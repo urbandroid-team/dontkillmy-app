@@ -1,0 +1,32 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="ExtendedFab" parent="@style/Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:elevation">6dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="backgroundTint">?attr/colorAccent</item>
+        <item name="cornerRadius">32dp</item>
+        <item name="layout_behavior">com.urbandroid.sleep.gui.fab.FloatingMaterialButtonBehavior</item>
+        <item name="iconPadding">12dp</item>
+        <item name="iconSize">24dp</item>
+        <item name="layout_anchorGravity">top|center</item>
+
+    </style>
+
+</resources>
