@@ -2,7 +2,7 @@ package com.urbandroid.dontkillmyapp
 
 import java.util.concurrent.TimeUnit
 
-val ALARM_REPEAT_MS : Long = TimeUnit.MINUTES.toMillis(8)
+val ALARM_REPEAT_MS : Long = TimeUnit.MINUTES.toMillis(10)
 const val ALARM_REPEAT_MARGIN_MS : Long = 30000
 val WORK_REPEAT_MS : Long = TimeUnit.SECONDS.toMillis(10)
 val MAIN_REPEAT_MS : Long = TimeUnit.SECONDS.toMillis(10)
