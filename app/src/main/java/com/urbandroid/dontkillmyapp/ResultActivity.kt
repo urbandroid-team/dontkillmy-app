@@ -22,6 +22,7 @@ import com.urbandroid.dontkillmyapp.gui.BenchmarkView
 import com.urbandroid.dontkillmyapp.service.BenchmarkService
 import kotlinx.android.synthetic.main.activity_result.*
 import java.util.*
+import kotlin.math.roundToInt
 
 
 class ResultActivity : AppCompatActivity() {
@@ -159,7 +160,7 @@ class ResultActivity : AppCompatActivity() {
                                     }
                                 }
                                 0 -> {
-                                    val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScFa3YweHO33W50ifAV8nSRGOFVCPacoikyA53SzkQXeDlQPA/viewform?usp=pp_url&entry.394232744=${Uri.encode(Build.MODEL)}&entry.184762960=${Uri.encode(Build.VERSION.SDK_INT.toString())}&entry.1019994117=${(benchmark.getMainResult() * 100).toInt()}&entry.769591257=${(benchmark.getAlarmResult()* 100).toInt()}&entry.1490587715=${(benchmark.getWorkResult()* 100).toInt()}&entry.2139576680=${benchmark.getDurationSeconds()}&submit=Submit"))
+                                    val i = Intent(Intent.ACTION_VIEW, Uri.parse("https://docs.google.com/forms/d/e/1FAIpQLScFa3YweHO33W50ifAV8nSRGOFVCPacoikyA53SzkQXeDlQPA/viewform?usp=pp_url&entry.394232744=${Uri.encode(Build.MODEL)}&entry.184762960=${Uri.encode(Build.VERSION.SDK_INT.toString())}&entry.1019994117=${(benchmark.getMainResult() * 100).roundToInt()}&entry.769591257=${(benchmark.getAlarmResult()* 100).roundToInt()}&entry.1490587715=${(benchmark.getWorkResult()* 100).roundToInt()}&entry.2139576680=${benchmark.getDurationSeconds()}&submit=Submit"))
                                     try {
                                         startActivity(i)
                                     } catch (e: Exception) {

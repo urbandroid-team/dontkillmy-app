@@ -9,6 +9,7 @@ import androidx.preference.PreferenceManager
 import com.google.gson.Gson
 import com.urbandroid.dontkillmyapp.*
 import java.util.*
+import kotlin.math.roundToInt
 
 data class Benchmark(val from : Long, var to : Long) {
 
@@ -82,7 +83,7 @@ data class Benchmark(val from : Long, var to : Long) {
         }
 
         fun formatResult(result : Float) : String {
-            return "${(result * 100).toInt()}%"
+            return "${(result * 100).roundToInt()}%"
 //            return "${DecimalFormat("0.0").format(result * 100)}%"
         }
 
