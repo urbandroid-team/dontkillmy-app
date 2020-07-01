@@ -38,4 +38,12 @@
         <item>Email</item>
         <item>Other</item>
     </string-array>
+
+    <string name="how_it_works">How it works</string>
+    <string name="how_it_works_text">The benchmark starts a foreground service with a wake lock and schedules repetitive tasks on the main thread (every 10s), a custom thread executor (every 10s) and schedules regular alarms using AlarmManager.setExactAndAllowWhileIdle (every 10 minutes). Then it calculates the score by comparing executed with expected.\n\nFor more details check the apps code at https://github.com/urbandroid-team/dontkillmy-app</string>
+    <string name="contact_support">Contact support</string>
+    <string name="tell_others">Tell others</string>
+    <string name="tell_others_text">DontKillMyApp Benchmark checks your phone background processing to make apps on your phone work properly.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+    <string name="rate">Please, rate us!</string>
+
 </resources>

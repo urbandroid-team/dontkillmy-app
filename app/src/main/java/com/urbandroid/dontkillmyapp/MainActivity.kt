@@ -1,9 +1,13 @@
 package com.urbandroid.dontkillmyapp
 
 import android.content.DialogInterface
+import android.content.Intent
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -74,4 +78,55 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.how_it_works -> {
+                val builder: AlertDialog.Builder = AlertDialog.Builder(this)
+                builder.setTitle(R.string.how_it_works)
+                builder.setMessage(R.string.how_it_works_text)
+                builder.setPositiveButton(R.string.ok, null)
+                builder.show()
+            }
+            R.id.support -> {
+                var subject = "DontKillMyApp Feedback"
+                var body = ""
+
+                val i = Intent(Intent.ACTION_SENDTO, Uri.parse("mailto:support@urbandroid.com?&subject=" + Uri.encode(subject) +
+                        "&body="))
+
+                i.putExtra(Intent.EXTRA_SUBJECT, subject)
+                try {
+                    startActivity(Intent.createChooser(i, getString(R.string.contact_support)))
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error $e")
+                }
+
+            }
+            R.id.tell_others -> {
+                var subject = "${getString(R.string.app_name)} ${getString(R.string.benchmark)}"
+                var body = getString(R.string.tell_others_text)
+
+                val i = Intent(Intent.ACTION_SEND)
+                i.setType("text/plain")
+
+                i.putExtra(Intent.EXTRA_SUBJECT, subject)
+                i.putExtra(Intent.EXTRA_TEXT, body)
+                try {
+                    startActivity(Intent.createChooser(i, getString(R.string.tell_others)))
+                } catch (e: Exception) {
+                    Log.e(TAG, "Error $e")
+                }
+
+            }
+        }
+        return true
+    }
+
 }
