@@ -3,7 +3,6 @@ package com.urbandroid.dontkillmyapp
 import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
@@ -66,7 +65,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-        doki_content.loadContent(Build.MANUFACTURER)
+        doki_content.loadContent()
         doki_content.setButtonsVisibility(false)
 
         val currentBenchmark = Benchmark.load(this)
