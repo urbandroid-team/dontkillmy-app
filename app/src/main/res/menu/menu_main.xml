@@ -11,4 +11,7 @@
   <item android:id="@+id/support"
         app:showAsAction="never"
       android:title="@string/contact_support" />
+  <item android:id="@+id/rate"
+        app:showAsAction="never"
+      android:title="@string/rate" />
 </menu>

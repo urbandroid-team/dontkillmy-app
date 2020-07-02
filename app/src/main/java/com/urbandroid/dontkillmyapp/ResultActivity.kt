@@ -76,6 +76,7 @@ class ResultActivity : AppCompatActivity() {
 
         done.setOnClickListener {
             Benchmark.clear(this)
+            RateActivity.start(this)
             finish()
         }
     }

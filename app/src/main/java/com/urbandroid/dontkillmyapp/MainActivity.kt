@@ -59,6 +59,7 @@ class MainActivity : AppCompatActivity() {
 
 
         }
+
     }
 
 
@@ -114,7 +115,7 @@ class MainActivity : AppCompatActivity() {
                 var body = getString(R.string.tell_others_text)
 
                 val i = Intent(Intent.ACTION_SEND)
-                i.setType("text/plain")
+                i.type = "text/plain"
 
                 i.putExtra(Intent.EXTRA_SUBJECT, subject)
                 i.putExtra(Intent.EXTRA_TEXT, body)
@@ -124,6 +125,15 @@ class MainActivity : AppCompatActivity() {
                     Log.e(TAG, "Error $e")
                 }
 
+            }
+            R.id.rate -> {
+                val url = "$PLAY_STORE_PREFIX$packageName"
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                try {
+                    startActivity(intent)
+                } catch (e: java.lang.Exception) {
+                    Toast.makeText(this, "Cannot open $url", Toast.LENGTH_LONG).show()
+                }
             }
         }
         return true

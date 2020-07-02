@@ -45,5 +45,9 @@
     <string name="tell_others">Tell others</string>
     <string name="tell_others_text">DontKillMyApp Benchmark checks your phone background processing to make apps on your phone work properly.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
     <string name="rate">Please, rate us!</string>
+    <string name="rate_button">Rate</string>
+    <string name="never_button">Never</string>
+    <string name="later_button">Later</string>
+    <string name="rate_text">We want to make apps work even on phones whose manufacturers prefer battery over functionality.\n\nThe best way you can help make this project visible is to rate and comment this free and open source tool on the Play Store.\n\nMany thanks for helping us making the Android eco-system a better place!</string>
 
 </resources>
