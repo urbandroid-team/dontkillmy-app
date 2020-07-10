@@ -95,6 +95,14 @@ class ResultActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.how_it_works -> {
+                val builder: AlertDialog.Builder = AlertDialog.Builder(this)
+                builder.setTitle(R.string.how_it_works)
+                builder.setMessage(R.string.how_it_works_text)
+                builder.setPositiveButton(R.string.ok, null)
+                builder.show()
+                return true
+            }
             R.id.share -> {
                 val benchmark = Benchmark.load(this)
                 benchmark?.let { benchmark ->

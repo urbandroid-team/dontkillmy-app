@@ -6,4 +6,8 @@
         android:icon="@drawable/ic_share"
         app:showAsAction="always"
       android:title="@string/share" />
+  <item android:id="@+id/how_it_works"
+      android:icon="@drawable/ic_help"
+      app:showAsAction="always"
+      android:title="@string/how_it_works" />
 </menu>
