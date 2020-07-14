@@ -5,9 +5,9 @@
 <string name="start_benchmark">Začít měřit</string>
 <string name="stop_benchmark">Vypnout měření</string>
 <string name="benchmark">Měření</string>
-<string name="running">Měření běží (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) vypněte zde.</string>
-<string name="finished">Měření je u konce, ukaž výsledky.</string>
-<string name="already_running">Měření běží již běží</string>
+<string name="running">Měření běží  (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) vypněte zde.</string>
+<string name="finished">Měření skončilo, ukaž výsledky.</string>
+<string name="already_running">Měření již běží</string>
 <string name="stop">Stop</string>
 <string name="clear">Vymazat</string>
 <string name="work">Vlákna</string>
@@ -31,10 +31,9 @@
 <item>6 hodin</item>
 <item>7 hodin</item>
 <item>8 hodin</item>
-<item>Ostatní</item>
 </string-array>
 <string name="how_it_works">Jak to funguje</string>
-<string name="how_it_works_text">Meření natsartuje službu na popředí, udržuje CPU zapnuté a nastaví opakující se ulohy na hlavním vlákně (po 10ti sekundách) a na dalších vláknech (po 10ti sekundách) a alarmy (AlarmManager.setExactAndAllowWhiteIdle po 10ti minutách). Na konci se spočítá skóre jako uskutečněné proti očekávaným.\n\nHondoty blízko 100% jsou dobrý výsledek - žádné nestadardní omezení pravděpodobně nejsou momentálně aktivní. Zkuste měření po týdnu opakovat, protože někteří výrobci zapínaji zabijáky aplikací až po nějaké době co není aplikace používána.\n\nGRAF\n\nKaždý řádek reprezentuje 5 minut. Ideálně vidíte v grafu 30 koleček a trojúhelníků na řádek a jeden čtverec na každém druhém řádku. Větší bílá místa znamenájí problém - Vaše aplikace nemusí pracovat správně pokud nezměníte nastavení telefonu.\n\nPro více informací se podívejte na https://dontkillmyapp.com a nebo přímo do zdrojáku na https://github.com/urbandroid-team/dontkillmy-app
+<string name="how_it_works_text">Meření nastartuje službu na popředí, udržuje CPU zapnuté a nastaví opakující se úlohy na hlavním vlákně (po 10ti sekundách) a na dalších vláknech (po 10ti sekundách) a alarmy (AlarmManager.setExactAndAllowWhileIdle po 10ti minutách). Na konci se spočítá skóre jako uskutečněné proti očekávaným.\n\nHodnoty blízko 100% jsou dobrý výsledek - žádná nestandardní omezení nejspíš nejsou momentálně aktivní. Zkuste měření za týden opakovat, protože někteří výrobci zapínaji zabijáky aplikací až po nějaké době co není aplikace používána.\n\nGRAF\n\nKaždý řádek reprezentuje 5 minut. Ideálně vidíte v grafu 30 koleček a trojúhelníků na řádek a jeden čtverec na každém druhém řádku. Větší bílá místa znamenají problém - Vaše aplikace nemusí pracovat správně pokud nezměníte nastavení telefonu.\n\nPro více informací se podívejte na https://dontkillmyapp.com a nebo přímo do zdrojáku na https://github.com/urbandroid-team/dontkillmy-app
 
 
 
@@ -47,5 +46,5 @@ Each row in the graph represents 5 minutes. Ideally you see 30 circles and trian
 <string name="never_button">Nikdy</string>
 <string name="later_button">Později</string>
 <string name="source">Zdrojový kód</string>
-<string name="rate_text">Chceme, aby aplikace fungovaly i na telefonech výrobců co upřednostňují baterii před užitečností aplikací.\n\nPomozte nám zviditelnit tento problém. Nejlépe tím, že ohodnotíte tuto aplikaci, která je zdarma a má otevřený zdrojový kód na Obchodě Play a napíšete nám zkušenosti, jak Vám aplikace pomohla.\n\nDěkujeme za Vaši podporu a důveru, že nám pomáháte zlepšovat svět Anddroidích zařízení. </string>
+<string name="rate_text">Chceme, aby aplikace fungovaly i na telefonech výrobců, kteří upřednostňují baterii před užitečností aplikací.\n\nPomozte nám zviditelnit tento problém. Nejlépe tím, že ohodnotíte tuto aplikaci, která je zdarma a má otevřený zdrojový kód na Obchodě Play a napíšete nám zkušenosti, jak Vám aplikace pomohla.\n\nDěkujeme za Vaši podporu a důvěru, že nám pomáháte zlepšovat svět Androidích zařízení.</string>
 </resources>

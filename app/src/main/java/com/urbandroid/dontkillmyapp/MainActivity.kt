@@ -142,6 +142,15 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this, "Cannot open $url", Toast.LENGTH_LONG).show()
                 }
             }
+            R.id.translate -> {
+                val url = "https://docs.google.com/spreadsheets/d/1DJ6nvdv2X8Q8e4NXu9VE0dT3SL72JX9evTmlDDALfRM/edit#gid=141810181"
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                try {
+                    startActivity(intent)
+                } catch (e: java.lang.Exception) {
+                    Toast.makeText(this, "Cannot open $url", Toast.LENGTH_LONG).show()
+                }
+            }
         }
         return true
     }

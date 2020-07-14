@@ -2,4 +2,50 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
+<string name="start_benchmark">شروع سنجش</string>
+<string name="stop_benchmark">توقف سنجش</string>
+<string name="benchmark">سنجش</string>
+<string name="running">سنجش در حال اجراست (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) برای توقف ضربه بزنید.</string>
+<string name="finished">سنجش پایان یافت، برای دیدن نتایج ضربه بزنید</string>
+<string name="already_running">سنجش در حال حاضر در حال اجراست</string>
+<string name="stop">توقف</string>
+<string name="clear">پاک</string>
+<string name="work">عمل</string>
+<string name="alarm">زنگ هشدار</string>
+<string name="main">اصلی</string>
+<string name="share">اشتراک گذاری</string>
+<string name="share_with">اشتراک گذاری با</string>
+<string name="report">گزارش</string>
+<string name="duration">مدت زمان</string>
+<string name="warning_title">هشدار</string>
+<string name="warning_text">لطفاً تلفن خود را از شارژر دور نگه دارید و سعی کنید در کل سنجش از آن استفاده نکنید.</string>
+<string name="cancel">لغو</string>
+<string name="ok">باشه</string>
+<string name="total">مجموع</string>
+<string-array name="duration_array">
+<item>۱ ساعت</item>
+<item>۲ ساعت</item>
+<item>۳ ساعت</item>
+<item>۴ ساعت</item>
+<item>۵ ساعت</item>
+<item>۶ ساعت</item>
+<item>۷ ساعت</item>
+<item>۸ ساعت</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>ایمیل</item>
+<item>سایر</item>
+</string-array>
+<string name="how_it_works">چگونه کار میکند</string>
+<string name="how_it_works_text">معیار یک سرویس پیش زمینه را با قفل بید شروع می کند و کارهای تکراری را در موضوع اصلی (هر۱۰ ثانیه)،  یک مجری موضوع سفارشی (هر۱۰ ثانیه) انجام می دهد و آلارم های منظم را با استفاده از مدیر آلارم گوشی (هر ۱۰ دقیقه) برنامه ریزی می کند. این ایده خوبی است که تست را در یک هفته تکرار کنید زیرا ممکن است برخی برنامه های نصب شده محدودیت هایی را برای برنامه هایی اعمال کنند که برای مدتی استفاده نمی شوند. هر سطر در نمودار ۵ دقیقه را نشان می دهد. در حالت ایده آل ۳۰ دایره و مثلث را در هر خط و یک مربع در هر خط دومی مشاهده می کنید.مناطق بزرگتر از فضای سفید یک مشکل را نشان می دهد - اگر تنظیمات تلفن خود را تغییر ندهید ممکن است برنامه های شما مطابق آنچه در نظر گرفته شده کار نکنند.  برای اطلاعات بیشتر کد برنامه را در https://github بررسی کنید. </string>
+<string name="contact_support">ارتباط با پشتیبانی</string>
+<string name="tell_others">معرفی به دیگران</string>
+<string name="tell_others_text">DontKillMyApp ، پردازش پس زمینه تلفن را بررسی می کند تا برنامه های روی تلفن شما به درستی کار کنند.https://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">لطفا به ما رای دهید!</string>
+<string name="rate_button">رای دادن</string>
+<string name="never_button">هرگز</string>
+<string name="later_button">بعدا</string>
+<string name="source">کد منبع</string>
+<string name="rate_text">ما می خواهیم برنامه ها را حتی در تلفن هایی اجرایی کنیم که سازندگان باتری را بیش از عملکرد ترجیح می دهند. بهترین روشی که به شما در بهبود این پروژه کمک می کند این است که این ابزار رایگان و متن باز را در فروشگاه Play ارزیابی و بررسی کنید. خیلی ممنون برای کمک به ما در ساختن اکوسیستم اندرویدی به مکانی بهتر!</string>
 </resources>

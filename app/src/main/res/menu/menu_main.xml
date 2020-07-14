@@ -17,4 +17,7 @@
   <item android:id="@+id/support"
         app:showAsAction="never"
       android:title="@string/contact_support" />
+  <item android:id="@+id/translate"
+        app:showAsAction="never"
+      android:title="@string/translate" />
 </menu>

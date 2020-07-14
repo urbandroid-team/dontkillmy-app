@@ -50,5 +50,6 @@
     <string name="later_button">Later</string>
     <string name="source">Source code</string>
     <string name="rate_text">We want to make apps work even on phones whose manufacturers prefer battery over functionality.\n\nThe best way you can help make this project visible is to rate and comment this free and open source tool on the Play Store.\n\nMany thanks for helping us making the Android eco-system a better place!</string>
+    <string name="translate">Help translate the app</string>
 
 </resources>
