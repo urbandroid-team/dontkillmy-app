@@ -15,6 +15,7 @@ import androidx.core.app.NotificationManagerCompat
 import androidx.preference.PreferenceManager
 import com.urbandroid.dontkillmyapp.*
 import com.urbandroid.dontkillmyapp.domain.Benchmark
+import kotlinx.coroutines.*
 import java.text.DateFormat
 import java.util.*
 import java.util.concurrent.Executors
@@ -31,6 +32,9 @@ class BenchmarkService : Service() {
     lateinit var h : Handler
 
     var executor : ScheduledExecutorService? = null
+
+    private val supervisorJob = SupervisorJob()
+    private val scope = CoroutineScope(Dispatchers.IO + supervisorJob)
 
     private val receiver = object:BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
@@ -136,6 +140,15 @@ class BenchmarkService : Service() {
         registerReceiver(receiver, IntentFilter(ACTION_ALARM));
         scheduleAlarm()
 
+        scope.launch {
+            while (true) {
+                Log.i(TAG, "Coroutine")
+                currentBenchmark.coroutineEvents.add(System.currentTimeMillis())
+                checkBenchmarkEnd(currentBenchmark)
+                delay(COROUTINE_REPEAT_MS)
+            }
+        }
+
         wakeLock =
             (getSystemService(Context.POWER_SERVICE) as PowerManager).run {
                 newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "DKMA::BenchmarkWakeLock").apply {
@@ -236,6 +249,8 @@ class BenchmarkService : Service() {
         cancelAlarm()
 
         h.removeCallbacks(mainRunnable)
+
+        supervisorJob.cancelChildren()
 
         wakeLock?.release()
 
