@@ -34,7 +34,7 @@ class BenchmarkService : Service() {
     var executor : ScheduledExecutorService? = null
 
     private val supervisorJob = SupervisorJob()
-    private val scope = CoroutineScope(Dispatchers.IO + supervisorJob)
+    private val scope = CoroutineScope(Dispatchers.Default + supervisorJob)
 
     private val receiver = object:BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
