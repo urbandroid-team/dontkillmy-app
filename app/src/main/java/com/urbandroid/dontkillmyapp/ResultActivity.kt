@@ -17,6 +17,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.get
+import com.google.android.play.core.review.ReviewManagerFactory
 import com.urbandroid.dontkillmyapp.domain.Benchmark
 import com.urbandroid.dontkillmyapp.gui.BenchmarkView
 import com.urbandroid.dontkillmyapp.service.BenchmarkService
@@ -79,6 +80,22 @@ class ResultActivity : AppCompatActivity() {
             Benchmark.clear(this)
             RateActivity.start(this)
             finish()
+        }
+
+        if (RateActivity.getTimeToRateAgain(this) > 0 && RateActivity.isTimeToRateAgain(this) && currentBenchmark?.getTotalResult() ?: 0f > 0.8f && !RateActivity.isRateNever(this) && (System.currentTimeMillis() % 5 == 0L)) {
+            val manager = ReviewManagerFactory.create(this@ResultActivity)
+
+            val request = manager.requestReviewFlow()
+            request.addOnCompleteListener { request ->
+                if (request.isSuccessful) {
+                    val reviewInfo = request.result
+                    val flow = manager.launchReviewFlow(this@ResultActivity, reviewInfo)
+                    flow.addOnCompleteListener { result ->
+                        RateActivity.setRateLater(this@ResultActivity)
+                    }
+                }
+            }
+
         }
     }
 

@@ -12,6 +12,7 @@ val COROUTINE_REPEAT_MS : Long = TimeUnit.SECONDS.toMillis(10)
 val HOUR_IN_MS : Long = TimeUnit.HOURS.toMillis(1)
 val BENCHMARK_DURATION : Long = HOUR_IN_MS * 3
 
+const val KEY_RATE_LATER : String = "Rate_later_1"
 const val KEY_RATE_NEVER : String = "Rate_never_1"
 const val KEY_RATE_DONE : String = "Rate_done_1"
 const val KEY_BENCHMARK : String = "Benchmark"

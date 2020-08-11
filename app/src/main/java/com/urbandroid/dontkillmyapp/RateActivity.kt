@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
 import kotlinx.android.synthetic.main.activity_rate.*
+import java.util.concurrent.TimeUnit
 
 class RateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +30,7 @@ class RateActivity : AppCompatActivity() {
         }
 
         later.setOnClickListener {
+            setRateLater(this)
             finish()
         }
 
@@ -40,11 +42,34 @@ class RateActivity : AppCompatActivity() {
     }
 
     companion object {
+
+        fun isRateDone(context : Context) : Boolean {
+            return PreferenceManager.getDefaultSharedPreferences(context).getBoolean(KEY_RATE_DONE, false)
+        }
+
+        fun isTimeToRateAgain(context : Context) : Boolean {
+            val ts = PreferenceManager.getDefaultSharedPreferences(context).getLong(KEY_RATE_LATER, -1)
+            return ts == -1L || System.currentTimeMillis() - ts > TimeUnit.DAYS.toMillis(4)
+        }
+
+        fun getTimeToRateAgain(context : Context) : Long {
+            return PreferenceManager.getDefaultSharedPreferences(context).getLong(KEY_RATE_LATER, -1)
+        }
+
+        fun isRateNever(context : Context) : Boolean {
+            return PreferenceManager.getDefaultSharedPreferences(context).getBoolean(KEY_RATE_NEVER, false)
+        }
+
+        fun setRateLater(context : Context) {
+            PreferenceManager.getDefaultSharedPreferences(context).edit().putLong(KEY_RATE_LATER, System.currentTimeMillis()).apply()
+        }
+
+        fun shouldStartRating(context : Context) : Boolean {
+            return !isRateDone(context) && !isRateNever(context) && isTimeToRateAgain(context)
+        }
+
         fun start(context : Context) {
-            if (
-                !PreferenceManager.getDefaultSharedPreferences(context).getBoolean(KEY_RATE_DONE, false) &&
-                !PreferenceManager.getDefaultSharedPreferences(context).getBoolean(KEY_RATE_NEVER, false)
-            ) {
+            if (shouldStartRating(context)) {
                 context.startActivity(Intent(context, RateActivity::class.java))
             }
         }
