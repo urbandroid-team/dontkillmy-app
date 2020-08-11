@@ -1,0 +1,3 @@
+The official DontKillMyApp app is here - make apps finally work properly even if you do not own a Pixel.
+
+Helps you set up your phone background tasks so that your apps can finally work for YOU even when not looking at the screen right now.
