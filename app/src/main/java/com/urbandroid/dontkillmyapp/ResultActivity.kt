@@ -82,7 +82,7 @@ class ResultActivity : AppCompatActivity() {
             finish()
         }
 
-        if (RateActivity.getTimeToRateAgain(this) > 0 && RateActivity.isTimeToRateAgain(this) && currentBenchmark?.getTotalResult() ?: 0f > 0.8f && !RateActivity.isRateNever(this) && (System.currentTimeMillis() % 5 == 0L)) {
+        if (RateActivity.getTimeToRateAgain(this) > 0 && RateActivity.isTimeToRateAgain(this) && currentBenchmark?.getTotalResult() ?: 0f > 0.9f && !RateActivity.isRateNever(this) && (System.currentTimeMillis() % 5 == 0L)) {
             val manager = ReviewManagerFactory.create(this@ResultActivity)
 
             val request = manager.requestReviewFlow()

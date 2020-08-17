@@ -49,7 +49,7 @@ class RateActivity : AppCompatActivity() {
 
         fun isTimeToRateAgain(context : Context) : Boolean {
             val ts = PreferenceManager.getDefaultSharedPreferences(context).getLong(KEY_RATE_LATER, -1)
-            return ts == -1L || System.currentTimeMillis() - ts > TimeUnit.DAYS.toMillis(4)
+            return ts == -1L || System.currentTimeMillis() - ts > TimeUnit.DAYS.toMillis(7)
         }
 
         fun getTimeToRateAgain(context : Context) : Long {
