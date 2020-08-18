@@ -52,4 +52,28 @@
     <string name="rate_text">We want to make apps work even on phones whose manufacturers prefer battery over functionality.\n\nThe best way you can help make this project visible is to rate and comment this free and open source tool on the Play Store.\n\nMany thanks for helping us making the Android eco-system a better place!</string>
     <string name="translate">Help translate the app</string>
 
+    <string name="slogan">Make apps work</string>
+    <string name="market_text">The official DontKillMyApp app is here - make apps finally work properly even if you do not own a Pixel.
+
+Helps you set up your phone background tasks so that your apps can finally work for YOU even when not looking at the screen right now.
+
+See how is your phone doing and test different settings with DontKillMyApp benchmark.
+
+Features:
+• DKMA benchmark: Measure how aggressively is your phone killing background apps
+• Guides: Get actionable steps to overcome most background process restrictions
+• Make a change:️Help smartphones stay smart by sharing your benchmark report to dontkillmyapp.com
+
+DontKillMyApp is a benchmark tool to see how well does your phone support background processing. You can measure before setting up your phone, then go through the setup guides and benchmark again to see how much has your phone been slacking in the background.
+
+You can share your report through the app to the maintainers of the dontkillmyapp.com website who compile it and base the overall negative score on it.
+
+How does the benchmark work? (Technical!)
+
+The app starts a foreground service with a wake lock and schedules repetitive task on the main thread, a custom thread executor and schedules regular alarms (AlarmManager.setExactAndAllowWhileIdle). Then it calculates executed vs. expected. That\'s it!
+
+For more details check the code. The app is open source available it https://github.com/urbandroid-team/dontkillmy-app
+
+Special thanks to Doki (github.com/doubledotlabs/doki).</string>
+
 </resources>
