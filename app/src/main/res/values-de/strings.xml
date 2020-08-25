@@ -2,4 +2,71 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Überprüfung starten</string>
+<string name="stop_benchmark">Überprüfung stoppen</string>
+<string name="benchmark">Überprüfen</string>
+<string name="running">Überprüfung läuft (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) zum Stoppen drücken.</string>
+<string name="finished">Überprüfung beendet, für Ergebnisse drücken.</string>
+<string name="already_running">Überprüfung läuft bereits</string>
+<string name="stop">Stop</string>
+<string name="clear">Löschen</string>
+<string name="work">Arbeit</string>
+<string name="alarm">Alarm</string>
+<string name="main">Main</string>
+<string name="share">Teilen</string>
+<string name="share_with">Teilen mit</string>
+<string name="report">Ergebnis</string>
+<string name="duration">Dauer</string>
+<string name="warning_title">Achtung</string>
+<string name="warning_text">Bitte das Telefon vom Ladegerät fernhalten und möglichst während der gesamten Überprüfung nicht verwenden.</string>
+<string name="cancel">Abbrechen</string>
+<string name="ok">OK</string>
+<string name="total">Gesamt</string>
+<string-array name="duration_array">
+<item>1 Stunde</item>
+<item>2 Stunden</item>
+<item>3 Stunden</item>
+<item>4 Stunden</item>
+<item>5 Stunden</item>
+<item>6 Stunden</item>
+<item>7 Stunden</item>
+<item>8 Stunden</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-Mail</item>
+<item>Anders</item>
+</string-array>
+<string name="how_it_works">Wie es funktioniert</string>
+<string name="tell_others_text">DontKillMyApp Überprüfung kontrolliert das Hintergrundverhalten des Telefons, damit Apps auf demTelefon ordnungsgemäß funktionieren.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Bitte bewerte uns!</string>
+<string name="rate_button">Bewertung</string>
+<string name="never_button">Nie</string>
+<string name="later_button">Später</string>
+<string name="source">Quellcode</string>
+<string name="rate_text">Wir möchten, dass Apps auch auf Telefonen funktionieren, deren Hersteller die Akkulaufzeit der Funktionalität vorziehen. \n\nDie beste Möglichkeit, dieses Projekt öffentlich zu machen, besteht darin, dieses kostenlose Open-Source-Tool im Play Store zu bewerten und zu kommentieren. \n\nVielen Dank für die Unterstützung, das Android-System zu einem besseren Ort zu machen!</string>
+<string name="translate">Hilf bei der Übersetzung</string>
+<string name="slogan">Make apps work</string>
+<string name="market_text">Die offizielle DontKillMyApp-App ist da - sorgen Sie dafür, dass Apps endlich richtig funktionieren, auch wenn Sie kein Pixel besitzen.
+
+Hilft Ihnen beim Einrichten Ihrer Telefon-Hintergrundaufgaben, damit Ihre Apps auch endlich für SIE richtig funktionieren können, auch wenn Sie gerade nicht auf den Bildschirm schauen.
+
+Sehen Sie, wie es Ihrem Telefon geht, und testen Sie verschiedene Einstellungen mit der DontKillMyApp-Überprüfung.
+
+Eigenschaften:
+• DKMA-Überprüfung: Messen Sie, wie aggressiv Ihr Telefon Hintergrund-Apps schließt
+• Anleitungen: Erhalten Sie detaillierte Schritt für Schritt Anleitungen, um die meisten Einschränkungen des Hintergrundprozesses zu überwinden
+• Nehmen Sie Änderungen selbst vor: ️Helfen Sie Smartphones, intelligent zu bleiben, indem Sie Ihren Überprüfungs-Bericht an dontkillmyapp.com weitergeben
+
+DontKillMyApp ist ein Überprüfungs-Tool, mit dem Sie feststellen können, wie gut Ihr Telefon die Hintergrundverarbeitung unterstützt. Sie können vor der Einrchtung Ihres Telefons zunächst überprüfen, dann die Einstellungs-Anleitungen durchgehen und erneut eine Überprüfung durchführen, um festzustellen, wie stark Ihr Telefon im Hintergrund nachgelassen hat.
+
+Sie können Ihren Bericht über die App an die Betreuer der Website dontkillmyapp.com weitergeben, die ihn zusammenstellen und die negative Gesamtpunktzahl darauf aufbauen.
+
+Wie funktioniert ie Überprüfung? (Technisch!)
+
+Die App startet einen Vordergrunddienst mit einer Wecksperre und plant sich wiederholende Aufgaben im Hauptthread, einem benutzerdefinierten Thread-Executor, und plant regelmäßige Alarme (AlarmManager.setExactAndAllowWhileIdle). Dann berechnet es die Ausführungen gegen die Erwartung. Das ist alles!
+
+Weitere Details finden Sie im Code. Die App ist Open-Source verfügbar unter https://github.com/urbandroid-team/dontkillmy-app
+
+Besonderer Dank geht an Doki (github.com/doubledotlabs/doki).</string>
 </resources>

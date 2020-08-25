@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">DontKillMyApp</string>
-    <string name="app_name_short">DKMA</string>
-    <string name="start_benchmark">Commencer l\'évaluation</string>
-    <string name="stop_benchmark">Arrêter l\'évaluation</string>
-    <string name="benchmark">Évaluation</string>
-    <string name="running">Évaluation en cours (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) appuyez pour arrêter.</string>
-    <string name="finished">Évaluation terminée, appuyez pour voir les résultats</string>
-    <string name="already_running">Évaluation déjà en cours</string>
-    <string name="stop">Arrêter</string>
-    <string name="clear">Effacer</string>
-    <string name="work">Travail</string>
-    <string name="alarm">Alarme</string>
-    <string name="main">Principal</string>
-    <string name="share">Partager</string>
-    <string name="share_with">Partager avec</string>
-    <string name="report">Rapport</string>
-    <string name="duration">Durée</string>
-    <string name="warning_title">Attention</string>
-    <string name="warning_text">Ne branchez pas votre téléphone et essayez de ne pas l\'utiliser pendant l\'évaluation.</string>
-    <string name="cancel">Annuler</string>
-    <string name="ok">OK</string>
-    <string name="total">Total</string>
-    <string-array name="duration_array">
-        <item>1 heure</item>
-        <item>2 heures</item>
-        <item>3 heures</item>
-        <item>4 heures</item>
-        <item>5 heures</item>
-        <item>6 heures</item>
-        <item>7 heures</item>
-        <item>8 heures</item>
-    </string-array>
-    <string-array name="share_array">
-        <item>DontKillMyApp.com</item>
-        <item>Courriel</item>
-        <item>Autre</item>
-    </string-array>
-    <string name="how_it_works">Fonctionnement</string>
-    <string name="how_it_works_text">L\'évaluation lance un service en arrière-plan avec un verrouillage actif et planifie des taches répétitives dans le fil principal (toutes les 10 secondes), un lanceur de fil personnalisé (toutes les 10 secondes), et planifie des alarmes régulièrement en utilisant AlarmManager.setExactAndAllowWhileIdle (toutes les 10 minutes). Ensuite elle calcule le score en comparant ce qui a été lancé et ce qui est attendu. \n\nLes scores proches de 100% sont de bons résultats - les optimisations de batterie non-standard ne sont pas utilisées. Bien qu\'il est bon de répéter le test dans une semaine, vu que certains OEM peuvent appliquer des limites inactives pendant un certain temps.\n\nLE GRAPHIQUE\n\nChaque colonne dans le graphique représente 5 minutes. Idéalement vous verrez 30 cercles par ligne et un carré toutes les 2 lignes. De plus larges zones blanches indiquent un problème - votre application pourrait ne pas marcher comme prévu si vous ne changez pas les paramètres de votre smartphone. Pour plus d\'informations, allez voir le code source de l\'application sur https://github.com/urbandroid-team/dontkillmy-app</string>
-    <string name="contact_support">Contacter le support</string>
-    <string name="tell_others">En parler</string>
-    <string name="tell_others_text">L\'évaluation de DontKillMyApp contrôle les processus en arrière-plan pour mieux faire fonctionner les applications de votre smartphone.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
-    <string name="rate">Notez-nous, s\'il vous plaît !</string>
-    <string name="rate_button">Noter</string>
-    <string name="never_button">Jamais</string>
-    <string name="later_button">Plus tard</string>
-    <string name="source">Code source</string>
-    <string name="rate_text">Nous voulons faire des applications qui fonctionnent même sur les smartphones dont leurs fabricants privilégient la batterie au fonctionnement. \n\nLa meilleure façon de faire connaître ce projet est de noter et commenter cet outil gratuit et libre sur le Play Store. \n\nNous vous remercions beaucoup pour nous aider à rendre Android meilleur !</string>
-    <string name="translate">Aidez à traduire l\'application</string>
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Commencer l\'évaluation</string>
+<string name="stop_benchmark">Arrêter l\'évaluation</string>
+<string name="benchmark">Évaluation</string>
+<string name="running">Évaluation en cours (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) appuyez pour arrêter.</string>
+<string name="finished">Évaluation terminée, appuyez pour voir les résultats</string>
+<string name="already_running">Évaluation déjà en cours</string>
+<string name="stop">Arrêter</string>
+<string name="clear">Effacer</string>
+<string name="work">Travail</string>
+<string name="alarm">Alarme</string>
+<string name="main">Principal</string>
+<string name="share">Partager</string>
+<string name="share_with">Partager avec</string>
+<string name="report">Rapport</string>
+<string name="duration">Durée</string>
+<string name="warning_title">Attention</string>
+<string name="warning_text">Ne branchez pas votre téléphone et essayez de ne pas l\'utiliser pendant l\'évaluation.</string>
+<string name="cancel">Annuler</string>
+<string name="ok">OK</string>
+<string name="total">Total</string>
+<string-array name="duration_array">
+<item>1 heure</item>
+<item>2 heures</item>
+<item>3 heures</item>
+<item>4 heures</item>
+<item>5 heures</item>
+<item>6 heures</item>
+<item>7 heures</item>
+<item>8 heures</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Courriel</item>
+<item>Autre</item>
+</string-array>
+<string name="how_it_works">Fonctionnement</string>
+<string name="how_it_works_text">L\'évaluation lance un service en arrière-plan avec un verrouillage actif et planifie des taches répétitives dans le fil principal (toutes les 10 secondes), un lanceur de fil personnalisé (toutes les 10 secondes), et planifie des alarmes régulièrement en utilisant AlarmManager.setExactAndAllowWhileIdle (toutes les 10 minutes). Ensuite elle calcule le score en comparant ce qui a été lancé et ce qui est attendu. \n\nLes scores proches de 100% sont de bons résultats - les optimisations de batterie non-standard ne sont pas utilisées. Bien qu\'il est bon de répéter le test dans une semaine, vu que certains OEM peuvent appliquer des limites inactives pendant un certain temps.\n\nLE GRAPHIQUE\n\nChaque colonne dans le graphique représente 5 minutes. Idéalement vous verrez 30 cercles par ligne et un carré toutes les 2 lignes. De plus larges zones blanches indiquent un problème - votre application pourrait ne pas marcher comme prévu si vous ne changez pas les paramètres de votre smartphone. Pour plus d\'informations, allez voir le code source de l\'application sur https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Contacter le support</string>
+<string name="tell_others">En parler</string>
+<string name="tell_others_text">L\'évaluation de DontKillMyApp contrôle les processus en arrière-plan pour mieux faire fonctionner les applications de votre smartphone.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Notez-nous, s\'il vous plaît !</string>
+<string name="rate_button">Noter</string>
+<string name="never_button">Jamais</string>
+<string name="later_button">Plus tard</string>
+<string name="source">Code source</string>
+<string name="rate_text">Nous voulons faire des applications qui fonctionnent même sur les smartphones dont leurs fabricants privilégient la batterie au fonctionnement. \n\nLa meilleure façon de faire connaître ce projet est de noter et commenter cet outil gratuit et libre sur le Play Store. \n\nNous vous remercions beaucoup pour nous aider à rendre Android meilleur !</string>
+<string name="translate">Aidez à traduire l\'application</string>
 </resources>
