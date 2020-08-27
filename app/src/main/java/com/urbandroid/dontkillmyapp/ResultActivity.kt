@@ -72,8 +72,6 @@ class ResultActivity : AppCompatActivity() {
             reportLayout.findViewById<TextView>(R.id.work).text = Benchmark.formatResult(it.getWorkResult())
             reportLayout.findViewById<TextView>(R.id.alarm).text = Benchmark.formatResult(it.getAlarmResult())
             reportLayout.findViewById<TextView>(R.id.main).text = Benchmark.formatResult(it.getMainResult())
-
-            //Log.i(TAG, "Coroutine result: "+Benchmark.formatResult(it.getCoroutineResult()))
         }
 
         done.setOnClickListener {
