@@ -18,7 +18,6 @@ data class Benchmark(val from : Long, var to : Long) {
     val workEvents = mutableListOf<Long>()
     val mainEvents = mutableListOf<Long>()
     val alarmEvents = mutableListOf<Long>()
-    //val coroutineEvents = mutableListOf<Long>()
 
     fun getWorkResult() : Float {
         return ((workEvents.size + 1) / ((to - from) / WORK_REPEAT_MS.toFloat())).coerceAtMost(1f)
@@ -35,10 +34,6 @@ data class Benchmark(val from : Long, var to : Long) {
     fun getAlarmResult() : Float {
         return ((alarmEvents.size + 1) / ((to - from) / (ALARM_REPEAT_MS + ALARM_REPEAT_MARGIN_MS).toFloat())).coerceAtMost(1f)
     }
-
-    //fun getCoroutineResult() : Float {
-    //    return ((coroutineEvents.size + 1) / ((to - from) / COROUTINE_REPEAT_MS.toFloat())).coerceAtMost(1f)
-    //}
 
     fun getDuration() : Long {
         return to - from
