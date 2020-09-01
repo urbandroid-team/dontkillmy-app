@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Start de evaluatie</string>
+<string name="stop_benchmark">Stop de evaluatie</string>
+<string name="benchmark">Evaluatie</string>
+<string name="running">Evaluatie is gestart (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) tap om te stoppen.</string>
+<string name="finished">Evaluatie is gestopt,tap voor het resultaat</string>
+<string name="already_running">De evaluatie is nog bezig</string>
+<string name="stop">Stop</string>
+<string name="clear">Wis</string>
+<string name="work">Werk</string>
+<string name="alarm">Alarm</string>
+<string name="main">Totaal</string>
+<string name="share">Deel</string>
+<string name="share_with">Deel met</string>
+<string name="report">Rapporteer</string>
+<string name="duration">Duur</string>
+<string name="warning_title">Waarschuwing</string>
+<string name="warning_text">Gelieve de telefoon niet in de oplader te laten en gebruik de telefoon niet gedurende de evaluatietest.</string>
+<string name="cancel">Afbreken</string>
+<string name="ok">OK</string>
+<string name="total">Totaal</string>
+<string-array name="duration_array">
+<item>1 uur</item>
+<item>2 uur</item>
+<item>3 uur</item>
+<item>4 uur</item>
+<item>5 uur</item>
+<item>6 uur</item>
+<item>7 uur</item>
+<item>8 uur</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-mail</item>
+<item>Anders</item>
+</string-array>
+<string name="how_it_works">Hoe werkt het</string>
+<string name="tell_others_text">DontKillMyApp Benchmark controleert de achtergrondprocessen om de apps goed te laten werken.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Beoordeel ons aub!</string>
+<string name="rate_button">Beoordeel</string>
+<string name="never_button">Nooit</string>
+<string name="later_button">Later</string>
+<string name="source">Broncode</string>
+<string name="rate_text">Ons doel is om uw apps te laten werken. Zelfs als de telefoonfabrikant belangrijker vinden om de batterij te sparen ten koste van de functionaliteit.\n\nDe beste manier om ons te helpen is om ons te beoordelen in de Playstore.\n\nHeel hartelijk dank om het Android platform beter te maken.</string>
+<string name="translate">Help ons om de app te vertalen.</string>
+<string name="slogan">Maak apps werkend</string>
+<string name="market_text">De officiele DontKillMyApp app is gearriveerd – Maakt apps eindelijk werkend, zelfs als je geen Pixel hebt.
+
+Helpt om de achtergrond taken in te stellen zodat je apps eindelijk werken, zelfs als je niet op je scherm kijkt. 
+
+Bekijk hoe je telefoon het doet en test verschillende instellingen met de DontKillMyApp Benchmark. 
+
+Eigenschappen:
+ • DKMA benchmark: Meet hoe aggressief de telefoon achtergrondprocessen stopt. Apps
+ • Ondersteund: Geeft stappen om de meest voorkomende restricties van de achtergrondprocessen aan te passen. 
+• Help mee: Help mee om smartphones slim te laten blijven om de evaluaties op te sturen naar dontkillmyapp.com 
+
+DontKillMyApp doet metingen om te kijken hoe goed de telefoon het doet in de ondersteuning van de achtergrondprocessen. 
+
+Doe een meting voordat je de telefooninstellingen aanpast. Dan ga door het stappenplan om te zien hoeveel je achtergrondprocessen vertragen. 
+
+Je kan de resultaten delen met de ontwikkelaars een algemene score berekenen en daarmee de negatieve score bepalen. 
+
+Hoe werkt de evaluatie? (Technisch!) 
+De app start een voorgrondprocess service met een wakker worden lock en plant een herhalende taak op het hoofdproces, een aangepaste custom thread executer, en plant regelmatig alarmeringen(AlarmManager.setExactAndAllowWhileIdle). Dan rekent hij uitgevoerde versus verwachte resultaten.Zo simpel is het. 
+
+Voor meer detail zie de broncode. De app is opensource en beschikbaar op https://github.com/urbandroid-team/dontkillmy-app 
+
+Speciale dank voor Doki (github.com/doubledotlabs/doki).
+
+</string>
+</resources>

@@ -38,6 +38,9 @@
 <item>Anders</item>
 </string-array>
 <string name="how_it_works">Wie es funktioniert</string>
+<string name="how_it_works_text">Die Überprüfung startet einen Vordergrunddienst mit einer Wecksperre und plant sich wiederholende Aufgaben für den Hauptthread (alle 10 Sekunden), einen benutzerdefinierten Thread-Executor (alle 10 Sekunden) und plant regelmäßige Alarme mit AlarmManager.setExactAndAllowWhileIdle (alle 10 Minuten). Anschließend wird die Punktzahl berechnet, indem die ausgeführten mit den erwarteten Werten verglichen werden.\n\nWerte nahe 100% sind gute Ergebnisse - nicht standardmäßige Batterieoptimierungen werden dann nicht angewendet. Trotzdem ist es gut, den Test in einer Woche zu wiederholen, da einige Betriebssysteme möglicherweise Beschränkungen für Apps anwenden, die für eine Weile nicht verwendet werden. \n\nDIE GRAFIK\n\nJede Zeile in der Grafik entspricht 5 Minuten. Idealerweise sehen Sie 30 Kreise und Dreiecke auf jeder Linie und ein Quadrat pro zweiter Linie. Größere Bereiche mit Leerzeichen weisen auf ein Problem hin. Ihre Apps funktionieren dann möglicherweise nicht wie vorgesehen, wenn Sie die Einstellungen Ihres Telefons nicht ändern.\n\nWeitere Informationen finden Sie im App-Code unter https://github. com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Entwickler kontaktieren</string>
+<string name="tell_others">Weitersagen</string>
 <string name="tell_others_text">DontKillMyApp Überprüfung kontrolliert das Hintergrundverhalten des Telefons, damit Apps auf demTelefon ordnungsgemäß funktionieren.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
 <string name="rate">Bitte bewerte uns!</string>
 <string name="rate_button">Bewertung</string>
