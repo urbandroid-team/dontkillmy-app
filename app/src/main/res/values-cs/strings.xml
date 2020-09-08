@@ -43,4 +43,20 @@
 <string name="later_button">Později</string>
 <string name="source">Zdrojový kód</string>
 <string name="rate_text">Chceme, aby aplikace fungovaly i na telefonech výrobců, kteří upřednostňují baterii před užitečností aplikací.\n\nPomozte nám zviditelnit tento problém. Nejlépe tím, že ohodnotíte tuto aplikaci, která je zdarma a má otevřený zdrojový kód na Obchodě Play a napíšete nám zkušenosti, jak Vám aplikace pomohla.\n\nDěkujeme za Vaši podporu a důvěru, že nám pomáháte zlepšovat svět Androidích zařízení.</string>
+<string name="slogan">Nech apky žít</string>
+<string name="market_text">Oficiální aplikace projektu DontKillMyApp je zde - konečně můžete nechat apky žít i na Vašem telefonu i když o zrovna neni Pixel.
+
+Aplikace Vám pomůže nastavit telefon tak, aby aplikace začali být užitečné i když zrovna nedržíte telfon v ruce. 
+
+Podívejte se jak si vede Váš telefoin ve sruvnaní s ostatními díky funkci Benchmark. 
+
+Vlatnosti:
+- DKMA Benchmark: změřte si jak agresivně zabíjí Váš telefon užitečné aplikace
+- Návody: podívejte se jak nastavit telefon, aby nechal aplikace žít
+- Umožněte změnu: nasdílejte zvoj report s projketem DKMA, abychom veděli jak si jednotlivé telefony vedou
+
+Nejprve změřtre telefon, pokud je Vaše skóre nízké, udělejte změny podle návodu a opakujet měření, abyste ověřili, že se nastavení podařilo.
+
+
+Projekt DKMA vyvíjejí a udržují dobrovolníci, kterým není jedno v jakém stavu je Androidí ekosystém a usilují o jeho zlepšení. Tato aplikace má otevřený zdrojový kód, který můžete nalézt na https://github.com/urbandroid-team/dontkillmy-app. </string>
 </resources>

@@ -69,7 +69,5 @@ De app start een voorgrondprocess service met een wakker worden lock en plant ee
 
 Voor meer detail zie de broncode. De app is opensource en beschikbaar op https://github.com/urbandroid-team/dontkillmy-app 
 
-Speciale dank voor Doki (github.com/doubledotlabs/doki).
-
-</string>
+Speciale dank voor Doki (github.com/doubledotlabs/doki).</string>
 </resources>
