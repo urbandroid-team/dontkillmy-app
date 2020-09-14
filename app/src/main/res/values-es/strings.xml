@@ -2,4 +2,78 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Iniciar analisis</string>
+<string name="stop_benchmark">Detener analisis</string>
+<string name="benchmark">Analisis</string>
+<string name="running">Analisis en progreso (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) toque para detenerlo.</string>
+<string name="finished">Analisis finalizado, toque para ver los resultados. </string>
+<string name="already_running">El analisis ya se encuentra ejecutandose.</string>
+<string name="stop">Parar</string>
+<string name="clear">Reiniciar</string>
+<string name="work">Trabajando</string>
+<string name="alarm">Alarma</string>
+<string name="main">Principal</string>
+<string name="share">Compartir</string>
+<string name="share_with">Compartir con</string>
+<string name="report">Reportar</string>
+<string name="duration">Duracion</string>
+<string name="warning_title">Cuidado!</string>
+<string name="warning_text">Desconecte el cargador, y no utilice el celular mientras se ejecuta el proceso.</string>
+<string name="cancel">Cancelar</string>
+<string name="ok">Aceptar</string>
+<string name="total">Total</string>
+<string-array name="duration_array">
+<item>1 Hora</item>
+<item>2 Horas</item>
+<item>3 Horas</item>
+<item>4 Horas</item>
+<item>5 Horas</item>
+<item>6 Horas</item>
+<item>7 Horas</item>
+<item>8 Horas</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Correo</item>
+<item>Otros</item>
+</string-array>
+<string name="how_it_works">Como funciona</string>
+<string name="how_it_works_text">El analisis ejecuta un servicio en primer plano con un bloqueo de activación y programa tareas repetitivas en el hilo principal (cada 10 segundos). una ejecucion de un hilo personalizado (cada 10 s) y programa alarmas regulares usando AlarmManager.setExactAndAllowWhileIdle (Cada 10 minutos). 
+Luego calcula la puntuación comparando ejecucion vs. espectativa.\n\nLas puntuaciones cercanas al 100% son buenos resultados; las optimizaciones de batería no estándar no se aplican en este momento. Aunque es bueno repetir la prueba en una semana, ya que algunos OEM pueden aplicar límites a las aplicaciones que no se utilizan durante un tiempo.\n\nEL ANALISIS\n\nCada fila del gráfico representa 5 minutos. Lo ideal es que vea 30 círculos y triángulos en cada línea y un cuadrado cada segunda línea. Las regiones más grandes de espacios en blanco indican un problema: es posible que sus aplicaciones no funcionen como se esperaba si no cambia la configuración de su teléfono.\n\n\Si eres programador puedes ver el codigo fuente de nuestra aplicacion aqui: https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Contactar al soporte</string>
+<string name="tell_others">Compartir</string>
+<string name="tell_others_text">El analisis de DontKillMyApp comprueba el procesamiento en segundo plano de su teléfono para que las aplicaciones de su teléfono funcionen correctamente.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Vota por nosotros!</string>
+<string name="rate_button">Calificar</string>
+<string name="never_button">Nunca</string>
+<string name="later_button">Luego</string>
+<string name="source">Codigo fuente</string>
+<string name="rate_text">Queremos que tus aplicaciones se ejecuten siempre, los fabricantes prefieren que ahorres batería en vez de que tus aplicaciones sigan ejecutándose en segundo plano.\n\nLa mejor que podemos hacer que este proyecto este al alcance de todos. Por favor, comenta y califica esta aplicación.\n\nMuchas gracias por hacer que el ecosistema de Android sea un mejor lugar para todos!</string>
+<string name="translate">Ayuda a traducir</string>
+<string name="slogan">Haz que tus aplicaciones funcionen</string>
+<string name="market_text">DonKillMyApp finalmente llego - Haz que tus aplicaciones funcionen al 100% sin necesidad de ser dueño de un Google Pixel. 
+
+Te ayudamos a que tu aplicacion se siga ejecutando en segundo plano.
+
+Observa como y realiza pruebas con nuestro efectivo analisis de aplicaciones. 
+
+Caracteristicas:
+
+Analisis DKMA: Mide qué tan agresivamente está tu teléfono cerrando aplicaciones en segundo plano
+GUIA: Te ayudamos paso a paso a quitar las restricciones de tu celular
+Haz la diferencia: Ayudanos a que tu Smartphone, siga siendo inteligente, envia tus reportes a dontkillmyapp.com
+
+DonKillMyApp es una herramienta que analisa los procesos en segundo plano. Puedes analisar, luego paso a paso te indicaremos como quitar
+la restriccion de tu celular para que tus aplicaciones no se cierren automaticamente. 
+
+Puedes compartir el analisis de tu caso desde la aplicacion o a traves de nuestro website dontkillmyapp.com, con esto ayudaras a otros
+a que no tengan el mismo problema. 
+
+Como funciona nuestro analisis. (Tecnicamente)
+
+La aplicación inicia un servicio en primer plano con un bloqueo de activación y programa tareas repetitivas en el hilo principal, un ejecutor de hilo personalizado y programa alarmas regulares (AlarmManager.setExactAndAllowWhileIdle). Calculo vs. expectativa. Listo!
+
+Para mas detalles puedes ver el codigo fuente desde aqui https://github.com/urbandroid-team/dontkillmy-app
+
+Gracias a Doki (github.com/doubledotlabs/doki).</string>
 </resources>

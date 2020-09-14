@@ -2,4 +2,40 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Rozpocznij benchmark</string>
+<string name="stop_benchmark">Zatrzymaj benchmark</string>
+<string name="benchmark">Benchmark</string>
+<string name="running">Benchmark trwa (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>). Naciśnij by zatrzymać</string>
+<string name="finished">Benchmark zakończony, naciśnij by zobaczyć rezultaty</string>
+<string name="already_running">Benchmark już trwa</string>
+<string name="stop">Zatrzymaj</string>
+<string name="clear">Wyczyść</string>
+<string name="work">Praca</string>
+<string name="alarm">Alarm</string>
+<string name="main">Główny</string>
+<string name="share">Udostępnij</string>
+<string name="share_with">Udostępnij przez</string>
+<string name="report">Zgłoś</string>
+<string name="duration">Czas trwania</string>
+<string name="warning_title">Ostrzeżenie</string>
+<string name="warning_text">Nie ładuj telefonu i nie używaj go podczas benchmarku.</string>
+<string name="cancel">Anuluj</string>
+<string name="ok">OK</string>
+<string name="total">Razem</string>
+<string-array name="duration_array">
+<item>1 godzina</item>
+<item>2 godziny</item>
+<item>3 godziny</item>
+<item>4 godziny</item>
+<item>5 godzin</item>
+<item>6 godzin</item>
+<item>7 godzin</item>
+<item>8 godzin</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Email</item>
+<item>Inne</item>
+</string-array>
+<string name="how_it_works">Jak to działa</string>
 </resources>
