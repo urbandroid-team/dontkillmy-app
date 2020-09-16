@@ -6,7 +6,7 @@
 <string name="stop_benchmark">Detener analisis</string>
 <string name="benchmark">Analisis</string>
 <string name="running">Analisis en progreso (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) toque para detenerlo.</string>
-<string name="finished">Analisis finalizado, toque para ver los resultados. </string>
+<string name="finished">Analisis finalizado, toque para ver los resultados.</string>
 <string name="already_running">El analisis ya se encuentra ejecutandose.</string>
 <string name="stop">Parar</string>
 <string name="clear">Reiniciar</string>

@@ -2,4 +2,74 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Mulai benchmark</string>
+<string name="stop_benchmark">Hentikan benchmark</string>
+<string name="benchmark">Benchmark</string>
+<string name="running">Benchmark sedang berlangsung (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) ketuk untuk menghentikan.</string>
+<string name="finished">Benchmark telah selesai, ketuk untuk melihat hasilnya</string>
+<string name="already_running">Pembandingan telah berlangsung</string>
+<string name="stop">Hentikan</string>
+<string name="clear">Bersihkan</string>
+<string name="work">Bekerja</string>
+<string name="alarm">Alarm</string>
+<string name="main">Utama</string>
+<string name="share">Bagikan</string>
+<string name="share_with">Bagikan dengan/via</string>
+<string name="report">Laporan</string>
+<string name="duration">Durasi</string>
+<string name="warning_title">Peringatan</string>
+<string name="warning_text">Jangan isi daya dan jangan gunakan ponsel anda selama proses sedang berlangsung</string>
+<string name="cancel">Batal</string>
+<string name="ok">OK</string>
+<string name="total">Total</string>
+<string-array name="duration_array">
+<item>1 jam</item>
+<item>2 jam</item>
+<item>3 jam</item>
+<item>4 jam</item>
+<item>5 jam</item>
+<item>6 jam</item>
+<item>7 jam</item>
+<item>8 jam</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Surel</item>
+<item>Lainnya</item>
+</string-array>
+<string name="how_it_works">Cara kerja</string>
+<string name="how_it_works_text">Pengukuran memulai layanan latar depan dengan penguncian layar saat bangun dan menjadwalkan tugas berulang di thread utama (setiap 10 detik), eksekutor thread kustom (setiap 10 detik), dan menjadwalkan alarm reguler menggunakan AlarmManager.setExactAndAllowWhileIdle (setiap 10 menit). Kemudian ia menghitung skor dengan membandingkan yang dieksekusi dengan yang diharapkan. \n\nSkor yang mendekati 100% adalah hasil yang baik - pengoptimalan baterai non-standar tidak diterapkan pada saat itu. Namun, ide yang bagus untuk mengulang pengujian dalam seminggu karena beberapa OEM mungkin menerapkan batasan ke aplikasi yang tidak digunakan untuk sementara waktu.\n\nGrafik\n\nSetiap baris dalam grafik mewakili 5 menit. Idealnya Anda melihat 30 lingkaran dan segitiga di setiap baris dan satu persegi di setiap baris kedua. Wilayah ruang kosong yang lebih luas menunjukkan adanya masalah - aplikasi Anda mungkin tidak berfungsi sebagaimana mestinya jika Anda tidak akan mengubah setelan ponsel.\n\n\ Untuk detail selengkapnya, periksa kode aplikasi di https://github.com/ urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Hubungi dukungan</string>
+<string name="tell_others">Beritahukan kepada yang lain</string>
+<string name="tell_others_text">Benchmark DontKillMyApp memeriksa pemrosesan latar belakang ponsel Anda untuk membuat aplikasi di ponsel Anda bekerja dengan baik.\n\nhttps://play.google.com/store/apps/details?Id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Mohon beri kami bintang!</string>
+<string name="rate_button">Beri Nilai</string>
+<string name="never_button">Jangan pernah</string>
+<string name="later_button">Nanti</string>
+<string name="source">Kode sumber</string>
+<string name="rate_text">Kami ingin membuat aplikasi berfungsi bahkan pada ponsel yang produsennya lebih menyukai baterai daripada fungsionalitas.\n\nCara terbaik untuk membantu proyek ini agar terlihat adalah dengan menilai dan mengomentari alat gratis dan sumber terbuka ini di Play Store.\n\nTerima kasih banyak untuk membantu kami membuat ekosistem Android menjadi tempat yang lebih baik!</string>
+<string name="translate">Bantu untuk menerjemahkan aplikasi ini</string>
+<string name="slogan">Membuat aplikasi berfungsi</string>
+<string name="market_text">Aplikasi DontKillMyApp resmi ada di sini - membuat aplikasi akhirnya berfungsi dengan baik meskipun Anda tidak memiliki Pixel.
+
+Membantu Anda mengatur tugas latar belakang ponsel sehingga aplikasi Anda akhirnya dapat bekerja untuk ANDA, bahkan saat Anda tidak melihat layar Anda.
+
+Lihat bagaimana ponsel Anda bekerja dan menguji pengaturan yang berbeda dengan benchmark DontKillMyApp.
+
+Fitur:
+• Tolok ukur DKMA: Mengukur seberapa agresif ponsel Anda mematikan aplikasi yang berjalan di latar belakang
+• Panduan: Dapatkan langkah-langkah yang dapat ditindaklanjuti untuk mengatasi sebagian besar pembatasan proses latar belakang
+• Lakukan perubahan: ️Bantu ponsel cerdas tetap pintar dengan membagikan laporan tolok ukur Anda ke dontkillmyapp.com
+
+DontKillMyApp adalah alat tolok ukur untuk melihat seberapa baik ponsel Anda mendukung pemrosesan latar belakang. Anda dapat mengukur sebelum mengatur telepon Anda, kemudian membaca panduan pengaturan dan mengukur lagi untuk melihat seberapa banyak telepon Anda kendur di latar belakang.
+
+Anda dapat membagikan laporan Anda melalui aplikasi ke pengelola situs web dontkillmyapp.com yang menyusunnya dan mendasarkan keseluruhan skor negatif berdasarkan data tersebut.
+
+Bagaimana cara kerja benchmark? (Teknis!)
+
+Aplikasi memulai layanan latar depan dengan penguncian layar saat bangun dan menjadwalkan tugas berulang pada thread utama, pelaksana thread kustom, dan menjadwalkan alarm reguler (AlarmManager.setExactAndAllowWhileIdle). Kemudian menghitung perbandingan antara yang dieksekusi vs. diharapkan. Itu saja!
+
+Untuk lebih jelasnya, silakan periksa kodenya. Aplikasi ini open source, tersedia di https://github.com/urbandroid-team/dontkillmy-app
+
+Terima kasih spesial kepada Doki (github.com/doubledotlabs/doki).</string>
 </resources>
