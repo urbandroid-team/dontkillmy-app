@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Inizio test (benchmark)</string>
+<string name="stop_benchmark">Stop test (benchmark)</string>
+<string name="benchmark">Test (benchmark)</string>
+<string name="running">Test in esecuzione (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) clicca qui per interromperlo.</string>
+<string name="finished">Test finito, clicca qui per i risultati</string>
+<string name="already_running">Test ancora in esecuzione</string>
+<string name="stop">Stop</string>
+<string name="clear">Pulisci</string>
+<string name="work">Lavoto</string>
+<string name="alarm">Allarme</string>
+<string name="main">Principale</string>
+<string name="share">Condividi</string>
+<string name="share_with">Condividi con</string>
+<string name="report">Segnala</string>
+<string name="duration">Durata</string>
+<string name="warning_title">Attenzione</string>
+<string name="warning_text">Cerca di non ricaricare il tuo telefono e di non utilizzarlo durante l\'intero test (benchmark).</string>
+<string name="cancel">Cancella</string>
+<string name="ok">Ok</string>
+<string name="total">Totale</string>
+<string-array name="duration_array">
+<item>1 ora</item>
+<item>2 ore</item>
+<item>3 ore</item>
+<item>4 ore</item>
+<item>5 ore</item>
+<item>6 ore</item>
+<item>7 ore</item>
+<item>8 ore</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Email</item>
+<item>Altro</item>
+</string-array>
+<string name="how_it_works">Come funziona</string>
+<string name="how_it_works_text">Il benchmark avvia un servizio in primo piano con un wakelock e pianifica attività ripetitive sul thread principale (ogni 10 secondi), un esecutore di thread personalizzato (ogni 10 secondi) e pianifica allarmi regolari utilizzando AlarmManager.setExactAndAllowWhileIdle (ogni 10 minuti). Quindi calcola il punteggio confrontando i risultati eseguiti e quelli previsti. \n\n I punteggi vicini al 100% sono buoni risultati - al momento non vengono applicate ottimizzazioni della batteria non standard. E\' bene ripetere il test entro una settimana poiché alcuni OEM potrebbero applicare limiti alle app che non vengono utilizzate da un po \'. \n\nGRAFICO\n\nOgni riga del grafico rappresenta 5 minuti. Idealmente vedi 30 cerchi e triangoli su ogni linea e un quadrato su ogni seconda linea. Le aree con più spazi vuoti indicano un problema: le tue app potrebbero non funzionare come previsto se non modifichi le impostazioni del telefono. \n\n\Per maggiori dettagli controlla il codice delle app su https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Contatta il supporto</string>
+<string name="tell_others">Dillo agli altri</string>
+<string name="tell_others_text">DontKillMyApp Benchmark controlla i processi in background del tuo telefono per far funzionare correttamente le app del tuo telefono.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Per favore, valutaci!</string>
+<string name="rate_button">Valuta</string>
+<string name="never_button">Mai</string>
+<string name="later_button">Più tardi</string>
+<string name="source">Codice sorgente</string>
+<string name="rate_text">Vogliamo che le app funzionino anche sui telefoni i cui produttori preferiscono la durata della batteria alle funzionalità.\n\nIl modo migliore per rendere visibile questo progetto è valutare e commentare questo strumento gratuito e open source sul Play Store.\n\nGrazie mille per averci aiutato a rendere l\'ecosistema Android un posto migliore!</string>
+<string name="translate">Aiuta a tradurre l\'app</string>
+<string name="slogan">Fai funzionare le app</string>
+<string name="market_text">L\'app ufficiale di DontKillMyApp è qui - finalmente le app funzionano correttamente anche se non possiedi un Pixel.
+
+Ti aiuta a configurare le attività in background del tuo  telefono in modo che le tue app possano finalmente funzionare per TE anche quando il tuo schermo è spento.
+
+Guarda come sta il tuo telefono e prova diverse impostazioni con il benchmark di DontKillMyApp.
+
+Caratteristiche:
+• Benchmark DKMA: misura quanto è aggressivo il tuo telefono nel terminare le app in background
+• Guide: ottieni passaggi attuabili per superare la maggior parte delle limitazioni dei processi in background
+• Apporta una modifica: ️aiuta gli smartphone a rimanere intelligenti condividendo il tuo rapporto di benchmark su dontkillmyapp.com
+
+DontKillMyApp è uno strumento di benchmark per vedere quanto bene il tuo telefono supporta l\'elaborazione in background. È possibile fare il benchmark prima di configurare il telefono, quindi consultare nuovamente le guide di configurazione e il benchmark per vedere quanto il telefono è intervenuto nel terminare i processi dell app in background.
+
+Puoi condividere il tuo report tramite l\'app con i manutentori del sito web dontkillmyapp.com che lo compilano e basano su di esso il punteggio negativo complessivo.
+
+Come funziona il benchmark? (Tecnico!)
+
+L\'app avvia un servizio in primo piano con un wakelock e pianifica attività ripetitive sul thread principale, un esecutore di thread personalizzato e pianifica allarmi regolari (AlarmManager.setExactAndAllowWhileIdle). Quindi confronta eseguito rispetto a previsto. Questo è tutto!
+
+Per maggiori dettagli controlla il codice. L\'app è open source disponibile https://github.com/urbandroid-team/dontkillmy-app
+
+Un ringraziamento speciale a Doki (github.com/doubledotlabs/doki). </string>
+</resources>
