@@ -38,6 +38,14 @@
 <item>Inne</item>
 </string-array>
 <string name="how_it_works">Jak to działa</string>
-<string name="contact_support">Wsparcie</string>
+<string name="contact_support">Kontakt ze wsparciem</string>
 <string name="tell_others">Powiedz innym</string>
+<string name="tell_others_text">DontKillMyApp Benchmark sprawdza przetwarzanie w tle, aby aplikacje na telefonie działały poprawnie.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Prosimy oceń naszą aplikację!</string>
+<string name="rate_button">Oceń teraz</string>
+<string name="never_button">Nigdy</string>
+<string name="later_button">Później</string>
+<string name="source">Kod źródłowy</string>
+<string name="translate">Pomóż przetłumaczyć aplikację</string>
+<string name="slogan">Spraw, by aplikacje działały</string>
 </resources>

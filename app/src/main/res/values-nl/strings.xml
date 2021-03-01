@@ -5,9 +5,9 @@
 <string name="start_benchmark">Start de evaluatie</string>
 <string name="stop_benchmark">Stop de evaluatie</string>
 <string name="benchmark">Evaluatie</string>
-<string name="running">Evaluatie is gestart (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) tap om te stoppen.</string>
-<string name="finished">Evaluatie is gestopt,tap voor het resultaat</string>
-<string name="already_running">De evaluatie is nog bezig</string>
+<string name="running">Evaluatie loopt (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) klik om te stoppen.</string>
+<string name="finished">Evaluatie is gestopt,klik voor het resultaat</string>
+<string name="already_running">De evaluatie loopt al</string>
 <string name="stop">Stop</string>
 <string name="clear">Wis</string>
 <string name="work">Werk</string>
@@ -38,7 +38,9 @@
 <item>Anders</item>
 </string-array>
 <string name="how_it_works">Hoe werkt het</string>
-<string name="tell_others_text">DontKillMyApp Benchmark controleert de achtergrondprocessen om de apps goed te laten werken.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="contact_support">Contacteer helpdesk</string>
+<string name="tell_others">Vertel het anderen</string>
+<string name="tell_others_text">DontKillMyApp Benchmark controleert de achtergrondprocessen van uw telefoon om de apps goed te laten werken.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
 <string name="rate">Beoordeel ons aub!</string>
 <string name="rate_button">Beoordeel</string>
 <string name="never_button">Nooit</string>
