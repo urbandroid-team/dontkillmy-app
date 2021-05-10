@@ -2,5 +2,67 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
+<string name="start_benchmark">開始測試</string>
+<string name="stop_benchmark">停止測試</string>
+<string name="benchmark">測試</string>
+<string name="running">測試中 (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) 點擊可停止</string>
+<string name="finished">測試結束，點擊以查看結果</string>
+<string name="already_running">測試已開始</string>
+<string name="stop">停止</string>
+<string name="clear">清除</string>
+<string name="share">分享</string>
+<string name="share_with">分享到</string>
+<string name="report">回報</string>
+<string name="duration">測試時間</string>
+<string name="warning_title">警告</string>
+<string name="warning_text">請不要在測試中充電或使用手機。</string>
+<string name="cancel">取消</string>
+<string name="ok">確認</string>
+<string name="total">總計</string>
+<string-array name="duration_array">
+<item>1 小時</item>
+<item>2 小時</item>
+<item>3 小時</item>
+<item>4 小時</item>
+<item>5 小時</item>
+<item>6 小時</item>
+<item>7 小時</item>
+<item>8 小時</item>
+<item>電子郵件</item>
+<item>其他</item>
+</string-array>
+<string name="how_it_works">運作原理</string>
+<string name="contact_support">聯絡支援</string>
+<string name="tell_others">跟別人分享</string>
+<string name="tell_others_text">「DontKillMyApp 測試」檢查你手機的背景處理，以讓 App 順利運作。\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">幫我們評分，拜託！</string>
+<string name="rate_button">評分</string>
+<string name="never_button">不再提醒</string>
+<string name="later_button">稍後</string>
+<string name="source">原始程式碼</string>
+<string name="rate_text">即使在某些製造商眼裡，續航力比功能性重要，但我們依然希望 App 能正確運作。\n\n在 Play 商店幫我們評分，是增加這個開放原始碼的計畫曝光的最好方式。\n\n我們非常感激協助我們改善 Android 生態的人！</string>
+<string name="translate">幫忙翻譯這個 App</string>
+<string name="slogan">Make apps work</string>
+<string name="market_text">DontKillMyApp 的官方應用程式就在這裡──即使你不是使用 Pixel，依然能讓 App 恢復正確運作。
 
+幫你的手機設定好背景工作，如此一來 App 便能順利的協助你！即使沒有盯著螢幕也可以。
+
+現在來看看你手機的狀況，並以「DontKillMyApp 測試」試試不同設定。
+
+Features:
+• DKMA benchmark: Measure how aggressively is your phone killing background apps
+• Guides: Get actionable steps to overcome most background process restrictions
+• Make a change:️Help smartphones stay smart by sharing your benchmark report to dontkillmyapp.com
+
+DontKillMyApp is a benchmark tool to see how well does your phone support background processing. You can measure before setting up your phone, then go through the setup guides and benchmark again to see how much has your phone been slacking in the background.
+
+You can share your report through the app to the maintainers of the dontkillmyapp.com website who compile it and base the overall negative score on it.
+
+測試是如何運作的？（技術層面！）
+
+The app starts a foreground service with a wake lock and schedules repetitive task on the main thread, a custom thread executor and schedules regular alarms (AlarmManager.setExactAndAllowWhileIdle). Then it calculates executed vs. expected. That\'s it!
+
+查看程式碼以取得詳細資訊。這個應用程式是開放原始碼的，並公開在 https://github.com/urbandroid-team/dontkillmy-app
+
+特別感謝 Doki （github.com/doubledotlabs/doki）。</string>
 </resources>

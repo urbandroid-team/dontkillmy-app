@@ -49,4 +49,5 @@
 <string name="source">Code source</string>
 <string name="rate_text">Nous voulons faire des applications qui fonctionnent même sur les smartphones dont leurs fabricants privilégient la batterie au fonctionnement. \n\nLa meilleure façon de faire connaître ce projet est de noter et commenter cet outil gratuit et libre sur le Play Store. \n\nNous vous remercions beaucoup pour nous aider à rendre Android meilleur !</string>
 <string name="translate">Aidez à traduire l\'application</string>
+<string name="slogan">Faire fonctionner l\'application</string>
 </resources>

@@ -5,7 +5,7 @@
 <string name="start_benchmark">Начать тест производительности</string>
 <string name="stop_benchmark">Остановить тест производительности</string>
 <string name="benchmark">Тест производительности</string>
-<string name="running">Тест запущен (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) нажмите чтобы остановить</string>
+<string name="running">Testul rulează (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) atinge pentru al opri.</string>
 <string name="finished">Тест завершен, нажмите чтобы посмотреть результаты</string>
 <string name="already_running">Тест производительности уже запущен</string>
 <string name="stop">Остановить</string>
