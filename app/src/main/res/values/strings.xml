@@ -73,7 +73,6 @@ How does the benchmark work? (Technical!)
 The app starts a foreground service with a wake lock and schedules repetitive task on the main thread, a custom thread executor and schedules regular alarms (AlarmManager.setExactAndAllowWhileIdle). Then it calculates executed vs. expected. That\'s it!
 
 For more details check the code. The app is open source available at https://github.com/urbandroid-team/dontkillmy-app
-
 Special thanks to Doki (github.com/doubledotlabs/doki).</string>
 
 </resources>
