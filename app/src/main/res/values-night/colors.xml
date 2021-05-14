@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary">#ba68c8</color>
+    <color name="colorPrimaryDark">#9c27b0</color>
+    <color name="colorAccent">#ba68c8</color>
+    <color name="bg">#1e1e1e</color>
+
+
+    <color name="primaryBright">#ffffffff</color>
+    <color name="primary">#ffffffff</color>
+    <color name="secondary">#b2ffffff</color>
+    <color name="tertiary">#54ffffff</color>
+    <color name="quaternary">#1effffff</color>
+
+</resources>

@@ -1,0 +1,130 @@
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_marginTop="36dp"
+        android:text="@string/total"
+        style="@style/Doki.Overline"
+        android:id="@+id/totalHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="48sp"
+        android:id="@+id/total"
+        style="@style/Doki.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center_vertical|center_horizontal"
+                android:drawablePadding="4dp"
+                android:drawableEnd="@drawable/ic_work"
+                android:drawableRight="@drawable/ic_work"
+                android:text="@string/work"
+                style="@style/Doki.Overline"
+                android:id="@+id/workHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="24sp"
+                android:id="@+id/work"
+                style="@style/Doki.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center_vertical|center_horizontal"
+            android:drawablePadding="4dp"
+            android:drawableEnd="@drawable/ic_main"
+            android:drawableRight="@drawable/ic_main"
+            android:text="@string/main"
+            style="@style/Doki.Overline"
+            android:id="@+id/mainHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="24sp"
+            android:id="@+id/main"
+            style="@style/Doki.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:drawableEnd="@drawable/ic_alarm"
+                android:drawableRight="@drawable/ic_alarm"
+                android:text="@string/alarm"
+                style="@style/Doki.Overline"
+                android:id="@+id/alarmHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="24sp"
+                android:id="@+id/alarm"
+                style="@style/Doki.Headline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_margin="36dp"
+        android:orientation="vertical"
+        android:id="@+id/chart"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="880dp"/>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>

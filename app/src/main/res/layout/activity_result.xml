@@ -18,7 +18,8 @@
         <com.google.android.material.button.MaterialButton
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="true"
-            android:padding="8dp"
+            android:padding="16dp"
+            app:cornerRadius="32dp"
             android:layout_margin="16dp"
             app:icon="@drawable/ic_trash"
             android:text="@string/clear"

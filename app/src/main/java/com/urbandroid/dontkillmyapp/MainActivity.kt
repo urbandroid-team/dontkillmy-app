@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
-        doki_content.loadContent()
+        doki_content.loadContent("samsung")
         doki_content.setButtonsVisibility(false)
 
         val currentBenchmark = Benchmark.load(this)

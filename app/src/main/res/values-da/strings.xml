@@ -38,16 +38,16 @@
 <item>Anden måde...</item>
 </string-array>
 <string name="how_it_works">Hvordan virker det?</string>
-<string name="how_it_works_text">Kontrollen starter en forgrunds-service som forhindrer skærmen i at låse, og igangsætter gentagne opgaver i hovedtråden (hver 10. sekund), en brugerdefineret tråd (også hver 10. sekund) og planlægger gentagne alarmer ved hjælp af AlarmManager.setExactAndAllowWhileIdle (hver 10. minut). Der beregnes en score ved at sammenligne det afviklede med det forventede.\n\nEn score tæt på 100% er en god score - ikke-standard batteri-optimeringer anvendes pt. ikke. Det kan være en god idé at gentage testen efter nogle uger, da nogle telefonproducenter lægger begrænsninger på apps som ikke har været i brug i en længere periode.\n\nGRAFEN\n\nHver række i grafen repræsenterer 5 minutter. Helt ideelt burde der være 30 cirkler og trekanter på hver linje og en kasse på hver anden linje. Større blanke områder indikerer at der er et problem - dine apps virker formodentlig ikke som forventet, med mindre du ændrer din telefons indstillinger.\n\n For flere detaljer kan koden til app\'en ser på https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="how_it_works_text">Kontrollen starter en forgrunds-service som forhindrer skærmen i at låse, og igangsætter gentagne opgaver i hovedtråden (hver 10. sekund), en brugerdefineret tråd (også hver 10. sekund) og planlægger gentagne alarmer ved hjælp af AlarmManager.setExactAndAllowWhileIdle (hver 10. minut). Der beregnes en score ved at sammenligne det afviklede med det forventede.\n\nEn score tæt på 100% er en god score - ikke-standard batteri-optimeringer anvendes pt. ikke. Det kan være en god idé at gentage testen efter nogle uger, da nogle telefonproducenter lægger begrænsninger på apps som ikke har været i brug i en længere periode.\n\nGRAFEN\n\nHver række i grafen repræsenterer 5 minutter. Helt ideelt burde der være 30 cirkler og trekanter på hver linje og en kasse på hver anden linje. Større blanke områder indikerer at der er et problem - dine apps virker formodentlig ikke som forventet, med mindre du ændrer din telefons indstillinger.\n\n For flere detaljer kan koden til app\'en ses på https://github.com/urbandroid-team/dontkillmy-app</string>
 <string name="contact_support">Kontakt support</string>
-<string name="tell_others">Fortæl det til andre </string>
+<string name="tell_others">Fortæl det til andre</string>
 <string name="tell_others_text">DontKillMyApp Kontrol tjekker din telefons afvikling af apps i baggrunden, for at få din telefon til at fungere korrekt.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
 <string name="rate">Bedøm os venligst!</string>
-<string name="rate_button">Bedøm os venligst!</string>
+<string name="rate_button">Bedøm</string>
 <string name="never_button">Aldrig</string>
 <string name="later_button">Senere</string>
 <string name="source">Kildekode</string>
-<string name="rate_text">Vi ønsker at vores apps virker på telefoner, hvis producent fortrækker batterilevetid over funktionalitet.\n\nDen bedste måde du kan hjælpe med at synliggøre dette gratis open-source-tool er ved at bedømme det i Play Butikken og skrive en kommentar.\n\nTusind tak fordi du hjælper os med at gøre Android til et bedre sted!</string>
+<string name="rate_text">Vi ønsker at vores apps virker på telefoner, hvis producent fortrækker batterilevetid over funktionalitet.\n\nDen bedste måde du kan hjælpe med at udbrede kendskabet til dette gratis open-source-tool er ved at bedømme det i Play Butikken og skrive en kommentar.\n\nTusind tak fordi du hjælper os med at gøre Android til et bedre sted!</string>
 <string name="translate">Hjælp med at oversætte app\'en</string>
 <string name="slogan">Få app\'en til at virke</string>
 <string name="market_text">Den officielle DontKillMyApp-app er her - få dine apps til at fungere korrekt, selvom du ikke ejer en Pixel.
@@ -61,7 +61,7 @@ Funktioner:
 • Guider: Få konkrete anvisninger på at undgå de fleste begrænsninger for baggrundsprocesser
 • Gør en forskel:️ Hjælp smart-phones med at være smarte ved at dele dine resultater med dontkillmyapp.com
 
-DontKillMyApp er et knóntrolværktøj som undersøger hvor godt din telefon understøtter baggrundsprocesser. Du kan kontrollere før du konfigurerer din telefons indstillinger. Gennemgå derefter vores setup-guides og kontroller igen for at se hvor meget din telefon har slækket på apps der kører i baggrunden.
+DontKillMyApp er et kontrolværktøj som undersøger hvor godt din telefon understøtter baggrundsprocesser. Du kan kontrollere før du konfigurerer din telefons indstillinger. Gennemgå derefter vores setup-guides og kontrollér igen for at se hvor meget din telefon har slækket på apps der kører i baggrunden.
 
 Du kan sende din rapport direkte fra app\'en til udviklerne hos dontkillmyapp.com-hjemmesiden, som samler alle resultater til en global score.
 
@@ -71,5 +71,5 @@ App\'en starter en service-app som låser skærmen til at være tændt og planl�
 
 For flere detaljer, tjek koden. App\'en er open-source, og kan findes på https://github.com/urbandroid-team/dontkillmy-app
 
-Særlig tak til (github.com/doubledotlabs/doki).</string>
+Særlig tak til Doki (github.com/doubledotlabs/doki).</string>
 </resources>

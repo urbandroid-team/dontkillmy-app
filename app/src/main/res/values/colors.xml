@@ -3,5 +3,14 @@
     <color name="white">#FFFFFF</color>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#2196F3</color>
+    <color name="colorAccent">#6200EE</color>
+    <color name="bg">@color/white</color>
+
+
+    <color name="primaryBright">#FF000000</color>
+    <color name="primary">#c7000000</color>
+    <color name="secondary">#8a000000</color>
+    <color name="tertiary">#61000000</color>
+    <color name="quaternary">#33000000</color>
+
 </resources>
