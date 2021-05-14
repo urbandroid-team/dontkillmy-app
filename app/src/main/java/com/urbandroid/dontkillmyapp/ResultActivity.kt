@@ -27,8 +27,6 @@ import kotlin.math.roundToInt
 
 
 class ResultActivity : AppCompatActivity() {
-class ResultActivity : AppCompatActivity() {
-class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
