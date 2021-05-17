@@ -54,24 +54,26 @@ class ResultActivity : AppCompatActivity() {
 
         if (currentBenchmark == null) {
             finish()
+            return
         }
 
 
-        currentBenchmark?.let {
-            Log.i(TAG, currentBenchmark.toString())
+        currentBenchmark?.let { bm->
 
-            if (currentBenchmark.running) {
+            if (bm.running) {
                 BenchmarkService.stop(this)
-                Benchmark.finishBenchmark(this, currentBenchmark)
+                Benchmark.finishBenchmark(this, bm)
             }
 
             val chart = reportLayout.findViewById<ViewGroup>(R.id.chart)
-            chart.addView(BenchmarkView(this, null, 0, it))
+            chart.addView(BenchmarkView(this, null, 0, bm))
 
-            reportLayout.findViewById<TextView>(R.id.total).text = Benchmark.formatResult(it.getTotalResult())
-            reportLayout.findViewById<TextView>(R.id.work).text = Benchmark.formatResult(it.getWorkResult())
-            reportLayout.findViewById<TextView>(R.id.alarm).text = Benchmark.formatResult(it.getAlarmResult())
-            reportLayout.findViewById<TextView>(R.id.main).text = Benchmark.formatResult(it.getMainResult())
+            reportLayout.findViewById<TextView>(R.id.total).text = Benchmark.formatResult(bm.getTotalResult())
+            reportLayout.findViewById<TextView>(R.id.work).text = Benchmark.formatResult(bm.getWorkResult())
+            reportLayout.findViewById<TextView>(R.id.alarm).text = Benchmark.formatResult(bm.getAlarmResult())
+            reportLayout.findViewById<TextView>(R.id.main).text = Benchmark.formatResult(bm.getMainResult())
+
+            Log.i(TAG, bm.toString())
         }
 
         done.setOnClickListener {
