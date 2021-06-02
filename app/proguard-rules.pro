@@ -12,6 +12,8 @@
 #   public *;
 #}
 
+-dontobfuscate
+
 # Uncomment this to preserve the line number information for
 # debugging stack traces.
 -keepattributes SourceFile,LineNumberTable
@@ -20,4 +22,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
--keep class com.urbandroid.dontkillmyapp.*
+-keepnames class com.urbandroid.dontkillmyapp.*

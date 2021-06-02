@@ -52,6 +52,9 @@ data class Benchmark(val from : Long, var to : Long) {
 
         fun load(context : Context) : Benchmark? {
             val json = PreferenceManager.getDefaultSharedPreferences(context).getString(KEY_BENCHMARK, null)
+
+            Log.i(TAG, "JSON: $json")
+
             json?.apply {
                 return Gson().fromJson(json, Benchmark::class.java)
             }

@@ -50,30 +50,39 @@ class ResultActivity : AppCompatActivity() {
         contentView.removeAllViews()
         contentView.addView(reportLayout)
 
-        val currentBenchmark = Benchmark.load(this)
+        val currentBenchmark = try {
+            Benchmark.load(this)
+        } catch (e: Exception) {
+            Log.e(TAG, "Cannot load benchmark", e)
+            Benchmark.clear(this)
+            finish()
+            return
+        }
 
         if (currentBenchmark == null) {
             finish()
             return
         }
 
-
-        currentBenchmark?.let { bm->
-
-            if (bm.running) {
+        try {
+            Log.i(TAG, currentBenchmark.toString())
+            if (currentBenchmark.running) {
                 BenchmarkService.stop(this)
-                Benchmark.finishBenchmark(this, bm)
+                Benchmark.finishBenchmark(this, currentBenchmark)
             }
 
             val chart = reportLayout.findViewById<ViewGroup>(R.id.chart)
-            chart.addView(BenchmarkView(this, null, 0, bm))
+            chart.addView(BenchmarkView(this, null, 0, currentBenchmark))
 
-            reportLayout.findViewById<TextView>(R.id.total).text = Benchmark.formatResult(bm.getTotalResult())
-            reportLayout.findViewById<TextView>(R.id.work).text = Benchmark.formatResult(bm.getWorkResult())
-            reportLayout.findViewById<TextView>(R.id.alarm).text = Benchmark.formatResult(bm.getAlarmResult())
-            reportLayout.findViewById<TextView>(R.id.main).text = Benchmark.formatResult(bm.getMainResult())
-
-            Log.i(TAG, bm.toString())
+            reportLayout.findViewById<TextView>(R.id.total).text = Benchmark.formatResult(currentBenchmark.getTotalResult())
+            reportLayout.findViewById<TextView>(R.id.work).text = Benchmark.formatResult(currentBenchmark.getWorkResult())
+            reportLayout.findViewById<TextView>(R.id.alarm).text = Benchmark.formatResult(currentBenchmark.getAlarmResult())
+            reportLayout.findViewById<TextView>(R.id.main).text = Benchmark.formatResult(currentBenchmark.getMainResult())
+        } catch (e: Exception) {
+            Log.e(TAG, "Cannot load benchmark - garbled - obfuscation", e)
+            Benchmark.clear(this)
+            finish()
+            return
         }
 
         done.setOnClickListener {
