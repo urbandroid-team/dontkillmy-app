@@ -38,6 +38,7 @@
 <item>Inne</item>
 </string-array>
 <string name="how_it_works">Jak to działa</string>
+<string name="how_it_works_text">Benchmark startuje jako pierwszoplanowy serwis z blokadą budzenia i planuje powtarzające się zadania na głównym wątku (każde 10s), na niestandardowym wykonawcy wątku (każde 10s) i ustawia zwykłe budziki używając AlarmManager.setExactAndAllowWhileIdle (każde 10 minut). Następnie, oblicza wynik poprzez porównanie wykonanego z oczekiwanym wynikiem. \n\nWyniki blisko 100% są dobrymi wynikami - niestandardowe optymalizacje baterii są wyłączone. Aczkolwiek, dobrze jest powtarzać test co tydzień, ponieważ niektóre OEM\'y mogą dodawać limity do aplikacji które nie są często używane. \n\nWYKRES\n\nKażdy wiersz w wykresie reprezentuje 5 minut testu. Zobaczysz 30 kółek i trójkątów na każdej linii, oraz jeden kwadrat na co drugiej linii. Miejsca, w których znajduje się większa ilość białej przestrzeni przedstawiają problem - twoje aplikacje mogą przestać działać, jeśli nie zmienisz ustawień swojego telefonu. \n\n\Po więcej informacji sprawdź kod aplikacji wchodzą na stronę: https://github.com/urbandroid-team/dontkillmy-app</string>
 <string name="contact_support">Kontakt ze wsparciem</string>
 <string name="tell_others">Powiedz innym</string>
 <string name="tell_others_text">DontKillMyApp Benchmark sprawdza przetwarzanie w tle, aby aplikacje na telefonie działały poprawnie.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
@@ -46,6 +47,30 @@
 <string name="never_button">Nigdy</string>
 <string name="later_button">Później</string>
 <string name="source">Kod źródłowy</string>
+<string name="rate_text">Chcemy, by aplikacje działały nawet na telefonach, gdzie producenci preferują baterię niż funkcjonalność. \n\n\Najlepszy sposób, w jaki możesz wspomóc ten projekt, to dodanie opinii o tej darmowej, i o otwartym kodzie źródłowym aplikacji w Sklepie Play. \n\n\Wielkie dzięki za pomoc w tworzeniu ekosystemu Android lepszym miejscem!</string>
 <string name="translate">Pomóż przetłumaczyć aplikację</string>
 <string name="slogan">Spraw, by aplikacje działały</string>
+<string name="market_text">Oficjalna aplikacja DontKillMyApp już tu jest - spraw, aby aplikacje w końcu działały poprawnie, nawet jeśli nie masz Pixel\'a. 
+
+Pomaga ustawić zadania w tle tak, aby twoje aplikacje działały dla CIEBIE, nawet jeśli nie używasz swojego telefonu. 
+
+Zobacz jak działa Twój telefon i przetestuj różne ustawienia poprzez benchmark w aplikacji DontKillMyApp. 
+
+Funkcje:
+• Benchmark DKMA: Sprawdź jak agresywnie twój telefon \'zabija\' procesy w tle
+• Poradniki: Uzyskaj wykonywalne kroki, do pokonania większość restrykcji dla procesów w tle
+• Zrób zmianę:️ Pomóż smartfonom zostać smart poprzez udostępnienie swojego benchmarku na stronie dontkillmyapp.com 
+
+DontKillMyApp jest narzędziem do benchmarków. Pozwala na zobaczenie jak dobrze twój telefon wspiera procesy w tle. Możesz sprawdzić, jak twój telefon wypadnie przed zastosowaniem własnych ustawień, a następnie ustawić swój telefon i przeprowadzić benchmark ponownie. 
+
+Możesz udostępnić swój raport poprzez aplikacje do właścicieli strony dontkillmyapp.com, którzy go skompilują i oprą na nim ogólny negatywny wynik. 
+
+Jak działa benchmark?
+(Techniczne!) 
+
+Aplikacja startuje jako pierwszoplanowy serwis z blokadą budzenia i planuje powtarzające się zadania na głównym wątku, na niestandardowym wykonawcy wątku i ustawia zwykłe budziki (AlarmManager.setExactAndAllowWhileIdle). Następnie, oblicza wynik poprzez porównanie wykonanego z oczekiwanym wynikiem. To wszystko! 
+
+Po więcej szczegółów sprawdź kod aplikacji. Aplikacja ma otwarte źródło dostępne na stronie https://github.com/urbandroid-team/dontkillmy-app
+Specjalne podziękowania dla Doki (github.com/doubledotlabs/doki).
+</string>
 </resources>
