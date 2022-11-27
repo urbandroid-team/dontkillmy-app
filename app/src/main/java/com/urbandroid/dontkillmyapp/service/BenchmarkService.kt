@@ -100,7 +100,11 @@ class BenchmarkService : Service() {
 
         val i = Intent(this, ResultActivity::class.java)
         i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-        val pi = PendingIntent.getActivity(this, 4242, i, PendingIntent.FLAG_UPDATE_CURRENT)
+        val pi = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            PendingIntent.getActivity(this, 4242, i, PendingIntent.FLAG_UPDATE_CURRENT.or(PendingIntent.FLAG_IMMUTABLE))
+        } else {
+            PendingIntent.getActivity(this, 4242, i, PendingIntent.FLAG_UPDATE_CURRENT)
+        }
 
         val notificationBuilder = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_FOREGROUND)
             .setSmallIcon(R.drawable.ic_dkma)
@@ -166,7 +170,11 @@ class BenchmarkService : Service() {
     private fun showFinishNotification() {
         val i = Intent(this, ResultActivity::class.java)
         i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-        val pi = PendingIntent.getActivity(this, 4242, i, PendingIntent.FLAG_UPDATE_CURRENT)
+        val pi = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            PendingIntent.getActivity(this, 4242, i, PendingIntent.FLAG_UPDATE_CURRENT.or(PendingIntent.FLAG_IMMUTABLE))
+        } else {
+            PendingIntent.getActivity(this, 4242, i, PendingIntent.FLAG_UPDATE_CURRENT)
+        }
 
         val notificationBuilder = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_FOREGROUND)
             .setSmallIcon(R.drawable.ic_dkma)
@@ -190,7 +198,11 @@ class BenchmarkService : Service() {
     private fun getAlarmIntent() : PendingIntent {
         val i = Intent(ACTION_ALARM)
         i.setPackage(packageName)
-        return PendingIntent.getBroadcast(this, 0, i, PendingIntent.FLAG_UPDATE_CURRENT)
+        return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            PendingIntent.getBroadcast(this, 0, i, PendingIntent.FLAG_UPDATE_CURRENT.or(PendingIntent.FLAG_IMMUTABLE))
+        } else {
+            PendingIntent.getBroadcast(this, 0, i, PendingIntent.FLAG_UPDATE_CURRENT)
+        }
     }
 
     fun scheduleAlarm() {
