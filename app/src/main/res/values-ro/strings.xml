@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Porneşte testul</string>
+<string name="stop_benchmark">Opreşte testul</string>
+<string name="benchmark">Testează</string>
+<string name="running">Testul rulează (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) atinge pentru al opri.</string>
+<string name="finished">Testul s-a terminat, atinge pentru rezultate</string>
+<string name="already_running">Testul deja rulează</string>
+<string name="stop">Stop</string>
+<string name="work">Lucrează</string>
+<string name="main">Principal</string>
+<string name="share">Distribuie</string>
+<string name="share_with">Distribuie către</string>
+<string name="report">Raportează</string>
+<string name="duration">Durata</string>
+<string name="warning_title">Atenţie</string>
+<string name="warning_text">Vă rugăm să nu ţineţi telefonul conectat la încărcător şi încercaţi să nu îl folosiţi pe toată durata testului.</string>
+<string name="cancel">Anulare</string>
+<string name="ok">OK</string>
+<string name="total">Total</string>
+<string-array name="duration_array">
+<item>1 oră</item>
+<item>2 ore</item>
+<item>3 ore</item>
+<item>4 ore</item>
+<item>5 ore</item>
+<item>6 ore</item>
+<item>7 ore</item>
+<item>8 ore</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Email</item>
+<item>Altele</item>
+</string-array>
+<string name="how_it_works">Cum funcţionează</string>
+<string name="how_it_works_text">Acest test porneşte un serviciu care ar trebui să ruleze permanent şi foloseşte nişte sarcini repetitive principale (la fiecare 10 s), o sarcină specifică (la fiecare 10 s) şi programează alarme regulate folosind AlarmManager.setExactAndAllowWhileIdle (la fiecare 10 min). Apoi calculează punctajul prin compararea sarcinilor efectuate faţă de cele programate.\n\nPunctaje apropiate de 100% sunt bune – ceea ce înseamnă că optimizarea bateriei nu este aplicată în acel moment. Totuşi este bine să repetaţi testul săptămânal, deoarece unele sisteme de operare pot aplica limitări aplicaţiilor care nu sunt folosite frecvent.\n\nGRAFICUL\n\nFiecare rând al graficului reprezintă 5 minute. Ar trebui să fie 30 de cercuri şi triunghiuri pe fiecare linie şi un pătrat la fiecare 2 linii. Zonele libere arată o problemă – aplicaţiile dvs. s-ar putea să nu funcţioneze cum ar trebui dacă nu schimbaţi setările telefonului.\n\nPentru mai multe detalii consultaţi codul sursă al aplicaţiei la adresa https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Cereţi ajutor</string>
+<string name="tell_others">Spuneţi şi altora</string>
+<string name="tell_others_text">Testul DontKillMyApp verifică funcţionarea în fundal a aplicaţiilor pentru a le face să funcţioneze corespunzător.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Vă rugăm să apreciaţi aplicaţia!</string>
+<string name="rate_button">Acum</string>
+<string name="never_button">Niciodată</string>
+<string name="later_button">Mai târziu</string>
+<string name="source">Codul sursă</string>
+<string name="rate_text">Ne dorim să facem aplicaţiile fucţionale chiar şi la telefoanele gândite să conserve bateria în detrimentul funcţionalităţii.\n\nCea mai bună cale de a face proiectul cunoscut este să apreciaţi şi să comentaţi această aplicaţie gratuită în PlayStore.\n\nMulţumim că ne ajutaţi să facem sistemul Android mai bun!</string>
+<string name="translate">Help translate the app</string>
+<string name="slogan">Facem aplicaţile să funcţioneze</string>
+<string name="exact_alarm_restrictions_title">Permiteți programarea exactă a alarmelor</string>
+<string name="exact_alarm_restrictions_summary">Vă rugăm să ne permiteți să programăm alarme exacte pentru a testa corect procesarea fundalului bazată pe alarmă.</string>
+<string name="general_error">Ceva n-a mers bine.</string>
+</resources>

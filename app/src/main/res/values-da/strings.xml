@@ -72,4 +72,7 @@ App\'en starter en service-app som låser skærmen til at være tændt og planl�
 For flere detaljer, tjek koden. App\'en er open-source, og kan findes på https://github.com/urbandroid-team/dontkillmy-app
 
 Særlig tak til Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Tillad nøjagtig alarmplanlægning</string>
+<string name="exact_alarm_restrictions_summary">Tillad os at planlægge nøjagtige alarmer for korrekt at teste Yoru-enhedsalarmbaseret baggrundsbehandling.</string>
+<string name="general_error">Noget gik galt.</string>
 </resources>

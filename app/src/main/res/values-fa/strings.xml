@@ -48,4 +48,7 @@
 <string name="later_button">بعدا</string>
 <string name="source">کد منبع</string>
 <string name="rate_text">ما می خواهیم برنامه ها را حتی در تلفن هایی اجرایی کنیم که سازندگان باتری را بیش از عملکرد ترجیح می دهند. بهترین روشی که به شما در بهبود این پروژه کمک می کند این است که این ابزار رایگان و متن باز را در فروشگاه Play ارزیابی و بررسی کنید. خیلی ممنون برای کمک به ما در ساختن اکوسیستم اندرویدی به مکانی بهتر!</string>
+<string name="exact_alarm_restrictions_title">برنامه ریزی دقیق زنگ هشدار</string>
+<string name="exact_alarm_restrictions_summary">لطفاً به ما اجازه دهید هشدارهای دقیقی را برای آزمایش صحیح پردازش پس زمینه مبتنی بر زنگ دستگاه YORU برنامه ریزی کنیم.</string>
+<string name="general_error">مشکلی پیش آمد</string>
 </resources>

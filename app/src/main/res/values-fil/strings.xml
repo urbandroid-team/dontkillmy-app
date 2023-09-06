@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Simulan ang pagsusulit</string>
+<string name="stop_benchmark">Ihinto ang pagsusulit</string>
+<string name="benchmark">Pagsusulit</string>
+<string name="running">Umaandar ang pagsusulit (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) pindutin upang ihinto.</string>
+<string name="finished">Tapos na ang pagsusulit, pindutin upang makita ang resulta</string>
+<string name="already_running">Tumatakbo na ang pagsusulit</string>
+<string name="stop">Hinto</string>
+<string name="clear">Alisin</string>
+<string name="work">Trabaho</string>
+<string name="alarm">Alarma</string>
+<string name="main">Pangunahin</string>
+<string name="share">Ibahagi</string>
+<string name="share_with">Ibahagi sa/kay</string>
+<string name="report">Ulat</string>
+<string name="duration">Tagal</string>
+<string name="warning_title">Babala</string>
+<string name="warning_text">Huwag i-charge ang iyong telepono o gamitin ito habang umaandar ang pagsusulit.</string>
+<string name="cancel">Kanselahin</string>
+<string name="ok">OK</string>
+<string name="total">Kabuuan</string>
+<string-array name="duration_array">
+<item>1 oras</item>
+<item>2 oras</item>
+<item>3 oras</item>
+<item>4 na oras</item>
+<item>5 oras</item>
+<item>6 na oras</item>
+<item>7 oras</item>
+<item>8 oras</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Email</item>
+<item>Iba pa</item>
+</string-array>
+<string name="how_it_works">Paano ito gumagana</string>
+<string name="how_it_works_text">Gumagawa ang pagsusulit na ito ng isang serbisyo sa foreground na may wake lock at iniiskedyul ang mga paulit-ulit na gawain sa pangunahing thread (bawat 10s), isang custom thread executor (bawat 10s), at nagtatakda ng mga alarma gamit ang AlarmManager.setExactAndAllowWhileIdle (bawat 10 minuto). Pagkatapos ay kukuwentahin nito ang puntos sa pamamagitan ng pagkumpara sa kung ilang gawain ang matagumpay na napaandar vs. kung ilang gawain ang inasahang mapaaandar.\n\nMainam kung malapit sa 100% ang puntos na nakuha mo - hindi pa tumatakbo sa ngayon ang mga \'di-standard na optimisasyon sa baterya. Ngunit mainam kung uulitin mo ang pagsusulit pagkatapos ng isang linggo sapagkat may ilang OEM na nagpapataw ng limitasyon sa mga app na hindi nagamit nang ilang araw.\n\nANG GRAPH\n\nInirerepresenta ng bawat hilera ng graph ang 5 minuto. Maganda kung nakakakita ka ng 30 bilog at tatsulok sa bawat isang hilera at isang parisukat bawat dalawang hilera. May problema kung marami kang nakikitang puting espasyo o patlang - maaaring hindi gumana tulad ng inaasahan ang iyong mga app kung hindi mo babaguhin ang setting ng iyong telepono.\n\nPara sa karagdagang impormasyon, sumangguni sa https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Kausapin ang suporta</string>
+<string name="tell_others">Ipaalam sa iba</string>
+<string name="market_text">¡Ha llegado DontKillMyApp! - Haz que tus aplicaciones funcionen al 100% sin necesidad de ser dueño de un Google Pixel. 
+
+Te ayudamos a que tus aplicaciones se sigan ejecutando en segundo plano.
+
+Observa cómo y realiza pruebas con nuestro efectivo análisis de aplicaciones. 
+
+Características:
+
+Análisis DKMA: Mide qué tan agresivamente está tu teléfono cerrando aplicaciones en segundo plano.
+
+Guía: Te ayudamos paso a paso a quitar las restricciones de tu smartphone.
+
+Marca la diferencia: Ayúdanos a que tu smartphone siga siendo inteligente y envía tus reportes a dontkillmyapp.com.
+
+DontKillMyApp es una herramienta que analiza los procesos en segundo plano. Puedes analizar y luego paso a paso te indicaremos cómo quitar las restricciones de tu smartphone para que tus aplicaciones no se cierren automáticamente. 
+
+Puedes compartir el análisis de tu caso desde la aplicación o a traves de nuestra página web dontkillmyapp.com, con esto ayudarás a otros usuarios a que no tengan el mismo problema. 
+
+¿Cómo funciona nuestro análisis? (Técnicamente)
+
+La aplicación inicia un servicio en primer plano con un bloqueo de activación y programa tareas repetitivas en el hilo principal, un ejecutor de hilo personalizado y programa alarmas regulares (AlarmManager.setExactAndAllowWhileIdle). Calcula la puntuación comparando ejecución vs. expectativa y ¡listo!
+
+Para más detalles, puedes ver el código fuente desde aquí: https://github.com/urbandroid-team/dontkillmy-app
+
+Gracias a Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Salli tarkan hälytyksen aikataulun</string>
+<string name="exact_alarm_restrictions_summary">Anna meidän ajoittaa tarkat hälytykset testataksesi Yoru-laitteen hälytyspohjaisen taustakäsittelyn oikein.</string>
+<string name="general_error">Jotain meni pieleen.</string>
+</resources>

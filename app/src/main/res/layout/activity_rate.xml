@@ -16,8 +16,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+            <include layout="@layout/view_toolbar"/>
+
             <ImageView
-                android:layout_marginTop="32dp"
                 android:id="@+id/image"
                 android:scaleType="centerInside"
                 android:src="@drawable/rate"
@@ -29,7 +30,8 @@
             <TextView
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/colorPrimary"
-                android:layout_margin="32dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginVertical="8dp"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="@string/rate_text"
                 android:layout_width="match_parent"

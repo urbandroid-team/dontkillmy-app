@@ -29,6 +29,11 @@
 <item>7 小時</item>
 <item>8 小時</item>
 </string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>電子郵件</item>
+<item>其他</item>
+</string-array>
 <string name="how_it_works">運作原理</string>
 <string name="contact_support">聯絡支援</string>
 <string name="tell_others">跟別人分享</string>
@@ -47,20 +52,23 @@
 
 現在來看看你手機的狀況，並以「DontKillMyApp 測試」試試不同設定。
 
-Features:
-• DKMA benchmark: Measure how aggressively is your phone killing background apps
-• Guides: Get actionable steps to overcome most background process restrictions
-• Make a change:️Help smartphones stay smart by sharing your benchmark report to dontkillmyapp.com
+特點：
+- DKMA基準測試：測量你的手機是如何積極地封殺後台應用程式的
+- 指南：獲得可操作的步驟來剋服大多數的後台進程限制
+- 做出改變：️通過分享你的基準報告到dontkillmyapp.com，幫助智慧型手機保有智慧
 
-DontKillMyApp is a benchmark tool to see how well does your phone support background processing. You can measure before setting up your phone, then go through the setup guides and benchmark again to see how much has your phone been slacking in the background.
+DontKillMyApp是一個基準工具，可以看到你的手機對後台處理的支持程度，在設置手機之前進行測量，然後通過設置指南，再次進行基準測試，看看手機在後台有多懈怠。
 
-You can share your report through the app to the maintainers of the dontkillmyapp.com website who compile it and base the overall negative score on it.
+你可以通過該應用程式將你的報告分享給dontkillmyapp.com網站的維護者，他們會對報告進行匯編，並在此基礎上得出總體負分。
 
 測試是如何運作的？（技術層面！）
 
-The app starts a foreground service with a wake lock and schedules repetitive task on the main thread, a custom thread executor and schedules regular alarms (AlarmManager.setExactAndAllowWhileIdle). Then it calculates executed vs. expected. That\'s it!
+此基準應用啟動一個帶有解鎖的前臺服務，在主線程上與自定義的線程執行器上安排重復的任務，並定期通知（AlarmManager.setExactAndAllowWhileIdle）。然後計算出已執行與預期的時程。That\'s it!
 
 查看程式碼以取得詳細資訊。這個應用程式是開放原始碼的，並公開在 https://github.com/urbandroid-team/dontkillmy-app
 
 特別感謝 Doki （github.com/doubledotlabs/doki）。</string>
+<string name="exact_alarm_restrictions_title">允许确切的警报安排</string>
+<string name="exact_alarm_restrictions_summary">请允许我们安排精确的警报，以正确测试YORU设备基于警报的背景处理。</string>
+<string name="general_error">出了些问题。</string>
 </resources>

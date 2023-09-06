@@ -46,9 +46,9 @@
 <string name="slogan">Nech apky žít</string>
 <string name="market_text">Oficiální aplikace projektu DontKillMyApp je zde - konečně můžete nechat apky žít i na Vašem telefonu i když o zrovna neni Pixel.
 
-Aplikace Vám pomůže nastavit telefon tak, aby aplikace začali být užitečné i když zrovna nedržíte telfon v ruce. 
+Aplikace Vám pomůže nastavit telefon tak, aby aplikace začali být užitečné i když zrovna nedržíte telfon v ruce.
 
-Podívejte se jak si vede Váš telefoin ve sruvnaní s ostatními díky funkci Benchmark. 
+Podívejte se jak si vede Váš telefoin ve sruvnaní s ostatními díky funkci Benchmark.
 
 Vlatnosti:
 - DKMA Benchmark: změřte si jak agresivně zabíjí Váš telefon užitečné aplikace
@@ -59,4 +59,7 @@ Nejprve změřtre telefon, pokud je Vaše skóre nízké, udělejte změny podle
 
 
 Projekt DKMA vyvíjejí a udržují dobrovolníci, kterým není jedno v jakém stavu je Androidí ekosystém a usilují o jeho zlepšení. Tato aplikace má otevřený zdrojový kód, který můžete nalézt na https://github.com/urbandroid-team/dontkillmy-app.</string>
+<string name="exact_alarm_restrictions_title">Povolit přesné plánování poplachu</string>
+<string name="exact_alarm_restrictions_summary">Prosím, dovolte nám naplánovat přesné alarmy a správně otestujte zpracování pozadí založeného na zařízení Yoru.</string>
+<string name="general_error">Něco se pokazilo.</string>
 </resources>

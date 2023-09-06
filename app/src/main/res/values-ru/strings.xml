@@ -5,7 +5,7 @@
 <string name="start_benchmark">Начать проверку</string>
 <string name="stop_benchmark">Остановить проверку</string>
 <string name="benchmark">Проверка</string>
-<string name="running">Проверка запущена (<xliff:g id="range">%1$s</xliff:g> — <xliff:g id="range">%2$s</xliff:g>) нажмите, чтобы остановить.</string>
+<string name="running">Проверка запущена (<xliff:g id="range">%1$s</xliff:g> — <xliff:g id="range">%2$s</xliff:g>). Нажмите, чтобы остановить.</string>
 <string name="finished">Проверка завершена, нажмите для просмотра результатов</string>
 <string name="already_running">Проверка уже выполняется</string>
 <string name="stop">Остановить</string>
@@ -21,7 +21,7 @@
 <string name="warning_text">Пожалуйста, не ставьте телефон на зарядку и постарайтесь не пользоваться им во время проверки.</string>
 <string name="cancel">Отмена</string>
 <string name="ok">ОК</string>
-<string name="total">Всего</string>
+<string name="total">Общая оценка</string>
 <string-array name="duration_array">
 <item>1 час</item>
 <item>2 часа</item>
@@ -50,7 +50,7 @@
 <string name="rate_text">Мы хотим, чтобы приложения работали даже на тех телефонах, производители которых берегут батарею в ущерб функциональности.\n\nЛучший способ рассказать об этом бесплатном открытом проекте — оставить оценку и комментарий в магазине Google Play.\n\nОт всего сердца благодарим Вас за помощь — вместе мы сделаем экосистему Android лучше!</string>
 <string name="translate">Помочь с переводом приложения</string>
 <string name="slogan">Помогает приложениям работать</string>
-<string name="market_text">"Представляем официальное приложение DontKillMyApp — с ним приложения начнут нормально работать даже на аппаратах Pixel.
+<string name="market_text">Представляем официальное приложение DontKillMyApp — с ним приложения начнут нормально работать даже на аппаратах Pixel.
 
 Приложение поможет настроить фоновые задачи телефона так, чтобы приложения работали даже тогда, когда Вы НЕ СМОТРИТЕ на экран телефона.
 
@@ -71,4 +71,7 @@ DontKillMyApp — это утилита для проверки того, как
 
 Чтобы узнать подробности, ознакомьтесь с кодом. Приложение имеет открытый код, доступный на https://github.com/urbandroid-team/dontkillmy-app
 Особая благодарность Doki (github.com/doubledotlabs/doki)."</string>
+<string name="exact_alarm_restrictions_title">Разрешить точное планирование тревоги</string>
+<string name="exact_alarm_restrictions_summary">Пожалуйста, позвольте нам запланировать точные сигналы тревоги для правильной проверки фоновой обработки на основе сигнализации устройства Yoru.</string>
+<string name="general_error">Что-то пошло не так.</string>
 </resources>

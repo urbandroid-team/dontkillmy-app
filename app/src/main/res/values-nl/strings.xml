@@ -51,25 +51,28 @@
 <string name="slogan">Maak apps werkend</string>
 <string name="market_text">De officiele DontKillMyApp app is gearriveerd – Maakt apps eindelijk werkend, zelfs als je geen Pixel hebt.
 
-Helpt om de achtergrond taken in te stellen zodat je apps eindelijk werken, zelfs als je niet op je scherm kijkt. 
+Helpt om de achtergrond taken in te stellen zodat je apps eindelijk werken, zelfs als je niet op je scherm kijkt.
 
-Bekijk hoe je telefoon het doet en test verschillende instellingen met de DontKillMyApp Benchmark. 
+Bekijk hoe je telefoon het doet en test verschillende instellingen met de DontKillMyApp Benchmark.
 
 Eigenschappen:
  • DKMA benchmark: Meet hoe aggressief de telefoon achtergrondprocessen stopt. Apps
- • Ondersteund: Geeft stappen om de meest voorkomende restricties van de achtergrondprocessen aan te passen. 
-• Help mee: Help mee om smartphones slim te laten blijven om de evaluaties op te sturen naar dontkillmyapp.com 
+ • Ondersteund: Geeft stappen om de meest voorkomende restricties van de achtergrondprocessen aan te passen.
+• Help mee: Help mee om smartphones slim te laten blijven om de evaluaties op te sturen naar dontkillmyapp.com
 
-DontKillMyApp doet metingen om te kijken hoe goed de telefoon het doet in de ondersteuning van de achtergrondprocessen. 
+DontKillMyApp doet metingen om te kijken hoe goed de telefoon het doet in de ondersteuning van de achtergrondprocessen.
 
-Doe een meting voordat je de telefooninstellingen aanpast. Dan ga door het stappenplan om te zien hoeveel je achtergrondprocessen vertragen. 
+Doe een meting voordat je de telefooninstellingen aanpast. Dan ga door het stappenplan om te zien hoeveel je achtergrondprocessen vertragen.
 
-Je kan de resultaten delen met de ontwikkelaars een algemene score berekenen en daarmee de negatieve score bepalen. 
+Je kan de resultaten delen met de ontwikkelaars een algemene score berekenen en daarmee de negatieve score bepalen.
 
-Hoe werkt de evaluatie? (Technisch!) 
-De app start een voorgrondprocess service met een wakker worden lock en plant een herhalende taak op het hoofdproces, een aangepaste custom thread executer, en plant regelmatig alarmeringen(AlarmManager.setExactAndAllowWhileIdle). Dan rekent hij uitgevoerde versus verwachte resultaten.Zo simpel is het. 
+Hoe werkt de evaluatie? (Technisch!)
+De app start een voorgrondprocess service met een wakker worden lock en plant een herhalende taak op het hoofdproces, een aangepaste custom thread executer, en plant regelmatig alarmeringen(AlarmManager.setExactAndAllowWhileIdle). Dan rekent hij uitgevoerde versus verwachte resultaten.Zo simpel is het.
 
-Voor meer detail zie de broncode. De app is opensource en beschikbaar op https://github.com/urbandroid-team/dontkillmy-app 
+Voor meer detail zie de broncode. De app is opensource en beschikbaar op https://github.com/urbandroid-team/dontkillmy-app
 
 Speciale dank voor Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Sta exacte alarmplanning toe</string>
+<string name="exact_alarm_restrictions_summary">Staat u toe om exacte alarmen te plannen om Yoru-apparaat gebaseerde achtergrondverwerking correct te testen.</string>
+<string name="general_error">Er is iets fout gegaan.</string>
 </resources>

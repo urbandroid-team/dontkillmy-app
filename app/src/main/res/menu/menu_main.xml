@@ -2,7 +2,14 @@
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
       tools:context="com.urbandroid.dnd.MainActivity">
-  <item android:id="@+id/how_it_works"
+
+  <item
+      android:icon="@drawable/ic_info_24"
+      android:title="Menu"
+      app:showAsAction="always">
+    <menu>
+
+    <item android:id="@+id/how_it_works"
         app:showAsAction="never"
       android:title="@string/how_it_works" />
   <item android:id="@+id/tell_others"
@@ -20,4 +27,6 @@
   <item android:id="@+id/translate"
         app:showAsAction="never"
       android:title="@string/translate" />
+    </menu>
+  </item>
 </menu>

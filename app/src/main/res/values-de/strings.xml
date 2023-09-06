@@ -72,4 +72,7 @@ Die App startet einen Vordergrunddienst mit einer Wecksperre und plant sich wied
 Weitere Details finden Sie im Code. Die App ist Open-Source verfügbar unter https://github.com/urbandroid-team/dontkillmy-app
 
 Besonderer Dank geht an Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Ermöglichen Sie eine genaue Alarmplanung</string>
+<string name="exact_alarm_restrictions_summary">Bitte erlauben Sie uns, genaue Alarme zu planen, um die alarmbasierte Hintergrundverarbeitung von YORU-Geräten ordnungsgemäß zu testen.</string>
+<string name="general_error">Etwas ist schief gelaufen.</string>
 </resources>

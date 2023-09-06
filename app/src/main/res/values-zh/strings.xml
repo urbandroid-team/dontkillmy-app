@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">激活测试</string>
+<string name="stop_benchmark">终止测试</string>
+<string name="benchmark">测试</string>
+<string name="running">测试中 (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) 点击即可终止</string>
+<string name="finished">测试终止，点击以查看结果</string>
+<string name="already_running">测试已经开始了</string>
+<string name="stop">终止</string>
+<string name="clear">删除</string>
+<string name="work">运行</string>
+<string name="alarm">警示</string>
+<string name="main">主线</string>
+<string name="share">转发</string>
+<string name="share_with">转发给</string>
+<string name="report">回报</string>
+<string name="duration">测试时长</string>
+<string name="warning_title">警告</string>
+<string name="warning_text">请不要在测试时充电或使用手机</string>
+<string name="cancel">取消</string>
+<string name="ok">确认</string>
+<string name="total">总计</string>
+<string-array name="duration_array">
+<item>一小时</item>
+<item>两小时</item>
+<item>三小时</item>
+<item>四小时</item>
+<item>五小时</item>
+<item>六小时</item>
+<item>七小时</item>
+<item>八小时</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>电子信箱</item>
+<item>其他</item>
+</string-array>
+<string name="how_it_works">运作原理</string>
+<string name="how_it_works_text">此基准测试启动一个预行的前台服务，将常态程序每十秒在主线程序与自定程序运行，并使用AlarmManager.setExactAndAllowWhileIdle（）每十分钟通知乙次。 通過比较已运行的与预期的时长计算出一个分数。\n\n 100分是最高分；目前无法提供非标准的电池优化。 不过一些设备制造商可能会限制一段时间内未使用的应用程序，所以建议每周重复测试。\n\n 理想情况下，每行显示三十个圆形与三角形，每两行显示一个方形。越大的空白区域表示越有问题，如果不改变设备的设定，此应用程序可能无法准确运行。\n\n 更多信息请在https://github.com/urbandroid-team/dontkillmy-app 查看应用程序码。</string>
+<string name="contact_support">联络支援</string>
+<string name="tell_others">转发给好友</string>
+<string name="tell_others_text">「DontKillMyApp 测试」检查你手机的后台处理，好让App 顺利运行。\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">请你留下好评，拜托！</string>
+<string name="rate_button">好评</string>
+<string name="never_button">不再提醒</string>
+<string name="later_button">稍等</string>
+<string name="source">原始程序码</string>
+<string name="rate_text">即使在某些制造商眼里，比起续航力，功能性更重要，但我们依然希望App 能正常运行。\n\n 在应用程序商店留下好评，是增加这个开方原始程序码计划的最佳方法。\n\n 非常感谢协助我们改良安卓环境的人！</string>
+<string name="translate">协助翻译这个App</string>
+<string name="slogan">让应用程序运行</string>
+<string name="market_text">DontKillMyApp 的官方应用程序就在这里──即使你不是使用 Pixel，依然能让App 恢复正确运行。
+
+为你的手机设定好后台程序工作，就能让 App 顺利的协助你！即使每有盯着荧幕也行。
+
+现在来看看你的手机状态，并且根据「DontKillMyApp 测试」是是不同的设定。
+
+特色：
+- DKMA基准测试：测试你的手机如何积极的封杀后台应用程序
+- 引导：获取易操作的指示以克服大多数的后台程序限制
+- 做出改变：️通过分享你的基准报告到dontkillmyapp.com，协助智慧型手机保有智慧
+
+DontKillMyApp是一个基准工具，可以看到你的手机对后台程序支持的程度，在设定手机前进行测试，然后通过设定引导，再进行测试，看看手机在后台有多怠慢。
+
+你能通过该应用程序分享你的报告给dontkillmyapp.com网站管理员，他们会整理报告汇总，并在此基准上得出总体负分。
+
+测试是如何运行的？（技术层面！）
+
+此基准应用启动一个带有解锁的前台服务，在主线序列与自定义序列运行器上安排重复的程序，并按时通知（AlarmManager.setExactAndAllowWhileIdle）。接着计算出已运行与预期的时长差。That\'s it!
+
+查看程序码来获取更多资讯。这个应用程序是开放程序码，且公开在 https://github.com/urbandroid-team/dontkillmy-app 上。
+
+特别感谢 Doki （github.com/doubledotlabs/doki）。</string>
+<string name="exact_alarm_restrictions_title">允许确切的警报安排</string>
+<string name="exact_alarm_restrictions_summary">请允许我们安排精确的警报，以正确测试YORU设备基于警报的背景处理。</string>
+<string name="general_error">出了些问题。</string>
+</resources>

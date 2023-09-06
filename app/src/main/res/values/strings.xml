@@ -75,4 +75,11 @@ The app starts a foreground service with a wake lock and schedules repetitive ta
 For more details check the code. The app is open source available at https://github.com/urbandroid-team/dontkillmy-app
 Special thanks to Doki (github.com/doubledotlabs/doki).</string>
 
+<string name="exact_alarm_restrictions_title">Allow exact alarm scheduling</string>
+<!-- Now on Android 12 alarm clocks need a permission to be able to scheudle alarms on time -->
+<string name="exact_alarm_restrictions_summary">Please allow us to schedule exact alarms to properly test yoru device alarm-based background processing.</string>
+<string name="general_error">Ops, something when wrong.</string>
+<string name="started">Benchmark started!</string>
+
+
 </resources>

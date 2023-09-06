@@ -1,27 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<dev.doubledot.doki.views.DokiContentView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme"
+    android:id="@+id/doki_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <dev.doubledot.doki.views.DokiContentView
-        android:theme="@style/AppTheme"
-        android:id="@+id/doki_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-<com.google.android.material.button.MaterialButton
-    app:cornerRadius="32dp"
-    app:icon="@drawable/ic_dkma"
-    android:id="@+id/fab"
-    android:layout_margin="16dp"
-    android:padding="16dp"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    android:text="@string/start_benchmark"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent" />

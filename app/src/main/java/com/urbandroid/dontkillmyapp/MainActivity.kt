@@ -1,33 +1,65 @@
 package com.urbandroid.dontkillmyapp
 
 import android.Manifest.permission
-import android.content.DialogInterface
+import android.app.AlarmManager
+import android.content.Context
 import android.content.Intent
+import android.content.res.Resources.getSystem
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts.RequestPermission
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.app.NotificationManagerCompat
+import androidx.core.view.get
 import androidx.preference.PreferenceManager
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.urbandroid.dontkillmyapp.domain.Benchmark
 import com.urbandroid.dontkillmyapp.service.BenchmarkService
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    val launchServiceAfterPermission = registerForActivityResult(RequestPermission()) {
+        if (it) {
+            startBenchmark()
+        }
+    }
+    val chooseDurationAfterPermission = registerForActivityResult(RequestPermission()) {
+        if (it) {
+            chooseDuration()
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val grantPostNotificationLauncher = registerForActivityResult(RequestPermission()) {
-            BenchmarkService.start(this)
-        }
+        val topView = findViewById<View>(dev.doubledot.doki.R.id.deviceManufacturerHeader)
+
+        val param = topView.layoutParams as ViewGroup.MarginLayoutParams
+        param.setMargins(0, 64.dp,0,0)
+        topView.layoutParams = param
+
+        val appBar = findViewById<ViewGroup>(dev.doubledot.doki.R.id.appbar)
+        val cToolbar = (appBar.get(0) as ViewGroup).get(0) as ViewGroup
+        val parent = findViewById<ViewGroup>(dev.doubledot.doki.R.id.doki_full_content)
+        var fab = layoutInflater.inflate(R.layout.view_fab, parent, false)
+        var toolbar = layoutInflater.inflate(R.layout.view_toolbar, cToolbar, false) as Toolbar
+        parent.addView(fab, parent.childCount)
+        cToolbar.addView(toolbar, 0)
+
+        setSupportActionBar(toolbar)
+        supportActionBar?.setTitle("")
 
         fab.setOnClickListener {
             Log.i(TAG, "start clicked")
@@ -35,43 +67,86 @@ class MainActivity : AppCompatActivity() {
             if (BenchmarkService.RUNNING) {
                 Toast.makeText(this, R.string.already_running, Toast.LENGTH_LONG).show()
             } else {
-                val builder: AlertDialog.Builder = AlertDialog.Builder(this)
-                builder.setTitle(R.string.duration)
-//                builder.setMessage("${getString(R.string.warning_title)}: ${getString(R.string.warning_text)}")
-
-                val arrayAdapter = ArrayAdapter<String>(
-                    this,
-                    R.layout.dialog_item, resources.getStringArray(R.array.duration_array)
-                )
-
-                builder.setNegativeButton(R.string.cancel, null)
-
-                builder.setAdapter(arrayAdapter,
-                    DialogInterface.OnClickListener { dialog, which ->
-                        PreferenceManager.getDefaultSharedPreferences(this).edit().putLong(
-                            KEY_BENCHMARK_DURATION, (which * HOUR_IN_MS) + HOUR_IN_MS).apply()
-
-                        val builder: AlertDialog.Builder = AlertDialog.Builder(this)
-                        builder.setTitle(R.string.warning_title)
-                        builder.setMessage(R.string.warning_text)
-                        builder.setPositiveButton(R.string.ok, DialogInterface.OnClickListener { dialog, which ->
-                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !NotificationManagerCompat.from(this).areNotificationsEnabled()) {
-                                grantPostNotificationLauncher.launch(permission.POST_NOTIFICATIONS)
-                            } else {
-                                BenchmarkService.start(this)
-                            }
-                        })
-                        builder.setNegativeButton(R.string.cancel, null)
-
-                        builder.show()
-                    })
-                builder.show()
+                if (hasExactAlarmPermission(this)) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !NotificationManagerCompat.from(this).areNotificationsEnabled()) {
+                        chooseDurationAfterPermission.launch(permission.POST_NOTIFICATIONS)
+                    } else {
+                        chooseDuration()
+                    }
+                }
             }
-
-
         }
+    }
+
+    fun chooseDuration() {
+        val builder = MaterialAlertDialogBuilder(this)
+        builder.setTitle(R.string.duration)
+
+        val arrayAdapter = ArrayAdapter(
+            this,
+            R.layout.dialog_item, resources.getStringArray(R.array.duration_array)
+        )
+
+        builder.setNegativeButton(R.string.cancel, null)
+
+        builder.setAdapter(arrayAdapter
+        ) { _, which ->
+            PreferenceManager.getDefaultSharedPreferences(this).edit().putLong(
+                KEY_BENCHMARK_DURATION, (which * HOUR_IN_MS) + HOUR_IN_MS
+            ).apply()
+
+            val builder = MaterialAlertDialogBuilder(this)
+            builder.setTitle(R.string.warning_title)
+            builder.setMessage(R.string.warning_text)
+            builder.setPositiveButton(
+                R.string.ok
+            ) { _, _ ->
+                startBenchmark()
+            }
+            builder.setNegativeButton(R.string.cancel, null)
+
+            builder.show()
+        }
+        builder.show()
 
     }
+
+    fun startBenchmark() {
+        Toast.makeText(MainActivity@this, R.string.started, Toast.LENGTH_SHORT).show()
+        BenchmarkService.start(this)
+    }
+
+    val Int.dp: Int get() = (this * getSystem().displayMetrics.density).toInt()
+
+    fun hasExactAlarmPermission(context : Context) : Boolean {
+        val am = context.getSystemService(AppCompatActivity.ALARM_SERVICE) as AlarmManager
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !am.canScheduleExactAlarms()) {
+            val builder = MaterialAlertDialogBuilder(this)
+            builder.setTitle(context.getString(R.string.exact_alarm_restrictions_title))
+            builder.setMessage(context.getString(R.string.exact_alarm_restrictions_summary))
+            builder.setPositiveButton(
+                R.string.ok
+            ) { _, _ ->
+                try {
+                    val intent = Intent(
+                        Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM,
+                        Uri.fromParts("package", context.packageName, null)
+                    )
+                    context.startActivity(intent)
+                } catch (e: java.lang.Exception) {
+                    Toast.makeText(
+                        context, R.string.general_error,
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+            }
+            builder.setNegativeButton(R.string.cancel, null)
+            builder.show()
+            return false
+        }
+        return true
+    }
+
 
     override fun onResume() {
         super.onResume()
@@ -82,7 +157,13 @@ class MainActivity : AppCompatActivity() {
         val currentBenchmark = Benchmark.load(this)
         currentBenchmark?.let {
             if (it.running) {
-                BenchmarkService.start(this)
+                if (hasExactAlarmPermission(this)) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !NotificationManagerCompat.from(this).areNotificationsEnabled()) {
+                        launchServiceAfterPermission.launch(permission.POST_NOTIFICATIONS)
+                    } else {
+                        startBenchmark()
+                    }
+                }
             } else {
                 ResultActivity.start(this)
             }
@@ -99,7 +180,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.how_it_works -> {
-                val builder: AlertDialog.Builder = AlertDialog.Builder(this)
+                val builder = MaterialAlertDialogBuilder(this)
                 builder.setTitle(R.string.how_it_works)
                 builder.setMessage(R.string.how_it_works_text)
                 builder.setPositiveButton(R.string.ok, null)

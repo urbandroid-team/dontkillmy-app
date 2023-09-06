@@ -1,6 +1,10 @@
 package com.urbandroid.dontkillmyapp.service
 
-import android.app.*
+import android.app.AlarmManager
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.app.Service
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -12,8 +16,19 @@ import android.os.PowerManager
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
+import androidx.core.content.ContextCompat
 import androidx.preference.PreferenceManager
-import com.urbandroid.dontkillmyapp.*
+import com.urbandroid.dontkillmyapp.ACTION_ALARM
+import com.urbandroid.dontkillmyapp.ALARM_REPEAT_MS
+import com.urbandroid.dontkillmyapp.BENCHMARK_DURATION
+import com.urbandroid.dontkillmyapp.KEY_BENCHMARK_DURATION
+import com.urbandroid.dontkillmyapp.MAIN_REPEAT_MS
+import com.urbandroid.dontkillmyapp.NOTIFICATION_CHANNEL_FOREGROUND
+import com.urbandroid.dontkillmyapp.NOTIFICATION_CHANNEL_REPORT
+import com.urbandroid.dontkillmyapp.R
+import com.urbandroid.dontkillmyapp.ResultActivity
+import com.urbandroid.dontkillmyapp.TAG
+import com.urbandroid.dontkillmyapp.WORK_REPEAT_MS
 import com.urbandroid.dontkillmyapp.domain.Benchmark
 import java.text.DateFormat
 import java.util.*
@@ -105,7 +120,7 @@ class BenchmarkService : Service() {
         val notificationBuilder = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_FOREGROUND)
             .setSmallIcon(R.drawable.ic_dkma)
             .setChannelId(NOTIFICATION_CHANNEL_FOREGROUND)
-            .setColor(resources.getColor(R.color.colorAccent))
+            .setColor(ContextCompat.getColor(this, R.color.colorPrimary))
             .setContentIntent(pi)
             .addAction(0, getString(R.string.stop), pi)
             .setShowWhen(false)

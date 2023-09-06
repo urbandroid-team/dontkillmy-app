@@ -18,7 +18,7 @@
 <string name="report">Rapport</string>
 <string name="duration">Durée</string>
 <string name="warning_title">Attention</string>
-<string name="warning_text">Ne branchez pas votre téléphone et essayez de ne pas l\'utiliser pendant l\'évaluation.</string>
+<string name="warning_text">Veuillez ne pas branchez pas votre téléphone et essayez de ne pas l\'utiliser pendant l\'évaluation.</string>
 <string name="cancel">Annuler</string>
 <string name="ok">OK</string>
 <string name="total">Total</string>
@@ -39,7 +39,7 @@
 </string-array>
 <string name="how_it_works">Fonctionnement</string>
 <string name="how_it_works_text">L\'évaluation lance un service en arrière-plan avec un verrouillage actif et planifie des taches répétitives dans le fil principal (toutes les 10 secondes), un lanceur de fil personnalisé (toutes les 10 secondes), et planifie des alarmes régulièrement en utilisant AlarmManager.setExactAndAllowWhileIdle (toutes les 10 minutes). Ensuite elle calcule le score en comparant ce qui a été lancé et ce qui est attendu. \n\nLes scores proches de 100% sont de bons résultats – les optimisations de batterie non-standard ne sont pas utilisées. Bien qu\'il est bon de répéter le test dans une semaine, vu que certains OEM peuvent appliquer des limites inactives pendant un certain temps.\n\nLE GRAPHIQUE\n\nChaque colonne dans le graphique représente 5 minutes. Idéalement vous verrez 30 cercles par ligne et un carré toutes les 2 lignes. De plus larges zones blanches indiquent un problème – votre application pourrait ne pas marcher comme prévu si vous ne changez pas les paramètres de votre smartphone. Pour plus d\'informations, allez voir le code source de l\'application sur https://github.com/urbandroid-team/dontkillmy-app</string>
-<string name="contact_support">Contacter l\'assistance</string>
+<string name="contact_support">Contacter le support</string>
 <string name="tell_others">Partager</string>
 <string name="tell_others_text">L\'évaluation de DontKillMyApp contrôle les processus en arrière-plan pour mieux faire fonctionner les applications de votre smartphone.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
 <string name="rate">Notez-nous, s\'il vous plaît !</string>
@@ -67,7 +67,10 @@ Vous pouvez partagez votre rapport depuis l\'application aux gérants du site do
 
 Comment fonctionne l\'évaluation? (Technique!)
 
-L\'application lance un service en arrière-plan, qui lance de façon répétitive une tâche, un éxécuteur et lance plusieurs alarmes régulières (AlarmManager.setExactAndAllowWhileIdle). C\'est tout! 
+L\'application lance un service en arrière-plan, qui lance de façon répétitive une tâche, un éxécuteur et lance plusieurs alarmes régulières (AlarmManager.setExactAndAllowWhileIdle). C\'est tout!
 
 Pour plus de détails, regardez le code-source. L\'application est open source, disponible sur https://github.com/urbandroid-team/dontkillmy-app. Merci à Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Autoriser la planification exacte des alarmes</string>
+<string name="exact_alarm_restrictions_summary">Veuillez nous permettre de planifier des alarmes exactes pour tester correctement le traitement d\'arrière-plan basé sur les alarmes de périphérique Yoru.</string>
+<string name="general_error">Quelque chose s\'est mal passé.</string>
 </resources>

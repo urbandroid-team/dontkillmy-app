@@ -3,11 +3,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 33
+    compileSdk 33
+
+    namespace "com.urbandroid.dontkillmyapp"
 
     defaultConfig {
-        applicationId "com.urbandroid.dontkillmyapp"
-        minSdkVersion 16
+        minSdkVersion 24
         targetSdkVersion 33
         versionCode 33
         versionName "2.5"

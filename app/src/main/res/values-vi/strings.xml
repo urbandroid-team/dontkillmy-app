@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Bắt đầu kiểm tra</string>
+<string name="stop_benchmark">Dừng kiểm tra</string>
+<string name="benchmark">Kiểm tra</string>
+<string name="running">Đang chạy kiểm chuẩn (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) Nhấn để dừng.</string>
+<string name="finished">Đã hoàn thành kiểm tra, nhấn để xem kết quả</string>
+<string name="already_running">Benchmark đang chạy</string>
+<string name="stop">Dừng</string>
+<string name="clear">Xóa</string>
+<string name="work">Thông báo hoạt động</string>
+<string name="alarm">Báo thức</string>
+<string name="main">Thông báo chính</string>
+<string name="share">Chia sẻ</string>
+<string name="share_with">Chia sẻ cho</string>
+<string name="report">Báo cáo</string>
+<string name="duration">Thời hạn</string>
+<string name="warning_title">Cảnh báo</string>
+<string name="warning_text">Vui lòng không sạc điện thoại và không nên dùng khi đang kiểm tra.</string>
+<string name="cancel">Huỷ</string>
+<string name="ok">OK</string>
+<string name="total">Tổng cộng</string>
+<string-array name="duration_array">
+<item>1 tiếng</item>
+<item>2 tiếng</item>
+<item>3 tiếng</item>
+<item>4 tiếng</item>
+<item>5 tiếng</item>
+<item>6 tiếng</item>
+<item>7 tiếng</item>
+<item>8 tiếng</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Email</item>
+<item>Khác</item>
+</string-array>
+<string name="how_it_works">Cách hoạt động</string>
+<string name="how_it_works_text">Kiểm tra bắt đầu với một dịch vụ tiền cảnh với dịch vụ đánh thức bị khóa và bố trí để các tác vụ được lặp lại mỗi 10 giây cho chuỗi chính, cho bộ xử lí chuỗi riêng (mỗi 10 giây) và đặt đồng hồ đánh thức bằng cách dùng lớp AlarmManager.setExactAndAllowWhileIdle (mỗi 10 phút). Rồi nó tính điểm bằng cách so sánh những thông báo được đặt ra và những thông báo đã được nhận. \n\nĐiểm càng gần với 100% thì càng tốt - việc tối ưu hoá pin không tiêu chuẩn chưa được áp dụng. Bạn nên lặp lại việc kiểm tra sau một tuần là một ý tưởng tốt vì có một số OEM (nhà sản xuất gốc) chặn lại những dịch vụ trong nền khi không sử dụng.\n\n BIỂU ĐỒ\n\nMỗi hàng trong biểu đồ tương ứng với năm phút. Trên lý thuyết bạn sẽ thấy 30 hình tròn và tam giác trong một dòng, và một hình vuông mỗi dòng thứ hai. Những khu vực mà có nhiều phần trắng biểu thị vấn đề - những ứng dụng của bạn có thể không hoạt động như mong đợi nếu bạn không thay đổi cài đặt trong điện thoại bạn.\n\nĐể biết thêm thông tin vui lòng đọc mã nguồn tại https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Liên hệ hỗ trợ</string>
+<string name="tell_others">Chia sẻ cho người khác</string>
+<string name="tell_others_text">Kiểm chuẩn của DontKillMyApp kiểm tra việc xử lí dịch vụ nền để cho những ứng dụng hoạt động đúng cách.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Xin hãy đánh giá chúng tôi!</string>
+<string name="rate_button">Đánh giá</string>
+<string name="never_button">Không nhắc tôi nữa</string>
+<string name="later_button">Để sau</string>
+<string name="source">Mã nguồn</string>
+<string name="rate_text">Chúng tôi muốn các ứng dụng hoạt động trong điện thoại mà các nhà sản xuất ưu tiên pin hơn chức năng.\n\n Cách tốt nhất bạn có thể giúp là đánh giá ứng dụng miễn phí và mở trên cửa hàng Play.\n\nCảm ơn dã giúp chúng tôi làm hệ điều hành Android tốt hơn!</string>
+<string name="translate">Giúp phiên dịch ứng dụng</string>
+<string name="slogan">Làm ứng dụng hoạt động</string>
+<string name="market_text">Ứng dụng DontKillMyApp (Dịch là "Đừng giết ứng dụng của tôi") chính thức đã ở đây - Làm các ứng dụng hoạt động mà không cần điện thoại Google Pixel.
+
+Giúp bạn thiết lập các quá trình dưới nền không bị tắt để khi màn hình tắt thì ứng dụng của bạn vẫn hoạt động.
+
+Xem điện thoại của bạn đang hoạt động ra sao và thử các cài đặt với Benchmark của DontKillMyApp.
+
+Các tính năng:
+- Benchmark DKMA: Kiểm tra xem điện thoại của bạn có quyết liệt dừng các ứng dụng nền đến đâu
+- Hướng dẫn: Nhận các bước dễ dàng dể khắc phục những hạn chế về các quá trình nguồn
+- Tạo nên sự thay đổi: Giúp điện thoại thông minh vẫn trở nên thông minh bằng cách chia sẻ Benchmark trên dontkillmyapp.com
+
+DontKillMyApp là một dụng cụ Benchmark để xem điện thoại hỗ trợ các quá trình nền như thế nào. Ứng dụng có thể đo trước và sau khi khi điện thoại được thiết lập để xem điện thoại đang hoạt động trong nền thế nào.
+
+Bạn có thể chia sẻ các báo cáo đến những người bảo trì của trang dontkillmyapp.com - những người biên dịch chúng và so sánh với điểm trung bình trên đó.
+
+Cách kiểm chuẩn họat động (Mang tính kĩ thuật).
+
+Ứng dụng bắt đầu với một dịch vụ tiền cảnh với dịch vụ đánh thức bị khóa và bố trí công việc được lặp lại cho chuỗi chính, cho bộ xử lí chuỗi riêng và đặt đồng hồ báo thức (AlarmManager.setExactAndAllowWhileIdle). Sau đó nó tính điểm thực tế so với mong đợi. Chỉ như vậy thôi!
+
+Mọi thông tin thêm vui lòng truy cập vào ứng dụng. Ứng dụng này có mã nguồn mở tại https://github.com/urbandroid-team/dontkillmy-app
+Cảm ơn sâu sắc tới Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Cho phép lập lịch báo động chính xác</string>
+<string name="exact_alarm_restrictions_summary">Vui lòng cho phép chúng tôi lên lịch báo động chính xác để kiểm tra đúng cách xử lý nền dựa trên báo động thiết bị Yoru.</string>
+<string name="general_error">Có gì đó đã sai.</string>
+</resources>

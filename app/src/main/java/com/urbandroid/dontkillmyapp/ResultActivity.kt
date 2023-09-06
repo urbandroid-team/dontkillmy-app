@@ -11,12 +11,17 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
-import android.view.*
+import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
+import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.view.get
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.play.core.review.ReviewManagerFactory
 import com.urbandroid.dontkillmyapp.domain.Benchmark
 import com.urbandroid.dontkillmyapp.gui.BenchmarkView
@@ -31,6 +36,8 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
 
+        setSupportActionBar(findViewById<Toolbar>(R.id.toolbar))
+        supportActionBar?.setTitle("")
         supportActionBar?.setDisplayShowHomeEnabled(true)
 
         title = "${getString(R.string.app_name)} ${getString(R.string.report)}"
@@ -45,7 +52,7 @@ class ResultActivity : AppCompatActivity() {
         val contentView = parent[1] as ViewGroup
 
         val inflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val reportLayout = inflater.inflate(R.layout.report, null) as ViewGroup
+        val reportLayout = inflater.inflate(R.layout.view_report, null) as ViewGroup
 
         contentView.removeAllViews()
         contentView.addView(reportLayout)
@@ -123,7 +130,7 @@ class ResultActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.how_it_works -> {
-                val builder: AlertDialog.Builder = AlertDialog.Builder(this)
+                val builder = MaterialAlertDialogBuilder(this)
                 builder.setTitle(R.string.how_it_works)
                 builder.setMessage(R.string.how_it_works_text)
                 builder.setPositiveButton(R.string.ok, null)
@@ -137,7 +144,7 @@ class ResultActivity : AppCompatActivity() {
                     val body = Benchmark.generateTextReport(this, benchmark)
                     val subject = "${getString(R.string.app_name)} ${getString(R.string.report)}"
 
-                    val builder: AlertDialog.Builder = AlertDialog.Builder(this)
+                    val builder = MaterialAlertDialogBuilder(this)
                     builder.setTitle(R.string.share_with)
 //                builder.setMessage("${getString(R.string.warning_title)}: ${getString(R.string.warning_text)}")
 
