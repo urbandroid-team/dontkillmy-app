@@ -1,16 +1,20 @@
 package com.urbandroid.dontkillmyapp
 
+import android.Manifest.permission
 import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts.RequestPermission
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NotificationManagerCompat
 import androidx.preference.PreferenceManager
 import com.urbandroid.dontkillmyapp.domain.Benchmark
 import com.urbandroid.dontkillmyapp.service.BenchmarkService
@@ -20,6 +24,10 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val grantPostNotificationLauncher = registerForActivityResult(RequestPermission()) {
+            BenchmarkService.start(this)
+        }
 
         fab.setOnClickListener {
             Log.i(TAG, "start clicked")
@@ -40,14 +48,18 @@ class MainActivity : AppCompatActivity() {
 
                 builder.setAdapter(arrayAdapter,
                     DialogInterface.OnClickListener { dialog, which ->
-                        PreferenceManager.getDefaultSharedPreferences(MainActivity@this).edit().putLong(
+                        PreferenceManager.getDefaultSharedPreferences(this).edit().putLong(
                             KEY_BENCHMARK_DURATION, (which * HOUR_IN_MS) + HOUR_IN_MS).apply()
 
                         val builder: AlertDialog.Builder = AlertDialog.Builder(this)
                         builder.setTitle(R.string.warning_title)
                         builder.setMessage(R.string.warning_text)
                         builder.setPositiveButton(R.string.ok, DialogInterface.OnClickListener { dialog, which ->
-                            BenchmarkService.start(this)
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !NotificationManagerCompat.from(this).areNotificationsEnabled()) {
+                                grantPostNotificationLauncher.launch(permission.POST_NOTIFICATIONS)
+                            } else {
+                                BenchmarkService.start(this)
+                            }
                         })
                         builder.setNegativeButton(R.string.cancel, null)
 

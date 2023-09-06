@@ -8,9 +8,11 @@ android {
     defaultConfig {
         applicationId "com.urbandroid.dontkillmyapp"
         minSdkVersion 16
-        targetSdkVersion 30
-        versionCode 34
+        targetSdkVersion 33
+        versionCode 33
         versionName "2.5"
+
+        multiDexEnabled true
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -31,8 +33,7 @@ android {
             signingConfig signingConfigs.release
         }
     }
-
-
+    namespace 'com.urbandroid.dontkillmyapp'
 }
 
 dependencies {
@@ -48,6 +49,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.5.0'
 
     implementation 'com.google.android.play:core:1.10.3'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
 
     def preference_version = "1.1.1"
 
