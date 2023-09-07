@@ -74,4 +74,5 @@ Cảm ơn sâu sắc tới Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Cho phép lập lịch báo động chính xác</string>
 <string name="exact_alarm_restrictions_summary">Vui lòng cho phép chúng tôi lên lịch báo động chính xác để kiểm tra đúng cách xử lý nền dựa trên báo động thiết bị Yoru.</string>
 <string name="general_error">Có gì đó đã sai.</string>
+<string name="started">Điểm chuẩn đang chạy</string>
 </resources>

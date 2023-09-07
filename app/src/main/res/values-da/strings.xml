@@ -75,4 +75,5 @@ Særlig tak til Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Tillad nøjagtig alarmplanlægning</string>
 <string name="exact_alarm_restrictions_summary">Tillad os at planlægge nøjagtige alarmer for korrekt at teste Yoru-enhedsalarmbaseret baggrundsbehandling.</string>
 <string name="general_error">Noget gik galt.</string>
+<string name="started">Benchmark kører</string>
 </resources>

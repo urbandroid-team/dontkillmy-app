@@ -69,4 +69,5 @@ Gracias a Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Salli tarkan hälytyksen aikataulun</string>
 <string name="exact_alarm_restrictions_summary">Anna meidän ajoittaa tarkat hälytykset testataksesi Yoru-laitteen hälytyspohjaisen taustakäsittelyn oikein.</string>
 <string name="general_error">Jotain meni pieleen.</string>
+<string name="started">Vertailuarvo on käynnissä</string>
 </resources>

@@ -75,4 +75,5 @@ Specjalne podziękowania dla Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Zezwalaj na dokładne planowanie alarmów</string>
 <string name="exact_alarm_restrictions_summary">Pozwól nam zaplanować dokładne alarmy, aby właściwie przetestować przetwarzanie tła oparte na alarmach Joru.</string>
 <string name="general_error">Coś poszło nie tak.</string>
+<string name="started">Benchmark działa</string>
 </resources>

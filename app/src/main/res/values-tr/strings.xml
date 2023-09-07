@@ -54,4 +54,5 @@
 <string name="exact_alarm_restrictions_title">Tam alarm planlamasına izin ver</string>
 <string name="exact_alarm_restrictions_summary">Lütfen Yoru cihaz alarm tabanlı arka plan işlemeyi düzgün bir şekilde test etmek için kesin alarmları planlamamıza izin verin.</string>
 <string name="general_error">Bir şeyler yanlış gitti.</string>
+<string name="started">Benchmark çalışıyor</string>
 </resources>

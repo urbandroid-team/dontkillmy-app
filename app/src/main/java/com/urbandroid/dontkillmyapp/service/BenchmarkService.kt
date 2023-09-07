@@ -186,7 +186,7 @@ class BenchmarkService : Service() {
         val notificationBuilder = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_FOREGROUND)
             .setSmallIcon(R.drawable.ic_dkma)
             .setChannelId(NOTIFICATION_CHANNEL_REPORT)
-            .setColor(resources.getColor(R.color.colorAccent))
+            .setColor(ContextCompat.getColor(this, R.color.colorPrimary))
             .setContentIntent(pi)
             .setAutoCancel(true)
             .setShowWhen(false)

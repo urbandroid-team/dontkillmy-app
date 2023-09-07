@@ -73,4 +73,5 @@ Pour plus de détails, regardez le code-source. L\'application est open source, 
 <string name="exact_alarm_restrictions_title">Autoriser la planification exacte des alarmes</string>
 <string name="exact_alarm_restrictions_summary">Veuillez nous permettre de planifier des alarmes exactes pour tester correctement le traitement d\'arrière-plan basé sur les alarmes de périphérique Yoru.</string>
 <string name="general_error">Quelque chose s\'est mal passé.</string>
+<string name="started">Benchmark est en cours d\'exécution</string>
 </resources>

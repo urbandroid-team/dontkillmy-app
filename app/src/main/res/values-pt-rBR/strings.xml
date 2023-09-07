@@ -74,4 +74,5 @@ Agradecimentos especiais a Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Permitir agendamento exato de alarme</string>
 <string name="exact_alarm_restrictions_summary">Permita-nos agendar alarmes exatos para testar corretamente o processamento de fundo baseado em alarme do dispositivo YORU.</string>
 <string name="general_error">Ops, algo quando errado.</string>
+<string name="started">O benchmark está em execução</string>
 </resources>

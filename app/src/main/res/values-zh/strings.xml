@@ -75,4 +75,5 @@ DontKillMyApp是一个基准工具，可以看到你的手机对后台程序支�
 <string name="exact_alarm_restrictions_title">允许确切的警报安排</string>
 <string name="exact_alarm_restrictions_summary">请允许我们安排精确的警报，以正确测试YORU设备基于警报的背景处理。</string>
 <string name="general_error">出了些问题。</string>
+<string name="started">基准正在运行</string>
 </resources>

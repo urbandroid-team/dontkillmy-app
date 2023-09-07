@@ -75,4 +75,5 @@ Besonderer Dank geht an Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Ermöglichen Sie eine genaue Alarmplanung</string>
 <string name="exact_alarm_restrictions_summary">Bitte erlauben Sie uns, genaue Alarme zu planen, um die alarmbasierte Hintergrundverarbeitung von YORU-Geräten ordnungsgemäß zu testen.</string>
 <string name="general_error">Etwas ist schief gelaufen.</string>
+<string name="started">Benchmark läuft</string>
 </resources>

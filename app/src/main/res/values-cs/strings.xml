@@ -62,4 +62,5 @@ Projekt DKMA vyvíjejí a udržují dobrovolníci, kterým není jedno v jakém 
 <string name="exact_alarm_restrictions_title">Povolit přesné plánování poplachu</string>
 <string name="exact_alarm_restrictions_summary">Prosím, dovolte nám naplánovat přesné alarmy a správně otestujte zpracování pozadí založeného na zařízení Yoru.</string>
 <string name="general_error">Něco se pokazilo.</string>
+<string name="started">Benchmark běží</string>
 </resources>

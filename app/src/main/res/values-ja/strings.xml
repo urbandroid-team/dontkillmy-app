@@ -75,4 +75,5 @@ Doki (github.com/doubledotlabs/doki) に特別な感謝を捧げます。"</stri
 <string name="exact_alarm_restrictions_title">正確なアラームスケジューリングを許可します</string>
 <string name="exact_alarm_restrictions_summary">正確なアラームをスケジュールして、Yoruデバイスアラームベースの背景処理を適切にテストしてください。</string>
 <string name="general_error">何かがうまくいかなかった。</string>
+<string name="started">ベンチマークが実行されています</string>
 </resources>

@@ -51,4 +51,5 @@
 <string name="exact_alarm_restrictions_title">Permiteți programarea exactă a alarmelor</string>
 <string name="exact_alarm_restrictions_summary">Vă rugăm să ne permiteți să programăm alarme exacte pentru a testa corect procesarea fundalului bazată pe alarmă.</string>
 <string name="general_error">Ceva n-a mers bine.</string>
+<string name="started">Benchmark funcționează</string>
 </resources>

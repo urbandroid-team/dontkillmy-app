@@ -75,4 +75,5 @@ Speciale dank voor Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Sta exacte alarmplanning toe</string>
 <string name="exact_alarm_restrictions_summary">Staat u toe om exacte alarmen te plannen om Yoru-apparaat gebaseerde achtergrondverwerking correct te testen.</string>
 <string name="general_error">Er is iets fout gegaan.</string>
+<string name="started">Benchmark is actief</string>
 </resources>

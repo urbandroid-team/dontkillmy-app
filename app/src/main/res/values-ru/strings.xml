@@ -74,4 +74,5 @@ DontKillMyApp — это утилита для проверки того, как
 <string name="exact_alarm_restrictions_title">Разрешить точное планирование тревоги</string>
 <string name="exact_alarm_restrictions_summary">Пожалуйста, позвольте нам запланировать точные сигналы тревоги для правильной проверки фоновой обработки на основе сигнализации устройства Yoru.</string>
 <string name="general_error">Что-то пошло не так.</string>
+<string name="started">Бланка работает</string>
 </resources>

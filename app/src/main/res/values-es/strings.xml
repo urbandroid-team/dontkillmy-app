@@ -79,4 +79,5 @@ Gracias a Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Permitir la programación exacta de la alarma</string>
 <string name="exact_alarm_restrictions_summary">Permítanos programar alarmas exactas para probar correctamente el procesamiento de fondo basado en alarmas del dispositivo YORU.</string>
 <string name="general_error">Algo salió mal.</string>
+<string name="started">Benchmark se está ejecutando</string>
 </resources>

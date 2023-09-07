@@ -51,4 +51,5 @@
 <string name="exact_alarm_restrictions_title">برنامه ریزی دقیق زنگ هشدار</string>
 <string name="exact_alarm_restrictions_summary">لطفاً به ما اجازه دهید هشدارهای دقیقی را برای آزمایش صحیح پردازش پس زمینه مبتنی بر زنگ دستگاه YORU برنامه ریزی کنیم.</string>
 <string name="general_error">مشکلی پیش آمد</string>
+<string name="started">معیار در حال اجرا است</string>
 </resources>

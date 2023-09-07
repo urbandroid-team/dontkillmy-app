@@ -75,4 +75,5 @@ Terima kasih spesial kepada Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Biarkan penjadwalan alarm yang tepat</string>
 <string name="exact_alarm_restrictions_summary">TOLONG TUNJUKKAN KAMI UNTUK MENJUCTUKAN ALARM yang tepat untuk menguji pemrosesan latar belakang berbasis alarm perangkat Yoru dengan benar.</string>
 <string name="general_error">Ada yang salah.</string>
+<string name="started">Benchmark sedang berjalan</string>
 </resources>

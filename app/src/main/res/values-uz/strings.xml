@@ -71,4 +71,5 @@
 <string name="exact_alarm_restrictions_title">Aniq signalni rejalashtirishga ruxsat bering</string>
 <string name="exact_alarm_restrictions_summary">Iltimos, Yoru qurilmasining signal asosida fonni qayta ishlashni to\'g\'ri sinash uchun aniq signallarni rejalashtirishga imkon bering.</string>
 <string name="general_error">Nimadir noto\'g\'ri bajarildi.</string>
+<string name="started">Kalitmark ishlamoqda</string>
 </resources>
