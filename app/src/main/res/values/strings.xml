@@ -77,7 +77,7 @@ Special thanks to Doki (github.com/doubledotlabs/doki).</string>
 
 <string name="exact_alarm_restrictions_title">Allow exact alarm scheduling</string>
 <!-- Now on Android 12 alarm clocks need a permission to be able to scheudle alarms on time -->
-<string name="exact_alarm_restrictions_summary">Please allow us to schedule exact alarms to properly test yoru device alarm-based background processing.</string>
+<string name="exact_alarm_restrictions_summary">Please allow us to schedule exact alarms to properly test your device alarm-based background processing.</string>
 <string name="general_error">Ops, something when wrong.</string>
 <string name="started">Benchmark running</string>
 
