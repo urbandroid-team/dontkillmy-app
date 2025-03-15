@@ -1,79 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-<string name="app_name">ドント・キル・マイ・アプリ</string>
-<string name="app_name_short">DKMA</string>
-<string name="start_benchmark">テスト開始</string>
-<string name="stop_benchmark">テスト終了</string>
-<string name="benchmark">ベンチマーク</string>
-<string name="running">テスト中 (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) タップすると終了します。</string>
-<string name="finished">テスト完了、タップすると結果が表示されます</string>
-<string name="already_running">テストを開始しました</string>
-<string name="stop">終了する</string>
-<string name="clear">消去する</string>
-<string name="work">ウォーク</string>
-<string name="alarm">アラーム</string>
-<string name="main">メイン</string>
-<string name="share">シェアー</string>
-<string name="share_with">共有する</string>
-<string name="report">報告する</string>
-<string name="duration">テスト時間</string>
-<string name="warning_title">！警告！</string>
-<string name="warning_text">テスト中は、端末の充電や使用はご遠慮ください。</string>
-<string name="cancel">キャンセル</string>
-<string name="ok">オーケー</string>
-<string name="total">総計</string>
-<string-array name="duration_array">
-<item>一時間</item>
-<item>二時間</item>
-<item>三時間</item>
-<item>四時間</item>
-<item>五時間</item>
-<item>六時間</item>
-<item>七時間</item>
-<item>八時間</item>
-</string-array>
-<string-array name="share_array">
-<item>ドント・キル・マイ・アプリ！Don\'t kill my app!</item>
-<item>メール</item>
-<item>その他</item>
-</string-array>
-<string name="how_it_works">原理説明</string>
-<string name="how_it_works_text">ベンチマークテストでは、主要スレッドと自作スレッドで10秒ごとに常態作業を実行し、AlarmManager.setExactAndAllowWhileIdle()を使って10分ごとに通知するような、先制型のフロントエンド・サービスを起動します。計算結果は、実行時間と予想時間を比較し、得点を算出します。 \n\n 100が最高点、標準以外のバッテリー最適化は現状不可。ですが、端末製造会社によっては、一定期間使用しないアプリを制限する場合がありますので、週1回の再検査をお勧めします。 \n\n 丸と三角は1行に30個、四角は2行に1個表示されるのが最適です。 空白部分が広いほど問題があり、端末の設定を変更しないとアプリが正常に機能しない場合があります。 \n\n 詳細については、https://github.com/urbandroid-team/dontkillmy-app でアプリのコードをご参照ください。</string>
-<string name="contact_support">支援センター</string>
-<string name="tell_others">他の人と共有する</string>
-<string name="tell_others_text">端末のアプリが正常に動作するように、端末のバックグラウンド処理をチェックする「ドント・キル・マイ・アプリ！ベンチマーク｜DKMA Benchmark」。 \n\n https://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
-<string name="rate">評価お願いします。</string>
-<string name="rate_button">評価する</string>
-<string name="never_button">もう通知されない</string>
-<string name="later_button">後で通知される</string>
-<string name="source">オリジナル・コード</string>
-<string name="rate_text">機能よりも寿命が大事という製造者の考え方もあるとはいえ、アプリは正常に機能さ せたいと考えています。\n\n プレイストアでのアプリの評価にご協力いただくことは、このオープンソース・プロジェクトの公開を増やすための最良の方法です。\n\n アンドロイドの環境改善にご協力いただいた皆様、本当にありがとうございました。</string>
-<string name="translate">このアプリの翻訳に協力する</string>
-<string name="slogan">アプリを機能させる</string>
-<string name="market_text">「ドント・キル・マイ・アプリの公式アプリはこちら - Pixelを使っていなくても、アプリを再開することができます。
+  <string name="app_name">DontKillMyApp</string>
+  <string name="app_name_short">DKMA</string>
+  <string name="start_benchmark">ベンチマークを開始</string>
+  <string name="stop_benchmark">ベンチマークを停止</string>
+  <string name="benchmark">ベンチマーク</string>
+  <string name="running">ベンチマークを実行中 (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) タップで停止します。</string>
+  <string name="finished">ベンチマークが完了しました。タップで結果を表示します。</string>
+  <string name="already_running">ベンチマークはすでに実行中です</string>
+  <string name="stop">停止</string>
+  <string name="clear">消去</string>
+  <string name="work">稼働</string>
+  <string name="alarm">アラーム</string>
+  <string name="main">メイン</string>
+  <string name="share">共有</string>
+  <string name="share_with">共有先</string>
+  <string name="report">レポート</string>
+  <string name="duration">間隔</string>
+  <string name="warning_title">警告</string>
+  <string name="warning_text">ベンチマーク中はデバイスを充電器から外し、使用しないようにしてください。</string>
+  <string name="cancel">キャンセル</string>
+  <string name="ok">OK</string>
+  <string name="total">合計</string>
+  <string-array name="duration_array">
+    <item>1 時間</item>
+    <item>2 時間</item>
+    <item>3 時間</item>
+    <item>4 時間</item>
+    <item>5 時間</item>
+    <item>6 時間</item>
+    <item>7 時間</item>
+    <item>8 時間</item>
+  </string-array>
+  <string-array name="share_array">
+    <item>DontKillMyApp.com</item>
+    <item>メール</item>
+    <item>その他</item>
+  </string-array>
+  <string name="how_it_works">仕組みについて</string>
+  <string name="how_it_works_text">ベンチマークはウェイクロックを使用してフォアグラウンドサービスを開始して、メインスレッド (10 秒ごとの間隔) とカスタムスレッドエグゼキューター (10 秒ごとの間隔) で繰り返しタスクをスケジュールし、AlarmManager.setExactAndAllowWhileIdle (10 分ごとの間隔) を使用して定期的なアラームをスケジュールします。次に実行されたタスクと期待されるタスクを比較してスコアを計算します。\n\n100% に近いスコアは良好な結果です。非標準なバッテリーの最適化は現時点では適用されていません。ただし、OEM によってはしばらく使用されていないアプリに制限を適用する場合があるため、1 週間後にテストを再度行うことをお勧めします。\n\nグラフ\n\nグラフの各行は 5 分を表しています。理想的には 30 個の円と三角形、2 行ごとに 1 つの四角形が表示され、空白の領域が大きい場合は問題を示しています。デバイスの設定を変更しないとアプリが意図した通りに動作しない可能性があります。\n\n詳細については https://github.com/urbandroid-team/dontkillmy-app でアプリのコードをご確認ください。</string>
+  <string name="contact_support">サポートに問い合わせる</string>
+  <string name="tell_others">他の人に伝える</string>
+  <string name="tell_others_text">DontKillMyApp ベンチマークは、デバイスのバックグラウンド処理をチェックしてデバイス上のアプリが適切に動作するかどうかを確認します。\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+  <string name="rate">評価をお願いします！</string>
+  <string name="rate_button">評価する</string>
+  <string name="never_button">今後は表示しない</string>
+  <string name="later_button">後でする</string>
+  <string name="source">ソースコード</string>
+  <string name="rate_text">私たちはメーカーによる機能性よりもバッテリーを優先するデバイスでも問わず、アプリが正常に動作するようにしたいと考えています。\n\nこのプロジェクトを色々な方に知ってもらうには Play ストアでこの無料なオープンソースツールを評価してコメントを投稿するのが一番です。\n\nAndroid のエコシステムをより良い物にご協力いただきありがとうございます！</string>
+  <string name="translate">アプリの翻訳にご協力ください</string>
+  <string name="slogan">アプリを動作させる</string>
+  <string name="market_text">公式の DontKillMyApp アプリが登場しました。
+Pixel を持っていなくてもアプリがようやく正常に動作するようになります。
 
-端末を背景で機能するように設定しておけば、アプリが助けてくれるはずです 画面を見つめていないときでも
+使用しているデバイスのバックグラウンドタスクを設定して画面を見ていないときでもアプリが正常に動作するようにできます。
 
-さて、DontKillMyAppテストで、端末の状態を確認し、様々な設定を試してみてください。
+DontKillMyApp ベンチマークで、使用しているデバイスの状態を確認し様々な設定をテストします。
 
-特別な機能
-- DKMAベンチマークテスト。 端末がバックエンド・アプリをどれだけ積極的に終了させるかを測定します。
-- ご案内です。 バックエンドの進捗制限のほとんどを解決するための実行可能な手引きをご覧ください。
--改善する：️ベンチマーク結果をdontkillmyapp.comで共有し、端末の性能を維持することができます。
+機能:
 
-ドント・キル・マイ・アプリは、お使いの端末がバックエンド処理にどの程度対応しているかを確認できるベンチマーク・ツールです。 設定前に端末を測定し、設定案内を見ながら再度ベンチマークを行うことで、端末がどの程度バックエンドでたるんでいるかを確認することができます。
+• DKMA ベンチマーク: 使用しているデバイスがバックグラウンドアプリをどれだけ頻繁に終了しているかを測定します。
 
-また、アプリを通じてdontkillmyapp.comのサイト管理者に報告すると、管理者がその報告を集計し、それに基づき全体の負点を算出することができます。
+• ガイド: ほとんどのバックグラウンドプロセスの制限を解決するための実用的な手順をお伝えします。
 
-テストはどんな方法で行うのですか？ (技術的に!)
+• 変更を加える: ベンチマークレポートを DontKillMyApp に共有することでデバイスをスマートな状態に保ちます。
 
-アプリは、待機中のロックでフロントエンドの機能を起動し、主要スレッドで繰り返し作業を予定し、自作スレッド・エクゼキュータを予定し、定期的に通知を予定します (AlarmManager.setExactAndAllowWhileIdle)． そして、その実行内容と期待値を計算する。
+DontKillMyApp は使用しているデバイスがバックグラウンド処理をどれだけサポートしているか確認するためのベンチマークツールです。デバイスをセットアップする前に測定し、セットアップガイドを確認後にもう一度ベンチマークを実行して使用しているデバイスのバックグラウンド処理がどのように動作しているかを確認できます。
 
-詳しくはコードをご覧ください。 このアプリはオープンソースで、https://github.com/urbandroid-team/dontkillmy-app で公開されています。
+アプリを通じてレポートを dontkillmyapp.com のウェブサイトの管理者へ共有できます。管理者はレポートをコンパイルして全体的なマイナススコアを算出します。
 
-Doki (github.com/doubledotlabs/doki) に特別な感謝を捧げます。"</string>
-<string name="exact_alarm_restrictions_title">正確なアラームスケジューリングを許可します</string>
-<string name="exact_alarm_restrictions_summary">正確なアラームをスケジュールして、Yoruデバイスアラームベースの背景処理を適切にテストしてください。</string>
-<string name="general_error">何かがうまくいかなかった。</string>
-<string name="started">ベンチマークが実行されています</string>
+ベンチマークはどのように機能するのですか? (技術的なお話です！)
+
+アプリはウェイクロックを使用してフォアグラウンドサービスを開始し、メインスレッドでタスクを繰り返すようにスケジュール、カスタムスレッドエグゼキューターと定期的なアラーム (AlarmManager.setExactAndAllowWhileIdle) をスケジュールします。次に実行されたタスクと期待されたタスクを計算します。これで完了です！
+
+詳細についてはコードをご確認ください。
+アプリはオープンソースで https://github.com/urbandroid-team/dontkillmy-app から入手ができます。Doki (github.com/doubledotlabs/doki) に感謝を申し上げます。</string>
+  <string name="exact_alarm_restrictions_title">正確なアラームスケジュールを許可する</string>
+  <!-- Now on Android 12 alarm clocks need a permission to be able to scheudle alarms on time -->
+  <string name="exact_alarm_restrictions_summary">デバイスのアラームベースのバックグラウンド処理を適切にテストするために正確なアラームをスケジュールします。</string>
+  <string name="general_error">おっと、問題が発生しました。</string>
+  <string name="started">ベンチマークは実行中です</string>
 </resources>
