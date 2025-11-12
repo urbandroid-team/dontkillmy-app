@@ -16,7 +16,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts.RequestPermission
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.app.NotificationManagerCompat
@@ -24,18 +25,20 @@ import androidx.core.view.get
 import androidx.preference.PreferenceManager
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.urbandroid.dontkillmyapp.domain.Benchmark
+import com.urbandroid.dontkillmyapp.gui.EdgeToEdgeUtil
+import com.urbandroid.dontkillmyapp.gui.ToolbarUtil
 import com.urbandroid.dontkillmyapp.service.BenchmarkService
-import kotlinx.android.synthetic.main.activity_main.*
+import dev.doubledot.doki.views.DokiContentView
 
 class MainActivity : AppCompatActivity() {
 
-    val launchServiceAfterPermission = registerForActivityResult(RequestPermission()) {
-        if (it) {
+    val launchServiceAfterPermission = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
+        if (it.all { true }) {
             startBenchmark()
         }
     }
-    val chooseDurationAfterPermission = registerForActivityResult(RequestPermission()) {
-        if (it) {
+    val chooseDurationAfterPermission = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) {
+        if (it.all { true }) {
             chooseDuration()
         }
     }
@@ -52,29 +55,57 @@ class MainActivity : AppCompatActivity() {
 
         val appBar = findViewById<ViewGroup>(dev.doubledot.doki.R.id.appbar)
         val cToolbar = (appBar.get(0) as ViewGroup).get(0) as ViewGroup
-        val parent = findViewById<ViewGroup>(dev.doubledot.doki.R.id.doki_full_content)
-        var fab = layoutInflater.inflate(R.layout.view_fab, parent, false)
+        var fab = findViewById<View>(R.id.fab)
+        var stop = findViewById<View>(R.id.stop)
         var toolbar = layoutInflater.inflate(R.layout.view_toolbar, cToolbar, false) as Toolbar
-        parent.addView(fab, parent.childCount)
         cToolbar.addView(toolbar, 0)
 
-        setSupportActionBar(toolbar)
+
+        ToolbarUtil.apply(this)
         supportActionBar?.setTitle("")
 
-        fab.setOnClickListener {
-            Log.i(TAG, "start clicked")
+        EdgeToEdgeUtil.insetsTop(appBar)
+        EdgeToEdgeUtil.insetsBottom(fab)
 
-            if (BenchmarkService.RUNNING) {
-                Toast.makeText(this, R.string.already_running, Toast.LENGTH_LONG).show()
+        fab.setOnClickListener {
+            if (missingPermissions()) {
+                requestPermissions(launchServiceAfterPermission)
             } else {
-                if (hasExactAlarmPermission(this)) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !NotificationManagerCompat.from(this).areNotificationsEnabled()) {
-                        chooseDurationAfterPermission.launch(permission.POST_NOTIFICATIONS)
-                    } else {
-                        chooseDuration()
-                    }
+                Log.i(TAG, "start clicked")
+                if (BenchmarkService.RUNNING) {
+                    ResultActivity.start(this)
+                    finish()
+//                Toast.makeText(this, R.string.already_running, Toast.LENGTH_LONG).show()
+                } else {
+                    chooseDuration()
                 }
             }
+        }
+    }
+
+
+    fun missingPermissions() : Boolean {
+        return !hasNotificationPermission() || !hasExactAlarmPermission(this)
+    }
+    fun hasNotificationPermission() : Boolean {
+        return Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU || NotificationManagerCompat.from(this).areNotificationsEnabled()
+    }
+
+
+    fun requestPermissions(resultLauncher : ActivityResultLauncher<Array<String>>) {
+        var permissions = mutableListOf<String>()
+        if (!hasExactAlarmPermission(this)) {
+            permissions.add(permission.SCHEDULE_EXACT_ALARM)
+//            if (Build.VERSION.SDK_INT == Build.VERSION_CODES.S || Build.VERSION.SDK_INT == Build.VERSION_CODES.S_V2) {
+                showExactAlarmPermissionDialog(this)
+//            }
+        }
+        if (!hasNotificationPermission()) {
+            permissions.add(permission.POST_NOTIFICATIONS)
+        }
+
+        if (permissions.isNotEmpty()) {
+            resultLauncher.launch(permissions.toTypedArray())
         }
     }
 
@@ -102,6 +133,8 @@ class MainActivity : AppCompatActivity() {
                 R.string.ok
             ) { _, _ ->
                 startBenchmark()
+                ResultActivity.start(this)
+                finish()
             }
             builder.setNegativeButton(R.string.cancel, null)
 
@@ -112,7 +145,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun startBenchmark() {
-        Toast.makeText(MainActivity@this, R.string.started, Toast.LENGTH_SHORT).show()
+//        Toast.makeText(MainActivity@this, R.string.started, Toast.LENGTH_SHORT).show()
         BenchmarkService.start(this)
     }
 
@@ -121,6 +154,12 @@ class MainActivity : AppCompatActivity() {
     fun hasExactAlarmPermission(context : Context) : Boolean {
         val am = context.getSystemService(AppCompatActivity.ALARM_SERVICE) as AlarmManager
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && !am.canScheduleExactAlarms()) {
+            return false
+        }
+        return true
+    }
+
+    fun showExactAlarmPermissionDialog(context : Context) {
             val builder = MaterialAlertDialogBuilder(this)
             builder.setTitle(context.getString(R.string.exact_alarm_restrictions_title))
             builder.setMessage(context.getString(R.string.exact_alarm_restrictions_summary))
@@ -142,31 +181,26 @@ class MainActivity : AppCompatActivity() {
             }
             builder.setNegativeButton(R.string.cancel, null)
             builder.show()
-            return false
-        }
-        return true
     }
-
 
     override fun onResume() {
         super.onResume()
 
+        if (hasExactAlarmPermission(this)) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !NotificationManagerCompat.from(this).areNotificationsEnabled()) {
+                launchServiceAfterPermission.launch(arrayOf(permission.POST_NOTIFICATIONS))
+            }
+        }
+
+        val doki_content = findViewById<DokiContentView>(R.id.doki_content)
         doki_content.loadContent()
         doki_content.setButtonsVisibility(false)
 
         val currentBenchmark = Benchmark.load(this)
         currentBenchmark?.let {
-            if (it.running) {
-                if (hasExactAlarmPermission(this)) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && !NotificationManagerCompat.from(this).areNotificationsEnabled()) {
-                        launchServiceAfterPermission.launch(permission.POST_NOTIFICATIONS)
-                    } else {
-                        startBenchmark()
-                    }
-                }
-            } else {
-                ResultActivity.start(this)
-            }
+            ResultActivity.start(this)
+            finish()
+            return
         }
 
     }

@@ -1,17 +1,22 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    google()
+}
 
 android {
-    compileSdk 33
+    compileSdk 36
 
     namespace "com.urbandroid.dontkillmyapp"
 
     defaultConfig {
         minSdkVersion 24
-        targetSdkVersion 33
-        versionCode 35
-        versionName "2.6"
+        targetSdk 36
+        versionCode 40
+        versionName "2.7"
 
         multiDexEnabled true
 
@@ -34,32 +39,44 @@ android {
             signingConfig signingConfigs.release
         }
     }
-    namespace 'com.urbandroid.dontkillmyapp'
+
+    compileOptions {
+        // coreLibraryDesugaringEnabled true    - will be added in AS 4.0
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.core:core-ktx:1.17.0'
+    implementation 'androidx.appcompat:appcompat:1.7.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
 
-    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'com.google.android.material:material:1.14.0-alpha06'
 
-    implementation 'com.google.android.play:core:1.10.3'
+    implementation 'com.google.android.play:review:2.0.2'
+    implementation 'com.google.android.play:review-ktx:2.0.2'
 
     implementation 'androidx.multidex:multidex:2.0.1'
 
-    def preference_version = "1.1.1"
+    def preference_version = "1.2.1"
 
     // Java language implementation
     implementation "androidx.preference:preference:$preference_version"
-    // Kotlin
     implementation "androidx.preference:preference-ktx:$preference_version"
-    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation 'com.google.code.gson:gson:2.13.2'
 
     dependencies {
         implementation('dev.doubledot.doki:library:0.0.1@aar') {

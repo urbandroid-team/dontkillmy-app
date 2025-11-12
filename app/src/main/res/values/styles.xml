@@ -7,10 +7,12 @@
         <item name="android:windowLightStatusBar">true</item>
     </style>
 
-    <style name="AppTheme.Base" parent="Theme.Material3.DynamicColors.DayNight">
+    <style name="AppTheme.Base" parent="Theme.Material3Expressive.DynamicColors.DayNight">
         <!-- Customize your theme here. -->
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+        <item name="font">@font/product</item>
+
 
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowAllowEnterTransitionOverlap">true</item>
@@ -38,8 +40,8 @@
         <item name="dokiInactiveIconsColor">@color/tertiary</item>
 <!--        <item name="toolbarStyle">@style/AppTheme.Toolbar</item>-->
 
-        <item name="android:navigationBarColor">@color/bg</item>
-        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
 
     </style>
@@ -103,7 +105,7 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
-        <item name="cornerRadius">16dp</item>
+        <item name="cornerRadius">36dp</item>
         <item name="layout_behavior">com.urbandroid.sleep.gui.fab.FloatingMaterialButtonBehavior</item>
         <item name="iconTint">?android:attr/textColorPrimaryInverse</item>
         <item name="iconPadding">12dp</item>
@@ -114,7 +116,7 @@
 
     <style name="toolbar">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_height">80dp</item>
     </style>
 
 

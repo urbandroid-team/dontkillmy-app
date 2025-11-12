@@ -4,10 +4,12 @@ import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceManager
-import kotlinx.android.synthetic.main.activity_rate.*
+import com.urbandroid.dontkillmyapp.gui.EdgeToEdgeUtil
+import com.urbandroid.dontkillmyapp.gui.ToolbarUtil
 import java.util.concurrent.TimeUnit
 
 class RateActivity : AppCompatActivity() {
@@ -16,6 +18,13 @@ class RateActivity : AppCompatActivity() {
         setContentView(R.layout.activity_rate)
 
         setTitle(R.string.rate)
+
+        val rate = findViewById<View>(R.id.rate);
+        val later = findViewById<View>(R.id.later);
+        val never = findViewById<View>(R.id.never);
+
+        ToolbarUtil.apply(this)
+        EdgeToEdgeUtil.insetsBottom(findViewById<View>(R.id.bottom))
 
         rate.setOnClickListener {
             val url = "$PLAY_STORE_PREFIX$packageName"

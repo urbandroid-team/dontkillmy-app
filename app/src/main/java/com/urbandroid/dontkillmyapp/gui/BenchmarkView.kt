@@ -10,12 +10,13 @@ import android.view.View
 import com.urbandroid.dontkillmyapp.domain.Benchmark
 import java.util.concurrent.TimeUnit
 
-class BenchmarkView  constructor(
+class BenchmarkView(
     context: Context,
     attrs: AttributeSet? = null,
-    defStyleAttr: Int = 0,
-    val benchmark : Benchmark
+    defStyleAttr: Int = 0
 ) : View(context, attrs, defStyleAttr) {
+
+    var benchmark : Benchmark? = null
 
     var p : Paint = Paint()
 
@@ -26,51 +27,62 @@ class BenchmarkView  constructor(
             .displayMetrics.density + 0.5f).toInt()
     }
 
-    override fun onDraw(canvas: Canvas?) {
+    fun refresh() {
+        val latest = Benchmark.load(this.context)
+        latest?.let {
+            benchmark = it
+        }
+
+        invalidate()
+    }
+
+    override fun onDraw(canvas: Canvas) {
         super.onDraw(canvas)
 
-        p.style = Paint.Style.FILL
-        p.color = Color.parseColor("#e57373")
+        benchmark?.let {benchmark ->
 
-        val lines = benchmark.getDuration() / timePerLine
+            p.style = Paint.Style.FILL
+            p.color = Color.parseColor("#e57373")
 
-        canvas?.let {
-            val size = getDip(context, 2).toFloat()
+            val lines = benchmark.getDuration() / timePerLine
 
-            p.color = Color.parseColor("#FB8C00")
+            canvas?.let {
+                val size = getDip(context, 4).toFloat()
 
-            benchmark.mainEvents.forEach{
-                val triangleSize = size * 1.5f
+                p.color = Color.parseColor("#4CAF50")
 
-                val x = computeX(benchmark.from, benchmark.to, it, canvas, size)
-                val y = computeY(benchmark.from, benchmark.to, it, canvas, size)
+                benchmark.workEvents.forEach{
+                    val x = computeX(benchmark.from, benchmark.to, it, canvas, size)
+                    val y = computeY(benchmark.from, benchmark.to, it, canvas, size)
 
-                canvas.drawPath(Path().apply {
-                    moveTo(x-triangleSize, y + triangleSize)
-                    lineTo(x+triangleSize, y + triangleSize)
-                    lineTo(x, y - size)
-                    lineTo(x - triangleSize, y + triangleSize)
-                }, p)
+                    canvas.drawCircle(x, y, size, p)
+                }
+
+                p.color = Color.parseColor("#3F51B5")
+                benchmark.alarmEvents.forEach{
+                    val x = computeX(benchmark.from, benchmark.to, it, canvas, size)
+                    val y = computeY(benchmark.from, benchmark.to, it, canvas, size)
+                    canvas.drawRect(x - size, y - size, x + size, y + size, p)
+                }
+
+                p.color = Color.parseColor("#FB8C00")
+
+                benchmark.mainEvents.forEach{
+                    val triangleSize = size * 1.2f
+
+                    val x = computeX(benchmark.from, benchmark.to, it, canvas, size)
+                    val y = computeY(benchmark.from, benchmark.to, it, canvas, size)
+
+                    canvas.drawPath(Path().apply {
+                        moveTo(x-triangleSize, y + triangleSize)
+                        lineTo(x+triangleSize, y + triangleSize)
+                        lineTo(x, y - size)
+                        lineTo(x - triangleSize, y + triangleSize)
+                    }, p)
+                }
             }
-
-            p.color = Color.parseColor("#4CAF50")
-
-            benchmark.workEvents.forEach{
-                val x = computeX(benchmark.from, benchmark.to, it, canvas, size)
-                val y = computeY(benchmark.from, benchmark.to, it, canvas, size)
-
-                canvas.drawCircle(x, y, size, p)
-            }
-
-            p.color = Color.parseColor("#3F51B5")
-            benchmark.alarmEvents.forEach{
-                val x = computeX(benchmark.from, benchmark.to, it, canvas, size)
-                val y = computeY(benchmark.from, benchmark.to, it, canvas, size)
-                canvas.drawRect(x - size, y - size, x + size, y + size, p)
-            }
-
-
         }
+
 
 
     }

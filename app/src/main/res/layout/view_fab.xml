@@ -5,7 +5,7 @@
     style="@style/ExtendedFab"
     app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
     android:layout_gravity="bottom|center_horizontal"
-    app:icon="@drawable/ic_play_circle_24"
+    app:icon="@drawable/ic_play_circle"
     android:id="@+id/fab"
     android:layout_margin="16dp"
     android:padding="16dp"

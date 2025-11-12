@@ -15,6 +15,7 @@ import android.os.IBinder
 import android.os.PowerManager
 import android.util.Log
 import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationCompat.PRIORITY_MAX
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.ContextCompat
 import androidx.preference.PreferenceManager
@@ -93,13 +94,13 @@ class BenchmarkService : Service() {
             val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
             val channelName = getString(R.string.benchmark);
-            val importance = NotificationManager.IMPORTANCE_LOW;
+            val importance = NotificationManager.IMPORTANCE_MAX;
             val notificationChannel = NotificationChannel(NOTIFICATION_CHANNEL_FOREGROUND, channelName, importance);
             notificationChannel.setShowBadge(false)
             notificationManager.createNotificationChannel(notificationChannel);
 
             val channelNameReport = getString(R.string.report);
-            val importanceReport = NotificationManager.IMPORTANCE_HIGH;
+            val importanceReport = NotificationManager.IMPORTANCE_MAX;
             val notificationChannelReport = NotificationChannel(NOTIFICATION_CHANNEL_REPORT, channelNameReport, importanceReport);
             notificationChannelReport.setShowBadge(true)
             notificationManager.createNotificationChannel(notificationChannelReport);
@@ -119,6 +120,7 @@ class BenchmarkService : Service() {
 
         val notificationBuilder = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_FOREGROUND)
             .setSmallIcon(R.drawable.ic_dkma)
+            .setPriority(PRIORITY_MAX)
             .setChannelId(NOTIFICATION_CHANNEL_FOREGROUND)
             .setColor(ContextCompat.getColor(this, R.color.colorPrimary))
             .setContentIntent(pi)
@@ -148,7 +150,7 @@ class BenchmarkService : Service() {
 
         h.post(mainRunnable)
 
-        registerReceiver(receiver, IntentFilter(ACTION_ALARM));
+        ContextCompat.registerReceiver(this, receiver, IntentFilter(ACTION_ALARM), ContextCompat.RECEIVER_EXPORTED);
         scheduleAlarm()
 
         wakeLock =
@@ -197,7 +199,11 @@ class BenchmarkService : Service() {
         }
 
         with(NotificationManagerCompat.from(this)) {
-            notify(4242, notificationBuilder.build())
+            try {
+                notify(4242, notificationBuilder.build())
+            } catch (e: SecurityException) {
+                Log.i(TAG, "Permission POST NOTIFICATION missing ", e)
+            }
         }
 
     }
@@ -210,29 +216,37 @@ class BenchmarkService : Service() {
 
     fun scheduleAlarm() {
         Log.i(TAG, "Scheduling at alarm ${Date(System.currentTimeMillis() + ALARM_REPEAT_MS)}")
-        when {
-            Build.VERSION.SDK_INT >= Build.VERSION_CODES.M -> {
-                (getSystemService(Context.ALARM_SERVICE) as AlarmManager).setExactAndAllowWhileIdle(
-                    AlarmManager.RTC_WAKEUP,
-                    System.currentTimeMillis() + ALARM_REPEAT_MS,
-                    getAlarmIntent()
-                )
+        try {
+            when {
+                Build.VERSION.SDK_INT >= Build.VERSION_CODES.M -> {
+                    (getSystemService(Context.ALARM_SERVICE) as AlarmManager).setExactAndAllowWhileIdle(
+                        AlarmManager.RTC_WAKEUP,
+                        System.currentTimeMillis() + ALARM_REPEAT_MS,
+                        getAlarmIntent()
+                    )
+                }
+                Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT -> {
+                    (getSystemService(Context.ALARM_SERVICE) as AlarmManager).setExact(
+                        AlarmManager.RTC_WAKEUP,
+                        System.currentTimeMillis() + ALARM_REPEAT_MS,
+                        getAlarmIntent()
+                    )
+                }
+                else -> {
+                    (getSystemService(Context.ALARM_SERVICE) as AlarmManager).set(
+                        AlarmManager.RTC_WAKEUP,
+                        System.currentTimeMillis() + ALARM_REPEAT_MS,
+                        getAlarmIntent()
+                    )
+                }
             }
-            Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT -> {
-                (getSystemService(Context.ALARM_SERVICE) as AlarmManager).setExact(
-                    AlarmManager.RTC_WAKEUP,
-                    System.currentTimeMillis() + ALARM_REPEAT_MS,
-                    getAlarmIntent()
-                )
+        } catch (e: SecurityException) {
+            Log.e(TAG, "Alarm security exception ", e)
+            (getSystemService(Context.ALARM_SERVICE) as AlarmManager).set(
+                AlarmManager.RTC_WAKEUP,
+                System.currentTimeMillis() + ALARM_REPEAT_MS,
+                getAlarmIntent())
             }
-            else -> {
-                (getSystemService(Context.ALARM_SERVICE) as AlarmManager).set(
-                    AlarmManager.RTC_WAKEUP,
-                    System.currentTimeMillis() + ALARM_REPEAT_MS,
-                    getAlarmIntent()
-                )
-            }
-        }
     }
 
     private fun cancelAlarm() {
@@ -266,6 +280,7 @@ class BenchmarkService : Service() {
         var RUNNING : Boolean = false
 
         fun start(context : Context) {
+            RUNNING = true
             Log.i(TAG, "Starting service")
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 context.startForegroundService(Intent(context, BenchmarkService::class.java))
@@ -275,6 +290,7 @@ class BenchmarkService : Service() {
         }
 
         fun stop(context : Context) {
+            RUNNING = false
             context.stopService(Intent(context, BenchmarkService::class.java))
         }
     }

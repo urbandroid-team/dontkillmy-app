@@ -41,30 +41,33 @@
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_margin="32dp"
+        android:id="@+id/bottom"
         app:layout_constraintBottom_toBottomOf="@+id/parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/later"
+            app:cornerRadius="16dp"            android:id="@+id/later"
             android:text="@string/later_button"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"/>
+            android:layout_height="64dp"/>
         <com.google.android.material.button.MaterialButton
+            app:cornerRadius="16dp"
             android:id="@+id/never"
             android:text="@string/never_button"
             style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"/>
+            android:layout_height="64dp"/>
         <com.google.android.material.button.MaterialButton
+            app:cornerRadius="16dp"
             android:id="@+id/rate"
             android:text="@string/rate_button"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_width="0dp"
             android:layout_weight="1"
-            android:layout_height="wrap_content"/>
+            android:layout_height="64dp"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
