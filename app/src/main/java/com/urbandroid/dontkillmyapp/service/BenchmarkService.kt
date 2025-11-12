@@ -115,7 +115,7 @@ class BenchmarkService : Service() {
         Log.i(TAG, "Benchmark $currentBenchmark RUNNING ${currentBenchmark.running}")
 
         val i = Intent(this, ResultActivity::class.java)
-        i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_SINGLE_TOP
         val pi = PendingIntent.getActivity(this, 4242, i, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
 
         val notificationBuilder = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_FOREGROUND)

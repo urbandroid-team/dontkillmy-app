@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
 <string name="start_benchmark">Commencer l\'évaluation</string>
@@ -18,7 +18,7 @@
 <string name="report">Rapport</string>
 <string name="duration">Durée</string>
 <string name="warning_title">Attention</string>
-<string name="warning_text">Veuillez ne pas branchez pas votre téléphone et essayez de ne pas l\'utiliser pendant l\'évaluation.</string>
+<string name="warning_text">Veuillez ne pas branchez votre téléphone et essayez de ne pas l\'utiliser pendant l\'évaluation.</string>
 <string name="cancel">Annuler</string>
 <string name="ok">OK</string>
 <string name="total">Total</string>
@@ -37,20 +37,20 @@
 <item>Courriel</item>
 <item>Autre</item>
 </string-array>
-<string name="how_it_works">Fonctionnement</string>
-<string name="how_it_works_text">L\'évaluation lance un service en arrière-plan avec un verrouillage actif et planifie des taches répétitives dans le fil principal (toutes les 10 secondes), un lanceur de fil personnalisé (toutes les 10 secondes), et planifie des alarmes régulièrement en utilisant AlarmManager.setExactAndAllowWhileIdle (toutes les 10 minutes). Ensuite elle calcule le score en comparant ce qui a été lancé et ce qui est attendu. \n\nLes scores proches de 100% sont de bons résultats – les optimisations de batterie non-standard ne sont pas utilisées. Bien qu\'il est bon de répéter le test dans une semaine, vu que certains OEM peuvent appliquer des limites inactives pendant un certain temps.\n\nLE GRAPHIQUE\n\nChaque colonne dans le graphique représente 5 minutes. Idéalement vous verrez 30 cercles par ligne et un carré toutes les 2 lignes. De plus larges zones blanches indiquent un problème – votre application pourrait ne pas marcher comme prévu si vous ne changez pas les paramètres de votre smartphone. Pour plus d\'informations, allez voir le code source de l\'application sur https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="how_it_works">Comment ça marche ?</string>
+<string name="how_it_works_text">L\'évaluation lance un service en arrière-plan avec un verrouillage actif et planifie des tâches répétitives dans le fil principal (toutes les 10 secondes), un lanceur de fil personnalisé (toutes les 10 secondes), et planifie des alarmes régulièrement en utilisant AlarmManager.setExactAndAllowWhileIdle (toutes les 10 minutes). Ensuite elle calcule le score en comparant ce qui a été lancé et ce qui est attendu. Les scores proches de 100% sont de bons résultats – Les optimisations de batterie non-standard ne sont pas utilisées. Bien qu\'il est bon de répéter le test dans une semaine, vu que certains OEM peuvent appliquer des limites inactives pendant un certain temps. LE GRAPHIQUE: Chaque colonne dans le graphique représente 5 minutes. Idéalement vous verrez 30 cercles par ligne et un carré toutes les 2 lignes. De plus larges zones blanches indiquent un problème – Votre application pourrait ne pas fonctionner comme prévu si vous ne changez pas les paramètres de votre smartphone. Pour plus d\'informations, allez voir le code source de l\'application sur https://github.com/urbandroid-team/dontkillmy-app</string>
 <string name="contact_support">Contacter le support</string>
 <string name="tell_others">Partager</string>
-<string name="tell_others_text">L\'évaluation de DontKillMyApp contrôle les processus en arrière-plan pour mieux faire fonctionner les applications de votre smartphone.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
-<string name="rate">Notez-nous, s\'il vous plaît !</string>
+<string name="tell_others_text">L\'évaluation de DontKillMyApp contrôle les processus en arrière-plan pour mieux faire fonctionner les applications de votre smartphone. https://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">S\'il vous plait, notez nous !</string>
 <string name="rate_button">Noter</string>
 <string name="never_button">Jamais</string>
 <string name="later_button">Plus tard</string>
 <string name="source">Code source</string>
-<string name="rate_text">Nous voulons faire des applications qui fonctionnent même sur les smartphones dont leurs fabricants privilégient la batterie au fonctionnement. \n\nLa meilleure façon de faire connaître ce projet est de noter et commenter cet outil gratuit et libre sur le Play Store. \n\nNous vous remercions beaucoup pour nous aider à rendre Android meilleur !</string>
-<string name="translate">Aidez à traduire l\'application</string>
-<string name="slogan">Faire fonctionner l\'application</string>
-<string name="market_text">L\'application officielle DontKillMyApp est disponible – faites fonctionner vos applications normalement, même si vous n\'utilisez pas un Pixel.
+<string name="rate_text">Nous voulons faire des applications qui fonctionnent même sur les smartphones dont leurs fabricants privilégient la batterie au fonctionnement. La meilleure façon de faire connaître ce projet est de noter et commenter cet outil gratuit et libre sur le Play Store. Nous vous remercions beaucoup pour nous aider à rendre Android meilleur !</string>
+<string name="translate">Ajoutez y votre touche personnelle, aidez nous à traduire l\'application.</string>
+<string name="slogan">Faire fonctionner l\'application.</string>
+<string name="market_text">L\'application officielle DontKillMyApp est disponible – Faites fonctionner vos applications normalement, même si vous n\'utilisez pas un Pixel.
 
 L\'application vous aide à paramétrer les tâches d\'arrière-plan de votre téléphone, afin que vos applications puissent fonctionner pour VOUS même si vous n\'êtes par sur votre écran.
 
@@ -65,13 +65,13 @@ DontKillMyApp est un outil d\'évaluation permettant de savoir comment votre té
 
 Vous pouvez partagez votre rapport depuis l\'application aux gérants du site dontkillmyapp.com, qui les compilent et en font un score négatif.
 
-Comment fonctionne l\'évaluation? (Technique!)
+Comment fonctionne l\'évaluation ? (Technique !)
 
 L\'application lance un service en arrière-plan, qui lance de façon répétitive une tâche, un éxécuteur et lance plusieurs alarmes régulières (AlarmManager.setExactAndAllowWhileIdle). C\'est tout!
 
 Pour plus de détails, regardez le code-source. L\'application est open source, disponible sur https://github.com/urbandroid-team/dontkillmy-app. Merci à Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Autoriser la planification exacte des alarmes</string>
-<string name="exact_alarm_restrictions_summary">Veuillez nous permettre de planifier des alarmes exactes pour tester correctement le traitement d\'arrière-plan basé sur les alarmes de périphérique Yoru.</string>
+<string name="exact_alarm_restrictions_summary">Veuillez nous permettre de programmer des alarmes exactes afin de tester correctement le traitement en arrière-plan basé sur les alarmes de votre appareil.</string>
 <string name="general_error">Quelque chose s\'est mal passé.</string>
-<string name="started">Benchmark est en cours d\'exécution</string>
+<string name="started">Benchmark est en cours d\'exécution.</string>
 </resources>

@@ -68,7 +68,7 @@ class BenchmarkView(
                 p.color = Color.parseColor("#FB8C00")
 
                 benchmark.mainEvents.forEach{
-                    val triangleSize = size * 1.2f
+                    val triangleSize = size * 0.9f
 
                     val x = computeX(benchmark.from, benchmark.to, it, canvas, size)
                     val y = computeY(benchmark.from, benchmark.to, it, canvas, size)

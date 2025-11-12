@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
 <string name="start_benchmark">Benchmarkni boshlash</string>
@@ -69,7 +69,7 @@
  Batafsil ma\'lumot olish uchun kodni tekshiring.  Ilova ochiq manba hisoblanadi: https://github.com/urbandroid-team/dontkillmy-app
  Dokiga alohida rahmat (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Aniq signalni rejalashtirishga ruxsat bering</string>
-<string name="exact_alarm_restrictions_summary">Iltimos, Yoru qurilmasining signal asosida fonni qayta ishlashni to\'g\'ri sinash uchun aniq signallarni rejalashtirishga imkon bering.</string>
+<string name="exact_alarm_restrictions_summary">Iltimos, qurilmangiz signaliga asoslangan fonda ishlov berishni to\'g\'ri tekshirish uchun bizga aniq signallarni rejalashtirishga ruxsat bering.</string>
 <string name="general_error">Nimadir noto\'g\'ri bajarildi.</string>
 <string name="started">Kalitmark ishlamoqda</string>
 </resources>

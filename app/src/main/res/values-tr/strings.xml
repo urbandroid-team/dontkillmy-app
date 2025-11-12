@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
-<string name="start_benchmark">Değerlendirmeyi başlat</string>
-<string name="stop_benchmark">Değerlendirmeyi durdur</string>
-<string name="benchmark">Performans değerlendirmesi</string>
-<string name="running">Değerlendirme çalışıyor (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) durdurmak için dokunun.</string>
-<string name="finished">Değerlendirme bitti, sonuçlar için dokunun</string>
-<string name="already_running">Değerlendirme zaten çalışıyor</string>
-<string name="stop">Durdur</string>
-<string name="clear">Temizle</string>
+<string name="start_benchmark">Karşılaştırma ölçütünü başlat</string>
+<string name="stop_benchmark">Karşılaştırma ölçütünü durdur</string>
+<string name="benchmark">Benchmark</string>
+<string name="running">Benchmark koşusu (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) durdurmak için dokunun.</string>
+<string name="finished">Benchmark tamamlandı, sonuçlar için dokunun</string>
+<string name="already_running">Benchmark zaten çalışıyor</string>
+<string name="stop">Dur</string>
+<string name="clear">Temiz</string>
 <string name="work">İş</string>
 <string name="alarm">Alarm</string>
 <string name="main">Ana</string>
@@ -18,9 +18,9 @@
 <string name="report">Rapor</string>
 <string name="duration">Süre</string>
 <string name="warning_title">Uyarı</string>
-<string name="warning_text">Lütfen telefonuzu şarjdan çıkarın ve değerlendirme boyunca kullanmayın</string>
-<string name="cancel">İptal et</string>
-<string name="ok">Tamam</string>
+<string name="warning_text">Lütfen telefonunuzu şarj cihazından uzak tutun ve tüm kıyaslama boyunca kullanmamaya çalışın.</string>
+<string name="cancel">İptal</string>
+<string name="ok">TAMAM.</string>
 <string name="total">Toplam</string>
 <string-array name="duration_array">
 <item>1 saat</item>
@@ -37,22 +37,42 @@
 <item>E-posta</item>
 <item>Diğer</item>
 </string-array>
-<string name="how_it_works">Nasıl çalışıyor</string>
-<string name="how_it_works_text">Performans değerlendirmesi uyku engelleme ve planlanmış tekrar eden görevler ile bir önplan servisi başlatır.</string>
-<string name="contact_support">Yardım &amp; destek</string>
-<string name="tell_others">Paylaş</string>
-<string name="tell_others_text">DontKillMyApp Benchmark uygulamaların telefonunuzda düzgün çalışması için telefonunuzdaki arkaplan işlemlerini inceler. \n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
-<string name="rate">Lütfen, bizi değerlendirin!</string>
-<string name="rate_button">Değerlendir</string>
+<string name="how_it_works">Nasıl çalışır</string>
+<string name="how_it_works_text">Kıyaslama testi, bir ön plan hizmetini uyandırma kilidiyle başlatır ve ana iş parçacığında (her 10 saniyede bir), özel bir iş parçacığı yürütücüsünde (her 10 saniyede bir) tekrarlayan görevler zamanlar ve AlarmManager.setExactAndAllowWhileIdle kullanarak düzenli alarmlar zamanlar (her 10 dakikada bir). Ardından, yürütülen ile bekleneni karşılaştırarak puanı hesaplar.\n\n%100\'e yakın puanlar iyi sonuçlardır - şu anda standart dışı pil optimizasyonları uygulanmamaktadır. Yine de, bazı OEM\'ler bir süre kullanılmayan uygulamalara sınırlamalar getirebileceğinden, testi bir hafta sonra tekrarlamak iyidir.\n\nGRAFİK\n\nGrafikteki her satır 5 dakikayı temsil eder. İdeal olarak, her satırda 30 daire ve üçgen ve her ikinci satırda bir kare görürsünüz. Daha büyük boşluk bölgeleri bir sorun olduğunu gösterir; telefonunuzun ayarlarını değiştirmezseniz uygulamalarınız istendiği gibi çalışmayabilir. Daha fazla ayrıntı için https://github.com/urbandroid-team/dontkillmy-app adresindeki uygulama kodunu kontrol edin.</string>
+<string name="contact_support">İletişim desteği</string>
+<string name="tell_others">Başkalarına anlatın</string>
+<string name="tell_others_text">DontKillMyApp Benchmark, telefonunuzdaki uygulamaların düzgün çalışmasını sağlamak için telefonunuzun arka plan işlemlerini kontrol eder.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Lütfen bizi değerlendirin!</string>
+<string name="rate_button">Oran</string>
 <string name="never_button">Asla</string>
-<string name="later_button">Sonra</string>
+<string name="later_button">Daha sonra</string>
 <string name="source">Kaynak kodu</string>
-<string name="rate_text">Üreticilerin pil ömrünü işlevselliğe tercih ettiği telefonlarda bile biz uygulamaların çalışmasını istiyoruz.\n\nBu projeyi duyurmada yardım edebileceğiniz en iyi yol, bu ücretsiz ve açık kaynak kodlu uygulamayı PlayStore da değerlendirmek ve yorum yazmak.\n\nAndroid ekosistemini daha güzel bir yer haline getirmeye yardım ettiğiniz için çok teşekkürler.</string>
-<string name="translate">Uygulamayı tercüme etmeye yardım et</string>
-<string name="slogan">Uygulamalar çalışsın</string>
-<string name="market_text">Resmi DontKillMyApp uygulaması burada - Pixel telefonunuz olmasa bile uygulamaların sonunda düzgün çalışmasını sağlayın. Telefonunuzun arka plan görevlerini ayarlamanıza yardımcı olur, böylece uygulamalarınız şu anda ekrana bakmıyorken bile SİZİN için çalışabilir. DontKillMyApp testi ile telefonunuzun nasıl çalıştığını görün ve farklı ayarları test edin. Özellikler: • DKMA testi: Telefonunuzun arka plan uygulamalarını ne kadar agresif bir şekilde öldürdüğünü ölçün • Kılavuzlar: Çoğu arka plan işlem kısıtlamasının üstesinden gelmek için eyleme geçirilebilir adımlar alın • Değişiklik yapın: Kıyaslama raporunuzu dontkillmyapp.com\'da paylaşarak akıllı telefonların akıllı kalmasına yardımcı olun DontKillMyApp, telefon unuzun arka plan işlemlerini ne kadar iyi desteklediğini görmek için bir test aracıdır. Telefonunuzu kurmadan önce ölçebilir, ardından kurulum kılavuzlarını inceleyebilir ve telefonunuzun arka planda ne kadar kaytardığını görmek için tekrar test yapabilirsiniz. Raporunuzu uygulama aracılığıyla, onu derleyen ve genel negatif puanı buna dayandıran dontkillmyapp.com web sitesinin editörleriyle paylaşabilirsiniz. Test nasıl çalışır? (Teknik!) Uygulama, uyandırma kilidi ile bir ön plan hizmetini başlatır ve ana iş parçacığında tekrarlayan görevler, özel bir iş parçacığı yürütücüsü ve düzenli alarmlar (AlarmManager.setExactAndAllowWhileIdle) kurar. Ardından yürütüleni ve bekleneni hesaplar. Bu kadar! Daha fazla ayrıntı için kodu kontrol edin. Uygulama, https://github.com/urbandroid-team/dontkillmy-app adresinde bulunan açık kaynaklıdır. Doki\'ye özel teşekkürler (github.com/doubledotlabs/doki).</string>
-<string name="exact_alarm_restrictions_title">Tam alarm planlamasına izin ver</string>
-<string name="exact_alarm_restrictions_summary">Lütfen Yoru cihaz alarm tabanlı arka plan işlemeyi düzgün bir şekilde test etmek için kesin alarmları planlamamıza izin verin.</string>
-<string name="general_error">Bir şeyler yanlış gitti.</string>
-<string name="started">Benchmark çalışıyor</string>
+<string name="rate_text">Üreticileri işlevsellikten çok pil gücüne önem veren telefonlarda bile uygulamaların çalışmasını sağlamak istiyoruz.\n\nBu projenin görünür olmasına yardımcı olmanın en iyi yolu, Play Store\'da bu ücretsiz ve açık kaynaklı aracı değerlendirip yorum yapmaktır.\n\nAndroid ekosistemini daha iyi bir yer haline getirmemize yardımcı olduğunuz için çok teşekkür ederiz!</string>
+<string name="translate">Uygulamayı çevirmeye yardımcı olun</string>
+<string name="slogan">Uygulamaların çalışmasını sağlayın</string>
+<string name="market_text">Resmi DontKillMyApp uygulaması burada - Pixel telefonunuz olmasa bile uygulamaların artık düzgün çalışmasını sağlayın.
+
+Telefonunuzun arka plan görevlerini ayarlamanıza yardımcı olur, böylece uygulamalarınız şu anda ekrana bakmadığınız zamanlarda bile SİZİN için çalışabilir.
+
+Telefonunuzun nasıl çalıştığını görün ve DontKillMyApp kıyaslama testiyle farklı ayarları test edin.
+
+Özellikler:
+• DKMA kıyaslaması: Telefonunuzun arka plan uygulamalarını ne kadar agresif bir şekilde kapattığını ölçün
+• Kılavuzlar: Çoğu arka plan işlem kısıtlamasının üstesinden gelmek için uygulanabilir adımlar
+• Değişiklik yapın: Kıyaslama raporunuzu dontkillmyapp.com ile paylaşarak akıllı telefonların akıllı kalmasına yardımcı olun
+
+DontKillMyApp, telefonunuzun arka plan işlemlerini ne kadar iyi desteklediğini görmek için bir kıyaslama aracıdır. Telefonunuzu kurmadan önce ölçüm yapabilir, ardından kurulum kılavuzlarını inceleyip tekrar kıyaslama testi yaparak telefonunuzun arka planda ne kadar yavaşladığını görebilirsiniz.
+
+Raporunuzu, uygulamayı derleyen ve genel olumsuz puanı buna göre belirleyen dontkillmyapp.com web sitesinin bakımcılarıyla uygulama aracılığıyla paylaşabilirsiniz.
+
+Kıyaslama nasıl çalışıyor? (Teknik!)
+
+Uygulama, bir ön plan hizmetini uyandırma kilidiyle başlatır ve ana iş parçacığında tekrarlayan görevleri, özel bir iş parçacığı yürütücüsünü ve düzenli alarmları (AlarmManager.setExactAndAllowWhileIdle) zamanlar. Ardından, yürütülen ve beklenen değerleri hesaplar. İşte bu kadar!
+
+Daha fazla ayrıntı için kodu inceleyin. Uygulama, https://github.com/urbandroid-team/dontkillmy-app adresinden açık kaynaklı olarak edinilebilir.
+Doki\'ye özel teşekkürler (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Tam alarm zamanlamasına izin verin</string>
+<string name="exact_alarm_restrictions_summary">Cihazınızın alarm tabanlı arka plan işlemesini düzgün bir şekilde test etmek için lütfen tam alarmları planlamamıza izin verin.</string>
+<string name="general_error">Oops, bir şeyler ters gitti.</string>
+<string name="started">Benchmark başladı!</string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
 <string name="start_benchmark">Bắt đầu kiểm tra</string>
@@ -72,7 +72,7 @@ Cách kiểm chuẩn họat động (Mang tính kĩ thuật).
 Mọi thông tin thêm vui lòng truy cập vào ứng dụng. Ứng dụng này có mã nguồn mở tại https://github.com/urbandroid-team/dontkillmy-app
 Cảm ơn sâu sắc tới Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Cho phép lập lịch báo động chính xác</string>
-<string name="exact_alarm_restrictions_summary">Vui lòng cho phép chúng tôi lên lịch báo động chính xác để kiểm tra đúng cách xử lý nền dựa trên báo động thiết bị Yoru.</string>
+<string name="exact_alarm_restrictions_summary">Vui lòng cho phép chúng tôi lên lịch cảnh báo chính xác để kiểm tra đúng cách quá trình xử lý nền dựa trên cảnh báo trên thiết bị của bạn.</string>
 <string name="general_error">Có gì đó đã sai.</string>
 <string name="started">Điểm chuẩn đang chạy</string>
 </resources>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
 <string name="start_benchmark">Začít měřit</string>
@@ -60,7 +60,7 @@ Nejprve změřtre telefon, pokud je Vaše skóre nízké, udělejte změny podle
 
 Projekt DKMA vyvíjejí a udržují dobrovolníci, kterým není jedno v jakém stavu je Androidí ekosystém a usilují o jeho zlepšení. Tato aplikace má otevřený zdrojový kód, který můžete nalézt na https://github.com/urbandroid-team/dontkillmy-app.</string>
 <string name="exact_alarm_restrictions_title">Povolit přesné plánování poplachu</string>
-<string name="exact_alarm_restrictions_summary">Prosím, dovolte nám naplánovat přesné alarmy a správně otestujte zpracování pozadí založeného na zařízení Yoru.</string>
+<string name="exact_alarm_restrictions_summary">Umožněte nám naplánovat přesné alarmy, abychom mohli řádně otestovat zpracování zařízení na pozadí na základě alarmu.</string>
 <string name="general_error">Něco se pokazilo.</string>
 <string name="started">Benchmark běží</string>
 </resources>

@@ -1,59 +1,56 @@
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">DontKillMyApp</string>
-    <string name="app_name_short">DKMA</string>
-    <string name="start_benchmark">Start benchmark</string>
-    <string name="stop_benchmark">Stop benchmark</string>
-    <string name="benchmark">Benchmark</string>
-    <string name="running">Benchmark running (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) tap to stop.</string>
-    <string name="finished">Benchmark finished, tap for results</string>
-    <string name="already_running">Benchmark is already running</string>
-    <string name="stop">Stop</string>
-    <string name="clear">Clear</string>
-    <string name="work">Work</string>
-    <string name="alarm">Alarm</string>
-    <string name="main">Main</string>
-    <string name="share">Share</string>
-    <string name="share_with">Share with</string>
-    <string name="report">Report</string>
-    <string name="duration">Duration</string>
-    <string name="warning_title">Warning</string>
-    <string name="warning_text">Please keep your phone out of the charger and try to not use it during the entire benchmark.</string>
-    <string name="cancel">Cancel</string>
-    <string name="ok">OK</string>
-    <string name="total">Total</string>
-
-    <string-array name="duration_array">
-        <item>1 hour</item>
-        <item>2 hours</item>
-        <item>3 hours</item>
-        <item>4 hours</item>
-        <item>5 hours</item>
-        <item>6 hours</item>
-        <item>7 hours</item>
-        <item>8 hours</item>
-    </string-array>
-
-    <string-array name="share_array">
-        <item>DontKillMyApp.com</item>
-        <item>Email</item>
-        <item>Other</item>
-    </string-array>
-
-    <string name="how_it_works">How it works</string>
-    <string name="how_it_works_text">The benchmark starts a foreground service with a wake lock and schedules repetitive tasks on the main thread (every 10s), a custom thread executor (every 10s) and schedules regular alarms using AlarmManager.setExactAndAllowWhileIdle (every 10 minutes). Then it calculates the score by comparing executed vs. expected.\n\nScores close to 100% are good results - non-standard battery optimizations are not applied at the moment. Although it is good to repeat the test in a week as some OEMs may apply limits to apps which are not used for a while.\n\nTHE GRAPH\n\nEach row in the graph represents 5 minutes. Ideally you see 30 circles and triangles on each line and one square every second line. Larger regions of white-space indicate a problem - your apps may not work as intended if you won\'t change your phone\'s settings.\n\n\For more details check the apps code at https://github.com/urbandroid-team/dontkillmy-app</string>
-    <string name="contact_support">Contact support</string>
-    <string name="tell_others">Tell others</string>
-    <string name="tell_others_text">DontKillMyApp Benchmark checks your phone background processing to make apps on your phone work properly.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
-    <string name="rate">Please, rate us!</string>
-    <string name="rate_button">Rate</string>
-    <string name="never_button">Never</string>
-    <string name="later_button">Later</string>
-    <string name="source">Source code</string>
-    <string name="rate_text">We want to make apps work even on phones whose manufacturers prefer battery over functionality.\n\nThe best way you can help make this project visible is to rate and comment this free and open source tool on the Play Store.\n\nMany thanks for helping us making the Android eco-system a better place!</string>
-    <string name="translate">Help translate the app</string>
-
-    <string name="slogan">Make apps work</string>
-    <string name="market_text">The official DontKillMyApp app is here - make apps finally work properly even if you do not own a Pixel.
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Start benchmark</string>
+<string name="stop_benchmark">Stop benchmark</string>
+<string name="benchmark">Benchmark</string>
+<string name="running">Benchmark running (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) tap to stop.</string>
+<string name="finished">Benchmark finished, tap for results</string>
+<string name="already_running">Benchmark is already running</string>
+<string name="stop">Stop</string>
+<string name="clear">Clear</string>
+<string name="work">Work</string>
+<string name="alarm">Alarm</string>
+<string name="main">Main</string>
+<string name="share">Share</string>
+<string name="share_with">Share with</string>
+<string name="report">Report</string>
+<string name="duration">Duration</string>
+<string name="warning_title">Warning</string>
+<string name="warning_text">Please keep your phone out of the charger and try to not use it during the entire benchmark.</string>
+<string name="cancel">Cancel</string>
+<string name="ok">OK</string>
+<string name="total">Total</string>
+<string-array name="duration_array">
+<item>1 hour</item>
+<item>2 hours</item>
+<item>3 hours</item>
+<item>4 hours</item>
+<item>5 hours</item>
+<item>6 hours</item>
+<item>7 hours</item>
+<item>8 hours</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Email</item>
+<item>Other</item>
+</string-array>
+<string name="how_it_works">How it works</string>
+<string name="how_it_works_text">The benchmark starts a foreground service with a wake lock and schedules repetitive tasks on the main thread (every 10s), a custom thread executor (every 10s) and schedules regular alarms using AlarmManager.setExactAndAllowWhileIdle (every 10 minutes). Then it calculates the score by comparing executed vs. expected.\n\nScores close to 100% are good results - non-standard battery optimizations are not applied at the moment. Although it is good to repeat the test in a week as some OEMs may apply limits to apps which are not used for a while.\n\nTHE GRAPH\n\nEach row in the graph represents 5 minutes. Ideally you see 30 circles and triangles on each line and one square every second line. Larger regions of white-space indicate a problem - your apps may not work as intended if you won\'t change your phone\'s settings.\n\n\For more details check the apps code at https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Contact support</string>
+<string name="tell_others">Tell others</string>
+<string name="tell_others_text">DontKillMyApp Benchmark checks your phone background processing to make apps on your phone work properly.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Please, rate us!</string>
+<string name="rate_button">Rate</string>
+<string name="never_button">Never</string>
+<string name="later_button">Later</string>
+<string name="source">Source code</string>
+<string name="rate_text">We want to make apps work even on phones whose manufacturers prefer battery over functionality.\n\nThe best way you can help make this project visible is to rate and comment this free and open source tool on the Play Store.\n\nMany thanks for helping us making the Android eco-system a better place!</string>
+<string name="translate">Help translate the app</string>
+<string name="slogan">Make apps work</string>
+<string name="market_text">The official DontKillMyApp app is here - make apps finally work properly even if you do not own a Pixel.
 
 Helps you set up your phone background tasks so that your apps can finally work for YOU even when not looking at the screen right now.
 
@@ -68,18 +65,16 @@ DontKillMyApp is a benchmark tool to see how well does your phone support backgr
 
 You can share your report through the app to the maintainers of the dontkillmyapp.com website who compile it and base the overall negative score on it.
 
+
 How does the benchmark work? (Technical!)
 
 The app starts a foreground service with a wake lock and schedules repetitive task on the main thread, a custom thread executor and schedules regular alarms (AlarmManager.setExactAndAllowWhileIdle). Then it calculates executed vs. expected. That\'s it!
 
 For more details check the code. The app is open source available at https://github.com/urbandroid-team/dontkillmy-app
 Special thanks to Doki (github.com/doubledotlabs/doki).</string>
-
 <string name="exact_alarm_restrictions_title">Allow exact alarm scheduling</string>
 <!-- Now on Android 12 alarm clocks need a permission to be able to scheudle alarms on time -->
-<string name="exact_alarm_restrictions_summary">Please allow us to schedule exact alarms to properly test yoru device alarm-based background processing.</string>
-<string name="general_error">Ops, something when wrong.</string>
-<string name="started">Benchmark running</string>
-
-
+<string name="exact_alarm_restrictions_summary">Please allow us to schedule exact alarms to properly test your device alarm-based background processing.</string>
+<string name="general_error">Oops, something when wrong.</string>
+<string name="started">Benchmark started!</string>
 </resources>

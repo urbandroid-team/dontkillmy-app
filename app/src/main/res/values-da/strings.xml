@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
 <string name="start_benchmark">Start kontrol</string>
@@ -73,7 +73,7 @@ For flere detaljer, tjek koden. App\'en er open-source, og kan findes på https:
 
 Særlig tak til Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Tillad nøjagtig alarmplanlægning</string>
-<string name="exact_alarm_restrictions_summary">Tillad os at planlægge nøjagtige alarmer for korrekt at teste Yoru-enhedsalarmbaseret baggrundsbehandling.</string>
+<string name="exact_alarm_restrictions_summary">Giv os mulighed for at planlægge nøjagtige alarmer for at teste din enheds alarmbaserede baggrundsbehandling korrekt.</string>
 <string name="general_error">Noget gik galt.</string>
 <string name="started">Benchmark kører</string>
 </resources>

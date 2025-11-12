@@ -43,6 +43,7 @@ class ResultActivity : AppCompatActivity(), CoroutineScope by MainScope() {
 
     var benchmarkView : BenchmarkView? = null
 
+    var reportLayout : ViewGroup? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -75,7 +76,7 @@ class ResultActivity : AppCompatActivity(), CoroutineScope by MainScope() {
         val contentView = parent[1] as ViewGroup
 
         val inflater = getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
-        val reportLayout = inflater.inflate(R.layout.view_report, null) as ViewGroup
+        reportLayout = inflater.inflate(R.layout.view_report, null) as ViewGroup
 
         contentView.removeAllViews()
         contentView.addView(reportLayout)
@@ -102,16 +103,16 @@ class ResultActivity : AppCompatActivity(), CoroutineScope by MainScope() {
         try {
             Log.i(TAG, currentBenchmark.toString())
 
-            val chart = reportLayout.findViewById<ViewGroup>(R.id.chart)
+            val chart = reportLayout?.findViewById<ViewGroup>(R.id.chart)
             benchmarkView = BenchmarkView(this, null, 0)
-            chart.addView(benchmarkView)
+            chart?.addView(benchmarkView)
 
             benchmarkView?.refresh()
 
-            reportLayout.findViewById<TextView>(R.id.total).text = Benchmark.formatResult(currentBenchmark.getTotalResult())
-            reportLayout.findViewById<TextView>(R.id.work).text = Benchmark.formatResult(currentBenchmark.getWorkResult())
-            reportLayout.findViewById<TextView>(R.id.alarm).text = Benchmark.formatResult(currentBenchmark.getAlarmResult())
-            reportLayout.findViewById<TextView>(R.id.main).text = Benchmark.formatResult(currentBenchmark.getMainResult())
+            reportLayout?.findViewById<TextView>(R.id.total)?.text = Benchmark.formatResult(currentBenchmark.getTotalResult())
+            reportLayout?.findViewById<TextView>(R.id.work)?.text = Benchmark.formatResult(currentBenchmark.getWorkResult())
+            reportLayout?.findViewById<TextView>(R.id.alarm)?.text = Benchmark.formatResult(currentBenchmark.getAlarmResult())
+            reportLayout?.findViewById<TextView>(R.id.main)?.text = Benchmark.formatResult(currentBenchmark.getMainResult())
         } catch (e: Exception) {
             Log.e(TAG, "Cannot load benchmark - garbled - obfuscation", e)
             Benchmark.clear(this)
@@ -276,6 +277,14 @@ class ResultActivity : AppCompatActivity(), CoroutineScope by MainScope() {
 
     fun refreshState() {
         benchmarkView?.refresh()
+        val currentBenchmark = Benchmark.load(this)
+        currentBenchmark?.let { currentBenchmark ->
+            reportLayout?.findViewById<TextView>(R.id.total)?.text = Benchmark.formatResult(currentBenchmark.getTotalResult())
+            reportLayout?.findViewById<TextView>(R.id.work)?.text = Benchmark.formatResult(currentBenchmark.getWorkResult())
+            reportLayout?.findViewById<TextView>(R.id.alarm)?.text = Benchmark.formatResult(currentBenchmark.getAlarmResult())
+            reportLayout?.findViewById<TextView>(R.id.main)?.text = Benchmark.formatResult(currentBenchmark.getMainResult())
+        }
+
         menuShare?.setVisible(!BenchmarkService.RUNNING)
 
         if (BenchmarkService.RUNNING) {

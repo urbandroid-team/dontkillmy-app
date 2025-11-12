@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
 <string name="start_benchmark">Porneşte testul</string>
@@ -49,7 +49,7 @@
 <string name="translate">Help translate the app</string>
 <string name="slogan">Facem aplicaţile să funcţioneze</string>
 <string name="exact_alarm_restrictions_title">Permiteți programarea exactă a alarmelor</string>
-<string name="exact_alarm_restrictions_summary">Vă rugăm să ne permiteți să programăm alarme exacte pentru a testa corect procesarea fundalului bazată pe alarmă.</string>
+<string name="exact_alarm_restrictions_summary">Vă rugăm să ne permiteți să programăm alarmele exacte pentru a testa în mod corespunzător procesarea în fundal bazată pe alarme a dispozitivului dvs.</string>
 <string name="general_error">Ceva n-a mers bine.</string>
 <string name="started">Benchmark funcționează</string>
 </resources>

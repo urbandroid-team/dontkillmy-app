@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
 <string name="start_benchmark">Rozpocznij benchmark</string>
@@ -52,28 +52,44 @@
 <string name="slogan">Spraw, by aplikacje działały</string>
 <string name="market_text">Oficjalna aplikacja DontKillMyApp już tu jest - spraw, aby aplikacje w końcu działały poprawnie, nawet jeśli nie masz Pixel\'a.
 
+
 Pomaga ustawić zadania w tle tak, aby twoje aplikacje działały dla CIEBIE, nawet jeśli nie używasz swojego telefonu.
+
 
 Zobacz jak działa Twój telefon i przetestuj różne ustawienia poprzez benchmark w aplikacji DontKillMyApp.
 
+
 Funkcje:
+
 • Benchmark DKMA: Sprawdź jak agresywnie twój telefon \'zabija\' procesy w tle
-• Poradniki: Uzyskaj wykonywalne kroki, do pokonania większość restrykcji dla procesów w tle
-• Zrób zmianę:️ Pomóż smartfonom zostać smart poprzez udostępnienie swojego benchmarku na stronie dontkillmyapp.com
 
-DontKillMyApp jest narzędziem do benchmarków. Pozwala na zobaczenie jak dobrze twój telefon wspiera procesy w tle. Możesz sprawdzić, jak twój telefon wypadnie przed zastosowaniem własnych ustawień, a następnie ustawić swój telefon i przeprowadzić benchmark ponownie.
+• Poradniki: Uzyskaj praktyczne kroki, aby pokonać ograniczenia uruchamianych procesów w tle
 
-Możesz udostępnić swój raport poprzez aplikacje do właścicieli strony dontkillmyapp.com, którzy go skompilują i oprą na nim ogólny negatywny wynik.
+• Wprowadź zmiany:️ Pomóż smartfonom zostać smart poprzez udostępnienie swojego benchmarku na stronie dontkillmyapp.com
+
+
+DontKillMyApp jest narzędziem benchmark, który pozwala zobaczyć jak telefon wspiera procesy działające w tle. Możesz sprawdzić, jak twój telefon wypadnie przed zastosowaniem własnych ustawień, a następnie skonfigurować swój telefon i przeprowadzić benchmark ponownie.
+
+
+Możesz udostępnić swój raport poprzez aplikacje do właścicieli strony dontkillmyapp.com, którzy go skompilują i oprą na nim ogólny regorystyczny wynik.
+
 
 Jak działa benchmark?
+
 (Techniczne!)
 
-Aplikacja startuje jako pierwszoplanowy serwis z blokadą budzenia i planuje powtarzające się zadania na głównym wątku, na niestandardowym wykonawcy wątku i ustawia zwykłe budziki (AlarmManager.setExactAndAllowWhileIdle). Następnie, oblicza wynik poprzez porównanie wykonanego z oczekiwanym wynikiem. To wszystko!
+
+Aplikacja startuje jako pierwszoplanowy serwis z blokadą alarmów i planuje powtarzające się zadania na głównym wąteku, jako niestandardowy wykonawca wątku, wykonując regularne alarmy (AlarmManager.setExactAndAllowWhileIdle). Następnie, oblicza wynik poprzez porównanie wykonanego z oczekiwanym wynikiem. To wszystko!
+
+
 
 Po więcej szczegółów sprawdź kod aplikacji. Aplikacja ma otwarte źródło dostępne na stronie https://github.com/urbandroid-team/dontkillmy-app
-Specjalne podziękowania dla Doki (github.com/doubledotlabs/doki).</string>
+
+Specjalne podziękowania dla Doki (github.com/doubledotlabs/doki).
+
+* Alarm - klasa obiektów występująca w języku programowania Android.</string>
 <string name="exact_alarm_restrictions_title">Zezwalaj na dokładne planowanie alarmów</string>
-<string name="exact_alarm_restrictions_summary">Pozwól nam zaplanować dokładne alarmy, aby właściwie przetestować przetwarzanie tła oparte na alarmach Joru.</string>
+<string name="exact_alarm_restrictions_summary">Prosimy o umożliwienie nam zaplanowania dokładnych alarmów w celu prawidłowego przetestowania przetwarzania w tle opartego na alarmach urządzenia.</string>
 <string name="general_error">Coś poszło nie tak.</string>
-<string name="started">Benchmark działa</string>
+<string name="started">Benchmark uruchomiony!</string>
 </resources>
