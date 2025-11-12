@@ -58,13 +58,6 @@ class BenchmarkView(
                     canvas.drawCircle(x, y, size, p)
                 }
 
-                p.color = Color.parseColor("#3F51B5")
-                benchmark.alarmEvents.forEach{
-                    val x = computeX(benchmark.from, benchmark.to, it, canvas, size)
-                    val y = computeY(benchmark.from, benchmark.to, it, canvas, size)
-                    canvas.drawRect(x - size, y - size, x + size, y + size, p)
-                }
-
                 p.color = Color.parseColor("#FB8C00")
 
                 benchmark.mainEvents.forEach{
@@ -80,10 +73,15 @@ class BenchmarkView(
                         lineTo(x - triangleSize, y + triangleSize)
                     }, p)
                 }
+
+                p.color = Color.parseColor("#3F51B5")
+                benchmark.alarmEvents.forEach{
+                    val x = computeX(benchmark.from, benchmark.to, it, canvas, size)
+                    val y = computeY(benchmark.from, benchmark.to, it, canvas, size)
+                    canvas.drawRect(x - size, y - size, x + size, y + size, p)
+                }
             }
         }
-
-
 
     }
 
