@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">ਬੈਂਚਮਾਰਕ ਸ਼ੁਰੂ ਕਰੋ</string>
+<string name="stop_benchmark">ਬੈਂਚਮਾਰਕ ਬੰਦ ਕਰੋ</string>
+<string name="benchmark">ਬੈਂਚਮਾਰਕ</string>
+<string name="running">ਬੈਂਚਮਾਰਕ ਚੱਲ ਰਿਹਾ ਹੈ (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) ਰੋਕਣ ਲਈ ਟੈਪ ਕਰੋ।</string>
+<string name="finished">ਬੈਂਚਮਾਰਕ ਪੂਰਾ ਹੋਇਆ, ਨਤੀਜਿਆਂ ਲਈ ਟੈਪ ਕਰੋ</string>
+<string name="already_running">ਬੈਂਚਮਾਰਕ ਪਹਿਲਾਂ ਹੀ ਚੱਲ ਰਿਹਾ ਹੈ।</string>
+<string name="stop">ਰੂਕੋ</string>
+<string name="clear">ਸਾਫ਼</string>
+<string name="work">ਕੰਮ</string>
+<string name="alarm">ਅਲਾਰਮ</string>
+<string name="main">ਮੁੱਖ</string>
+<string name="share">ਸਾਂਝਾ ਕਰੋ</string>
+<string name="share_with">ਇਹਨਾਂ ਨਾਲ ਸਾਂਝਾ ਕਰੋ</string>
+<string name="report">ਰਿਪੋਰਟ ਕਰੋ</string>
+<string name="duration">ਮਿਆਦ</string>
+<string name="warning_title">ਚੇਤਾਵਨੀ</string>
+<string name="warning_text">ਕਿਰਪਾ ਕਰਕੇ ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਚਾਰਜਰ ਤੋਂ ਬਾਹਰ ਰੱਖੋ ਅਤੇ ਕੋਸ਼ਿਸ਼ ਕਰੋ ਕਿ ਪੂਰੇ ਬੈਂਚਮਾਰਕ ਦੌਰਾਨ ਇਸਨੂੰ ਨਾ ਵਰਤੋ।</string>
+<string name="cancel">ਰੱਦ ਕਰੋ</string>
+<string name="ok">ਠੀਕ ਹੈ</string>
+<string name="total">ਕੁੱਲ</string>
+<string-array name="duration_array">
+<item>1 ਘੰਟਾ</item>
+<item>2 ਘੰਟੇ</item>
+<item>3 ਘੰਟੇ</item>
+<item>4 ਘੰਟੇ</item>
+<item>5 ਘੰਟੇ</item>
+<item>6 ਘੰਟੇ</item>
+<item>7 ਘੰਟੇ</item>
+<item>8 ਘੰਟੇ</item>
+</string-array>
+<string-array name="share_array">
+<item>ਡੋਂਟਕਿਲਮਾਈਐਪ.ਕਾੱਮ</item>
+<item>ਈਮੇਲ</item>
+<item>ਹੋਰ</item>
+</string-array>
+<string name="how_it_works">ਇਹ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ</string>
+<string name="how_it_works_text">ਬੈਂਚਮਾਰਕ ਇੱਕ ਵੇਕ ਲਾਕ ਨਾਲ ਇੱਕ ਫੋਰਗਰਾਉਂਡ ਸੇਵਾ ਸ਼ੁਰੂ ਕਰਦਾ ਹੈ ਅਤੇ ਮੁੱਖ ਥ੍ਰੈੱਡ (ਹਰ 10 ਸਕਿੰਟ), ਇੱਕ ਕਸਟਮ ਥ੍ਰੈੱਡ ਐਗਜ਼ੀਕਿਊਟਰ (ਹਰ 10 ਸਕਿੰਟ) \'ਤੇ ਦੁਹਰਾਉਣ ਵਾਲੇ ਕੰਮਾਂ ਨੂੰ ਸ਼ਡਿਊਲ ਕਰਦਾ ਹੈ ਅਤੇ AlarmManager.setExactAndAllowWhileIdle (ਹਰ 10 ਮਿੰਟ) ਦੀ ਵਰਤੋਂ ਕਰਕੇ ਨਿਯਮਤ ਅਲਾਰਮ ਨੂੰ ਸ਼ਡਿਊਲ ਕਰਦਾ ਹੈ। ਫਿਰ ਇਹ ਐਗਜ਼ੀਕਿਊਟ ਕੀਤੇ ਬਨਾਮ ਉਮੀਦ ਕੀਤੀ ਗਈ ਤੁਲਨਾ ਕਰਕੇ ਸਕੋਰ ਦੀ ਗਣਨਾ ਕਰਦਾ ਹੈ।\n\n100% ਦੇ ਨੇੜੇ ਸਕੋਰ ਚੰਗੇ ਨਤੀਜੇ ਹਨ - ਇਸ ਸਮੇਂ ਗੈਰ-ਮਿਆਰੀ ਬੈਟਰੀ ਅਨੁਕੂਲਤਾ ਲਾਗੂ ਨਹੀਂ ਕੀਤੀ ਜਾਂਦੀ ਹੈ। ਹਾਲਾਂਕਿ ਇੱਕ ਹਫ਼ਤੇ ਵਿੱਚ ਟੈਸਟ ਨੂੰ ਦੁਹਰਾਉਣਾ ਚੰਗਾ ਹੈ ਕਿਉਂਕਿ ਕੁਝ OEM ਉਹਨਾਂ ਐਪਾਂ \'ਤੇ ਸੀਮਾਵਾਂ ਲਾਗੂ ਕਰ ਸਕਦੇ ਹਨ ਜੋ ਕੁਝ ਸਮੇਂ ਲਈ ਨਹੀਂ ਵਰਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ।\n\nਗ੍ਰਾਫ\n\nਗ੍ਰਾਫ ਵਿੱਚ ਹਰੇਕ ਕਤਾਰ 5 ਮਿੰਟਾਂ ਨੂੰ ਦਰਸਾਉਂਦੀ ਹੈ। ਆਦਰਸ਼ਕ ਤੌਰ \'ਤੇ ਤੁਸੀਂ ਹਰੇਕ ਲਾਈਨ \'ਤੇ 30 ਚੱਕਰ ਅਤੇ ਤਿਕੋਣ ਅਤੇ ਹਰ ਦੂਜੀ ਲਾਈਨ ਵਿੱਚ ਇੱਕ ਵਰਗ ਦੇਖਦੇ ਹੋ। ਖਾਲੀ ਥਾਂ ਦੇ ਵੱਡੇ ਖੇਤਰ ਸਮੱਸਿਆ ਦਾ ਸੰਕੇਤ ਦਿੰਦੇ ਹਨ - ਜੇਕਰ ਤੁਸੀਂ ਆਪਣੇ ਫ਼ੋਨ ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਨਹੀਂ ਬਦਲਦੇ ਤਾਂ ਹੋ ਸਕਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀਆਂ ਐਪਾਂ ਇਰਾਦੇ ਅਨੁਸਾਰ ਕੰਮ ਨਾ ਕਰਨ।\n\n\ਵਧੇਰੇ ਜਾਣਕਾਰੀ ਲਈ https://github.com/urbandroid-team/dontkillmy-app \'ਤੇ ਐਪਸ ਕੋਡ ਦੀ ਜਾਂਚ ਕਰੋ।</string>
+<string name="contact_support">ਸਹਾਇਤਾ ਨਾਲ ਸੰਪਰਕ ਕਰੋ</string>
+<string name="tell_others">ਦੂਜਿਆਂ ਨੂੰ ਦੱਸੋ</string>
+<string name="tell_others_text">DontKillMyApp ਬੈਂਚਮਾਰਕ ਤੁਹਾਡੇ ਫ਼ੋਨ ਦੀਆਂ ਐਪਾਂ ਨੂੰ ਸਹੀ ਢੰਗ ਨਾਲ ਕੰਮ ਕਰਨ ਲਈ ਤੁਹਾਡੇ ਫ਼ੋਨ ਦੀ ਬੈਕਗ੍ਰਾਊਂਡ ਪ੍ਰੋਸੈਸਿੰਗ ਦੀ ਜਾਂਚ ਕਰਦਾ ਹੈ।\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">ਕਿਰਪਾ ਕਰਕੇ, ਸਾਨੂੰ ਦਰਜਾ ਦਿਓ!</string>
+<string name="rate_button">ਰੇਟ ਕਰੋ</string>
+<string name="never_button">ਕਦੇ ਨਹੀਂ</string>
+<string name="later_button">ਬਾਅਦ ਵਿੱਚ</string>
+<string name="source">ਸਰੋਤ ਕੋਡ</string>
+<string name="rate_text">ਅਸੀਂ ਉਨ੍ਹਾਂ ਫ਼ੋਨਾਂ \'ਤੇ ਵੀ ਐਪਸ ਨੂੰ ਕੰਮ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਜਿਨ੍ਹਾਂ ਦੇ ਨਿਰਮਾਤਾ ਕਾਰਜਸ਼ੀਲਤਾ ਨਾਲੋਂ ਬੈਟਰੀ ਨੂੰ ਤਰਜੀਹ ਦਿੰਦੇ ਹਨ।\n\nਇਸ ਪ੍ਰੋਜੈਕਟ ਨੂੰ ਦ੍ਰਿਸ਼ਮਾਨ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਨ ਦਾ ਸਭ ਤੋਂ ਵਧੀਆ ਤਰੀਕਾ ਹੈ Play Store \'ਤੇ ਇਸ ਮੁਫ਼ਤ ਅਤੇ ਓਪਨ ਸੋਰਸ ਟੂਲ ਨੂੰ ਰੇਟ ਕਰਨਾ ਅਤੇ ਟਿੱਪਣੀ ਕਰਨਾ।\n\nAndroid ਈਕੋ-ਸਿਸਟਮ ਨੂੰ ਇੱਕ ਬਿਹਤਰ ਜਗ੍ਹਾ ਬਣਾਉਣ ਵਿੱਚ ਸਾਡੀ ਮਦਦ ਕਰਨ ਲਈ ਬਹੁਤ ਧੰਨਵਾਦ!</string>
+<string name="translate">ਐਪ ਦਾ ਅਨੁਵਾਦ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰੋ</string>
+<string name="slogan">ਐਪਾਂ ਨੂੰ ਕੰਮ ਕਰਨ ਦਿਓ</string>
+<string name="market_text">ਅਧਿਕਾਰਤ DontKillMyApp ਐਪ ਇੱਥੇ ਹੈ - ਐਪਸ ਨੂੰ ਅੰਤ ਵਿੱਚ ਸਹੀ ਢੰਗ ਨਾਲ ਕੰਮ ਕਰਨ ਦਿਓ ਭਾਵੇਂ ਤੁਹਾਡੇ ਕੋਲ Pixel ਨਾ ਹੋਵੇ। 
+
+ਤੁਹਾਡੇ ਫ਼ੋਨ ਦੇ ਬੈਕਗ੍ਰਾਊਂਡ ਟਾਸਕ ਸੈੱਟ ਕਰਨ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ ਤੁਹਾਡੀਆਂ ਐਪਸ ਅੰਤ ਵਿੱਚ ਤੁਹਾਡੇ ਲਈ ਕੰਮ ਕਰ ਸਕਣ ਭਾਵੇਂ ਤੁਸੀਂ ਹੁਣੇ ਸਕ੍ਰੀਨ ਵੱਲ ਨਾ ਦੇਖ ਰਹੇ ਹੋ। 
+
+ਦੇਖੋ ਕਿ ਤੁਹਾਡਾ ਫ਼ੋਨ ਕਿਵੇਂ ਚੱਲ ਰਿਹਾ ਹੈ ਅਤੇ DontKillMyApp ਬੈਂਚਮਾਰਕ ਨਾਲ ਵੱਖ-ਵੱਖ ਸੈਟਿੰਗਾਂ ਦੀ ਜਾਂਚ ਕਰੋ। 
+
+ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ: 
+• DKMA ਬੈਂਚਮਾਰਕ: ਮਾਪੋ ਕਿ ਤੁਹਾਡਾ ਫ਼ੋਨ ਬੈਕਗ੍ਰਾਊਂਡ ਐਪਸ ਨੂੰ ਕਿੰਨੀ ਹਮਲਾਵਰ ਢੰਗ ਨਾਲ ਮਾਰ ਰਿਹਾ ਹੈ 
+• ਗਾਈਡਾਂ: ਜ਼ਿਆਦਾਤਰ ਬੈਕਗ੍ਰਾਊਂਡ ਪ੍ਰਕਿਰਿਆ ਪਾਬੰਦੀਆਂ ਨੂੰ ਦੂਰ ਕਰਨ ਲਈ ਕਾਰਵਾਈਯੋਗ ਕਦਮ ਪ੍ਰਾਪਤ ਕਰੋ 
+• ਇੱਕ ਤਬਦੀਲੀ ਕਰੋ: ️ dontkillmyapp.com \'ਤੇ ਆਪਣੀ ਬੈਂਚਮਾਰਕ ਰਿਪੋਰਟ ਸਾਂਝੀ ਕਰਕੇ ਸਮਾਰਟਫ਼ੋਨਾਂ ਨੂੰ ਸਮਾਰਟ ਰਹਿਣ ਵਿੱਚ ਮਦਦ ਕਰੋ 
+
+DontKillMyApp ਇੱਕ ਬੈਂਚਮਾਰਕ ਟੂਲ ਹੈ ਇਹ ਦੇਖਣ ਲਈ ਕਿ ਤੁਹਾਡਾ ਫ਼ੋਨ ਬੈਕਗ੍ਰਾਊਂਡ ਪ੍ਰੋਸੈਸਿੰਗ ਦਾ ਕਿੰਨੀ ਚੰਗੀ ਤਰ੍ਹਾਂ ਸਮਰਥਨ ਕਰਦਾ ਹੈ। ਤੁਸੀਂ ਆਪਣੇ ਫ਼ੋਨ ਨੂੰ ਸੈੱਟਅੱਪ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਮਾਪ ਸਕਦੇ ਹੋ, ਫਿਰ ਸੈੱਟਅੱਪ ਗਾਈਡਾਂ ਅਤੇ ਬੈਂਚਮਾਰਕ ਨੂੰ ਦੁਬਾਰਾ ਦੇਖ ਸਕਦੇ ਹੋ ਕਿ ਤੁਹਾਡਾ ਫ਼ੋਨ ਬੈਕਗ੍ਰਾਊਂਡ ਵਿੱਚ ਕਿੰਨਾ ਢਿੱਲਾ ਰਿਹਾ ਹੈ। 
+
+ਤੁਸੀਂ ਐਪ ਰਾਹੀਂ ਆਪਣੀ ਰਿਪੋਰਟ dontkillmyapp.com ਵੈੱਬਸਾਈਟ ਦੇ ਰੱਖ-ਰਖਾਅ ਕਰਨ ਵਾਲਿਆਂ ਨਾਲ ਸਾਂਝੀ ਕਰ ਸਕਦੇ ਹੋ ਜੋ ਇਸਨੂੰ ਕੰਪਾਇਲ ਕਰਦੇ ਹਨ ਅਤੇ ਇਸ \'ਤੇ ਸਮੁੱਚੇ ਨਕਾਰਾਤਮਕ ਸਕੋਰ ਨੂੰ ਅਧਾਰ ਬਣਾਉਂਦੇ ਹਨ। 
+
+ਬੈਂਚਮਾਰਕ ਕਿਵੇਂ ਕੰਮ ਕਰਦਾ ਹੈ? (ਤਕਨੀਕੀ!) 
+
+ਐਪ ਇੱਕ ਵੇਕ ਲਾਕ ਨਾਲ ਇੱਕ ਫੋਰਗਰਾਉਂਡ ਸੇਵਾ ਸ਼ੁਰੂ ਕਰਦੀ ਹੈ ਅਤੇ ਮੁੱਖ ਥ੍ਰੈਡ, ਇੱਕ ਕਸਟਮ ਥ੍ਰੈਡ ਐਗਜ਼ੀਕਿਊਟਰ \'ਤੇ ਦੁਹਰਾਉਣ ਵਾਲੇ ਕੰਮ ਨੂੰ ਸ਼ਡਿਊਲ ਕਰਦੀ ਹੈ ਅਤੇ ਨਿਯਮਤ ਅਲਾਰਮ (AlarmManager.setExactAndAllowWhileIdle) ਨੂੰ ਸ਼ਡਿਊਲ ਕਰਦੀ ਹੈ। ਫਿਰ ਇਹ ਐਗਜ਼ੀਕਿਊਟ ਕੀਤੇ ਬਨਾਮ ਉਮੀਦ ਕੀਤੇ ਗਏ ਦੀ ਗਣਨਾ ਕਰਦੀ ਹੈ। ਬੱਸ! 
+
+ਹੋਰ ਵੇਰਵਿਆਂ ਲਈ ਕੋਡ ਦੀ ਜਾਂਚ ਕਰੋ। ਐਪ ਓਪਨ ਸੋਰਸ ਹੈ ਜੋ https://github.com/urbandroid-team/dontkillmy-app \'ਤੇ ਉਪਲਬਧ ਹੈ 
+ਡੋਕੀ (github.com/doubledotlabs/doki) ਦਾ ਵਿਸ਼ੇਸ਼ ਧੰਨਵਾਦ।</string>
+<string name="exact_alarm_restrictions_title">ਸਹੀ ਅਲਾਰਮ ਸ਼ਡਿਊਲਿੰਗ ਦੀ ਆਗਿਆ ਦਿਓ</string>
+<string name="exact_alarm_restrictions_summary">ਕਿਰਪਾ ਕਰਕੇ ਸਾਨੂੰ ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਦੇ ਅਲਾਰਮ-ਅਧਾਰਿਤ ਬੈਕਗ੍ਰਾਊਂਡ ਪ੍ਰੋਸੈਸਿੰਗ ਦੀ ਸਹੀ ਢੰਗ ਨਾਲ ਜਾਂਚ ਕਰਨ ਲਈ ਸਹੀ ਅਲਾਰਮ ਸ਼ਡਿਊਲ ਕਰਨ ਦੀ ਇਜਾਜ਼ਤ ਦਿਓ।</string>
+<string name="general_error">ਓਹ, ਕੁਝ ਗਲਤ ਹੋਣ \'ਤੇ।</string>
+<string name="started">ਬੈਂਚਮਾਰਕ ਸ਼ੁਰੂ ਹੋ ਗਿਆ!</string>
+</resources>

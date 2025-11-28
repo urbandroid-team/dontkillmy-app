@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">ବେଞ୍ଚମାର୍କ ଆରମ୍ଭ କରନ୍ତୁ</string>
+<string name="stop_benchmark">ବେଞ୍ଚମାର୍କ ବନ୍ଦ କରନ୍ତୁ</string>
+<string name="benchmark">ବେଞ୍ଚମାର୍କ</string>
+<string name="running">ବେଞ୍ଚମାର୍କ ଚାଲୁଛି (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) ବନ୍ଦ କରିବାକୁ ଟାପ୍ କରନ୍ତୁ।</string>
+<string name="finished">ବେଞ୍ଚମାର୍କ ସମାପ୍ତ ହୋଇଛି, ଫଳାଫଳ ପାଇଁ ଟାପ୍ କରନ୍ତୁ</string>
+<string name="already_running">ବେଞ୍ଚମାର୍କ ପୂର୍ବରୁ ଚାଲୁଛି</string>
+<string name="stop">ବନ୍ଦ କରନ୍ତୁ</string>
+<string name="clear">ଖାଲି କରନ୍ତୁ</string>
+<string name="work">କାମ</string>
+<string name="alarm">ଆଲାରାମ୍</string>
+<string name="main">ମୁଖ୍ୟ</string>
+<string name="share">ସେୟାର୍‍ କରନ୍ତୁ</string>
+<string name="share_with">ଏହାଙ୍କ ସହ ସେୟାର୍‌ କରନ୍ତୁ</string>
+<string name="report">ରିପୋର୍ଟ କରନ୍ତୁ</string>
+<string name="duration">ଅବଧି</string>
+<string name="warning_title">ଚେତାବନୀ</string>
+<string name="warning_text">ଦୟାକରି ଆପଣଙ୍କ ଫୋନକୁ ଚାର୍ଜର ବାହାରେ ରଖନ୍ତୁ ଏବଂ ସମଗ୍ର ବେଞ୍ଚମାର୍କ ସମୟରେ ଏହାକୁ ବ୍ୟବହାର ନ କରିବାକୁ ଚେଷ୍ଟା କରନ୍ତୁ।</string>
+<string name="cancel">ବାତିଲ କରନ୍ତୁ</string>
+<string name="ok">ଠିକ୍ ଅଛି</string>
+<string name="total">ମୋଟ</string>
+<string-array name="duration_array">
+<item>1 ଘଣ୍ଟା</item>
+<item>୨ ଘଣ୍ଟା</item>
+<item>୩ ଘଣ୍ଟା</item>
+<item>୪ ଘଣ୍ଟା</item>
+<item>୫ ଘଣ୍ଟା</item>
+<item>6 ଘଣ୍ଟା</item>
+<item>୭ ଘଣ୍ଟା</item>
+<item>8 ଘଣ୍ଟା</item>
+</string-array>
+<string-array name="share_array">
+<item>ଡଣ୍ଟକିଲ୍‌ମାଇଆପ୍‌.କମ୍‌</item>
+<item>ଇମେଲ୍</item>
+<item>ଅନ୍ୟାନ୍ୟ</item>
+</string-array>
+<string name="how_it_works">ଏହା କିପରି କାମ କରେ</string>
+<string name="how_it_works_text">ବେଞ୍ଚମାର୍କ ଏକ ୱେକ୍ ଲକ୍ ସହିତ ଏକ ଫୋରଗ୍ରାଉଣ୍ଡ ସେବା ଆରମ୍ଭ କରେ ଏବଂ ମୁଖ୍ୟ ଥ୍ରେଡ୍ (ପ୍ରତି 10 ସେକେଣ୍ଡ), ଏକ କଷ୍ଟମ୍ ଥ୍ରେଡ୍ ଏକଜିକ୍ୟୁଟର (ପ୍ରତି 10 ସେକେଣ୍ଡ) ରେ ପୁନରାବୃତ୍ତି କାର୍ଯ୍ୟଗୁଡ଼ିକୁ ସୂଚୀବଦ୍ଧ କରେ ଏବଂ AlarmManager.setExactAndAllowWhileIdle (ପ୍ରତି 10 ମିନିଟ୍) ବ୍ୟବହାର କରି ନିୟମିତ ଆଲାର୍ମଗୁଡ଼ିକୁ ସୂଚୀବଦ୍ଧ କରେ। ତା\'ପରେ ଏହା କାର୍ଯ୍ୟକାରୀ ହୋଇଥିବା ବନାମ ଆଶା କରାଯାଇଥିବା ତୁଳନା କରି ସ୍କୋର ଗଣନା କରେ।\n\n100% ପାଖାପାଖି ସ୍କୋରଗୁଡ଼ିକ ଭଲ ଫଳାଫଳ - ବର୍ତ୍ତମାନ ଅଣ-ମାନକ ବ୍ୟାଟେରୀ ଅପ୍ଟିମାଇଜେସନ୍ ପ୍ରୟୋଗ କରାଯାଏ ନାହିଁ। ଯଦିଓ କିଛି OEM କିଛି ସମୟ ପାଇଁ ବ୍ୟବହୃତ ନ ହୋଇଥିବା ଆପ୍ ପାଇଁ ସୀମା ଲାଗୁ କରିପାରନ୍ତି, ତେଣୁ ଏକ ସପ୍ତାହରେ ପରୀକ୍ଷା ପୁନରାବୃତ୍ତି କରିବା ଭଲ।\n\nଗ୍ରାଫ୍\n\nଗ୍ରାଫ୍‌ର ପ୍ରତ୍ୟେକ ଧାଡ଼ି 5 ମିନିଟ୍ ପ୍ରତିନିଧିତ୍ୱ କରେ। ଆଦର୍ଶ ଭାବରେ ଆପଣ ପ୍ରତ୍ୟେକ ଧାଡ଼ିରେ 30ଟି ବୃତ୍ତ ଏବଂ ତ୍ରିଭୁଜ ଏବଂ ପ୍ରତ୍ୟେକ ଦ୍ୱିତୀୟ ଧାଡ଼ିରେ ଗୋଟିଏ ବର୍ଗକ୍ଷେତ୍ର ଦେଖିବେ। ଖାଲି ସ୍ଥାନର ବଡ଼ ଅଞ୍ଚଳ ସମସ୍ୟାକୁ ସୂଚିତ କରେ - ଯଦି ଆପଣ ଆପଣଙ୍କ ଫୋନର ସେଟିଂସ୍ ପରିବର୍ତ୍ତନ ନ କରନ୍ତି, ତେବେ ଆପଣଙ୍କ ଆପ୍ ଆଶାନୁରୂପେ କାମ କରିନପାରେ।\n\n\ଅଧିକ ବିବରଣୀ ପାଇଁ https://github.com/urbandroid-team/dontkillmy-app ରେ ଆପ୍ କୋଡ୍ ଯାଞ୍ଚ କରନ୍ତୁ।</string>
+<string name="contact_support">ସହାୟତା ପାଇଁ ଯୋଗାଯୋଗ କରନ୍ତୁ</string>
+<string name="tell_others">ଅନ୍ୟମାନଙ୍କୁ କୁହନ୍ତୁ</string>
+<string name="tell_others_text">ଆପଣଙ୍କ ଫୋନରେ ଥିବା ଆପ୍ସକୁ ସଠିକ୍ ଭାବରେ କାମ କରିବା ପାଇଁ DontKillMyApp ବେଞ୍ଚମାର୍କ ଆପଣଙ୍କ ଫୋନର ବ୍ୟାକଗ୍ରାଉଣ୍ଡ ପ୍ରକ୍ରିୟାକରଣ ଯାଞ୍ଚ କରେ।\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">ଦୟାକରି, ଆମକୁ ମୂଲ୍ୟାଙ୍କନ କରନ୍ତୁ!</string>
+<string name="rate_button">ମୂଲ୍ୟାଙ୍କନ କରନ୍ତୁ</string>
+<string name="never_button">କେବେବି ନୁହେଁ</string>
+<string name="later_button">ପରେ</string>
+<string name="source">ସୋର୍ସ କୋଡ୍</string>
+<string name="rate_text">ଆମେ ସେହି ଫୋନଗୁଡ଼ିକରେ ମଧ୍ୟ ଆପ୍ସ କାମ କରିବାକୁ ଚାହୁଁଛୁ ଯେଉଁମାନଙ୍କର ନିର୍ମାତାମାନେ କାର୍ଯ୍ୟକ୍ଷମତା ଅପେକ୍ଷା ବ୍ୟାଟେରୀକୁ ପସନ୍ଦ କରନ୍ତି।\n\nଏହି ପ୍ରୋଜେକ୍ଟକୁ ଦୃଶ୍ୟମାନ କରିବାରେ ସାହାଯ୍ୟ କରିବାର ସର୍ବୋତ୍ତମ ଉପାୟ ହେଉଛି Play Store ରେ ଏହି ମାଗଣା ଏବଂ ଖୋଲା ଉତ୍ସ ଉପକରଣକୁ ମୂଲ୍ୟାଙ୍କନ ଏବଂ ମନ୍ତବ୍ୟ ଦେବା।\n\nAndroid ଇକୋ-ସିଷ୍ଟମକୁ ଏକ ଉତ୍ତମ ସ୍ଥାନ କରିବାରେ ଆମକୁ ସାହାଯ୍ୟ କରିବା ପାଇଁ ଅନେକ ଧନ୍ୟବାଦ!</string>
+<string name="translate">ଆପ୍ ଅନୁବାଦ କରିବାରେ ସାହାଯ୍ୟ କରନ୍ତୁ</string>
+<string name="slogan">ଆପଗୁଡ଼ିକୁ କାମ କରନ୍ତୁ</string>
+<string name="market_text">DontKillMyApp ଆପଟି ଏଠାରେ ଅଛି - ଯଦିଓ ଆପଣଙ୍କ ପାଖରେ Pixel ନାହିଁ ତଥାପି ଆପ୍ସକୁ ସଠିକ୍ ଭାବରେ କାମ କରିବାକୁ ଦିଅନ୍ତୁ। 
+
+ଆପଣଙ୍କୁ ଆପଣଙ୍କର ଫୋନ୍ ପୃଷ୍ଠଭୂମି କାର୍ଯ୍ୟଗୁଡ଼ିକୁ ସେଟ୍ ଅପ୍ କରିବାରେ ସାହାଯ୍ୟ କରେ ଯାହା ଦ୍ଵାରା ଆପଣଙ୍କର ଆପ୍ସ ବର୍ତ୍ତମାନ ସ୍କ୍ରିନ୍ ଦେଖୁନଥିବା ସମୟରେ ମଧ୍ୟ ଆପଣଙ୍କ ପାଇଁ କାମ କରିପାରିବ। 
+
+DontKillMyApp ବେଞ୍ଚମାର୍କ ସହିତ ଆପଣଙ୍କର ଫୋନ୍ କିପରି କାମ କରୁଛି ଦେଖନ୍ତୁ ଏବଂ ବିଭିନ୍ନ ସେଟିଂସ୍ ପରୀକ୍ଷା କରନ୍ତୁ। 
+
+ବୈଶିଷ୍ଟ୍ୟଗୁଡ଼ିକ: 
+• DKMA ବେଞ୍ଚମାର୍କ: ଆପଣଙ୍କର ଫୋନ୍ ପୃଷ୍ଠଭୂମି ଆପ୍ସକୁ କେତେ ଆକ୍ରମଣାତ୍ମକ ଭାବରେ ହତ୍ୟା କରୁଛି ତାହା ମାପ କରନ୍ତୁ 
+• ଗାଇଡ୍: ଅଧିକାଂଶ ପୃଷ୍ଠଭୂମି ପ୍ରକ୍ରିୟା ପ୍ରତିବନ୍ଧକକୁ ଦୂର କରିବା ପାଇଁ କାର୍ଯ୍ୟକ୍ଷମ ପଦକ୍ଷେପ ପାଆନ୍ତୁ 
+• ପରିବର୍ତ୍ତନ କରନ୍ତୁ: ️ dontkillmyapp.com ରେ ଆପଣଙ୍କର ବେଞ୍ଚମାର୍କ ରିପୋର୍ଟ ସେୟାର କରି ସ୍ମାର୍ଟଫୋନ୍‌କୁ ସ୍ମାର୍ଟ ରହିବାରେ ସାହାଯ୍ୟ କରନ୍ତୁ 
+
+DontKillMyApp ହେଉଛି ଏକ ବେଞ୍ଚମାର୍କ ଉପକରଣ ଯାହା ଆପଣଙ୍କ ଫୋନ୍ ପୃଷ୍ଠଭୂମି ପ୍ରକ୍ରିୟାକରଣକୁ କେତେ ଭଲ ଭାବରେ ସମର୍ଥନ କରେ ତାହା ଦେଖିବା ପାଇଁ। ଆପଣ ଆପଣଙ୍କର ଫୋନ୍ ସେଟ୍ ଅପ୍ କରିବା ପୂର୍ବରୁ ମାପ କରିପାରିବେ, ତାପରେ ସେଟ୍ଅପ୍ ଗାଇଡ୍ ଏବଂ ବେଞ୍ଚମାର୍କ ମାଧ୍ୟମରେ ପୁଣି ଥରେ ଦେଖିପାରିବେ ଯେ ଆପଣଙ୍କର ଫୋନ୍ ପୃଷ୍ଠଭୂମିରେ କେତେ ସ୍ଲାକ୍ ହୋଇଛି। 
+
+ଆପଣ ଆପ୍ ମାଧ୍ୟମରେ ଆପଣଙ୍କର ରିପୋର୍ଟ dontkillmyapp.com ୱେବସାଇଟ୍ ର ରକ୍ଷଣାବେକ୍ଷଣକାରୀଙ୍କ ସହ ସେୟାର କରିପାରିବେ ଯେଉଁମାନେ ଏହାକୁ ସଂକଳନ କରନ୍ତି ଏବଂ ଏଥିରେ ସାମଗ୍ରିକ ନକାରାତ୍ମକ ସ୍କୋରକୁ ଆଧାର କରନ୍ତି। 
+
+ବେଞ୍ଚମାର୍କ କିପରି କାମ କରେ? (ଟେକ୍ନିକାଲ୍!) 
+
+ଆପ୍ ଏକ ୱେକ୍ ଲକ୍ ସହିତ ଏକ ଫୋରଗ୍ରାଉଣ୍ଡ ସେବା ଆରମ୍ଭ କରେ ଏବଂ ମୁଖ୍ୟ ଥ୍ରେଡ୍, ଏକ କଷ୍ଟମ୍ ଥ୍ରେଡ୍ ଏକଜିକ୍ୟୁଟରରେ ପୁନରାବୃତ୍ତି କାର୍ଯ୍ୟ ସୂଚୀବଦ୍ଧ କରେ ଏବଂ ନିୟମିତ ଆଲାର୍ମ (AlarmManager.setExactAndAllowWhileIdle) ସୂଚୀବଦ୍ଧ କରେ। ତା\'ପରେ ଏହା ନିର୍ବାହ ହୋଇଥିବା ବନାମ ଆଶା କରାଯାଇଥିବା ଗଣନା କରେ। ଏତିକି! 
+
+ଅଧିକ ବିବରଣୀ ପାଇଁ କୋଡ୍ ଯାଞ୍ଚ କରନ୍ତୁ। ଆପ୍ଟି https://github.com/urbandroid-team/dontkillmy-app ରେ ଉପଲବ୍ଧ ଓପନ୍ ସୋର୍ସ 
+ଡୋକି (github.com/doubledotlabs/doki) କୁ ବିଶେଷ ଧନ୍ୟବାଦ।</string>
+<string name="exact_alarm_restrictions_title">ସଠିକ୍ ଆଲାରାମ ସମୟ ନିର୍ଦ୍ଧାରଣକୁ ଅନୁମତି ଦିଅନ୍ତୁ</string>
+<string name="exact_alarm_restrictions_summary">ଆପଣଙ୍କ ଡିଭାଇସର ଆଲାର୍ମ-ଆଧାରିତ ପୃଷ୍ଠଭୂମି ପ୍ରକ୍ରିୟାକରଣକୁ ସଠିକ୍ ଭାବରେ ପରୀକ୍ଷା କରିବା ପାଇଁ ଦୟାକରି ଆମକୁ ସଠିକ୍ ଆଲାର୍ମ ସୂଚୀବଦ୍ଧ କରିବାକୁ ଅନୁମତି ଦିଅନ୍ତୁ।</string>
+<string name="general_error">ଓଃ, କିଛି ଭୁଲ ହେଲେ।</string>
+<string name="started">ବେଞ୍ଚମାର୍କ ଆରମ୍ଭ ହେଲା!</string>
+</resources>

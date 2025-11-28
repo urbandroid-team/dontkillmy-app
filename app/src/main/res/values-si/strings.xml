@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">මිණුම් ලකුණ ආරම්භ කරන්න</string>
+<string name="stop_benchmark">මිණුම් ලකුණ නවත්වන්න</string>
+<string name="benchmark">මිණුම් ලකුණ</string>
+<string name="running">මිණුම් ලකුණ ධාවනය (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) නතර කිරීමට තට්ටු කරන්න.</string>
+<string name="finished">මිණුම් ලකුණ අවසන්, ප්‍රතිඵල සඳහා තට්ටු කරන්න</string>
+<string name="already_running">මිණුම් ලකුණ දැනටමත් ක්‍රියාත්මකයි.</string>
+<string name="stop">නවත්වන්න</string>
+<string name="clear">පැහැදිලි</string>
+<string name="work">කාර්යය</string>
+<string name="alarm">අනතුරු ඇඟවීම</string>
+<string name="main">ප්‍රධාන</string>
+<string name="share">බෙදාගන්න</string>
+<string name="share_with">බෙදාගන්න</string>
+<string name="report">වාර්තාව</string>
+<string name="duration">කාල සීමාව</string>
+<string name="warning_title">අවවාදයයි</string>
+<string name="warning_text">කරුණාකර ඔබගේ දුරකථනය චාජරයෙන් පිටත තබාගෙන සම්පූර්ණ මිණුම් ලකුණ අතරතුර එය භාවිතා නොකිරීමට උත්සාහ කරන්න.</string>
+<string name="cancel">අවලංගු කරන්න</string>
+<string name="ok">හරි</string>
+<string name="total">සමස්ත</string>
+<string-array name="duration_array">
+<item>පැය 1 යි</item>
+<item>පැය 2 යි</item>
+<item>පැය 3 යි</item>
+<item>පැය 4 යි</item>
+<item>පැය 5 යි</item>
+<item>පැය 6 යි</item>
+<item>පැය 7 යි</item>
+<item>පැය 8 යි</item>
+</string-array>
+<string-array name="share_array">
+<item>ඩොන්ට්කිල්මයිඇප්.කොම්</item>
+<item>විද්යුත් තැපෑල</item>
+<item>වෙනත්</item>
+</string-array>
+<string name="how_it_works">එය ක්‍රියා කරන ආකාරය</string>
+<string name="how_it_works_text">මිණුම් ලකුණ අවදි අගුලක් සහිත පෙරබිම් සේවාවක් ආරම්භ කරන අතර ප්‍රධාන නූල් (සෑම තත්පර 10 කට වරක්), අභිරුචි නූල් ක්‍රියාත්මක කරන්නෙකු (සෑම තත්පර 10 කට වරක්) පුනරාවර්තන කාර්යයන් කාලසටහන්ගත කරයි සහ AlarmManager.setExactAndAllowWhileIdle (සෑම මිනිත්තු 10 කට වරක්) භාවිතයෙන් සාමාන්‍ය අනතුරු ඇඟවීම් කාලසටහන්ගත කරයි. ඉන්පසු එය ක්‍රියාත්මක කරන ලද ඒවා අපේක්ෂිත ඒවා සමඟ සංසන්දනය කිරීමෙන් ලකුණු ගණනය කරයි.\n\n100% ට ආසන්න ලකුණු හොඳ ප්‍රතිඵල වේ - මේ මොහොතේ සම්මත නොවන බැටරි ප්‍රශස්තිකරණයන් යොදනු නොලැබේ. සමහර OEMs ටික වේලාවක් භාවිතා නොකරන යෙදුම් සඳහා සීමාවන් යෙදිය හැකි බැවින් සතියකින් පරීක්ෂණය නැවත කිරීම හොඳ වුවද.\n\nරූප සටහන\n\nප්‍රස්ථාරයේ සෑම පේළියක්ම මිනිත්තු 5 ක් නියෝජනය කරයි. ඉතා මැනවින් ඔබට සෑම පේළියකම රවුම් සහ ත්‍රිකෝණ 30 ක් සහ සෑම දෙවන පේළියකටම එක් චතුරස්රයක් දැකිය හැකිය. විශාල සුදු-හිස් ඉඩ ප්‍රදේශ ගැටළුවක් පෙන්නුම් කරයි - ඔබ ඔබගේ දුරකථනයේ සැකසුම් වෙනස් නොකරන්නේ නම් ඔබගේ යෙදුම් අපේක්ෂිත පරිදි ක්‍රියා නොකරනු ඇත.\n\n\වැඩි විස්තර සඳහා https://github.com/urbandroid-team/dontkillmy-app හි යෙදුම් කේතය පරීක්ෂා කරන්න.</string>
+<string name="contact_support">සහාය අමතන්න</string>
+<string name="tell_others">අන් අයට කියන්න</string>
+<string name="tell_others_text">ඔබගේ දුරකථනයේ යෙදුම් නිසි ලෙස ක්‍රියා කිරීමට DontKillMyApp Benchmark ඔබගේ දුරකථන පසුබිම් සැකසුම් පරීක්ෂා කරයි.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">කරුණාකර, අපව ශ්‍රේණිගත කරන්න!</string>
+<string name="rate_button">අනුපාතය</string>
+<string name="never_button">කවදාවත් නැහැ</string>
+<string name="later_button">පසුව</string>
+<string name="source">මූලාශ්‍ර කේතය</string>
+<string name="rate_text">ක්‍රියාකාරීත්වයට වඩා බැටරි බලය කැමති නිෂ්පාදකයින් සිටින දුරකථනවල පවා යෙදුම් ක්‍රියා කරවීමට අපට අවශ්‍යයි.\n\nමෙම ව්‍යාපෘතිය දෘශ්‍යමාන කිරීමට ඔබට උදව් කළ හැකි හොඳම ක්‍රමය නම් Play Store හි මෙම නොමිලේ සහ විවෘත මූලාශ්‍ර මෙවලම ශ්‍රේණිගත කිරීම සහ අදහස් දැක්වීමයි.\n\nAndroid පරිසර පද්ධතිය වඩා හොඳ ස්ථානයක් බවට පත් කිරීමට අපට උදව් කිරීම ගැන බොහොම ස්තූතියි!</string>
+<string name="translate">යෙදුම පරිවර්තනය කිරීමට උදව් කරන්න</string>
+<string name="slogan">යෙදුම් ක්‍රියා කරවන්න</string>
+<string name="market_text">නිල DontKillMyApp යෙදුම මෙන්න - ඔබට Pixel එකක් නොමැති වුවද යෙදුම් අවසානයේ නිසි ලෙස ක්‍රියාත්මක කිරීමට ඉඩ දෙන්න. 
+
+ඔබගේ දුරකථන පසුබිම් කාර්යයන් සැකසීමට ඔබට උදව් කරයි, එවිට ඔබේ යෙදුම් දැන් තිරය දෙස නොබලන විට පවා ඔබ වෙනුවෙන් ක්‍රියා කළ හැකිය. 
+
+ඔබගේ දුරකථනය කෙසේ ක්‍රියා කරනවාදැයි බලන්න සහ DontKillMyApp මිණුම් ලකුණ සමඟ විවිධ සැකසුම් පරීක්ෂා කරන්න. 
+
+විශේෂාංග: 
+• DKMA මිණුම් ලකුණ: ඔබගේ දුරකථනය පසුබිම් යෙදුම් විනාශ කරන ආකාරය ආක්‍රමණශීලී ලෙස මැන බලන්න 
+• මාර්ගෝපදේශ: බොහෝ පසුබිම් ක්‍රියාවලි සීමාවන් ජය ගැනීමට ක්‍රියාකාරී පියවර ලබා ගන්න 
+• වෙනසක් කරන්න:️ඔබගේ මිණුම් ලකුණ වාර්තාව dontkillmyapp.com වෙත බෙදා ගැනීමෙන් ස්මාර්ට්ෆෝන් බුද්ධිමත්ව සිටීමට උදව් කරන්න 
+
+DontKillMyApp යනු ඔබගේ දුරකථනය පසුබිම් සැකසුම් සඳහා කොතරම් හොඳින් සහාය දක්වනවාද යන්න බැලීමට මිණුම් ලකුණ මෙවලමකි. ඔබගේ දුරකථනය සැකසීමට පෙර ඔබට මැනිය හැකිය, පසුව සැකසුම් මාර්ගෝපදේශ හරහා ගොස් ඔබගේ දුරකථනය පසුබිමේ කොපමණ ප්‍රමාණයක් මන්දගාමී වී ඇත්දැයි බැලීමට නැවත මිණුම් ලකුණ බලන්න. 
+
+ඔබට යෙදුම හරහා ඔබගේ වාර්තාව dontkillmyapp.com වෙබ් අඩවියේ නඩත්තු කරන්නන් සමඟ බෙදා ගත හැකි අතර එය සම්පාදනය කර එහි සමස්ත සෘණ ලකුණු පදනම් කර ගත හැකිය. 
+
+මිණුම් ලකුණ ක්‍රියා කරන්නේ කෙසේද? (තාක්ෂණික!) 
+
+යෙදුම අවදි අගුලක් සමඟ පෙරබිම් සේවාවක් ආරම්භ කරන අතර ප්‍රධාන නූල් මත පුනරාවර්තන කාර්යයක්, අභිරුචි නූල් ක්‍රියාත්මක කරන්නෙකු සහ සාමාන්‍ය අනතුරු ඇඟවීම් කාලසටහන්ගත කරයි (AlarmManager.setExactAndAllowWhileIdle). ඉන්පසු එය ක්‍රියාත්මක කරන ලද එදිරිව අපේක්ෂිත ගණනය කරයි. එපමණයි! 
+
+වැඩි විස්තර සඳහා කේතය පරීක්ෂා කරන්න. යෙදුම විවෘත මූලාශ්‍රයක් වන අතර https://github.com/urbandroid-team/dontkillmy-app හි ඇත 
+
+Doki (github.com/doubledotlabs/doki) ට විශේෂ ස්තූතිය.</string>
+<string name="exact_alarm_restrictions_title">නිශ්චිත අනතුරු ඇඟවීමේ කාලසටහන්ගත කිරීමට ඉඩ දෙන්න</string>
+<string name="exact_alarm_restrictions_summary">ඔබගේ උපාංගයේ එලාම් පාදක පසුබිම් සැකසුම් නිසි ලෙස පරීක්ෂා කිරීම සඳහා නිශ්චිත එලාම් කාලසටහන්ගත කිරීමට කරුණාකර අපට ඉඩ දෙන්න.</string>
+<string name="general_error">අපොයි, මොකක් හරි වැරැද්දක් වුනාම.</string>
+<string name="started">මිණුම් ලකුණ ආරම්භ විය!</string>
+</resources>

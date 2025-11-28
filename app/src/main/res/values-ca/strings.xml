@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Inicia el punt de referència</string>
+<string name="stop_benchmark">Atura el punt de referència</string>
+<string name="benchmark">Punt de referència</string>
+<string name="running">Benchmark en execució (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) toca per aturar.</string>
+<string name="finished">Comparativa finalitzada, toca per veure els resultats</string>
+<string name="already_running">El punt de referència ja està en funcionament</string>
+<string name="stop">Atura</string>
+<string name="clear">Clar</string>
+<string name="work">Treball</string>
+<string name="alarm">Alarma</string>
+<string name="main">Principal</string>
+<string name="share">Comparteix</string>
+<string name="share_with">Comparteix amb</string>
+<string name="report">Informe</string>
+<string name="duration">Durada</string>
+<string name="warning_title">Avís</string>
+<string name="warning_text">Si us plau, mantingueu el telèfon fora del carregador i intenteu no utilitzar-lo durant tota la prova comparativa.</string>
+<string name="cancel">Cancel·la</string>
+<string name="ok">D\'acord</string>
+<string name="total">Total</string>
+<string-array name="duration_array">
+<item>1 hora</item>
+<item>2 hores</item>
+<item>3 hores</item>
+<item>4 hores</item>
+<item>5 hores</item>
+<item>6 hores</item>
+<item>7 hores</item>
+<item>8 hores</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Correu electrònic</item>
+<item>Altres</item>
+</string-array>
+<string name="how_it_works">Com funciona</string>
+<string name="how_it_works_text">El punt de referència inicia un servei en primer pla amb un bloqueig de despertador i programa tasques repetitives al fil principal (cada 10 segons), un executor de fils personalitzat (cada 10 segons) i programa alarmes regulars mitjançant AlarmManager.setExactAndAllowWhileIdle (cada 10 minuts). A continuació, calcula la puntuació comparant les executades amb les esperades.\n\nLes puntuacions properes al 100% són bons resultats; de moment no s\'apliquen optimitzacions de bateria no estàndard. Tot i que és bo repetir la prova d\'aquí a una setmana, ja que alguns fabricants d\'equips originals (OEM) poden aplicar límits a les aplicacions que no s\'utilitzen durant un temps.\n\nEL GRÀFIC\n\nCada fila del gràfic representa 5 minuts. Idealment, es veuen 30 cercles i triangles a cada línia i un quadrat cada segona línia. Les regions més grans d\'espai en blanc indiquen un problema: és possible que les aplicacions no funcionin com es pretén si no es canvia la configuració del telèfon.\n\n\Per a més detalls, consulteu el codi de les aplicacions a https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Contacta amb l\'assistència</string>
+<string name="tell_others">Digues-ho als altres</string>
+<string name="tell_others_text">El punt de referència de DontKillMyApp comprova el processament en segon pla del telèfon per assegurar-se que les aplicacions funcionin correctament.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Si us plau, valora\'ns!</string>
+<string name="rate_button">Tarifa</string>
+<string name="never_button">Mai</string>
+<string name="later_button">Més tard</string>
+<string name="source">Codi font</string>
+<string name="rate_text">Volem que les aplicacions funcionin fins i tot en telèfons els fabricants dels quals prefereixen la bateria a la funcionalitat.\n\nLa millor manera d\'ajudar a fer visible aquest projecte és valorar i comentar aquesta eina gratuïta i de codi obert a la Play Store.\n\nMoltes gràcies per ajudar-nos a fer de l\'ecosistema Android un lloc millor!</string>
+<string name="translate">Ajuda a traduir l\'aplicació</string>
+<string name="slogan">Fes que les aplicacions funcionin</string>
+<string name="market_text">L\'aplicació oficial DontKillMyApp ja és aquí: fes que les aplicacions finalment funcionin correctament fins i tot si no tens un Pixel.
+
+T\'ajuda a configurar les tasques en segon pla del telèfon perquè les teves aplicacions finalment puguin funcionar per a TU, fins i tot quan no mires la pantalla ara mateix.
+
+Mira com va el teu telèfon i prova diferents configuracions amb el punt de referència de DontKillMyApp.
+
+Característiques:
+• Punt de referència DKMA: mesura amb quina agressivitat està eliminant el teu telèfon les aplicacions en segon pla
+• Guies: obté passos pràctics per superar la majoria de les restriccions de processos en segon pla
+• Fes un canvi: ️Ajuda els telèfons intel·ligents a mantenir-se intel·ligents compartint el teu informe de punt de referència a dontkillmyapp.com
+
+DontKillMyApp és una eina de punt de referència per veure com de bé admet el teu telèfon el processament en segon pla. Pots mesurar abans de configurar el telèfon i, a continuació, revisar les guies de configuració i tornar a fer el punt de referència per veure quant ha estat funcionant el teu telèfon en segon pla.
+
+Pots compartir el teu informe a través de l\'aplicació amb els mantenidors del lloc web dontkillmyapp.com, que el compilen i basen la puntuació negativa general en ell.
+
+Com funciona el punt de referència? (Tècnic!)
+
+L\'aplicació inicia un servei en primer pla amb un wake lock i programa tasques repetitives al fil principal, un executor de fils personalitzat i programa alarmes regulars (AlarmManager.setExactAndAllowWhileIdle). A continuació, calcula l\'execució en funció de l\'esperat. Això és tot!
+
+Per a més detalls, consulteu el codi. L\'aplicació és de codi obert i està disponible a https://github.com/urbandroid-team/dontkillmy-app
+Un agraïment especial a Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Permetre una programació exacta de les alarmes</string>
+<string name="exact_alarm_restrictions_summary">Permeteu-nos programar alarmes exactes per provar correctament el processament en segon pla basat en alarmes del vostre dispositiu.</string>
+<string name="general_error">Ups, alguna cosa està malament.</string>
+<string name="started">Benchmark començat!</string>
+</resources>

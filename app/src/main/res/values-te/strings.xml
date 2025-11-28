@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">బెంచ్‌మార్క్‌ను ప్రారంభించండి</string>
+<string name="stop_benchmark">బెంచ్‌మార్క్‌ను ఆపివేయండి</string>
+<string name="benchmark">బెంచ్‌మార్క్</string>
+<string name="running">బెంచ్‌మార్క్ రన్నింగ్ (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) ఆపడానికి నొక్కండి.</string>
+<string name="finished">బెంచ్‌మార్క్ పూర్తయింది, ఫలితాల కోసం నొక్కండి</string>
+<string name="already_running">బెంచ్‌మార్క్ ఇప్పటికే అమలులో ఉంది</string>
+<string name="stop">ఆపు</string>
+<string name="clear">క్లియర్</string>
+<string name="work">పని</string>
+<string name="alarm">అలారం</string>
+<string name="main">ప్రధాన</string>
+<string name="share">షేర్ చేయి</string>
+<string name="share_with">వీరితో షేర్ చేయండి</string>
+<string name="report">నివేదిక</string>
+<string name="duration">వ్యవధి</string>
+<string name="warning_title">హెచ్చరిక</string>
+<string name="warning_text">దయచేసి మీ ఫోన్‌ను ఛార్జర్ నుండి దూరంగా ఉంచండి మరియు మొత్తం బెంచ్‌మార్క్ సమయంలో దాన్ని ఉపయోగించకుండా ఉండటానికి ప్రయత్నించండి.</string>
+<string name="cancel">రద్దు చేయి</string>
+<string name="ok">సరే</string>
+<string name="total">మొత్తం</string>
+<string-array name="duration_array">
+<item>1 గంట</item>
+<item>2 గంటలు</item>
+<item>3 గంటలు</item>
+<item>4 గంటలు</item>
+<item>5 గంటలు</item>
+<item>6 గంటలు</item>
+<item>7 గంటలు</item>
+<item>8 గంటలు</item>
+</string-array>
+<string-array name="share_array">
+<item>డోంట్ కిల్ మైయాప్.కామ్</item>
+<item>ఇ-మెయిల్</item>
+<item>ఇతర</item>
+</string-array>
+<string name="how_it_works">అది ఎలా పని చేస్తుంది</string>
+<string name="how_it_works_text">బెంచ్‌మార్క్ వేక్ లాక్‌తో ఫోర్‌గ్రౌండ్ సర్వీస్‌ను ప్రారంభిస్తుంది మరియు ప్రధాన థ్రెడ్‌లో (ప్రతి 10సెకన్లు), కస్టమ్ థ్రెడ్ ఎగ్జిక్యూటర్ (ప్రతి 10సెకన్లు) పునరావృతమయ్యే పనులను షెడ్యూల్ చేస్తుంది మరియు AlarmManager.setExactAndAllowWhileIdle (ప్రతి 10 నిమిషాలు) ఉపయోగించి సాధారణ అలారాలను షెడ్యూల్ చేస్తుంది. అప్పుడు అది అమలు చేయబడిన vs. అంచనా వేసిన వాటిని పోల్చడం ద్వారా స్కోర్‌ను లెక్కిస్తుంది.\n\n100%కి దగ్గరగా ఉన్న స్కోర్‌లు మంచి ఫలితాలు - ప్రస్తుతానికి ప్రామాణికం కాని బ్యాటరీ ఆప్టిమైజేషన్‌లు వర్తించవు. కొన్ని OEMలు కొంతకాలం ఉపయోగించని యాప్‌లకు పరిమితులను వర్తింపజేయవచ్చు కాబట్టి వారంలో పరీక్షను పునరావృతం చేయడం మంచిది.\n\nది గ్రాఫ్\n\nగ్రాఫ్‌లోని ప్రతి అడ్డు వరుస 5 నిమిషాలను సూచిస్తుంది. ఆదర్శంగా మీరు ప్రతి లైన్‌లో 30 సర్కిల్‌లు మరియు త్రిభుజాలను మరియు ప్రతి రెండవ లైన్‌లో ఒక చతురస్రాన్ని చూస్తారు. పెద్ద ఖాళీ ప్రాంతాలు సమస్యను సూచిస్తాయి - మీరు మీ ఫోన్ సెట్టింగ్‌లను మార్చకపోతే మీ యాప్‌లు ఉద్దేశించిన విధంగా పనిచేయకపోవచ్చు.\n\n\మరిన్ని వివరాల కోసం https://github.com/urbandroid-team/dontkillmy-app వద్ద యాప్‌ల కోడ్‌ను తనిఖీ చేయండి.</string>
+<string name="contact_support">మద్దతును సంప్రదించండి</string>
+<string name="tell_others">ఇతరులకు చెప్పండి</string>
+<string name="tell_others_text">మీ ఫోన్‌లోని యాప్‌లు సరిగ్గా పనిచేసేలా చేయడానికి DontKillMyApp బెంచ్‌మార్క్ మీ ఫోన్ బ్యాక్‌గ్రౌండ్ ప్రాసెసింగ్‌ను తనిఖీ చేస్తుంది.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">దయచేసి, మాకు రేట్ చేయండి!</string>
+<string name="rate_button">రేటు</string>
+<string name="never_button">ఎప్పుడూ</string>
+<string name="later_button">తరువాత</string>
+<string name="source">సోర్స్ కోడ్</string>
+<string name="rate_text">తయారీదారులు కార్యాచరణ కంటే బ్యాటరీని ఇష్టపడే ఫోన్‌లలో కూడా యాప్‌లు పనిచేసేలా చేయాలనుకుంటున్నాము.\n\nఈ ప్రాజెక్ట్‌ను కనిపించేలా చేయడంలో మీరు సహాయపడగల ఉత్తమ మార్గం ప్లే స్టోర్‌లో ఈ ఉచిత మరియు ఓపెన్ సోర్స్ సాధనాన్ని రేట్ చేయడం మరియు వ్యాఖ్యానించడం.\n\nఆండ్రాయిడ్ పర్యావరణ వ్యవస్థను మెరుగైన ప్రదేశంగా మార్చడంలో మాకు సహాయం చేసినందుకు చాలా ధన్యవాదాలు!</string>
+<string name="translate">యాప్‌ను అనువదించడంలో సహాయం చేయండి</string>
+<string name="slogan">యాప్‌లను పని చేయనివ్వండి</string>
+<string name="market_text">అధికారిక DontKillMyApp యాప్ ఇక్కడ ఉంది - మీరు పిక్సెల్‌ను కలిగి లేకపోయినా యాప్‌లు చివరకు సరిగ్గా పనిచేసేలా చేయండి. 
+
+మీ ఫోన్ బ్యాక్‌గ్రౌండ్ టాస్క్‌లను సెటప్ చేయడంలో మీకు సహాయపడుతుంది, తద్వారా మీ యాప్‌లు ప్రస్తుతం స్క్రీన్‌ను చూడనప్పుడు కూడా మీ కోసం పని చేయగలవు. 
+
+మీ ఫోన్ ఎలా పనిచేస్తుందో చూడండి మరియు DontKillMyApp బెంచ్‌మార్క్‌తో విభిన్న సెట్టింగ్‌లను పరీక్షించండి. 
+
+ఫీచర్‌లు: 
+• DKMA బెంచ్‌మార్క్: మీ ఫోన్ బ్యాక్‌గ్రౌండ్ యాప్‌లను ఎంత దూకుడుగా చంపుతుందో కొలవండి 
+• గైడ్‌లు: చాలా బ్యాక్‌గ్రౌండ్ ప్రాసెస్ పరిమితులను అధిగమించడానికి చర్య తీసుకోగల దశలను పొందండి 
+• మార్పు చేయండి:️మీ బెంచ్‌మార్క్ నివేదికను dontkillmyapp.comకి షేర్ చేయడం ద్వారా స్మార్ట్‌ఫోన్‌లు స్మార్ట్‌గా ఉండటానికి సహాయం చేయండి 
+
+DontKillMyApp అనేది మీ ఫోన్ బ్యాక్‌గ్రౌండ్ ప్రాసెసింగ్‌కు ఎంత బాగా మద్దతు ఇస్తుందో చూడటానికి ఒక బెంచ్‌మార్క్ సాధనం. మీరు మీ ఫోన్‌ను సెటప్ చేసే ముందు కొలవవచ్చు, ఆపై సెటప్ గైడ్‌ల ద్వారా వెళ్లి మీ ఫోన్ బ్యాక్‌గ్రౌండ్‌లో ఎంత స్లాక్ అవుతుందో చూడటానికి మళ్ళీ బెంచ్‌మార్క్ చేయవచ్చు. 
+
+మీరు మీ నివేదికను dontkillmyapp.com వెబ్‌సైట్ యొక్క మెయింటెయినర్‌లకు యాప్ ద్వారా షేర్ చేయవచ్చు, వారు దానిని కంపైల్ చేసి దానిపై మొత్తం నెగటివ్ స్కోర్‌ను బేస్ చేసుకోవచ్చు. 
+
+బెంచ్‌మార్క్ ఎలా పని చేస్తుంది? (సాంకేతిక!) 
+
+యాప్ వేక్ లాక్‌తో ఫోర్‌గ్రౌండ్ సర్వీస్‌ను ప్రారంభిస్తుంది మరియు ప్రధాన థ్రెడ్‌లో పునరావృతమయ్యే పనిని షెడ్యూల్ చేస్తుంది, కస్టమ్ థ్రెడ్ ఎగ్జిక్యూటర్ మరియు రెగ్యులర్ అలారాలను షెడ్యూల్ చేస్తుంది (AlarmManager.setExactAndAllowWhileIdle). అప్పుడు అది అమలు చేయబడిన vs. అంచనా వేసిన వాటిని లెక్కిస్తుంది. అంతే! 
+
+మరిన్ని వివరాల కోసం కోడ్‌ను తనిఖీ చేయండి. యాప్ ఓపెన్ సోర్స్ https://github.com/urbandroid-team/dontkillmy-appలో అందుబాటులో ఉంది 
+డోకి (github.com/doubledotlabs/doki)కి ప్రత్యేక ధన్యవాదాలు.</string>
+<string name="exact_alarm_restrictions_title">ఖచ్చితమైన అలారం షెడ్యూలింగ్‌ను అనుమతించండి</string>
+<string name="exact_alarm_restrictions_summary">మీ పరికర అలారం ఆధారిత నేపథ్య ప్రాసెసింగ్‌ను సరిగ్గా పరీక్షించడానికి ఖచ్చితమైన అలారాలను షెడ్యూల్ చేయడానికి దయచేసి మమ్మల్ని అనుమతించండి.</string>
+<string name="general_error">అయ్యో, ఏదో తప్పు జరిగినప్పుడు.</string>
+<string name="started">బెంచ్‌మార్క్ ప్రారంభమైంది!</string>
+</resources>

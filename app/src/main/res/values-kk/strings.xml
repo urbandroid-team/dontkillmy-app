@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Эталонды бастау</string>
+<string name="stop_benchmark">Эталонды тоқтату</string>
+<string name="benchmark">Эталон</string>
+<string name="running">Сынақ жұмысы (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) тоқтату үшін түртіңіз.</string>
+<string name="finished">Сынақ аяқталды, нәтижелер үшін түртіңіз</string>
+<string name="already_running">Бенчмарк қазірдің өзінде жұмыс істеп тұр</string>
+<string name="stop">Тоқта</string>
+<string name="clear">Таза</string>
+<string name="work">Жұмыс</string>
+<string name="alarm">Дабыл</string>
+<string name="main">Негізгі</string>
+<string name="share">Бөлісу</string>
+<string name="share_with">Бөлісу</string>
+<string name="report">Есеп беру</string>
+<string name="duration">Ұзақтығы</string>
+<string name="warning_title">Ескерту</string>
+<string name="warning_text">Телефоныңызды зарядтағыштан алшақ ұстаңыз және оны бүкіл сынақ кезінде пайдаланбауға тырысыңыз.</string>
+<string name="cancel">Бас тарту</string>
+<string name="ok">Жарайды</string>
+<string name="total">Барлығы</string>
+<string-array name="duration_array">
+<item>1 сағат</item>
+<item>2 сағат</item>
+<item>3 сағат</item>
+<item>4 сағат</item>
+<item>5 сағат</item>
+<item>6 сағат</item>
+<item>7 сағат</item>
+<item>8 сағат</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Электрондық пошта</item>
+<item>Басқа</item>
+</string-array>
+<string name="how_it_works">Ол қалай жұмыс істейді</string>
+<string name="how_it_works_text">Көрсеткіш ояту құлпы бар алдыңғы қатардағы қызметті бастайды және негізгі ағындағы (әр 10 секунд сайын), реттелетін ағынды орындаушыдағы (әр 10 секунд сайын) қайталанатын тапсырмаларды жоспарлайды және AlarmManager.setExactAndAllowWhileIdle (әр 10 минут сайын) арқылы тұрақты дабылдарды жоспарлайды. Содан кейін ол орындалған мен күтілетін нәтижені салыстыру арқылы ұпайды есептейді.\n\n100%-ға жуық ұпайлар жақсы нәтижелер болып табылады - қазіргі уақытта стандартты емес батареяны оңтайландыру қолданылмаған. Сынақты бір аптадан кейін қайталаған дұрыс, себебі кейбір OEM құрылғылары біраз уақыт пайдаланылмайтын қолданбаларға шектеу қоюы мүмкін.\n\nГРАФИКА\n\nГрафиктегі әрбір жол 5 минутты көрсетеді. Ең дұрысы, сіз әр жолда 30 шеңбер мен үшбұрышты және әр екінші жолда бір шаршыны көресіз. Бос кеңістіктің үлкен аймақтары ақаулықты көрсетеді – телефон параметрлерін өзгертпесеңіз, қолданбаларыңыз ойдағыдай жұмыс істемеуі мүмкін.\n\n\Қосымша мәліметтер алу үшін https://github.com/urbandroid-team/dontkillmy-app сайтынан қолданбалар кодын тексеріңіз.</string>
+<string name="contact_support">Қолдау қызметіне хабарласыңыз</string>
+<string name="tell_others">Басқаларға айтыңыз</string>
+<string name="tell_others_text">DontKillMyApp Benchmark телефоныңыздағы қолданбалардың дұрыс жұмыс істеуі үшін телефоныңыздың фондық өңделуін тексереді.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Бізді бағалаңыздар!</string>
+<string name="rate_button">Бағалау</string>
+<string name="never_button">Ешқашан</string>
+<string name="later_button">Кейінірек</string>
+<string name="source">Бастапқы код</string>
+<string name="rate_text">Өндірушілер батареяны функционалдығынан артық көретін телефондарда да қолданбалардың жұмыс істеуін қалаймыз.\n\nБұл жобаны көрсетуге көмектесудің ең жақсы жолы - Play Store дүкенінде бұл тегін және бастапқы бастапқы құралды бағалап, пікір қалдыру.\n\nAndroid экожүйесін жақсырақ орналастыруға көмектескеніңіз үшін көп рахмет!</string>
+<string name="translate">Қолданбаны аударуға көмектесіңіз</string>
+<string name="slogan">Қолданбалардың жұмыс істеуін қамтамасыз етіңіз</string>
+<string name="market_text">Ресми DontKillMyApp қолданбасы осында - сізде Pixel болмаса да, қолданбалардың дұрыс жұмыс істеуін қамтамасыз етіңіз.
+
+Телефоныңыздың фондық тапсырмаларын орнатуға көмектеседі, сонда қолданбалар дәл қазір экранға қарамасаңыз да СІЗ үшін жұмыс істей алады.
+
+Телефоныңыздың жұмысын қараңыз және DontKillMyApp эталоны арқылы әртүрлі параметрлерді тексеріңіз.
+
+Ерекше өзгешеліктері:
+• DKMA эталоны: телефоныңыздың фондық қолданбаларды жою қаншалықты агрессивті екенін өлшеңіз
+• Нұсқаулар: фондық процестің көптеген шектеулерін еңсеру үшін әрекет етуге болатын қадамдарды алыңыз
+• Өзгеріс жасаңыз: ️Dontkillmyapp.com сайтында эталондық есеппен бөлісу арқылы смартфондардың ақылды болуына көмектесіңіз.
+
+DontKillMyApp – телефоныңыздың фондық өңдеуді қаншалықты қолдайтынын көруге арналған эталондық құрал. Телефонды орнатпас бұрын өлшеуге болады, содан кейін орнату нұсқаулығынан өтіп, телефоныңыздың фондық режимде қаншалықты босаңсығанын көру үшін қайта салыстыруға болады.
+
+Есепті қолданба арқылы оны құрастыратын және жалпы теріс бағаны негіздейтін dontkillmyapp.com веб-сайтының қолдаушыларымен бөлісе аласыз.
+
+
+Эталон қалай жұмыс істейді? (Техникалық!)
+
+Қолданба ояту құлпы арқылы алдыңғы қатардағы қызметті бастайды және негізгі ағындағы қайталанатын тапсырманы, реттелетін ағынды орындаушыны жоспарлайды және тұрақты дабылдарды (AlarmManager.setExactAndAllowWhileIdle) жоспарлайды. Содан кейін ол күтілгенге қарсы орындалғанды ​​есептейді. Міне бітті!
+
+Қосымша мәліметтер алу үшін кодты тексеріңіз. Қолданба https://github.com/urbandroid-team/dontkillmy-app сайтында қолжетімді ашық бастапқы коды болып табылады
+Докиге ерекше рахмет (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Дабылды нақты жоспарлауға рұқсат етіңіз</string>
+<string name="exact_alarm_restrictions_summary">Құрылғыңыздың дабыл негізіндегі фондық өңдеуін дұрыс тексеру үшін бізге нақты дабылдарды жоспарлауға рұқсат етіңіз.</string>
+<string name="general_error">Ой, қате кезде бірдеңе.</string>
+<string name="started">Бенчмарк басталды!</string>
+</resources>

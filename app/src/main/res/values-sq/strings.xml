@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Filloni pikën referuese</string>
+<string name="stop_benchmark">Ndalo pikën referuese</string>
+<string name="benchmark">Pika referuese</string>
+<string name="running">Testi i pikës referuese po ekzekutohet (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) trokit për të ndaluar.</string>
+<string name="finished">Standardi përfundoi, trokit për rezultatet</string>
+<string name="already_running">Benchmark tashmë është duke u ekzekutuar</string>
+<string name="stop">Ndalo</string>
+<string name="clear">Pastro</string>
+<string name="work">Punë</string>
+<string name="alarm">Alarm</string>
+<string name="main">Kryesore</string>
+<string name="share">Ndaj</string>
+<string name="share_with">Ndani me</string>
+<string name="report">Raporto</string>
+<string name="duration">Kohëzgjatja</string>
+<string name="warning_title">Paralajmërim</string>
+<string name="warning_text">Ju lutemi mbajeni telefonin larg nga karikuesi dhe përpiquni të mos e përdorni gjatë gjithë testit të benchmark-ut.</string>
+<string name="cancel">Anulo</string>
+<string name="ok">Në rregull</string>
+<string name="total">Totali</string>
+<string-array name="duration_array">
+<item>1 orë</item>
+<item>2 orë</item>
+<item>3 orë</item>
+<item>4 orë</item>
+<item>5 orë</item>
+<item>6 orë</item>
+<item>7 orë</item>
+<item>8 orë</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Email</item>
+<item>Të tjera</item>
+</string-array>
+<string name="how_it_works">Si funksionon</string>
+<string name="how_it_works_text">Testi i pikës së referencës fillon një shërbim në plan të parë me një bllokim zgjimi dhe cakton detyra të përsëritura në fijen kryesore (çdo 10 sekonda), një ekzekutues të personalizuar të fijeve (çdo 10 sekonda) dhe cakton alarme të rregullta duke përdorur AlarmManager.setExactAndAllowWhileIdle (çdo 10 minuta). Pastaj llogarit rezultatin duke krahasuar ekzekutimet me ato të pritura.\n\nRezultatet afër 100% janë rezultate të mira - optimizimet jo standarde të baterisë nuk zbatohen për momentin. Megjithëse është mirë të përsëritet testi pas një jave pasi disa prodhues origjinalë (OEM) mund të aplikojnë kufizime për aplikacionet që nuk përdoren për një kohë.\n\nGRAFIKU\n\nÇdo rresht në grafik përfaqëson 5 minuta. Idealisht, shihni 30 rrathë dhe trekëndësha në çdo rresht dhe një katror çdo rresht të dytë. Rajonet më të mëdha të hapësirës së bardhë tregojnë një problem - aplikacionet tuaja mund të mos funksionojnë siç pritet nëse nuk do t\'i ndryshoni cilësimet e telefonit tuaj.\n\n\Për më shumë detaje, kontrolloni kodin e aplikacionit në https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Kontaktoni mbështetjen</string>
+<string name="tell_others">U thuaj të tjerëve</string>
+<string name="tell_others_text">DontKillMyApp Benchmark kontrollon përpunimin në sfond të telefonit tuaj për të bërë që aplikacionet në telefonin tuaj të funksionojnë siç duhet.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Ju lutemi, na vlerësoni!</string>
+<string name="rate_button">Vlerëso</string>
+<string name="never_button">Kurrë</string>
+<string name="later_button">Më vonë</string>
+<string name="source">Kodi burimor</string>
+<string name="rate_text">Ne duam t\'i bëjmë aplikacionet të funksionojnë edhe në telefonat, prodhuesit e të cilëve preferojnë baterinë mbi funksionalitetin.\n\nMënyra më e mirë për ta bërë këtë projekt të dukshëm është të vlerësoni dhe komentoni këtë mjet falas dhe me burim të hapur në Play Store.\n\nShumë faleminderit që na ndihmoni ta bëjmë ekosistemin Android një vend më të mirë!</string>
+<string name="translate">Ndihmoni në përkthimin e aplikacionit</string>
+<string name="slogan">Bëjini aplikacionet të funksionojnë</string>
+<string name="market_text">Aplikacioni zyrtar DontKillMyApp është këtu - bëjini aplikacionet të funksionojnë më në fund siç duhet edhe nëse nuk keni një Pixel.
+
+Ju ndihmon të konfiguroni detyrat në sfond të telefonit tuaj në mënyrë që aplikacionet tuaja më në fund të mund të funksionojnë për JU edhe kur nuk shikoni ekranin tani.
+
+Shikoni si po funksionon telefoni juaj dhe testoni cilësime të ndryshme me DontKillMyApp benchmark.
+
+Karakteristikat:
+• Testi DKMA: Matni se sa agresivisht po i shkatërron telefoni juaj aplikacionet në sfond
+• Udhëzues: Merrni hapa të zbatueshëm për të kapërcyer shumicën e kufizimeve të procesit në sfond
+• Bëni një ndryshim:️Ndihmoni telefonat inteligjentë të qëndrojnë të zgjuar duke ndarë raportin tuaj të testit në dontkillmyapp.com
+
+DontKillMyApp është një mjet testimi për të parë se sa mirë e mbështet telefoni juaj përpunimin në sfond. Mund të matni para se të konfiguroni telefonin tuaj, pastaj të kaloni nëpër udhëzuesit e konfigurimit dhe të testoni përsëri testin për të parë se sa shumë ka qenë i ngadaltë telefoni juaj në sfond.
+
+Mund ta ndani raportin tuaj përmes aplikacionit me mirëmbajtësit e faqes së internetit dontkillmyapp.com të cilët e përpilojnë atë dhe e bazojnë rezultatin e përgjithshëm negativ në të.
+
+Si funksionon testi i pikës referuese? (Teknikisht!)
+
+Aplikacioni nis një shërbim në plan të parë me një bllokim zgjimi dhe cakton detyra të përsëritura në fijen kryesore, një ekzekutues të personalizuar të fijes dhe cakton alarme të rregullta (AlarmManager.setExactAndAllowWhileIdle). Pastaj llogarit ekzekutimin kundrejt atij të pritur. Kaq ishte!
+
+Për më shumë detaje, kontrolloni kodin. Aplikacioni është me burim të hapur, i disponueshëm në https://github.com/urbandroid-team/dontkillmy-app
+Faleminderit të veçantë Doki-t (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Lejo planifikimin e saktë të alarmit</string>
+<string name="exact_alarm_restrictions_summary">Ju lutemi na lejoni të caktojmë alarme të sakta për të testuar siç duhet përpunimin në sfond të bazuar në alarmet e pajisjes suaj.</string>
+<string name="general_error">Ups, diçka nuk shkon kur.</string>
+<string name="started">Standardi filloi!</string>
+</resources>

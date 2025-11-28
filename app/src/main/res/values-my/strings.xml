@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">စံနှုန်းကို စတင်ပါ။</string>
+<string name="stop_benchmark">စံနှုန်းကို ရပ်လိုက်ပါ။</string>
+<string name="benchmark">စံသတ်မှတ်ချက်</string>
+<string name="running">စံသတ်မှတ်ချက်များ လုပ်ဆောင်နေသည် (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) ရပ်တန့်ရန် တို့ပါ။</string>
+<string name="finished">Benchmark ပြီးပါပြီ၊ ရလဒ်များအတွက် နှိပ်ပါ။</string>
+<string name="already_running">Benchmark က လုပ်ဆောင်နေပါပြီ။</string>
+<string name="stop">ရပ်</string>
+<string name="clear">ရှင်းပါတယ်။</string>
+<string name="work">အလုပ်</string>
+<string name="alarm">နှိုးစက်</string>
+<string name="main">အဓိက</string>
+<string name="share">မျှဝေပါ။</string>
+<string name="share_with">မျှဝေပါ။</string>
+<string name="report">သတင်းပို့တယ်။</string>
+<string name="duration">သင်တန်းကာလ</string>
+<string name="warning_title">သတိပေးချက်</string>
+<string name="warning_text">ကျေးဇူးပြု၍ သင့်ဖုန်းကို အားသွင်းကြိုးမှနေ၍ စံနှုန်းတစ်ခုလုံးတွင် မသုံးရန်ကြိုးစားပါ။</string>
+<string name="cancel">မလုပ်တော့</string>
+<string name="ok">အိုကေ</string>
+<string name="total">စုစုပေါင်း</string>
+<string-array name="duration_array">
+<item>၁ နာရီ</item>
+<item>2 နှစ်ရီ</item>
+<item>၃ နာရီ</item>
+<item>၄ နာရီ</item>
+<item>၅ နာရီ</item>
+<item>၆ နာရီ</item>
+<item>၇ နာရီ</item>
+<item>၈ နာရီ</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>အီးမေးလ်</item>
+<item>တခြား</item>
+</string-array>
+<string name="how_it_works">ဘယ်လိုအလုပ်လုပ်လဲ။</string>
+<string name="how_it_works_text">စံသတ်မှတ်ချက်သည် နိုးကြားသော့ခတ်မှုဖြင့် ရှေ့ဘက်ဝန်ဆောင်မှုကို စတင်ပြီး ပင်မချည်မျှင် (10s တိုင်း)၊ စိတ်ကြိုက် thread executor (10s တိုင်း) နှင့် AlarmManager.setExactAndAllowWhileIdle (10 မိနစ်တိုင်း) တွင် ထပ်တလဲလဲ လုပ်ဆောင်စရာများကို အချိန်ဇယားဆွဲသည်။ ထို့နောက် ၎င်းသည် လုပ်ဆောင်ပြီးသော မျှော်မှန်းထားသည်နှင့် နှိုင်းယှဉ်ခြင်းဖြင့် ရမှတ်များကို တွက်ချက်ပါသည်။\n\n100% အနီးရှိ ရမှတ်များသည် ရလဒ်ကောင်းများဖြစ်သည် - စံမဟုတ်သော ဘက်ထရီကို ပိုမိုကောင်းမွန်အောင်ပြုလုပ်ခြင်းများကို လောလောဆယ်တွင် အသုံးမပြုပါ။ အချို့ OEM များသည် ခဏတာအသုံးမပြုသော အက်ပ်များအတွက် ကန့်သတ်ချက်များ သက်ရောက်နိုင်သောကြောင့် တစ်ပတ်အတွင်း စမ်းသပ်မှုကို ပြန်လုပ်ရန် ကောင်းပါတယ်။\n\nဂရပ်ဖစ်\n\nဂရပ်ရှိ အတန်းတစ်ခုစီသည် 5 မိနစ်ကို ကိုယ်စားပြုသည်။ အကောင်းဆုံးကတော့ စာကြောင်းတစ်ခုစီမှာ စက်ဝိုင်း 30 နဲ့ တြိဂံတွေကို စက္ကန့်တိုင်း တစ်စတုရန်းတစ်ခုစီတွေ့ရမှာပါ။ နေရာလွတ်၏ ပိုကြီးသော ဧရိယာများသည် ပြဿနာကို ညွှန်ပြသည် - သင့်ဖုန်း၏ ဆက်တင်များကို မပြောင်းလဲပါက သင့်အက်ပ်များသည် ရည်ရွယ်ထားသည့်အတိုင်း အလုပ်မဖြစ်နိုင်ပါ။\n\n\အသေးစိတ်အချက်အလက်များအတွက် https://github.com/urbandroid-team/dontkillmy-app တွင် အက်ပ်ကုဒ်ကို စစ်ဆေးပါ။</string>
+<string name="contact_support">အကူအညီကို ဆက်သွယ်ပါ။</string>
+<string name="tell_others">တခြားသူတွေကို ပြောပြပါ။</string>
+<string name="tell_others_text">DontKillMyApp Benchmark သည် သင့်ဖုန်းရှိ အက်ပ်များကို ကောင်းမွန်စွာ အလုပ်လုပ်စေရန် သင့်ဖုန်း၏ နောက်ခံလုပ်ဆောင်မှုကို စစ်ဆေးပါသည်။\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">ကျေးဇူးပြု၍ ကျွန်ုပ်တို့ကို အဆင့်သတ်မှတ်ပါ။</string>
+<string name="rate_button">နှုန်းထား</string>
+<string name="never_button">ဘယ်တော့မှ</string>
+<string name="later_button">နောက်တော့</string>
+<string name="source">အရင်းအမြစ်ကုဒ်</string>
+<string name="rate_text">လုပ်ဆောင်ချက်ထက် ဘက်ထရီကို ပိုနှစ်သက်သည့် ထုတ်လုပ်သူများ၏ ဖုန်းများတွင်ပင် အက်ပ်များကို ကျွန်ုပ်တို့ အလုပ်လုပ်စေလိုပါသည်။\n\nဤပရောဂျက်ကို မြင်နိုင်စေရန် သင်ကူညီပေးနိုင်သည့် အကောင်းဆုံးနည်းလမ်းမှာ Play Store တွင် ဤအခမဲ့နှင့် ပွင့်လင်းသောအရင်းအမြစ်တူးလ်ကို အဆင့်သတ်မှတ်ပြီး မှတ်ချက်ပေးခြင်းဖြစ်သည်။\n\nAndroid ဂေဟစနစ်ကို ပိုကောင်းအောင် ကူညီပေးသည့်အတွက် များစွာကျေးဇူးတင်ရှိပါသည်။</string>
+<string name="translate">အက်ပ်ကို ဘာသာပြန်ရာတွင် ကူညီပါ။</string>
+<string name="slogan">အက်ပ်များကို အလုပ်ဖြစ်စေပါ။</string>
+<string name="market_text">တရားဝင် DontKillMyApp အက်ပ်သည် ဤနေရာတွင်ဖြစ်သည် - သင် Pixel မပိုင်ဆိုင်သော်လည်း နောက်ဆုံးတွင် အက်ပ်များကို ကောင်းစွာအလုပ်လုပ်စေသည်။
+
+သင့်ဖုန်း၏ နောက်ခံလုပ်ဆောင်စရာများကို စနစ်ထည့်သွင်းရန် သင့်အက်ပ်များကို ယခုအချိန်တွင် မကြည့်ရသေးသည့်တိုင် သင့်အက်ပ်များ နောက်ဆုံးတွင် သင့်အတွက် အလုပ်လုပ်နိုင်စေရန် ကူညီပေးပါသည်။
+
+သင့်ဖုန်းက ဘယ်လိုနေလဲဆိုတာ ကြည့်ပြီး DontKillMyApp စံနှုန်းနဲ့ မတူညီတဲ့ ဆက်တင်တွေကို စမ်းသပ်ပါ။
+
+အင်္ဂါရပ်များ:
+• DKMA စံသတ်မှတ်ချက်- သင့်ဖုန်းသည် နောက်ခံအက်ပ်များကို မည်မျှပြင်းထန်စွာ သတ်ဖြတ်သည်ကို တိုင်းတာပါ။
+• လမ်းညွှန်များ- နောက်ခံလုပ်ငန်းစဉ် ကန့်သတ်ချက်များကို ကျော်လွှားရန် လုပ်ဆောင်နိုင်သော အဆင့်များကို ရယူပါ။
+• ပြောင်းလဲမှုတစ်ခုပြုလုပ်ပါ-️သင်၏စံညွှန်းအစီရင်ခံစာကို dontkillmyapp.com သို့မျှဝေခြင်းဖြင့် စမတ်ဖုန်းများ စမတ်ကျနေစေရန် ကူညီပေးပါ။
+
+DontKillMyApp သည် သင့်ဖုန်းသည် နောက်ခံလုပ်ဆောင်ခြင်းကို မည်မျှ ကောင်းမွန်စွာ ပံ့ပိုးပေးနိုင်သည်ကို ကြည့်ရှုရန် စံတူကိရိယာတစ်ခုဖြစ်သည်။ သင့်ဖုန်းကို စဖွင့်သတ်မှတ်ခြင်းမပြုမီ တိုင်းတာနိုင်ပြီး၊ ထို့နောက် သင့်ဖုန်းသည် နောက်ခံတွင် မည်မျှလျော့သွားသည်ကို ကြည့်ရှုရန် စဖွင့်သတ်မှတ်မှု လမ်းညွှန်များနှင့် စံညွှန်းများကို ထပ်မံကြည့်ရှုနိုင်သည်။
+
+သင်၏အစီရင်ခံစာကို အက်ပ်မှတစ်ဆင့် စုစည်းပြီး ၎င်းတွင် အလုံးစုံအနုတ်လက္ခဏာရမှတ်ကို အခြေခံသည့် dontkillmyapp.com ဝဘ်ဆိုက်၏ ထိန်းသိမ်းသူများထံ မျှဝေနိုင်ပါသည်။
+
+
+စံသတ်မှတ်ချက် ဘယ်လိုအလုပ်လုပ်သလဲ။ (နည်းပညာ!)
+
+အပလီကေးရှင်းသည် နိုးကြားသော့ခတ်မှုဖြင့် ရှေ့ဘက်ဝန်ဆောင်မှုကို စတင်ပြီး ပင်မချည်ကြိုး၊ စိတ်ကြိုက်ကြိုးကို စီမံဆောင်ရွက်သူတွင် ထပ်တလဲလဲ လုပ်ဆောင်ရမည့်အရာများကို အချိန်ဇယားဆွဲကာ ပုံမှန်နှိုးစက်များ (AlarmManager.setExactAndAllowWhileIdle) ကို စီစဉ်ပေးပါသည်။ ထို့နောက် ၎င်းသည် ကွပ်မျက်မှုနှင့် မျှော်မှန်းထားသည်ကို တွက်ချက်သည်။ ဒါပဲ!
+
+အသေးစိတ်အချက်အလက်များအတွက် ကုဒ်ကိုစစ်ဆေးပါ။ အက်ပ်သည် https://github.com/urbandroid-team/dontkillmy-app တွင်ရရှိနိုင်သည့် open source ဖြစ်သည်
+Doki (github.com/doubledotlabs/doki) အား အထူးကျေးဇူးတင်ရှိပါသည်။</string>
+<string name="exact_alarm_restrictions_title">အတိအကျ နှိုးစက်အချိန်ဇယားကို ခွင့်ပြုပါ။</string>
+<string name="exact_alarm_restrictions_summary">သင့်စက်ပစ္စည်း၏ နှိုးစက်အခြေခံ နောက်ခံလုပ်ဆောင်မှုကို ကောင်းမွန်မှန်ကန်စွာ စမ်းသပ်ရန် အတိအကျ နှိုးစက်များကို အချိန်ဇယားဆွဲခွင့်ပြုပါ။</string>
+<string name="general_error">အိုး၊ တစ်ခုခုမှားနေတဲ့အခါ။</string>
+<string name="started">စံသတ်မှတ်ချက် စတင်ပါပြီ။</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">معيار البدء</string>
+<string name="stop_benchmark">معيار الإيقاف</string>
+<string name="benchmark">المعيار</string>
+<string name="running">تشغيل معيار الأداء (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) انقر للتوقف.</string>
+<string name="finished">انتهى المعيار القياسي، اضغط للحصول على النتائج</string>
+<string name="already_running">المقارنة المعيارية قيد التشغيل بالفعل</string>
+<string name="stop">توقف</string>
+<string name="clear">واضح</string>
+<string name="work">العمل</string>
+<string name="alarm">الإنذار</string>
+<string name="main">الرئيسية</string>
+<string name="share">شارك</string>
+<string name="share_with">شارك مع</string>
+<string name="report">تقرير</string>
+<string name="duration">المدة</string>
+<string name="warning_title">تحذير</string>
+<string name="warning_text">يُرجى إبعاد هاتفك عن الشاحن ومحاولة عدم استخدامه خلال فترة القياس بأكملها.</string>
+<string name="cancel">إلغاء</string>
+<string name="ok">حسناً</string>
+<string name="total">الإجمالي</string>
+<string-array name="duration_array">
+<item>1 ساعة</item>
+<item>2 ساعة</item>
+<item>3 ساعات</item>
+<item>4 ساعات</item>
+<item>5 ساعات</item>
+<item>6 ساعات</item>
+<item>7 ساعات</item>
+<item>8 ساعات</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>البريد الإلكتروني</item>
+<item>أخرى</item>
+</string-array>
+<string name="how_it_works">كيف تعمل</string>
+<string name="how_it_works_text">يبدأ اختبار الأداء خدمةً أماميةً بقفل استيقاظ، ويُجدول المهام المتكررة على الخيط الرئيسي (كل ١٠ ثوانٍ)، ومنفذ خيط مخصص (كل ١٠ ثوانٍ)، ويُجدول التنبيهات المنتظمة باستخدام AlarmManager.setExactAndAllowWhileIdle (كل ١٠ دقائق). ثم يحسب النتيجة بمقارنة ما تم تنفيذه بالمتوقع.\n\nالنتائج القريبة من ١٠٠٪ تُعدّ نتائج جيدة - لا تُطبّق تحسينات البطارية غير القياسية حاليًا. مع ذلك، يُنصح بتكرار الاختبار بعد أسبوع، إذ قد تُطبّق بعض الشركات المصنعة للمعدات الأصلية قيودًا على التطبيقات التي لا تُستخدم لفترة.\n\nالرسم البياني\n\nيمثل كل صف في الرسم البياني ٥ دقائق. من الناحية المثالية، سترى ٣٠ دائرة ومثلثًا على كل سطر، ومربعًا واحدًا في كل سطر ثانٍ. تشير المناطق الأكبر من المساحة البيضاء إلى وجود مشكلة - قد لا تعمل تطبيقاتك كما هو مقصود إذا لم تقم بتغيير إعدادات هاتفك. لمزيد من التفاصيل، راجع كود التطبيقات على https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">اتصل بالدعم</string>
+<string name="tell_others">أخبر الآخرين</string>
+<string name="tell_others_text">يتحقق تطبيق DontKillMyApp Benchmark من معالجة الخلفية لهاتفك لجعل التطبيقات على هاتفك تعمل بشكل صحيح.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">من فضلك، قيّمنا!</string>
+<string name="rate_button">المعدل</string>
+<string name="never_button">أبداً</string>
+<string name="later_button">في وقت لاحق</string>
+<string name="source">كود المصدر</string>
+<string name="rate_text">نريد أن نجعل التطبيقات تعمل حتى على الهواتف التي يفضل مصنعوها البطارية على الوظائف.\n\nأفضل طريقة يمكنك من خلالها المساعدة في جعل هذا المشروع مرئيًا هي تقييم هذه الأداة المجانية والمفتوحة المصدر والتعليق عليها على متجر Play.\n\nشكرًا جزيلاً لمساعدتنا في جعل نظام Android مكانًا أفضل!</string>
+<string name="translate">المساعدة في ترجمة التطبيق</string>
+<string name="slogan">اجعل التطبيقات تعمل</string>
+<string name="market_text">تطبيق DontKillMyApp الرسمي متوفر الآن - اجعل تطبيقاتك تعمل بكفاءة حتى لو لم تكن تملك هاتف Pixel.
+
+يساعدك هذا التطبيق على ضبط مهام الخلفية في هاتفك لتعمل تطبيقاتك بكفاءة حتى عند عدم النظر إلى الشاشة.
+
+راقب أداء هاتفك واختبر إعدادات مختلفة باستخدام اختبار DontKillMyApp.
+
+الميزات:
+• اختبار DKMA: قيس مدى فعالية هاتفك في إيقاف تطبيقات الخلفية.
+• أدلة: احصل على خطوات عملية للتغلب على معظم قيود عمليات الخلفية.
+• حسّن أداء هاتفك: ساعد هواتفك الذكية على البقاء ذكية من خلال مشاركة تقرير اختبار الأداء الخاص بك على dontkillmyapp.com.
+
+DontKillMyApp هي أداة اختبار أداء لمعرفة مدى دعم هاتفك لمعالجة الخلفية. يمكنك القياس قبل إعداد هاتفك، ثم مراجعة أدلة الإعداد واختبار الأداء مرة أخرى لمعرفة مدى تباطؤ هاتفك في الخلفية.
+
+يمكنك مشاركة تقريرك عبر التطبيق مع مشرفي موقع dontkillmyapp.com الذين يجمعونه ويعتمدون على تقييمه السلبي الإجمالي.
+
+كيف يعمل هذا الاختبار؟ (تقني!)
+
+يبدأ التطبيق خدمةً أماميةً بقفل تنبيه، ويُجدول المهام المتكررة على الخيط الرئيسي، ومنفذ خيط مخصص، ويُجدول التنبيهات المنتظمة (AlarmManager.setExactAndAllowWhileIdle). ثم يحسب ما تم تنفيذه مقابل المتوقع. هذا كل شيء!
+
+للمزيد من التفاصيل، يُرجى مراجعة الكود. التطبيق مفتوح المصدر، ومتاح على الرابط: https://github.com/urbandroid-team/dontkillmy-app
+شكر خاص لـ Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">السماح بالجدولة الزمنية الدقيقة للإنذار</string>
+<string name="exact_alarm_restrictions_summary">يُرجى السماح لنا بجدولة الإنذارات الدقيقة لاختبار المعالجة الخلفية القائمة على الإنذارات في جهازك بشكل صحيح.</string>
+<string name="general_error">عفوًا، شيء ما عندما يكون هناك خطأ ما.</string>
+<string name="started">بدأ المعيار!</string>
+</resources>

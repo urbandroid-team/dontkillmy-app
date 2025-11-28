@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Qala ibhentshimakhi</string>
+<string name="stop_benchmark">Misa ibhentshimakhi</string>
+<string name="benchmark">Ibhentshimakhi</string>
+<string name="running">Ibhentshimakhi iyasebenza (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) thepha ukuze umise.</string>
+<string name="finished">Ibhentshimakhi iphelile, thepha ukuze uthole imiphumela</string>
+<string name="already_running">Ibhentshimakhi isivele iyasebenza</string>
+<string name="stop">Ima</string>
+<string name="clear">Kucace</string>
+<string name="work">Sebenza</string>
+<string name="alarm">I-alamu</string>
+<string name="main">Okuyinhloko</string>
+<string name="share">Yabelana</string>
+<string name="share_with">Yabelana no</string>
+<string name="report">Bika</string>
+<string name="duration">Ubude besikhathi</string>
+<string name="warning_title">Isexwayiso</string>
+<string name="warning_text">Sicela ugcine ifoni yakho ingaphandle kweshaja bese uzama ukungayisebenzisi ngesikhathi sonke sebhentshimakhi.</string>
+<string name="cancel">Khansela</string>
+<string name="ok">KULUNGILE</string>
+<string name="total">Ingqikithi</string>
+<string-array name="duration_array">
+<item>1 ihora</item>
+<item>amahora angu-2</item>
+<item>3 amahora</item>
+<item>4 amahora</item>
+<item>5 amahora</item>
+<item>6 amahora</item>
+<item>7 amahora</item>
+<item>8 amahora</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>I-imeyili</item>
+<item>Okunye</item>
+</string-array>
+<string name="how_it_works">Isebenza kanjani</string>
+<string name="how_it_works_text">Ibhentshimakhi iqala isevisi yangaphambili nge-wake lock futhi ishejula imisebenzi ephindaphindwayo kuchungechunge oluyinhloko (njalo nge-10s), umenzi wentambo ngokwezifiso (njalo nge-10s) futhi uhlele ama-alamu avamile kusetshenziswa i-AlarmManager.setExactAndAllowWhileIdle (njalo ngemizuzu eyi-10). Bese ibala isikolo ngokuqhathanisa okwenziwe uma kuqhathaniswa nokulindelekile.\n\nAmaphuzu asondele ku-100% ayimiphumela emihle - ukuthuthukiswa kwebhethri okungajwayelekile akusetshenziswa okwamanje. Nakuba kuhle ukuphinda ukuhlola evikini njengoba amanye ama-OEM angase asebenzise imikhawulo kuzinhlelo zokusebenza ezingasetshenziswa isikhashana.\n\nIGRAPH\n\nUmugqa ngamunye kugrafu umele imizuzu emi-5. Ngokufanelekile ubona imibuthano engama-30 nonxantathu emugqeni ngamunye nesikwele esisodwa emgqeni wesibili. Izifunda ezikhudlwana zesikhala esimhlophe zibonisa inkinga - izinhlelo zakho zokusebenza zingase zingasebenzi njengoba zihlosiwe uma ungeke ushintshe izilungiselelo zefoni yakho.\n\n\Ukuze uthole imininingwane eyengeziwe hlola ikhodi yezinhlelo zokusebenza kokuthi https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Xhumana nosekelo</string>
+<string name="tell_others">Tshela abanye</string>
+<string name="tell_others_text">I-DontKillMyApp Benchmark ihlola ukucutshungulwa kwangemuva kwefoni yakho ukuze yenze izinhlelo zokusebenza kufoni yakho zisebenze kahle.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Sicela usilinganisele!</string>
+<string name="rate_button">Linganisa</string>
+<string name="never_button">Ungalokothi</string>
+<string name="later_button">Kamuva</string>
+<string name="source">Ikhodi yomthombo</string>
+<string name="rate_text">Sifuna ukwenza izinhlelo zokusebenza zisebenze nakumafoni abakhiqizi bawo bancamela ibhethri kunokusebenza.\n\nIndlela engcono kakhulu ongasiza ngayo ukwenza le phrojekthi ibonakale ukulinganisa nokubeka amazwana leli thuluzi lamahhala nelivulekile lomthombo ku-Google Play Isitolo.\n\nSiyabonga kakhulu ngokusisiza senze i-eco-system ye-Android ibe indawo engcono!</string>
+<string name="translate">Siza ukuhumusha uhlelo lokusebenza</string>
+<string name="slogan">Yenza izinhlelo zokusebenza zisebenze</string>
+<string name="market_text">Uhlelo lokusebenza olusemthethweni lwe-DontKillMyApp selukhona - yenza izinhlelo zokusebenza zigcine zisebenza kahle ngisho noma ungenayo i-Pixel.
+
+Ikusiza ukuthi uhlele imisebenzi yangemuva yefoni yakho ukuze izinhlelo zakho zokusebenza ekugcineni zikwazi ukukusebenzela noma ungabheki esikrinini njengamanje.
+
+Bona ukuthi ifoni yakho isebenza kanjani futhi uhlole izilungiselelo ezihlukile ngebhentshimakhi ye-DontKillMyApp.
+
+Izici:
+• Ibhentshimakhi ye-DKMA: Linganisa ukuthi ifoni yakho ibulala kangakanani izinhlelo zokusebenza zasemuva
+• Imihlahlandlela: Thola izinyathelo ezingenzeka ukuze unqobe imikhawulo eminingi yenqubo yangemuva
+• Yenza ushintsho:️Siza ama-smartphones ahlale ehlakaniphile ngokwabelana ngombiko wakho wokuma ku-dontkillmyapp.com
+
+I-DontKillMyApp iyithuluzi lokulinganisa ukuze ubone ukuthi ifoni yakho isekela kahle kangakanani ukucubungula ingemuva. Ungakwazi ukulinganisa ngaphambi kokusetha ifoni yakho, bese udlula kumhlahlandlela wokusetha uphinde ulinganise futhi ukuze ubone ukuthi ifoni yakho ibintekenteke kangakanani ngemuva.
+
+Ungakwazi ukwabelana ngombiko wakho ngohlelo lokusebenza kubanakekeli bewebhusayithi ye-dontkillmyapp.com abawuhlanganisayo futhi basekele umphumela ongemuhle kuwo wonke.
+
+
+Ngabe ibhentshimakhi isebenza kanjani? (Okwezobuchwepheshe!)
+
+Uhlelo lokusebenza luqala isevisi yangaphambili nge-wake lock futhi luhlele umsebenzi ophindaphindwayo kuchungechunge oluyinhloko, isakhi sochungechunge ngokwezifiso futhi luhlele ama-alamu avamile (AlarmManager.setExactAndAllowWhileIdle). Bese ibala okwenziwayo uma kuqhathaniswa. Yilokho kuphela!
+
+Ukuze uthole imininingwane eyengeziwe hlola ikhodi. Uhlelo lokusebenza luwumthombo ovulekile otholakala ku-https://github.com/urbandroid-team/dontkillmy-app
+Sibonga ngokukhethekile u-Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Vumela ukuhlelwa kwe-alamu okuqondile</string>
+<string name="exact_alarm_restrictions_summary">Sicela usivumele ukuthi sihlele ama-alamu aqondile ukuze sihlole kahle ukucubungula okusemuva kwe-alamu yedivayisi yakho.</string>
+<string name="general_error">Eshu, okuthile uma kungalungile.</string>
+<string name="started">Ibhentshimakhi iqalile!</string>
+</resources>

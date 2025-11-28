@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Iniciar benchmark</string>
+<string name="stop_benchmark">Parar benchmark</string>
+<string name="benchmark">Benchmark</string>
+<string name="running">Executando teste (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s2</xliff:g>) toque para finalizar.</string>
+<string name="finished">O benchmark foi finalizado, toque para ver os resultados</string>
+<string name="already_running">Ainda está em execução</string>
+<string name="stop">Parar</string>
+<string name="clear">Limpar</string>
+<string name="work">Trabalhando</string>
+<string name="alarm">Alarme</string>
+<string name="main">Principal</string>
+<string name="share">Compartilhar</string>
+<string name="share_with">Compartilhar com</string>
+<string name="report">Reportar</string>
+<string name="duration">Duração</string>
+<string name="warning_title">Atenção</string>
+<string name="warning_text">Por favor mantenha seu telemóvel desconectado do carregador e não tente usá-lo até que o teste finalize.</string>
+<string name="cancel">Cancelar</string>
+<string name="ok">OK</string>
+<string name="total">Total</string>
+<string-array name="duration_array">
+<item>1 hora</item>
+<item>2 horas</item>
+<item>3 horas</item>
+<item>4 horas</item>
+<item>5 horas</item>
+<item>6 horas</item>
+<item>7 horas</item>
+<item>8 horas</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Email</item>
+<item>Outro</item>
+</string-array>
+<string name="how_it_works">Como funciona</string>
+<string name="how_it_works_text">O benchmark inicia um serviço de primeiro plano com um wake lock e horário de tarefas repetitivas no thread principal (a cada 10s), um executor de thread personalizado (a cada 10s) e horários de  alarmes regulares usando AlarmManager.setExactAndAllowWhileIdle (a cada 10 minutos). Em seguida, ele calcula os resultados comparando os executados com os esperados.\n\nOs escores próximos a 100% são bons resultados - otimizações de bateria não padrão não são aplicadas no momento. Embora seja bom repetir o teste em uma semana, pois alguns OEMs podem aplicar limites a aplicativos que não são usados ​​por um tempo.\n\nO GRÁFICO\n\nCada linha no gráfico representa 5 minutos. Idealmente, você vê 30 círculos e triângulos em cada linha e um quadrado a cada segunda linha. Regiões maiores de espaço em branco indicam um problema - seus aplicativos podem não funcionar como pretendido se você não alterar as configurações do telefone.\n\n\ Para obter mais detalhes, verifique o código dos aplicativos em https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Contactar suporte</string>
+<string name="tell_others">Contacte outros</string>
+<string name="tell_others_text">O DontKillMyApp Benchmark verifica o processamento em segundo plano do telefone para fazer os aplicativos funcionarem corretamente. \ N \ nhttps: //play.google.com/store/apps/details? Id = com.urbandroid.dontkillmyapp</string>
+<string name="rate">Por favor, nós avalie!</string>
+<string name="rate_button">Avaliar</string>
+<string name="never_button">Nunca</string>
+<string name="later_button">Mais tarde</string>
+<string name="source">Código fonte</string>
+<string name="rate_text">Queremos que os aplicativos funcionem mesmo em telefones cujos fabricantes preferem bateria em vez de funcionalidade.\n\nA melhor maneira de ajudar a tornar este projeto visível é avaliar e comentar esta ferramenta gratuita e de código aberto na Play Store. \n\nMuito obrigado. por nos ajudar a tornar o ecossistema Android um lugar melhor!</string>
+<string name="translate">Ajude a traduzir o aplicativo</string>
+<string name="slogan">Lema</string>
+<string name="market_text">O aplicativo oficial DontKillMyApp está aqui - faça os aplicativos finalmente funcionarem corretamente, mesmo se você não tiver um Pixel.
+
+Ajuda a configurar as tarefas em segundo plano do telefone para que seus aplicativos possam finalmente funcionar para VOCÊ, mesmo quando não estiver olhando para a tela.
+
+Veja como está o seu telefone e teste diferentes configurações com o benchmark DontKillMyApp.
+
+Características:
+• Referência DKMA: meça a agressividade do seu telefone, matando os aplicativos de fundo
+• Guias: obtenha etapas acionáveis ​​para superar a maioria das restrições de processo em segundo plano
+• Faça uma mudança: ️Ajude os smartphones a ficarem inteligentes compartilhando seu relatório de benchmark com dontkillmyapp.com
+
+DontKillMyApp é uma ferramenta de referência para ver se o seu telefone suporta o processamento em segundo plano. Você pode medir antes de configurar seu telefone, depois seguir os guias de configuração e comparar novamente para ver o quanto seu telefone está relaxando em segundo plano.
+
+Você pode compartilhar seu relatório por meio do aplicativo com os mantenedores do site dontkillmyapp.com que o compilam e baseiam a pontuação negativa geral nele.
+
+Como funciona o benchmark? (Técnico!)
+
+O aplicativo inicia um serviço de primeiro plano com um wake lock e horários de tarefas repetitivas no thread principal, um executor de thread personalizado e horários de alarmes regulares (AlarmManager.setExactAndAllowWhileIdle). Em seguida, ele calcula executado vs.esperado. É isso!
+
+Para mais detalhes verifique o código. O aplicativo é de código aberto disponível em https://github.com/urbandroid-team/dontkillmy-app
+Agradecimentos especiais a Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Permitir agendamento exato de alarme</string>
+<string name="exact_alarm_restrictions_summary">Permita-nos agendar alarmes exactos para testar corretamente o processamento em segundo plano baseado em alarmes do seu dispositivo.</string>
+<string name="general_error">Ops, algo quando errado.</string>
+<string name="started">O benchmark está em execução</string>
+</resources>

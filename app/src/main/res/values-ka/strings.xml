@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">საწყისი საორიენტაციო მაჩვენებელი</string>
+<string name="stop_benchmark">შეჩერების საორიენტაციო მაჩვენებელი</string>
+<string name="benchmark">საორიენტაციო ნიშანი</string>
+<string name="running">საორიენტაციო მაჩვენებელი მუშაობს (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) შეეხეთ შესაჩერებლად.</string>
+<string name="finished">საორიენტაციო მაჩვენებელი დასრულებულია, შედეგების სანახავად შეეხეთ</string>
+<string name="already_running">Benchmark უკვე მუშაობს</string>
+<string name="stop">გაჩერება</string>
+<string name="clear">გასუფთავება</string>
+<string name="work">სამუშაო</string>
+<string name="alarm">სიგნალიზაცია</string>
+<string name="main">მთავარი</string>
+<string name="share">გაზიარება</string>
+<string name="share_with">გაზიარება</string>
+<string name="report">ანგარიში</string>
+<string name="duration">ხანგრძლივობა</string>
+<string name="warning_title">გაფრთხილება</string>
+<string name="warning_text">გთხოვთ, ტელეფონი დამტენიდან მოარიდოთ და მთელი ტესტის განმავლობაში არ გამოიყენოთ.</string>
+<string name="cancel">გაუქმება</string>
+<string name="ok">კარგი</string>
+<string name="total">სულ</string>
+<string-array name="duration_array">
+<item>1 საათი</item>
+<item>2 საათი</item>
+<item>3 საათი</item>
+<item>4 საათი</item>
+<item>5 საათი</item>
+<item>6 საათი</item>
+<item>7 საათი</item>
+<item>8 საათი</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>ელ. ფოსტა</item>
+<item>სხვა</item>
+</string-array>
+<string name="how_it_works">როგორ მუშაობს</string>
+<string name="how_it_works_text">სატესტო ტესტი იწყებს წინა პლანის სერვისს გაღვიძების დაბლოკვით და ადგენს განმეორებად დავალებებს მთავარ ნაკადზე (ყოველ 10 წამში), მორგებულ ნაკადების შემსრულებელს (ყოველ 10 წამში) და ადგენს რეგულარულ სიგნალიზაციას AlarmManager.setExactAndAllowWhileIdle-ის გამოყენებით (ყოველ 10 წუთში). შემდეგ ის ითვლის ქულას შესრულებული და მოსალოდნელი შედეგების შედარებით.\n\n100%-თან ახლოს მყოფი ქულები კარგი შედეგია - არასტანდარტული ბატარეის ოპტიმიზაცია ამჟამად არ გამოიყენება. თუმცა კარგია ტესტის გამეორება ერთ კვირაში, რადგან ზოგიერთმა OEM-მა შეიძლება შეზღუდვები დააწესოს იმ აპლიკაციებზე, რომლებიც გარკვეული დროის განმავლობაში არ გამოიყენება.\n\nგრაფიკა\n\nგრაფიკაში თითოეული რიგი წარმოადგენს 5 წუთს. იდეალურ შემთხვევაში, თითოეულ ხაზზე ხედავთ 30 წრეს და სამკუთხედს და ერთ კვადრატს ყოველ მეორე ხაზზე. თეთრი სივრცის უფრო დიდი რეგიონები პრობლემაზე მიუთითებს - თქვენი აპლიკაციები შეიძლება არ იმუშაოს ისე, როგორც დაგეგმილი იყო, თუ არ შეცვლით თქვენი ტელეფონის პარამეტრებს.\n\n\დამატებითი ინფორმაციისთვის იხილეთ აპლიკაციის კოდი https://github.com/urbandroid-team/dontkillmy-app-ზე.</string>
+<string name="contact_support">დაუკავშირდით მხარდაჭერის გუნდს</string>
+<string name="tell_others">უთხარით სხვებს</string>
+<string name="tell_others_text">DontKillMyApp Benchmark ამოწმებს თქვენი ტელეფონის ფონურ დამუშავებას, რათა აპლიკაციებმა გამართულად იმუშაონ.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">გთხოვთ, შეგვაფასოთ!</string>
+<string name="rate_button">შეფასება</string>
+<string name="never_button">არასდროს</string>
+<string name="later_button">მოგვიანებით</string>
+<string name="source">საწყისი კოდი</string>
+<string name="rate_text">ჩვენ გვსურს, რომ აპლიკაციები იმუშაოს იმ ტელეფონებზეც კი, რომელთა მწარმოებლები ფუნქციონალურობაზე მეტად ბატარეას ანიჭებენ უპირატესობას.\n\nამ პროექტის ხილვადობის ხელშეწყობის საუკეთესო გზაა ამ უფასო და ღია კოდის ინსტრუმენტის შეფასება და კომენტარის დატოვება Play Store-ზე.\n\nდიდი მადლობა, რომ დაგვეხმარეთ Android-ის ეკოსისტემის უკეთეს ადგილად გადაქცევაში!</string>
+<string name="translate">დაგვეხმარეთ აპლიკაციის თარგმნაში</string>
+<string name="slogan">აპლიკაციების ამუშავება</string>
+<string name="market_text">ოფიციალური DontKillMyApp აპლიკაცია აქ არის - საბოლოოდ უზრუნველყოს აპლიკაციების გამართულად მუშაობა, მაშინაც კი, თუ Pixel არ გაქვთ.
+
+დაგეხმარებათ დააყენოთ თქვენი ტელეფონის ფონური დავალებები ისე, რომ თქვენი აპლიკაციები საბოლოოდ იმუშაოს თქვენთვის, მაშინაც კი, როდესაც ამჟამად ეკრანს არ უყურებთ.
+
+ნახეთ, როგორ მუშაობს თქვენი ტელეფონი და შეამოწმეთ სხვადასხვა პარამეტრები DontKillMyApp-ის ბენჩმარკინგით.
+
+მახასიათებლები:
+• DKMA ბენჩმარკინგი: გაზომეთ, რამდენად აგრესიულად კლავს თქვენი ტელეფონი ფონურ აპლიკაციებს
+• სახელმძღვანელოები: მიიღეთ ქმედითი ნაბიჯები ფონური პროცესის შეზღუდვების დასაძლევად
+• შეიტანეთ ცვლილება:️ დაეხმარეთ სმარტფონებს ჭკვიანად დარჩენაში თქვენი ბენჩმარკინგის ანგარიშის dontkillmyapp.com-ზე გაზიარებით
+
+DontKillMyApp არის ბენჩმარკინგის ინსტრუმენტი, რათა ნახოთ, რამდენად კარგად უჭერს მხარს თქვენი ტელეფონი ფონურ დამუშავებას. შეგიძლიათ გაზომოთ ტელეფონის დაყენებამდე, შემდეგ გადახედოთ დაყენების სახელმძღვანელოებს და ხელახლა შეასრულოთ ბენჩმარკინგი, რათა ნახოთ, რამდენად ნელა მუშაობს თქვენი ტელეფონი ფონზე.
+
+შეგიძლიათ გაუზიაროთ თქვენი ანგარიში აპლიკაციის საშუალებით dontkillmyapp.com ვებსაიტის შემქმნელებს, რომლებიც ადგენენ მას და ქმნიან საერთო უარყოფით ქულას მასზე დაყრდნობით.
+
+როგორ მუშაობს საორიენტაციო ტესტი? (ტექნიკური!)
+
+აპლიკაცია იწყებს წინა პლანზე მოქმედ სერვისს გაღვიძების დაბლოკვით და ადგენს განმეორებად დავალებებს მთავარ ნაკადზე, მორგებულ ნაკადების შემსრულებელზე და ადგენს რეგულარულ სიგნალიზაციას (AlarmManager.setExactAndAllowWhileIdle). შემდეგ ის ითვლის შესრულებულ და მოსალოდნელ რაოდენობას. სულ ესაა!
+
+დამატებითი ინფორმაციისთვის იხილეთ კოდი. აპლიკაცია ღია კოდია, რომელიც ხელმისაწვდომია https://github.com/urbandroid-team/dontkillmy-app-ზე
+განსაკუთრებული მადლობა Doki-ს (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">ზუსტი განგაშის დაგეგმვის დაშვება</string>
+<string name="exact_alarm_restrictions_summary">გთხოვთ, მოგვცეთ ზუსტი სიგნალიზაციის დაგეგმვის საშუალება, რათა სათანადოდ გამოვცადოთ თქვენი მოწყობილობის სიგნალიზაციაზე დაფუძნებული ფონური დამუშავება.</string>
+<string name="general_error">უი, რაღაც რიგზე არაა.</string>
+<string name="started">საორიენტაციო მაჩვენებელი დაიწყო!</string>
+</resources>

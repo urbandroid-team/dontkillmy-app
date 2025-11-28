@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Почати перевірку продуктивності</string>
+<string name="stop_benchmark">Зупинити перевірку продуктивності</string>
+<string name="benchmark">Перевірка продуктивності</string>
+<string name="running">Триває перевірка (<xliff:g id="range">%1$s</xliff:g> — <xliff:g id="range">%2$s</xliff:g>). Натисніть, щоб зупинити.</string>
+<string name="finished">Перевірку продуктивності завершено, натисність, щоб переглянути результат</string>
+<string name="already_running">Перевірку вже розпочато</string>
+<string name="stop">Зупинити перевірку </string>
+<string name="clear">Очистити</string>
+<string name="work">Робота</string>
+<string name="alarm">Сповіщення</string>
+<string name="main">Головне</string>
+<string name="share">Поділитись</string>
+<string name="share_with">Поділитись з</string>
+<string name="report">Звіт</string>
+<string name="duration">Тривалість</string>
+<string name="warning_title">Застереження</string>
+<string name="warning_text">Будь ласка, не підключайте телефон до зарядного пристрою і не корисуйтеся ним під час перевірки продуктивності</string>
+<string name="cancel">Відмінити</string>
+<string name="ok">ОК</string>
+<string name="total">Загалом</string>
+<string-array name="duration_array">
+<item>1 година</item>
+<item>2 години</item>
+<item>3 години</item>
+<item>4 години</item>
+<item>5 годин</item>
+<item>6 годин</item>
+<item>7 годин</item>
+<item>8 годин</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Пошта</item>
+<item>Інше</item>
+</string-array>
+<string name="how_it_works">Як це працює</string>
+<string name="contact_support">Служба підтримки</string>
+<string name="tell_others">Розказати друзям</string>
+<string name="tell_others_text">Перевірка продуктивності DontKillMyApp перевіяє фонову обробку даних вашого телефону, щоб застосунки на ньому працювали коректно.</string>
+<string name="rate">Будь ласка, оцініть нас!</string>
+<string name="rate_button">Оцінити</string>
+<string name="never_button">Ніколи</string>
+<string name="later_button">Пізніше</string>
+<string name="source">Вихідний код</string>
+<string name="rate_text">Ми хочемо, щоб застосунки працювали навіть на тих телефонах, виробники яких надають перевагу ефективній роботі батареї, а не функціональності. \n\n. Найкраще що ви можете зробити для популяризації цього проєкту  —  лишити оцінку і коментар у Play Store. \n\n Дякуємо, що допомагаєте зробити екосистему Android трохи кращою.</string>
+<string name="translate">Допоможіть перекласти застосунок</string>
+<string name="slogan">Змусимо застосунки працювати!</string>
+<string name="exact_alarm_restrictions_title">Дозволити точне планування сповіщень</string>
+<string name="exact_alarm_restrictions_summary">Будь ласка, дозвольте нам запланувати точні будильники, щоб належним чином протестувати обробку фону вашого пристрою на основі будильників.</string>
+<string name="general_error">Ой, щось пішло не так</string>
+<string name="started">Тест продуктивності розпочато!</string>
+</resources>

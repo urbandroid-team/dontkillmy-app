@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Start benchmark</string>
+<string name="stop_benchmark">Stop benchmark</string>
+<string name="benchmark">Benchmark</string>
+<string name="running">Futó benchmark (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) koppintson a leállításhoz.</string>
+<string name="finished">Benchmark kész, koppintson az eredményekre</string>
+<string name="already_running">A benchmark már fut</string>
+<string name="stop">Stop</string>
+<string name="clear">Tiszta</string>
+<string name="work">Munka</string>
+<string name="alarm">Riasztás</string>
+<string name="main">Főoldal</string>
+<string name="share">Megosztás</string>
+<string name="share_with">Megosztás</string>
+<string name="report">Jelentés</string>
+<string name="duration">Időtartam</string>
+<string name="warning_title">Figyelmeztetés</string>
+<string name="warning_text">Kérjük, hogy a telefonodat ne tedd ki a töltőből, és próbáld meg nem használni a teljes benchmark alatt.</string>
+<string name="cancel">Törölje</string>
+<string name="ok">OK</string>
+<string name="total">Összesen</string>
+<string-array name="duration_array">
+<item>1 óra</item>
+<item>2 óra</item>
+<item>3 óra</item>
+<item>4 óra</item>
+<item>5 óra</item>
+<item>6 óra</item>
+<item>7 óra</item>
+<item>8 óra</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-mail</item>
+<item>Egyéb</item>
+</string-array>
+<string name="how_it_works">Hogyan működik</string>
+<string name="how_it_works_text">A benchmark egy előtérbeli szolgáltatást indít egy wake lock-kal, és ismétlődő feladatokat ütemez a fő szálon (10 másodpercenként), egy egyéni szálvégrehajtóval (10 másodpercenként), és rendszeres riasztásokat ütemez az AlarmManager.setExactAndAllowWhileIdle használatával (10 percenként). Ezután kiszámítja a pontszámot a végrehajtott és a várt eredmények összehasonlításával.\n\nA 100%-hoz közeli pontszámok jó eredménynek számítanak - jelenleg nem alkalmaznak nem szabványos akkumulátor-optimalizálást. Bár érdemes egy hét múlva megismételni a tesztet, mivel egyes OEM-ek korlátozásokat alkalmazhatnak azokra az alkalmazásokra, amelyeket egy ideig nem használnak.\n\nA GRAFIKON\n\nA grafikon minden sora 5 percet jelent. Ideális esetben minden sorban 30 kör és háromszög látható, és minden második sorban egy négyzet. A nagyobb üres területek problémát jeleznek - az alkalmazásai nem biztos, hogy a kívánt módon fognak működni, ha nem módosítja a telefon beállításait.\n\n\További részletekért tekintse meg az alkalmazás kódját a https://github.com/urbandroid-team/dontkillmy-app oldalon.</string>
+<string name="contact_support">Kapcsolatfelvétel a támogatással</string>
+<string name="tell_others">Mondja el másoknak</string>
+<string name="tell_others_text">A DontKillMyApp Benchmark ellenőrzi a telefon háttérfeldolgozását, hogy az alkalmazások megfelelően működjenek a telefonodon.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Kérjük, értékeljen minket!</string>
+<string name="rate_button">Rate</string>
+<string name="never_button">Soha</string>
+<string name="later_button">Később</string>
+<string name="source">Forráskód</string>
+<string name="rate_text">Azt szeretnénk, hogy az alkalmazások olyan telefonokon is működjenek, amelyek gyártói az akkumulátort a funkcionalitással szemben részesítik előnyben.\n\nA projekt láthatóbbá tételéhez a legjobb mód az, ha értékeled és véleményezed ezt az ingyenes és nyílt forráskódú eszközt a Play Áruházban.\n\nKöszönjük, hogy segítesz nekünk jobbá tenni az Android ökoszisztémát!</string>
+<string name="translate">Segítsen lefordítani az alkalmazást</string>
+<string name="slogan">Alkalmazások működésbe hozása</string>
+<string name="market_text">Megérkezett a hivatalos DontKillMyApp alkalmazás – biztosítsd, hogy az alkalmazások végre megfelelően működjenek, még akkor is, ha nincs Pixel telefonod.
+
+Segít beállítani a telefonod háttérfeladatait, hogy az alkalmazásaid végre NEKED is működhessenek, még akkor is, ha éppen nem nézed a képernyőt.
+
+Nézd meg, hogyan teljesít a telefonod, és tesztelj különböző beállításokat a DontKillMyApp benchmark segítségével.
+
+Jellemzők:
+
+• DKMA benchmark: Mérd meg, hogy a telefonod milyen agresszívan löki le a háttéralkalmazásokat.
+• Útmutatók: Gyakorlatias lépéseket kapsz a legtöbb háttérfolyamat-korlátozás leküzdéséhez.
+• Változtass:️Segíts az okostelefonoknak okosnak maradni a benchmark jelentés dontkillmyapp.com oldalon történő megosztásával.
+
+A DontKillMyApp egy benchmark eszköz, amellyel láthatod, hogy a telefonod mennyire támogatja a háttérfeldolgozást. A telefon beállítása előtt megmérheted, majd átnézheted a beállítási útmutatókat, és újra összehasonlíthatod, hogy mennyit slazított a telefon a háttérben.
+
+A jelentésedet az alkalmazáson keresztül megoszthatod a dontkillmyapp.com weboldal karbantartóival, akik összeállítják, és erre alapozzák az összesített negatív pontszámot.
+
+Hogyan működik a benchmark? (Technikai!)
+
+Az alkalmazás elindít egy előtérbeli szolgáltatást egy wake lock-kal, és ismétlődő feladatokat ütemez a fő szálon, egy egyéni szálvégrehajtóval, és rendszeres riasztásokat ütemez (AlarmManager.setExactAndAllowWhileIdle). Ezután kiszámítja a végrehajtott és a várt feladatokat. Ennyi!
+
+További részletekért tekintse meg a kódot. Az alkalmazás nyílt forráskódú, és elérhető a https://github.com/urbandroid-team/dontkillmy-app címen.
+
+Külön köszönet a Dokinak (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Pontos riasztási ütemezés engedélyezése</string>
+<string name="exact_alarm_restrictions_summary">Kérjük, engedje meg, hogy pontos riasztásokat ütemezzünk, hogy megfelelően tesztelhessük az eszköz riasztásalapú háttérfeldolgozását.</string>
+<string name="general_error">Hoppá, valami nem stimmel.</string>
+<string name="started">Benchmark elindult!</string>
+</resources>

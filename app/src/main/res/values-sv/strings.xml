@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Starta riktmärke</string>
+<string name="stop_benchmark">Stoppa riktmärke</string>
+<string name="benchmark">Riktmärke</string>
+<string name="running">Körning med riktmärke (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) tryck för att stoppa.</string>
+<string name="finished">Benchmark avslutad, tryck för resultat</string>
+<string name="already_running">Benchmark är redan igång</string>
+<string name="stop">Stopp</string>
+<string name="clear">Klar</string>
+<string name="work">Arbete</string>
+<string name="alarm">Larm</string>
+<string name="main">Huvud</string>
+<string name="share">Aktie</string>
+<string name="share_with">Dela med dig av</string>
+<string name="report">Rapport</string>
+<string name="duration">Varaktighet</string>
+<string name="warning_title">Varning</string>
+<string name="warning_text">Ta inte ut din telefon ur laddaren och försök att inte använda den under hela mätningen.</string>
+<string name="cancel">Avbryt</string>
+<string name="ok">OK</string>
+<string name="total">Totalt</string>
+<string-array name="duration_array">
+<item>1 timme</item>
+<item>2 timmar</item>
+<item>3 timmar</item>
+<item>4 timmar</item>
+<item>5 timmar</item>
+<item>6 timmar</item>
+<item>7 timmar</item>
+<item>8 timmar</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-post</item>
+<item>Övriga</item>
+</string-array>
+<string name="how_it_works">Så här fungerar det</string>
+<string name="how_it_works_text">Benchmarkprogrammet startar en förgrundstjänst med ett wake lock och schemalägger repetitiva uppgifter på huvudtråden (var 10:e sekund), en anpassad trådexekutor (var 10:e sekund) och schemalägger regelbundna larm med AlarmManager.setExactAndAllowWhileIdle (var 10:e minut). Sedan beräknar den poängen genom att jämföra exekverade med förväntade.\n\nPoäng nära 100 % är bra resultat – icke-standardiserade batterioptimeringar tillämpas inte för närvarande. Det är dock bra att upprepa testet om en vecka eftersom vissa OEM-tillverkare kan tillämpa gränser för appar som inte används på ett tag.\n\nDIGRAFEN\n\nVarje rad i grafen representerar 5 minuter. Helst ser du 30 cirklar och trianglar på varje rad och en kvadrat varannan rad. Större områden med vitt utrymme indikerar ett problem – dina appar kanske inte fungerar som avsett om du inte ändrar telefonens inställningar.\n\n\För mer information, kolla appens kod på https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Kontakta support</string>
+<string name="tell_others">Berätta för andra</string>
+<string name="tell_others_text">DontKillMyApp Benchmark kontrollerar din telefons bakgrundsbehandling för att få appar på din telefon att fungera korrekt.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Snälla, betygsätt oss!</string>
+<string name="rate_button">Pris</string>
+<string name="never_button">Aldrig</string>
+<string name="later_button">Senare</string>
+<string name="source">Källkod</string>
+<string name="rate_text">Vi vill att appar ska fungera även på telefoner vars tillverkare föredrar batteri framför funktionalitet.\n\nDet bästa sättet du kan hjälpa till att synliggöra detta projekt är att betygsätta och kommentera detta gratisverktyg med öppen källkod i Play Store.\n\nStort tack för att du hjälper oss att göra Android-ekosystemet till en bättre plats!</string>
+<string name="translate">Hjälp till att översätta appen</string>
+<string name="slogan">Få appar att fungera</string>
+<string name="market_text">Den officiella DontKillMyApp-appen är här – få äntligen appar att fungera korrekt även om du inte äger en Pixel.
+
+Hjälper dig att konfigurera bakgrundsuppgifterna på din telefon så att dina appar äntligen kan fungera för DIG även när du inte tittar på skärmen just nu.
+
+Se hur det går för din telefon och testa olika inställningar med DontKillMyApp-benchmarket.
+
+Funktioner:
+
+• DKMA-benchmark: Mät hur aggressivt din telefon avstänger bakgrundsappar
+
+• Guider: Få konkreta steg för att övervinna de flesta begränsningar av bakgrundsprocesser
+
+• Gör en förändring: ️Hjälp smartphones att hålla sig smarta genom att dela din benchmarkrapport till dontkillmyapp.com
+
+DontKillMyApp är ett benchmarkverktyg för att se hur väl din telefon stöder bakgrundsbearbetning. Du kan mäta innan du konfigurerar din telefon, sedan gå igenom installationsguiderna och göra en ny benchmark för att se hur mycket din telefon har slakat i bakgrunden.
+
+Du kan dela din rapport via appen med ansvarig för webbplatsen dontkillmyapp.com som sammanställer den och baserar det totala negativa resultatet på den.
+
+Hur fungerar riktmärket? (Tekniskt!)
+
+Appen startar en förgrundstjänst med ett väckningslås och schemalägger repetitiva uppgifter på huvudtråden, en anpassad trådexekutor och schemalägger regelbundna larm (AlarmManager.setExactAndAllowWhileIdle). Sedan beräknar den exekverade kontra förväntade. Det är allt!
+
+För mer information, kolla koden. Appen är öppen källkod tillgänglig på https://github.com/urbandroid-team/dontkillmy-app
+Särskilt tack till Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Tillåt exakt schemaläggning av larm</string>
+<string name="exact_alarm_restrictions_summary">Låt oss schemalägga exakta larm för att kunna testa din enhet på ett korrekt sätt med larmbaserad bakgrundsbehandling.</string>
+<string name="general_error">Oops, något när fel.</string>
+<string name="started">Benchmark startade!</string>
+</resources>

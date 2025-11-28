@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Mulakan penanda aras</string>
+<string name="stop_benchmark">Hentikan penanda aras</string>
+<string name="benchmark">Penanda aras</string>
+<string name="running">Penanda aras berjalan (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) ketik untuk berhenti.</string>
+<string name="finished">Penanda aras selesai, ketik untuk mendapatkan hasil</string>
+<string name="already_running">Penanda aras sudah berjalan</string>
+<string name="stop">Berhenti</string>
+<string name="clear">Jelas</string>
+<string name="work">Kerja</string>
+<string name="alarm">Penggera</string>
+<string name="main">Utama</string>
+<string name="share">Kongsi</string>
+<string name="share_with">Kongsi dengan</string>
+<string name="report">Laporan</string>
+<string name="duration">Tempoh</string>
+<string name="warning_title">Amaran</string>
+<string name="warning_text">Sila jauhkan telefon anda daripada pengecas dan cuba untuk tidak menggunakannya semasa keseluruhan penanda aras.</string>
+<string name="cancel">Batal</string>
+<string name="ok">OK</string>
+<string name="total">Jumlah</string>
+<string-array name="duration_array">
+<item>1 jam</item>
+<item>2 jam</item>
+<item>3 jam</item>
+<item>4 jam</item>
+<item>5 jam</item>
+<item>6 jam</item>
+<item>7 jam</item>
+<item>8 jam</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-mel</item>
+<item>Lain-lain</item>
+</string-array>
+<string name="how_it_works">Bagaimana ia berfungsi</string>
+<string name="how_it_works_text">Penanda aras memulakan perkhidmatan latar depan dengan kunci bangun dan menjadualkan tugas berulang pada urutan utama (setiap 10s), pelaksana utas tersuai (setiap 10s) dan menjadualkan penggera biasa menggunakan AlarmManager.setExactAndAllowWhileIdle (setiap 10 minit). Kemudian ia mengira skor dengan membandingkan dilaksanakan berbanding jangkaan.\n\nSkor hampir 100% adalah hasil yang baik - pengoptimuman bateri bukan standard tidak digunakan pada masa ini. Walaupun adalah baik untuk mengulangi ujian dalam seminggu kerana sesetengah OEM mungkin mengenakan had kepada apl yang tidak digunakan untuk seketika.\n\nGRAF\n\nSetiap baris dalam graf mewakili 5 minit. Sebaik-baiknya anda melihat 30 bulatan dan segi tiga pada setiap baris dan satu petak setiap baris kedua. Kawasan ruang putih yang lebih besar menunjukkan masalah - apl anda mungkin tidak berfungsi seperti yang dimaksudkan jika anda tidak akan menukar tetapan telefon anda.\n\n\Untuk butiran lanjut, semak kod apl di https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Hubungi sokongan</string>
+<string name="tell_others">Beritahu orang lain</string>
+<string name="tell_others_text">Penanda Aras DontKillMyApp menyemak pemprosesan latar belakang telefon anda untuk menjadikan apl pada telefon anda berfungsi dengan betul.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Tolong, nilaikan kami!</string>
+<string name="rate_button">Kadar</string>
+<string name="never_button">tidak pernah</string>
+<string name="later_button">Nanti</string>
+<string name="source">Kod sumber</string>
+<string name="rate_text">Kami mahu menjadikan apl berfungsi walaupun pada telefon yang pengeluarnya lebih mengutamakan bateri berbanding kefungsian.\n\nCara terbaik anda boleh membantu menjadikan projek ini kelihatan adalah dengan menilai dan mengulas alat sumber terbuka dan percuma ini di Gedung Play.\n\nTerima kasih kerana membantu kami menjadikan ekosistem Android tempat yang lebih baik!</string>
+<string name="translate">Bantu menterjemah apl</string>
+<string name="slogan">Jadikan apl berfungsi</string>
+<string name="market_text">Apl rasmi DontKillMyApp ada di sini - jadikan apl akhirnya berfungsi dengan baik walaupun anda tidak memiliki Pixel.
+
+Membantu anda menyediakan tugas latar belakang telefon anda supaya apl anda akhirnya boleh berfungsi untuk ANDA walaupun tidak melihat skrin sekarang.
+
+Lihat prestasi telefon anda dan uji tetapan yang berbeza dengan penanda aras DontKillMyApp.
+
+ciri-ciri:
+• Penanda aras DKMA: Ukur sejauh mana agresif telefon anda membunuh apl latar belakang
+• Panduan: Dapatkan langkah yang boleh diambil tindakan untuk mengatasi kebanyakan sekatan proses latar belakang
+• Buat perubahan:️Bantu telefon pintar kekal pintar dengan berkongsi laporan penanda aras anda kepada dontkillmyapp.com
+
+DontKillMyApp ialah alat penanda aras untuk melihat sejauh mana telefon anda menyokong pemprosesan latar belakang. Anda boleh mengukur sebelum menyediakan telefon anda, kemudian pergi melalui panduan persediaan dan penanda aras sekali lagi untuk melihat sejauh mana telefon anda mengalami kelesuan di latar belakang.
+
+Anda boleh berkongsi laporan anda melalui apl kepada penyelenggara tapak web dontkillmyapp.com yang menyusunnya dan mendasarkan skor negatif keseluruhan padanya.
+
+
+Bagaimanakah penanda aras berfungsi? (Teknikal!)
+
+Apl memulakan perkhidmatan latar depan dengan kunci bangun dan menjadualkan tugas berulang pada utas utama, pelaksana utas tersuai dan menjadualkan penggera biasa (AlarmManager.setExactAndAllowWhileIdle). Kemudian ia mengira dilaksanakan berbanding dijangka. Itu sahaja!
+
+Untuk butiran lanjut semak kod. Apl ini adalah sumber terbuka yang tersedia di https://github.com/urbandroid-team/dontkillmy-app
+Terima kasih khas kepada Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Benarkan penjadualan penggera yang tepat</string>
+<string name="exact_alarm_restrictions_summary">Sila benarkan kami menjadualkan penggera tepat untuk menguji pemprosesan latar belakang berasaskan penggera peranti anda dengan betul.</string>
+<string name="general_error">Op, sesuatu apabila salah.</string>
+<string name="started">Penanda aras bermula!</string>
+</resources>

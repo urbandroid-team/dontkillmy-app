@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">เริ่มการวัดประสิทธิภาพ</string>
+<string name="stop_benchmark">หยุดการวัดประสิทธิภาพ</string>
+<string name="benchmark">เกณฑ์มาตรฐาน</string>
+<string name="running">เกณฑ์มาตรฐานกำลังทำงาน (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) แตะเพื่อหยุด</string>
+<string name="finished">เสร็จสิ้นการทดสอบแล้ว แตะเพื่อดูผลลัพธ์</string>
+<string name="already_running">กำลังทำการทดสอบประสิทธิภาพอยู่แล้ว</string>
+<string name="stop">หยุด</string>
+<string name="clear">ชัดเจน</string>
+<string name="work">งาน</string>
+<string name="alarm">สัญญาณเตือน</string>
+<string name="main">หลัก</string>
+<string name="share">แชร์</string>
+<string name="share_with">แชร์กับ</string>
+<string name="report">รายงาน</string>
+<string name="duration">ระยะเวลา</string>
+<string name="warning_title">คำเตือน</string>
+<string name="warning_text">กรุณาเก็บโทรศัพท์ของคุณออกจากที่ชาร์จ และพยายามอย่าใช้มันตลอดการทดสอบประสิทธิภาพ</string>
+<string name="cancel">ยกเลิก</string>
+<string name="ok">โอเค</string>
+<string name="total">รวม</string>
+<string-array name="duration_array">
+<item>1 ชั่วโมง</item>
+<item>2 ชั่วโมง</item>
+<item>3 ชั่วโมง</item>
+<item>4 ชั่วโมง</item>
+<item>5 ชั่วโมง</item>
+<item>6 ชั่วโมง</item>
+<item>7 ชั่วโมง</item>
+<item>8 ชั่วโมง</item>
+</string-array>
+<string-array name="share_array">
+<item>อย่าปิดแอปของฉัน</item>
+<item>อีเมล</item>
+<item>อื่นๆ</item>
+</string-array>
+<string name="how_it_works">วิธีการทำงาน</string>
+<string name="how_it_works_text">เกณฑ์มาตรฐานจะเริ่มบริการเบื้องหน้าด้วย wake lock และกำหนดเวลาการทำงานซ้ำๆ บนเธรดหลัก (ทุก 10 วินาที) ตัวดำเนินการเธรดที่กำหนดเอง (ทุก 10 วินาที) และกำหนดเวลาการแจ้งเตือนตามปกติโดยใช้ AlarmManager.setExactAndAllowWhileIdle (ทุก 10 นาที) จากนั้นจะคำนวณคะแนนโดยการเปรียบเทียบการทำงานจริงกับการทำงานที่คาดหวัง\n\nคะแนนที่ใกล้เคียง 100% ถือเป็นผลลัพธ์ที่ดี เนื่องจากขณะนี้ยังไม่มีการปรับปรุงประสิทธิภาพแบตเตอรี่ที่ไม่ได้มาตรฐาน อย่างไรก็ตาม ควรทำการทดสอบซ้ำอีกครั้งภายในหนึ่งสัปดาห์ เนื่องจาก OEM บางรายอาจกำหนดข้อจำกัดสำหรับแอปที่ไม่ได้ใช้งานเป็นระยะเวลาหนึ่ง\n\nกราฟ\n\nแต่ละแถวในกราฟแสดงเวลา 5 นาที ตามหลักการแล้ว คุณจะเห็นวงกลมและสามเหลี่ยม 30 วงในแต่ละบรรทัด และสี่เหลี่ยมจัตุรัสหนึ่งวงทุกๆ สองบรรทัด พื้นที่ว่างขนาดใหญ่บ่งชี้ถึงปัญหา - แอปของคุณอาจไม่ทำงานตามที่ตั้งใจไว้หากคุณไม่เปลี่ยนการตั้งค่าโทรศัพท์ของคุณ\n\n\สำหรับรายละเอียดเพิ่มเติม โปรดตรวจสอบโค้ดแอปที่ https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">ติดต่อฝ่ายสนับสนุน</string>
+<string name="tell_others">บอกผู้อื่น</string>
+<string name="tell_others_text">DontKillMyApp Benchmark ตรวจสอบการประมวลผลพื้นหลังโทรศัพท์ของคุณเพื่อให้แอปบนโทรศัพท์ของคุณทำงานได้อย่างถูกต้อง\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">กรุณาให้คะแนนเรา!</string>
+<string name="rate_button">อัตรา</string>
+<string name="never_button">ไม่เคย</string>
+<string name="later_button">ภายหลัง</string>
+<string name="source">ซอร์สโค้ด</string>
+<string name="rate_text">เราต้องการสร้างแอปให้ทำงานได้แม้ในโทรศัพท์ที่ผู้ผลิตให้ความสำคัญกับแบตเตอรี่มากกว่าฟังก์ชันการใช้งาน\n\nวิธีที่ดีที่สุดที่คุณสามารถช่วยให้โครงการนี้เป็นที่รู้จักคือการให้คะแนนและแสดงความคิดเห็นเกี่ยวกับเครื่องมือโอเพ่นซอร์สฟรีนี้ใน Play Store\n\nขอบคุณมากที่ช่วยเราทำให้ระบบนิเวศ Android เป็นสถานที่ที่ดีขึ้น!</string>
+<string name="translate">ช่วยแปลแอป</string>
+<string name="slogan">ทำให้แอปทำงาน</string>
+<string name="market_text">แอป DontKillMyApp อย่างเป็นทางการมาแล้ว - ช่วยให้แอปทำงานได้อย่างถูกต้องแม้ไม่มี Pixel
+
+ช่วยคุณตั้งค่างานเบื้องหลังโทรศัพท์ เพื่อให้แอปต่างๆ สามารถทำงานได้แม้ในขณะที่ไม่ได้มองหน้าจอ
+
+ดูว่าโทรศัพท์ของคุณทำงานเป็นอย่างไรและทดสอบการตั้งค่าต่างๆ ด้วยเกณฑ์มาตรฐาน DontKillMyApp
+
+คุณสมบัติ:
+• เกณฑ์มาตรฐาน DKMA: วัดว่าโทรศัพท์ของคุณกำลังปิดแอปเบื้องหลังบ่อยแค่ไหน
+• คำแนะนำ: ดูขั้นตอนที่ปฏิบัติได้จริงเพื่อเอาชนะข้อจำกัดของกระบวนการเบื้องหลังส่วนใหญ่
+• เปลี่ยนแปลง:️ ช่วยให้สมาร์ทโฟนทำงานได้อย่างชาญฉลาดด้วยการแชร์รายงานเกณฑ์มาตรฐานของคุณไปที่ dontkillmyapp.com
+
+DontKillMyApp คือเครื่องมือประเมินประสิทธิภาพเพื่อดูว่าโทรศัพท์ของคุณรองรับการประมวลผลเบื้องหลังได้ดีเพียงใด คุณสามารถวัดผลก่อนตั้งค่าโทรศัพท์ จากนั้นอ่านคู่มือการตั้งค่าและประเมินประสิทธิภาพอีกครั้งเพื่อดูว่าโทรศัพท์ของคุณทำงานช้าลงในเบื้องหลังมากน้อยเพียงใด
+
+คุณสามารถแชร์รายงานของคุณผ่านแอปไปยังผู้ดูแลเว็บไซต์ dontkillmyapp.com ซึ่งจะรวบรวมและให้คะแนนติดลบโดยรวม
+
+เกณฑ์มาตรฐานทำงานอย่างไร? (ทางเทคนิค!)
+
+แอปจะเริ่มบริการเบื้องหน้าด้วย Wake Lock และกำหนดเวลางานซ้ำๆ บนเธรดหลัก ตัวดำเนินการเธรดที่กำหนดเอง และกำหนดเวลาการแจ้งเตือนตามปกติ (AlarmManager.setExactAndAllowWhileIdle) จากนั้นจะคำนวณว่าทำงานจริงเทียบกับที่คาดไว้ แค่นี้ก็เสร็จเรียบร้อย!
+
+สำหรับรายละเอียดเพิ่มเติม โปรดดูโค้ด แอปนี้เป็นโอเพนซอร์สที่ https://github.com/urbandroid-team/dontkillmy-app
+ขอขอบคุณ Doki เป็นพิเศษ (github.com/doubledotlabs/doki)</string>
+<string name="exact_alarm_restrictions_title">อนุญาตให้ตั้งเวลาปลุกได้อย่างแม่นยำ</string>
+<string name="exact_alarm_restrictions_summary">กรุณาอนุญาตให้เราจัดตารางการแจ้งเตือนที่แม่นยำเพื่อทดสอบการทำงานเบื้องหลังของอุปกรณ์ของคุณที่อิงกับการแจ้งเตือนอย่างถูกต้อง</string>
+<string name="general_error">ขออภัย เกิดข้อผิดพลาดขึ้น</string>
+<string name="started">เริ่มต้นแล้ว!</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Pradinis lyginamasis standartas</string>
+<string name="stop_benchmark">Stop etalonas</string>
+<string name="benchmark">Lyginamasis standartas</string>
+<string name="running">Vykdomas lyginamasis testas (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>). Palieskite, kad sustabdytumėte.</string>
+<string name="finished">Baigtas lyginamasis indeksas, bakstelėkite, kad gautumėte rezultatus</string>
+<string name="already_running">Lyginamasis testas jau veikia</string>
+<string name="stop">Sustabdyti</string>
+<string name="clear">Skaidrus</string>
+<string name="work">Darbas</string>
+<string name="alarm">Signalizacija</string>
+<string name="main">Pagrindinis</string>
+<string name="share">Dalintis</string>
+<string name="share_with">Dalytis su</string>
+<string name="report">Ataskaita</string>
+<string name="duration">Trukmė</string>
+<string name="warning_title">Įspėjimas</string>
+<string name="warning_text">Prašome nelaikyti telefono įkroviklyje ir stengtis juo nesinaudoti per visą lyginamąjį testą.</string>
+<string name="cancel">Atšaukti</string>
+<string name="ok">GERAI</string>
+<string name="total">Iš viso</string>
+<string-array name="duration_array">
+<item>1 val.</item>
+<item>2 valandos</item>
+<item>3 valandos</item>
+<item>4 valandos</item>
+<item>5 valandos</item>
+<item>6 valandos</item>
+<item>7 valandos</item>
+<item>8 valandos</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>El. paštas</item>
+<item>Kita</item>
+</string-array>
+<string name="how_it_works">Kaip tai veikia</string>
+<string name="how_it_works_text">Etaloninis testas paleidžia priekinio plano paslaugą su pažadinimo užraktu ir suplanuoja pasikartojančias užduotis pagrindiniame gijoje (kas 10 s), pasirinktinį gijos vykdytoją (kas 10 s) ir suplanuoja reguliarius signalus naudodamas „AlarmManager.setExactAndAllowWhileIdle“ (kas 10 minučių). Tada jis apskaičiuoja rezultatą, palygindamas įvykdytas ir laukiamas užduotis.\n\nBalsai, artimi 100 %, yra geri rezultatai – šiuo metu netaikomos nestandartinės akumuliatoriaus optimizacijos. Nors testą verta pakartoti po savaitės, nes kai kurie originalios įrangos gamintojai gali taikyti apribojimus programoms, kurios kurį laiką nenaudojamos.\n\nDIAGRAMAS\n\nKiekviena grafiko eilutė atitinka 5 minutes. Idealiu atveju kiekvienoje eilutėje matote 30 apskritimų ir trikampių, o kiekvienoje antroje eilutėje – po vieną kvadratą. Didesni tarpai rodo problemą – jūsų programos gali neveikti taip, kaip numatyta, jei nepakeisite telefono nustatymų.\n\n\Daugiau informacijos rasite programų kode adresu https://github.com/urbandroid-team/dontkillmy-app.</string>
+<string name="contact_support">Susisiekite su palaikymo tarnyba</string>
+<string name="tell_others">Papasakokite kitiems</string>
+<string name="tell_others_text">„DontKillMyApp Benchmark“ tikrina jūsų telefono foninį apdorojimą, kad programos jūsų telefone veiktų tinkamai.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Įvertinkite mus!</string>
+<string name="rate_button">Įvertinkite</string>
+<string name="never_button">Niekada</string>
+<string name="later_button">Vėliau</string>
+<string name="source">Šaltinio kodas</string>
+<string name="rate_text">Norime, kad programėlės veiktų net ir tuose telefonuose, kurių gamintojai teikia pirmenybę baterijai, o ne funkcionalumui.\n\nGeriausias būdas padėti šiam projektui tapti matomam – įvertinti ir pakomentuoti šį nemokamą ir atvirojo kodo įrankį „Play“ parduotuvėje.\n\nLabai ačiū, kad padedate mums pagerinti „Android“ ekosistemą!</string>
+<string name="translate">Padėkite išversti programą</string>
+<string name="slogan">Užtikrinkite, kad programos veiktų</string>
+<string name="market_text">Oficiali „DontKillMyApp“ programėlė jau čia – priverskite programas pagaliau tinkamai veikti, net jei neturite „Pixel“ telefono.
+
+Padeda nustatyti telefono fonines užduotis, kad jūsų programos pagaliau veiktų JUMS, net kai šiuo metu nežiūrite į ekraną.
+
+Pažiūrėkite, kaip veikia jūsų telefonas, ir išbandykite skirtingus nustatymus naudodami „DontKillMyApp“ etaloną.
+
+Funkcijos:
+
+• DKMA etalonas: išmatuokite, kaip agresyviai jūsų telefonas naikina fonines programas.
+• Vadovai: gaukite veiksmų, kaip įveikti daugumą foninių procesų apribojimų.
+• Pakeiskite:️ Padėkite išmaniesiems telefonams išlikti išmaniems, bendrindami savo etaloninę ataskaitą svetainėje dontkillmyapp.com.
+
+„DontKillMyApp“ yra etaloninė priemonė, skirta pamatyti, kaip gerai jūsų telefonas palaiko foninį apdorojimą. Galite išmatuoti prieš nustatydami telefoną, tada peržiūrėti sąrankos vadovus ir dar kartą atlikti etaloną, kad pamatytumėte, kiek jūsų telefonas sulėtėjo fone.
+
+Savo ataskaitą per programėlę galite bendrinti su dontkillmyapp.com svetainės prižiūrėtojais, kurie ją surinks ir ja remdamiesi pagrindžia bendrą neigiamą balą.
+
+Kaip veikia etalonas? (Techninė dalis!)
+
+Programa paleidžia priekinio plano paslaugą su pažadinimo užraktu ir suplanuoja pasikartojančias užduotis pagrindiniame gija, pasirinktinį gijos vykdytoją ir suplanuoja reguliarius signalus (AlarmManager.setExactAndAllowWhileIdle). Tada ji apskaičiuoja įvykdytų ir laukiamų užduočių skaičių. Štai ir viskas!
+
+Daugiau informacijos rasite kode. Programa yra atvirojo kodo ir pasiekiama adresu https://github.com/urbandroid-team/dontkillmy-app
+Ypatinga padėka Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Leidžia tiksliai planuoti žadintuvus</string>
+<string name="exact_alarm_restrictions_summary">Leiskite mums suplanuoti tikslius pavojaus signalus, kad galėtume tinkamai išbandyti įrenginio signalais pagrįstą foninį apdorojimą.</string>
+<string name="general_error">Ups, kažkas, kai negerai.</string>
+<string name="started">Pradėtas lyginamasis indeksas!</string>
+</resources>

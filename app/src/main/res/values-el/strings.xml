@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Άρχισε Μέτρηση </string>
+<string name="stop_benchmark">Σταμάτα μέτρηση </string>
+<string name="benchmark">Μέτρηση </string>
+<string name="running">"Μέτρηση Τρέχει  (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) Πατα να σταματήσεις."</string>
+<string name="finished">Μέτρηση τελείωσε, πατήστε για αποτελέσματα </string>
+<string name="already_running">Μέτρηση τρέχει ηδη</string>
+<string name="stop">Σταμάτα </string>
+<string name="clear">Καθάρισε </string>
+<string name="work">Δουλειά </string>
+<string name="alarm">Συναγερμός </string>
+<string name="main">Κεντρικό </string>
+<string name="share">Μοιράσου </string>
+<string name="share_with">Μοιράσου με</string>
+<string name="report">Ανάφερε </string>
+<string name="duration">Διάρκεια </string>
+<string name="warning_title">Προειδοποίηση </string>
+<string name="warning_text">Παρακαλώ μην φορτίζετε το κινητό σας και προσπαθήστε να μην το χρησιμοποιήσετε κατά την μέτρηση.</string>
+<string name="cancel">Ακύρωση </string>
+<string name="ok">ΟΚ</string>
+<string-array name="duration_array">
+<item>1 ωρα</item>
+<item>2 ώρες </item>
+<item>3 ώρες </item>
+<item>4 ώρες </item>
+<item>5 ώρες </item>
+<item>6 ώρες </item>
+<item>7 ώρες </item>
+<item>8 ώρες </item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Ηλεκτρονικό Ταχυδρομείο </item>
+<item>Άλλο </item>
+</string-array>
+<string name="how_it_works">Πως δουλεύει </string>
+</resources>

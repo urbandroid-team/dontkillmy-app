@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Почетна референтна точка</string>
+<string name="stop_benchmark">Стоп репер</string>
+<string name="benchmark">Репер</string>
+<string name="running">Референтниот показател работи (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) допрете за да запрете.</string>
+<string name="finished">Реперната е завршена, допрете за резултати</string>
+<string name="already_running">Реперот веќе работи</string>
+<string name="stop">Стоп</string>
+<string name="clear">Исчисти</string>
+<string name="work">Работа</string>
+<string name="alarm">Аларм</string>
+<string name="main">Главно</string>
+<string name="share">Сподели</string>
+<string name="share_with">Сподели со</string>
+<string name="report">Извештај</string>
+<string name="duration">Времетраење</string>
+<string name="warning_title">Предупредување</string>
+<string name="warning_text">Ве молиме држете го телефонот подалеку од полначот и обидете се да не го користите за време на целиот тест.</string>
+<string name="cancel">Откажи</string>
+<string name="ok">Во ред</string>
+<string name="total">Вкупно</string>
+<string-array name="duration_array">
+<item>1 час</item>
+<item>2 часа</item>
+<item>3 часа</item>
+<item>4 часа</item>
+<item>5 часа</item>
+<item>6 часа</item>
+<item>7 часа</item>
+<item>8 часа</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Е-пошта</item>
+<item>Друго</item>
+</string-array>
+<string name="how_it_works">Како функционира</string>
+<string name="how_it_works_text">Референтниот пресек стартува услуга во преден план со заклучување на будење и закажува повторувачки задачи на главната нишка (на секои 10 секунди), прилагоден извршител на нишки (на секои 10 секунди) и закажува редовни аларми користејќи AlarmManager.setExactAndAllowWhileIdle (на секои 10 минути). Потоа го пресметува резултатот со споредување на извршените наспроти очекуваните.\n\nРезултатите блиску до 100% се добри резултати - нестандардните оптимизации на батериите не се применуваат во моментов. Иако е добро да се повтори тестот за една недела бидејќи некои производители на оригинална опрема (OEM) може да применат ограничувања за апликации кои не се користат некое време.\n\nГРАФОК\n\nСекој ред на графиконот претставува 5 минути. Идеално, гледате 30 кругови и триаголници на секоја линија и по еден квадрат на секоја втора линија. Поголемите региони со бел простор укажуваат на проблем - вашите апликации може да не работат како што е предвидено ако не ги промените поставките на вашиот телефон.\n\n\За повеќе детали, проверете го кодот на апликацијата на https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Контактирајте ја поддршката</string>
+<string name="tell_others">Кажете им на другите</string>
+<string name="tell_others_text">DontKillMyApp Benchmark ја проверува обработката во позадина на вашиот телефон за да ги направи апликациите на телефонот да работат правилно.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Ве молиме, оценете нѐ!</string>
+<string name="rate_button">Оцени</string>
+<string name="never_button">Никогаш</string>
+<string name="later_button">Подоцна</string>
+<string name="source">Изворен код</string>
+<string name="rate_text">Сакаме апликациите да работат дури и на телефони чии производители претпочитаат батерија пред функционалноста.\n\nНајдобриот начин да го направите овој проект видлив е да ја оцените и коментирате оваа бесплатна алатка со отворен код на Play Store.\n\nВи благодариме што ни помагате да го направиме екосистемот на Android подобро место!</string>
+<string name="translate">Помогнете да се преведе апликацијата</string>
+<string name="slogan">Направете апликациите да работат</string>
+<string name="market_text">Официјалната апликација DontKillMyApp е тука - направете апликациите конечно да работат правилно дури и ако немате Pixel.
+
+Ви помага да ги поставите задачите во позадина на вашиот телефон, така што вашите апликации конечно ќе можат да работат за ВАС дури и кога не гледате во екранот во моментов.
+
+Видете како работи вашиот телефон и тестирајте различни поставки со DontKillMyApp бенчмарк.
+
+Карактеристики:
+• DKMA бенчмарк: Измерете колку агресивно вашиот телефон ги уништува апликациите во позадина
+• Водичи: Добијте практични чекори за надминување на повеќето ограничувања на процесите во позадина
+• Направете промена:️Помогнете им на паметните телефони да останат паметни со споделување на вашиот извештај за бенчмарк на dontkillmyapp.com
+
+DontKillMyApp е алатка за бенчмарк за да видите колку добро вашиот телефон поддржува обработка во позадина. Можете да измерите пред да го поставите вашиот телефон, а потоа да ги погледнете упатствата за поставување и повторно да го бенчмаркирате за да видите колку вашиот телефон бил забавен во позадина.
+
+Можете да го споделите вашиот извештај преку апликацијата со одржувачите на веб-страницата dontkillmyapp.com кои го составуваат и врз основа на него го базираат вкупниот негативен резултат.
+
+Како функционира бенчмаркот? (Технички!)
+
+Апликацијата стартува услуга во преден план со заклучување на будење и закажува повторувачки задачи на главната нишка, прилагоден извршител на нишки и закажува редовни аларми (AlarmManager.setExactAndAllowWhileIdle). Потоа ги пресметува извршените наспроти очекуваните. Тоа е тоа!
+
+За повеќе детали проверете го кодот. Апликацијата е со отворен код достапна на https://github.com/urbandroid-team/dontkillmy-app
+Посебна благодарност до Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Дозволете точно закажување на аларми</string>
+<string name="exact_alarm_restrictions_summary">Дозволете ни да закажеме точни аларми за правилно да ја тестираме обработката во позадина базирана на аларми на вашиот уред.</string>
+<string name="general_error">Упс, нешто не е во ред.</string>
+<string name="started">Реперот започна!</string>
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Bençmarka başlayın</string>
+<string name="stop_benchmark">Benchmarkı dayandırın</string>
+<string name="benchmark">Benchmark</string>
+<string name="running">Bençmark işləyir (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) dayandırmaq üçün klikləyin.</string>
+<string name="finished">Benchmark tamamlandı, nəticələr üçün toxunun</string>
+<string name="already_running">Benchmark artıq işləyir</string>
+<string name="stop">Dayan</string>
+<string name="clear">Təmiz</string>
+<string name="work">iş</string>
+<string name="alarm">Siqnal</string>
+<string name="main">Əsas</string>
+<string name="share">Paylaşın</string>
+<string name="share_with">ilə paylaşın</string>
+<string name="report">Hesabat</string>
+<string name="duration">Müddət</string>
+<string name="warning_title">Xəbərdarlıq</string>
+<string name="warning_text">Zəhmət olmasa telefonunuzu şarj cihazından kənarda saxlayın və bütün sınaq müddətində istifadə etməməyə çalışın.</string>
+<string name="cancel">Ləğv et</string>
+<string name="ok">OK</string>
+<string name="total">Cəmi</string>
+<string-array name="duration_array">
+<item>1 saat</item>
+<item>2 saat</item>
+<item>3 saat</item>
+<item>4 saat</item>
+<item>5 saat</item>
+<item>6 saat</item>
+<item>7 saat</item>
+<item>8 saat</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-poçt</item>
+<item>Digər</item>
+</string-array>
+<string name="how_it_works">Necə işləyir</string>
+<string name="how_it_works_text">Bu meyar oyanma kilidi ilə ön planda xidmətə başlayır və əsas ipdə təkrarlanan tapşırıqları (hər 10 saniyədən bir), xüsusi ip icraçısı (hər 10 saniyədən bir) planlaşdırır və AlarmManager.setExactAndAllowWhileIdle (hər 10 dəqiqədən bir) istifadə edərək müntəzəm həyəcan siqnallarını planlaşdırır. Sonra o, icra edilən və gözlənilənləri müqayisə edərək balı hesablayır.\n\n100%-ə yaxın ballar yaxşı nəticələrdir - hazırda qeyri-standart batareya optimallaşdırmaları tətbiq edilmir. Baxmayaraq ki, testi bir həftə ərzində təkrarlamaq yaxşıdır, çünki bəzi OEM-lər bir müddət istifadə olunmayan tətbiqlərə məhdudiyyətlər tətbiq edə bilər.\n\nQRAFİA\n\nQrafikdəki hər cərgə 5 dəqiqədir. İdeal olaraq hər sətirdə 30 dairə və üçbucaq və hər ikinci sətirdə bir kvadrat görürsünüz. Daha böyük boşluq bölgələri problemi göstərir - telefonunuzun parametrlərini dəyişdirməsəniz, tətbiqləriniz nəzərdə tutulduğu kimi işləməyə bilər.\n\n\Ətraflı məlumat üçün https://github.com/urbandroid-team/dontkillmy-app ünvanında tətbiq kodunu yoxlayın.</string>
+<string name="contact_support">Dəstək ilə əlaqə saxlayın</string>
+<string name="tell_others">Başqalarına deyin</string>
+<string name="tell_others_text">DontKillMyApp Benchmark, telefonunuzdakı proqramların düzgün işləməsi üçün telefonunuzun fon emalını yoxlayır.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Zəhmət olmasa, bizə qiymət verin!</string>
+<string name="rate_button">Qiymətləndirmə</string>
+<string name="never_button">Heç vaxt</string>
+<string name="later_button">Daha sonra</string>
+<string name="source">Mənbə kodu</string>
+<string name="rate_text">Biz tətbiqləri hətta istehsalçıları batareyanı funksionallıqdan üstün tutan telefonlarda da işləmək istəyirik.\n\nBu layihənin görünməsinə kömək edə biləcəyiniz ən yaxşı üsul Play Store-da bu pulsuz və açıq mənbə alətini qiymətləndirmək və şərh etməkdir.\n\nAndroid ekosistemini daha yaxşı yerləşdirməmizə kömək etdiyiniz üçün çox sağ olun!</string>
+<string name="translate">Proqramı tərcümə etməyə kömək edin</string>
+<string name="slogan">Proqramları işləyin</string>
+<string name="market_text">Rəsmi DontKillMyApp tətbiqi buradadır - Pixel sahibi olmasanız belə, proqramların nəhayət düzgün işləməsini təmin edin.
+
+Telefonunuzun fonunda tapşırıqları qurmağa kömək edir ki, hətta hazırda ekrana baxmasanız belə, proqramlarınız nəhayət sizin üçün işləyə bilsin.
+
+Telefonunuzun necə olduğuna baxın və DontKillMyApp benchmark ilə müxtəlif parametrləri sınayın.
+
+Xüsusiyyətlər:
+• DKMA benchmark: Telefonunuzun fon proqramlarını nə dərəcədə aqressiv şəkildə məhv etdiyini ölçün
+• Bələdçilər: Əksər fon prosesi məhdudiyyətlərini aradan qaldırmaq üçün təsirli addımlar əldə edin
+• Dəyişiklik edin: ️Standart hesabatınızı dontkillmyapp.com ilə paylaşmaqla smartfonların ağıllı qalmasına kömək edin.
+
+DontKillMyApp telefonunuzun fon emalını nə qədər yaxşı dəstəklədiyini görmək üçün etalon vasitədir. Telefonunuzu quraşdırmadan əvvəl ölçə bilərsiniz, sonra quraşdırma təlimatlarına keçin və telefonunuzun fonda nə qədər zəiflədiyini görmək üçün yenidən müqayisə edə bilərsiniz.
+
+Siz hesabatınızı proqram vasitəsilə dontkillmyapp.com veb-saytının onu tərtib edən və ümumi mənfi balı əsaslandıran baxıcıları ilə paylaşa bilərsiniz.
+
+
+Benchmark necə işləyir? (Texniki!)
+
+Tətbiq oyanma kilidi ilə ön planda xidmətə başlayır və əsas mövzuda təkrarlanan tapşırıq, xüsusi ip icraçısı və müntəzəm həyəcan siqnalları (AlarmManager.setExactAndAllowWhileIdle) təyin edir. Sonra gözlənilən və yerinə yetirilənləri hesablayır. Budur!
+
+Ətraflı məlumat üçün kodu yoxlayın. Proqram açıq mənbədir https://github.com/urbandroid-team/dontkillmy-app
+Doki-yə xüsusi təşəkkürlər (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Siqnalın dəqiq planlaşdırılmasına icazə verin</string>
+<string name="exact_alarm_restrictions_summary">Zəhmət olmasa, cihazınızın siqnala əsaslanan fon emalını düzgün yoxlamaq üçün dəqiq siqnalları planlaşdırmağa icazə verin.</string>
+<string name="general_error">Vay, səhv olanda nəsə.</string>
+<string name="started">Benchmark başladı!</string>
+</resources>

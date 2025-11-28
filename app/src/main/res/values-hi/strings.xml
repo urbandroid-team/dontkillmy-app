@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">बेंचमार्क प्रारंभ करें</string>
+<string name="stop_benchmark">स्टॉप बेंचमार्क</string>
+<string name="benchmark">बेंचमार्क</string>
+<string name="running">बेंचमार्क चल रहा है (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) रोकने के लिए टैप करें.</string>
+<string name="finished">बेंचमार्क समाप्त, परिणामों के लिए टैप करें</string>
+<string name="already_running">बेंचमार्क पहले से ही चल रहा है</string>
+<string name="stop">रुकना</string>
+<string name="clear">स्पष्ट</string>
+<string name="work">काम</string>
+<string name="alarm">खतरे की घंटी</string>
+<string name="main">मुख्य</string>
+<string name="share">शेयर करना</string>
+<string name="share_with">के साथ शेयर करें</string>
+<string name="report">प्रतिवेदन</string>
+<string name="duration">अवधि</string>
+<string name="warning_title">चेतावनी</string>
+<string name="warning_text">कृपया अपने फोन को चार्जर से दूर रखें और पूरे बेंचमार्क के दौरान इसका उपयोग न करने का प्रयास करें।</string>
+<string name="cancel">रद्द करना</string>
+<string name="ok">ठीक है</string>
+<string name="total">कुल</string>
+<string-array name="duration_array">
+<item>1 घंटा</item>
+<item>2 घंटे</item>
+<item>3 घंटे</item>
+<item>4 घंटे</item>
+<item>5 घंटे</item>
+<item>6 घंटे</item>
+<item>7 गंटे</item>
+<item>8 घंटे</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>ईमेल</item>
+<item>अन्य</item>
+</string-array>
+<string name="how_it_works">यह काम किस प्रकार करता है</string>
+<string name="how_it_works_text">बेंचमार्क एक वेक लॉक के साथ एक फ़ोरग्राउंड सेवा शुरू करता है और मुख्य थ्रेड पर दोहराए जाने वाले कार्यों (प्रत्येक 10 सेकंड), एक कस्टम थ्रेड एक्ज़ीक्यूटर (प्रत्येक 10 सेकंड) को शेड्यूल करता है और AlarmManager.setExactAndAllowWhileIdle (प्रत्येक 10 मिनट) का उपयोग करके नियमित अलार्म शेड्यूल करता है। फिर यह निष्पादित बनाम अपेक्षित की तुलना करके स्कोर की गणना करता है।\n\n100% के करीब स्कोर अच्छे परिणाम हैं - गैर-मानक बैटरी अनुकूलन फ़िलहाल लागू नहीं हैं। हालाँकि, एक हफ़्ते में परीक्षण दोहराना अच्छा है क्योंकि कुछ OEM उन ऐप्स पर सीमाएँ लागू कर सकते हैं जिनका उपयोग कुछ समय के लिए नहीं किया जाता है।\n\nग्राफ़\n\nग्राफ़ में प्रत्येक पंक्ति 5 मिनट दर्शाती है। आदर्श रूप से, आपको प्रत्येक पंक्ति पर 30 वृत्त और त्रिभुज और हर दूसरी पंक्ति में एक वर्ग दिखाई देगा। रिक्त स्थान के बड़े क्षेत्र किसी समस्या का संकेत देते हैं - यदि आप अपने फ़ोन की सेटिंग नहीं बदलते हैं, तो हो सकता है कि आपके ऐप्स अपेक्षित रूप से काम न करें।\n\n\nअधिक जानकारी के लिए https://github.com/urbandroid-team/dontkillmy-app पर ऐप्स कोड देखें।</string>
+<string name="contact_support">समर्थन से संपर्क करें</string>
+<string name="tell_others">दूसरों को बताएं</string>
+<string name="tell_others_text">DontKillMyApp बेंचमार्क आपके फ़ोन के बैकग्राउंड प्रोसेसिंग की जाँच करता है ताकि आपके फ़ोन पर मौजूद ऐप्स ठीक से काम करें।\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">कृपया हमें रेटिंग दें!</string>
+<string name="rate_button">दर</string>
+<string name="never_button">कभी नहीं</string>
+<string name="later_button">बाद में</string>
+<string name="source">सोर्स कोड</string>
+<string name="rate_text">हम चाहते हैं कि ऐप्स उन फ़ोन पर भी काम करें जिनके निर्माता कार्यक्षमता से ज़्यादा बैटरी को प्राथमिकता देते हैं।\n\nइस प्रोजेक्ट को लोगों तक पहुँचाने में आपकी मदद करने का सबसे अच्छा तरीका है कि आप Play Store पर इस मुफ़्त और ओपन सोर्स टूल को रेटिंग दें और उस पर टिप्पणी करें।\n\nAndroid इको-सिस्टम को बेहतर बनाने में हमारी मदद करने के लिए आपका बहुत-बहुत धन्यवाद!</string>
+<string name="translate">ऐप का अनुवाद करने में सहायता करें</string>
+<string name="slogan">ऐप्स को कार्यशील बनाएं</string>
+<string name="market_text">आधिकारिक DontKillMyApp ऐप आ गया है - अब आपके ऐप्स पिक्सेल न होने पर भी ठीक से काम करेंगे।
+
+यह आपके फ़ोन के बैकग्राउंड टास्क सेट अप करने में आपकी मदद करता है ताकि आपके ऐप्स तब भी काम कर सकें जब आप स्क्रीन पर नज़र न रख रहे हों।
+
+DontKillMyApp बेंचमार्क के साथ देखें कि आपका फ़ोन कैसा प्रदर्शन कर रहा है और विभिन्न सेटिंग्स का परीक्षण करें।
+
+विशेषताएँ:
+• DKMA बेंचमार्क: मापें कि आपका फ़ोन बैकग्राउंड ऐप्स को कितनी तेज़ी से बंद कर रहा है।
+• गाइड: ज़्यादातर बैकग्राउंड प्रोसेस प्रतिबंधों को दूर करने के लिए कारगर कदम पाएँ।
+• बदलाव लाएँ: dontkillmyapp.com पर अपनी बेंचमार्क रिपोर्ट शेयर करके स्मार्टफ़ोन को स्मार्ट बनाए रखने में मदद करें।
+
+DontKillMyApp एक बेंचमार्क टूल है जो यह देखने के लिए है कि आपका फ़ोन बैकग्राउंड प्रोसेसिंग को कितनी अच्छी तरह सपोर्ट करता है। आप अपना फ़ोन सेटअप करने से पहले माप सकते हैं, फिर सेटअप गाइड देखें और फिर से बेंचमार्क करके देखें कि आपका फ़ोन बैकग्राउंड में कितना धीमा चल रहा है।
+
+आप ऐप के ज़रिए अपनी रिपोर्ट dontkillmyapp.com वेबसाइट के मेंटेनर्स के साथ शेयर कर सकते हैं, जो इसे संकलित करते हैं और इसके आधार पर कुल नेगेटिव स्कोर तय करते हैं।
+
+बेंचमार्क कैसे काम करता है? (तकनीकी!)
+
+ऐप एक वेक लॉक के साथ एक फ़ोरग्राउंड सर्विस शुरू करता है और मुख्य थ्रेड पर दोहराए जाने वाले टास्क, एक कस्टम थ्रेड एक्ज़ीक्यूटर और नियमित अलार्म (AlarmManager.setExactAndAllowWhileIdle) शेड्यूल करता है। फिर यह निष्पादित बनाम अपेक्षित की गणना करता है। बस!
+
+अधिक जानकारी के लिए कोड देखें। ऐप ओपन सोर्स है और https://github.com/urbandroid-team/dontkillmy-app पर उपलब्ध है।
+Doki (github.com/doubledotlabs/doki) का विशेष धन्यवाद।</string>
+<string name="exact_alarm_restrictions_title">सटीक अलार्म शेड्यूलिंग की अनुमति दें</string>
+<string name="exact_alarm_restrictions_summary">कृपया हमें आपके डिवाइस अलार्म-आधारित पृष्ठभूमि प्रसंस्करण का उचित परीक्षण करने के लिए सटीक अलार्म शेड्यूल करने की अनुमति दें।</string>
+<string name="general_error">ओह, कुछ तो गड़बड़ है।</string>
+<string name="started">बेंचमार्क शुरू हो गया!</string>
+</resources>

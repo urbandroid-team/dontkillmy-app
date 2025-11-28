@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Жишиг шалгуурыг эхлүүлэх</string>
+<string name="stop_benchmark">Жишиг үзүүлэлтийг зогсоо</string>
+<string name="benchmark">Жишиг</string>
+<string name="running">Жишиг ажиллаж байна (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) зогсоохын тулд товшино уу.</string>
+<string name="finished">Жишиг шалгалт дууссан. Үр дүнг харахын тулд товшино уу</string>
+<string name="already_running">Бенчмарк аль хэдийн ажиллаж байна</string>
+<string name="stop">Зогс</string>
+<string name="clear">Тодорхой</string>
+<string name="work">Ажил</string>
+<string name="alarm">Сэрүүлэг</string>
+<string name="main">Үндсэн</string>
+<string name="share">Хуваалцах</string>
+<string name="share_with">-тай хуваалцах</string>
+<string name="report">Тайлан</string>
+<string name="duration">Үргэлжлэх хугацаа</string>
+<string name="warning_title">Анхааруулга</string>
+<string name="warning_text">Утсаа цэнэглэгчээс хол байлгаж, бүх шалгуурын турш ашиглахгүй байхыг хичээгээрэй.</string>
+<string name="cancel">Цуцлах</string>
+<string name="ok">OK</string>
+<string name="total">Нийт</string>
+<string-array name="duration_array">
+<item>1 цаг</item>
+<item>2 цаг</item>
+<item>3 цаг</item>
+<item>4 цаг</item>
+<item>5 цаг</item>
+<item>6 цаг</item>
+<item>7 цаг</item>
+<item>8 цаг</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Имэйл</item>
+<item>Бусад</item>
+</string-array>
+<string name="how_it_works">Энэ нь хэрхэн ажилладаг</string>
+<string name="how_it_works_text">Энэ жишиг нь сэрүүлгийн түгжээгээр эхний үйлчилгээг эхлүүлж, үндсэн хэлхээнд (10 секунд тутамд), өөрчлөн тохируулагч урсгал гүйцэтгэгч (10 секунд тутамд) дээр давтагдах даалгавруудыг хуваарьлаж, AlarmManager.setExactAndAllowWhileIdle (10 минут тутамд) ашиглан тогтмол дохиоллын хуваарь гаргадаг. Дараа нь гүйцэтгэсэн болон хүлээгдэж буйг харьцуулан оноог тооцдог.\n\n100%-тай ойролцоо оноо нь сайн үр дүн юм - одоогоор стандарт бус батерейны оновчлол хэрэгжээгүй байна. Хэдийгээр зарим OEM-үүд хэсэг хугацаанд ашиглагдаагүй апп-уудад хязгаарлалт тавьж болзошгүй тул долоо хоногийн дараа тестийг давтах нь зүйтэй.\n\nГРАФИК\n\nГрафик дахь мөр бүр 5 минутыг илэрхийлнэ. Хамгийн тохиромжтой нь та мөр бүрт 30 тойрог, гурвалжин, хоёр дахь мөрөнд нэг квадратыг хардаг. Илүү том хоосон зай нь асуудал байгааг илтгэнэ - хэрэв та утасныхаа тохиргоог өөрчлөхгүй бол таны апп-ууд зориулалтын дагуу ажиллахгүй байж магадгүй.\n\n\Дэлгэрэнгүй мэдээллийг https://github.com/urbandroid-team/dontkillmy-app хаягаас аппын кодыг шалгана уу.</string>
+<string name="contact_support">Дэмжлэгтэй холбоо барина уу</string>
+<string name="tell_others">Бусдад хэл</string>
+<string name="tell_others_text">DontKillMyApp Benchmark нь таны утсан дээрх програмуудыг зөв ажиллуулахын тулд утасны дэвсгэр боловсруулалтыг шалгадаг.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Биднийг үнэлнэ үү!</string>
+<string name="rate_button">Үнэлгээ</string>
+<string name="never_button">Хэзээ ч үгүй</string>
+<string name="later_button">Дараа нь</string>
+<string name="source">Эх код</string>
+<string name="rate_text">Бид үйлдвэрлэгчид нь батарейг илүүд үздэг утсан дээр ч гэсэн програмуудыг ажиллуулахыг хүсэж байна.\n\nТа энэ төслийг харуулахад туслах хамгийн сайн арга бол Play Store дээрх үнэгүй, нээлттэй эхийн хэрэгслийг үнэлж, сэтгэгдэл бичих явдал юм.\n\nАндройд эко системийг илүү сайн газар болгоход бидэнд тусалсанд маш их баярлалаа!</string>
+<string name="translate">Програмыг орчуулахад тусална уу</string>
+<string name="slogan">Аппликешнүүдийг ажиллуул</string>
+<string name="market_text">Албан ёсны DontKillMyApp програм энд байна - та Pixel эзэмшдэггүй байсан ч програмуудыг эцэст нь зөв ажиллуулаарай.
+
+Яг одоо дэлгэц рүү харахгүй байсан ч таны апп-ууд эцэст нь ТАНД ажиллах боломжтой болохын тулд утасныхаа дэвсгэр даалгавруудыг тохируулахад тусална.
+
+Таны утас ямар байгааг харж, DontKillMyApp жишиг ашиглан өөр тохиргоог туршиж үзээрэй.
+
+Онцлогууд:
+• DKMA жишиг: Таны утас арын програмуудыг хэр түрэмгийлж байгааг хэмжинэ
+• Удирдамж: Ихэнх далд үйл явцын хязгаарлалтыг даван туулах арга хэмжээ авах боломжтой
+• Өөрчлөлт хийх: ️Жишиг үнэлгээний тайлангаа dontkillmyapp.com-д хуваалцаж, ухаалаг утсаа ухаалаг байхад нь туслаарай.
+
+DontKillMyApp бол таны утас дэвсгэр боловсруулалтыг хэр сайн дэмждэгийг хардаг жишиг хэрэгсэл юм. Та утсаа тохируулахаасаа өмнө хэмжилт хийж, дараа нь тохиргооны гарын авлагыг үзэж, таны утас цаана нь хэр зэрэг суларч байгааг харах боломжтой.
+
+Та тайлангаа аппликейшнээр дамжуулан түүнийг эмхэтгэсэн dontkillmyapp.com вэб сайтын хөтлөгчидтэй хуваалцаж, нийт сөрөг оноог үндэслэж болно.
+
+
+Бенчмарк хэрхэн ажилладаг вэ? (Техникийн!)
+
+Апп нь сэрүүлгийн түгжээгээр үндсэн үйлчилгээг эхлүүлж, үндсэн хэлхээ, захиалгат урсгалын гүйцэтгэгч дээр давтагдах даалгавруудыг хуваарилж, байнгын дохиолол (AlarmManager.setExactAndAllowWhileIdle) хуваарь гаргадаг. Дараа нь энэ нь хүлээгдэж буй гүйцэтгэлтэй харьцуулахад тооцоолно. Ингээд л боллоо!
+
+Дэлгэрэнгүй мэдээллийг кодыг шалгана уу. Уг програмыг https://github.com/urbandroid-team/dontkillmy-app хаягаас авах боломжтой нээлттэй эх сурвалж юм.
+Доки-д онцгой талархал илэрхийлье (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Сэрүүлгийн тодорхой хуваарийг зөвшөөрөх</string>
+<string name="exact_alarm_restrictions_summary">Таны төхөөрөмжийн дохиололд суурилсан дэвсгэр боловсруулалтыг зөв шалгахын тулд бидэнд яг сэрүүлэг төлөвлөхийг зөвшөөрнө үү.</string>
+<string name="general_error">Уучлаарай, ямар нэг зүйл буруу үед.</string>
+<string name="started">Бенчмарк эхэлсэн!</string>
+</resources>

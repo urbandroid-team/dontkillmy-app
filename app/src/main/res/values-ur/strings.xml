@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">بینچ مارک شروع کریں۔</string>
+<string name="stop_benchmark">بینچ مارک کو روکیں۔</string>
+<string name="benchmark">بینچ مارک</string>
+<string name="running">بینچ مارک چل رہا ہے (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) روکنے کے لیے تھپتھپائیں۔</string>
+<string name="finished">بینچ مارک ختم، نتائج کے لیے تھپتھپائیں۔</string>
+<string name="already_running">بینچ مارک پہلے ہی چل رہا ہے۔</string>
+<string name="stop">رک جاؤ</string>
+<string name="clear">صاف</string>
+<string name="work">کام</string>
+<string name="alarm">الارم</string>
+<string name="main">مین</string>
+<string name="share">شیئر کریں۔</string>
+<string name="share_with">کے ساتھ اشتراک کریں۔</string>
+<string name="report">رپورٹ</string>
+<string name="duration">دورانیہ</string>
+<string name="warning_title">وارننگ</string>
+<string name="warning_text">براہ کرم اپنے فون کو چارجر سے دور رکھیں اور کوشش کریں کہ پورے بینچ مارک کے دوران اسے استعمال نہ کریں۔</string>
+<string name="cancel">منسوخ کریں۔</string>
+<string name="ok">ٹھیک ہے</string>
+<string name="total">کل</string>
+<string-array name="duration_array">
+<item>1 گھنٹہ</item>
+<item>2 گھنٹے</item>
+<item>3 گھنٹے</item>
+<item>4 گھنٹے</item>
+<item>5 گھنٹے</item>
+<item>6 گھنٹے</item>
+<item>7 گھنٹے</item>
+<item>8 گھنٹے</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>ای میل</item>
+<item>دیگر</item>
+</string-array>
+<string name="how_it_works">یہ کیسے کام کرتا ہے۔</string>
+<string name="how_it_works_text">بینچ مارک ایک ویک لاک کے ساتھ پیش منظر کی خدمت شروع کرتا ہے اور مین تھریڈ (ہر 10 سیکنڈ) پر دہرائے جانے والے کاموں کو شیڈول کرتا ہے، ایک حسب ضرورت تھریڈ ایگزیکیوٹر (ہر 10 سیکنڈ) اور AlarmManager.setExactAndAllowWhileIdle (ہر 10 منٹ) کا استعمال کرتے ہوئے باقاعدہ الارم کا شیڈول کرتا ہے۔ پھر یہ متوقع بمقابلہ متوقع کا موازنہ کرکے اسکور کا حساب لگاتا ہے۔\n\n100% کے قریب اسکور اچھے نتائج ہیں - اس وقت غیر معیاری بیٹری کی اصلاح کا اطلاق نہیں کیا گیا ہے۔ اگرچہ ٹیسٹ کو ایک ہفتے میں دہرانا اچھا ہے کیونکہ کچھ OEMs ان ایپس پر حدیں لگا سکتے ہیں جو تھوڑی دیر کے لیے استعمال نہیں ہوتی ہیں۔\n\nگراف\n\nگراف میں ہر قطار 5 منٹ کی نمائندگی کرتی ہے۔ مثالی طور پر آپ کو ہر لائن پر 30 دائرے اور مثلث اور ہر دوسری لائن پر ایک مربع نظر آتا ہے۔ وائٹ اسپیس کے بڑے علاقے ایک مسئلہ کی نشاندہی کرتے ہیں - اگر آپ اپنے فون کی سیٹنگز کو تبدیل نہیں کرتے ہیں تو آپ کی ایپس مطلوبہ کام نہیں کر سکتی ہیں۔\n\n\مزید تفصیلات کے لیے https://github.com/urbandroid-team/dontkillmy-app پر ایپس کوڈ چیک کریں</string>
+<string name="contact_support">سپورٹ سے رابطہ کریں۔</string>
+<string name="tell_others">دوسروں کو بتائیں</string>
+<string name="tell_others_text">DontKillMyApp بینچ مارک آپ کے فون کے بیک گراؤنڈ پروسیسنگ کو چیک کرتا ہے تاکہ آپ کے فون پر موجود ایپس ٹھیک سے کام کر سکیں۔\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">براہ کرم، ہمیں درجہ دیں!</string>
+<string name="rate_button">شرح</string>
+<string name="never_button">کبھی نہیں۔</string>
+<string name="later_button">بعد میں</string>
+<string name="source">ماخذ کوڈ</string>
+<string name="rate_text">ہم ایپس کو ان فونز پر بھی کام کرنا چاہتے ہیں جن کے مینوفیکچررز فعالیت پر بیٹری کو ترجیح دیتے ہیں۔\n\nاس پروجیکٹ کو مرئی بنانے میں آپ کی مدد کرنے کا بہترین طریقہ Play Store پر اس مفت اور اوپن سورس ٹول کی درجہ بندی اور تبصرہ کرنا ہے۔\n\nAndroid ایکو سسٹم کو ایک بہتر جگہ بنانے میں ہماری مدد کرنے کا بہت شکریہ!</string>
+<string name="translate">ایپ کا ترجمہ کرنے میں مدد کریں۔</string>
+<string name="slogan">ایپس کو کام کرنے دیں۔</string>
+<string name="market_text">آفیشل DontKillMyApp ایپ یہاں ہے - ایپس کو آخر کار مناسب طریقے سے کام کریں چاہے آپ کے پاس Pixel نہ ہو۔
+
+آپ کے فون کے پس منظر کے کاموں کو ترتیب دینے میں آپ کی مدد کرتا ہے تاکہ آپ کی ایپس آپ کے لیے کام کر سکیں یہاں تک کہ اس وقت اسکرین کو نہ دیکھ رہے ہوں۔
+
+دیکھیں کہ آپ کا فون کیسا ہے اور DontKillMyApp بینچ مارک کے ساتھ مختلف سیٹنگز کی جانچ کریں۔
+
+خصوصیات:
+• DKMA بینچ مارک: پیمائش کریں کہ آپ کا فون بیک گراؤنڈ ایپس کو کتنا جارحانہ انداز میں مار رہا ہے۔
+• رہنما: پس منظر کے عمل کی زیادہ تر پابندیوں پر قابو پانے کے لیے قابل عمل اقدامات حاصل کریں۔
+• تبدیلی کریں: اپنی بینچ مارک رپورٹ dontkillmyapp.com پر شیئر کرکے اسمارٹ فونز کو اسمارٹ رہنے میں مدد کریں
+
+DontKillMyApp یہ دیکھنے کے لیے ایک بینچ مارک ٹول ہے کہ آپ کا فون بیک گراؤنڈ پروسیسنگ کو کس حد تک سپورٹ کرتا ہے۔ آپ اپنے فون کو سیٹ کرنے سے پہلے پیمائش کر سکتے ہیں، پھر سیٹ اپ گائیڈز اور بینچ مارک کے ذریعے دوبارہ دیکھیں کہ آپ کا فون پس منظر میں کتنا سست ہو رہا ہے۔
+
+آپ اپنی رپورٹ کو ایپ کے ذریعے dontkillmyapp.com ویب سائٹ کے مینٹینرز کے ساتھ شیئر کر سکتے ہیں جو اسے مرتب کرتے ہیں اور اس پر مجموعی منفی سکور کی بنیاد رکھتے ہیں۔
+
+
+بینچ مارک کیسے کام کرتا ہے؟ (تکنیکی!)
+
+ایپ ویک لاک کے ساتھ پیش منظر کی خدمت شروع کرتی ہے اور مین تھریڈ، ایک کسٹم تھریڈ ایگزیکیوٹر پر دہرائے جانے والے کام کو شیڈول کرتی ہے اور باقاعدہ الارم (AlarmManager.setExactAndAllowWhileIdle) کو شیڈول کرتی ہے۔ پھر یہ پھانسی بمقابلہ متوقع کا حساب لگاتا ہے۔ بس!
+
+مزید تفصیلات کے لیے کوڈ چیک کریں۔ ایپ اوپن سورس https://github.com/urbandroid-team/dontkillmy-app پر دستیاب ہے۔
+ڈوکی کا خصوصی شکریہ (github.com/doubledotlabs/doki)۔</string>
+<string name="exact_alarm_restrictions_title">عین مطابق الارم شیڈولنگ کی اجازت دیں۔</string>
+<string name="exact_alarm_restrictions_summary">براہ کرم ہمیں آپ کے آلے کے الارم پر مبنی بیک گراؤنڈ پروسیسنگ کو صحیح طریقے سے جانچنے کے لیے بالکل درست الارم شیڈول کرنے کی اجازت دیں۔</string>
+<string name="general_error">افوہ، کچھ غلط ہونے پر۔</string>
+<string name="started">بینچ مارک شروع ہوا!</string>
+</resources>

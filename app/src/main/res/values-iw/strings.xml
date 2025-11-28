@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">התחל את מבחן הביצועים</string>
+<string name="stop_benchmark">עצור את הבנצ\'מרק</string>
+<string name="benchmark">מדד</string>
+<string name="running">ריצת בנצ\'מרק (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) הקש כדי לעצור.</string>
+<string name="finished">הבדיקה הסתיימה, הקש לקבלת תוצאות</string>
+<string name="already_running">הבנצ\'מרק כבר פועל</string>
+<string name="stop">עצור</string>
+<string name="clear">ברור</string>
+<string name="work">עבודה</string>
+<string name="alarm">אזעקה</string>
+<string name="main">ראשי</string>
+<string name="share">שתף</string>
+<string name="share_with">שתף עם</string>
+<string name="report">דו"ח</string>
+<string name="duration">משך</string>
+<string name="warning_title">אזהרה</string>
+<string name="warning_text">אנא השאר את הטלפון מחוץ למטען ונסה לא להשתמש בו במהלך כל הבדיקה.</string>
+<string name="cancel">ביטול</string>
+<string name="ok">בסדר</string>
+<string name="total">סה"כ</string>
+<string-array name="duration_array">
+<item>שעה אחת</item>
+<item>שעתיים</item>
+<item>3 שעות</item>
+<item>4 שעות</item>
+<item>5 שעות</item>
+<item>6 שעות</item>
+<item>7 שעות</item>
+<item>8 שעות</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>דוא"ל</item>
+<item>אחר</item>
+</string-array>
+<string name="how_it_works">איך זה עובד</string>
+<string name="how_it_works_text">מבחן הביצועים מפעיל שירות בחזית עם נעילת השכמה ומתזמן משימות חוזרות על השרשור הראשי (כל 10 שניות), מבצע שרשור מותאם אישית (כל 10 שניות) ומתזמן התראות רגילות באמצעות AlarmManager.setExactAndAllowWhileIdle (כל 10 דקות). לאחר מכן הוא מחשב את הציון על ידי השוואת ביצועים לעומת צפויים.\n\nציונים קרובים ל-100% הם תוצאות טובות - אופטימיזציות סוללה לא סטנדרטיות אינן מיושמות כרגע. למרות זאת, כדאי לחזור על הבדיקה בעוד שבוע מכיוון שחלק מיצרני הציוד המקורי (OEM) עשויים להחיל מגבלות על אפליקציות שלא נעשה בהן שימוש במשך זמן מה.\n\nהגרף\n\nכל שורה בגרף מייצגת 5 דקות. באופן אידיאלי, תראו 30 עיגולים ומשולשים בכל שורה וריבוע אחד בכל שורה שנייה. אזורים גדולים יותר של רווח לבן מצביעים על בעיה - ייתכן שהאפליקציות שלכם לא יפעלו כמתוכנן אם לא תשנו את הגדרות הטלפון שלכם.\n\n\לפרטים נוספים, עיינו בקוד האפליקציה בכתובת https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">צור קשר עם התמיכה</string>
+<string name="tell_others">ספר לאחרים</string>
+<string name="tell_others_text">DontKillMyApp Benchmark בודק את עיבוד הרקע של הטלפון שלך כדי לגרום לאפליקציות בטלפון שלך לעבוד כראוי.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">אנא, דרגו אותנו!</string>
+<string name="rate_button">תעריף</string>
+<string name="never_button">לעולם</string>
+<string name="later_button">מאוחר יותר</string>
+<string name="source">קוד מקור</string>
+<string name="rate_text">אנחנו רוצים לגרום לאפליקציות לעבוד גם בטלפונים שהיצרנים שלהם מעדיפים סוללה על פני פונקציונליות.\n\nהדרך הטובה ביותר שבה תוכלו לעזור להפוך את הפרויקט הזה לגלוי היא לדרג ולהגיב על הכלי החינמי והקוד הפתוח הזה בחנות Play.\n\nתודה רבה על העזרה שלכם להפוך את המערכת האקולוגית של אנדרואיד למקום טוב יותר!</string>
+<string name="translate">עזרו לתרגם את האפליקציה</string>
+<string name="slogan">הפעל אפליקציות</string>
+<string name="market_text">אפליקציית DontKillMyApp הרשמית כאן - סוף סוף גרמו לאפליקציות לעבוד כמו שצריך גם אם אין לכם פיקסל.
+
+מסייעת לכם להגדיר את משימות הרקע של הטלפון שלכם, כך שהאפליקציות שלכם יוכלו סוף סוף לעבוד בשבילכם גם כשאתם לא מסתכלים על המסך כרגע.
+
+ראו איך הטלפון שלכם מתפקד ובדקו הגדרות שונות עם מדד DontKillMyApp.
+
+מאפיינים:
+
+• מדד DKMA: מדדו עד כמה הטלפון שלכם מנטרל אפליקציות ברקע בצורה אגרסיבית.
+
+מדריכים: קבלו צעדים מעשיים להתגברות על רוב מגבלות תהליכי הרקע.
+
+בצעו שינוי: ️עזרו לסמארטפונים להישאר חכמים על ידי שיתוף דוח המדד שלכם עם dontkillmyapp.com.
+
+DontKillMyApp הוא כלי מדד כדי לראות עד כמה הטלפון שלכם תומך בעיבוד רקע. תוכלו למדוד לפני הגדרת הטלפון, לאחר מכן לעבור על מדריכי ההתקנה ולבצע שוב מדד כדי לראות כמה הטלפון שלכם רפה ברקע.
+
+תוכלו לשתף את הדוח שלכם דרך האפליקציה עם מתחזקי אתר dontkillmyapp.com, אשר אוספים אותו ומבססים עליו את הציון השלילי הכולל.
+
+כיצד פועלת בדיקת הביצועים? (טכנית!)
+
+האפליקציה מפעילה שירות קדמי עם נעילת השכמה ומתזמנת משימות חוזרות על השרשור הראשי, מבצע שרשור מותאם אישית ומתזמנת התראות רגילות (AlarmManager.setExactAndAllowWhileIdle). לאחר מכן היא מחשבת את הביצועים לעומת הצפויים. זהו!
+
+לפרטים נוספים, עיינו בקוד. האפליקציה היא קוד פתוח וזמינה בכתובת https://github.com/urbandroid-team/dontkillmy-app
+תודה מיוחדת ל-Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">אפשר תזמון מדויק של אזעקות</string>
+<string name="exact_alarm_restrictions_summary">אנא אפשר לנו לתזמן אזעקות מדויקות כדי לבדוק כראוי את עיבוד הרקע מבוסס האזעקות של המכשיר שלך.</string>
+<string name="general_error">אופס, משהו השתבש.</string>
+<string name="started">הבנצ\'מרק התחיל!</string>
+</resources>

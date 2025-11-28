@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Spustiť porovnávací test</string>
+<string name="stop_benchmark">Zastaviť referenčnú hodnotu</string>
+<string name="benchmark">Referenčná hodnota</string>
+<string name="running">Spustený benchmark (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) klepnutím zastavíte.</string>
+<string name="finished">Benchmark dokončený, klepnite na výsledky</string>
+<string name="already_running">Benchmark už beží</string>
+<string name="stop">Zastavte</string>
+<string name="clear">Jasné</string>
+<string name="work">Práca</string>
+<string name="alarm">Alarm</string>
+<string name="main">Hlavná stránka</string>
+<string name="share">Zdieľať</string>
+<string name="share_with">Zdieľať s</string>
+<string name="report">Správa</string>
+<string name="duration">Trvanie</string>
+<string name="warning_title">Upozornenie</string>
+<string name="warning_text">Počas celého testovania majte telefón mimo nabíjačky a snažte sa ho nepoužívať.</string>
+<string name="cancel">Zrušiť</string>
+<string name="ok">V poriadku</string>
+<string name="total">Celkom</string>
+<string-array name="duration_array">
+<item>1 hodina</item>
+<item>2 hodiny</item>
+<item>3 hodiny</item>
+<item>4 hodiny</item>
+<item>5 hodín</item>
+<item>6 hodín</item>
+<item>7 hodín</item>
+<item>8 hodín</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-mail</item>
+<item>Iné</item>
+</string-array>
+<string name="how_it_works">Ako to funguje</string>
+<string name="how_it_works_text">Benchmark spúšťa službu v popredí s funkciou wake lock a plánuje opakujúce sa úlohy v hlavnom vlákne (každých 10 sekúnd), vlastný vykonávač vlákien (každých 10 sekúnd) a plánuje pravidelné alarmy pomocou AlarmManager.setExactAndAllowWhileIdle (každých 10 minút). Potom vypočíta skóre porovnaním vykonaných a očakávaných úloh.\n\nSkóre blízke 100 % sú dobré výsledky – momentálne sa neaplikujú neštandardné optimalizácie batérie. Je však dobré test zopakovať o týždeň, pretože niektorí výrobcovia OEM môžu uplatňovať obmedzenia na aplikácie, ktoré sa určitý čas nepoužívajú.\n\nGRAF\n\nKaždý riadok v grafe predstavuje 5 minút. V ideálnom prípade vidíte 30 kruhov a trojuholníkov na každom riadku a jeden štvorec na každom druhom riadku. Väčšie oblasti bieleho priestoru naznačujú problém – vaše aplikácie nemusia fungovať podľa očakávania, ak nezmeníte nastavenia telefónu.\n\n\Ďalšie podrobnosti nájdete v kóde aplikácií na adrese https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Kontaktovať podporu</string>
+<string name="tell_others">Povedzte to ostatným</string>
+<string name="tell_others_text">DontKillMyApp Benchmark kontroluje spracovanie údajov na pozadí vášho telefónu, aby aplikácie v telefóne fungovali správne.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Prosím, ohodnoťte nás!</string>
+<string name="rate_button">Sadzba</string>
+<string name="never_button">Nikdy</string>
+<string name="later_button">Neskôr</string>
+<string name="source">Zdrojový kód</string>
+<string name="rate_text">Chceme, aby aplikácie fungovali aj na telefónoch, ktorých výrobcovia uprednostňujú batériu pred funkčnosťou.\n\nNajlepší spôsob, ako môžete pomôcť zviditeľniť tento projekt, je ohodnotiť a komentovať tento bezplatný a open source nástroj v Obchode Play.\n\nĎakujeme, že nám pomáhate zlepšiť ekosystém Androidu!</string>
+<string name="translate">Pomoc pri preklade aplikácie</string>
+<string name="slogan">Zabezpečenie fungovania aplikácií</string>
+<string name="market_text">Oficiálna aplikácia DontKillMyApp je tu – nechajte aplikácie konečne fungovať správne, aj keď nevlastníte Pixel.
+
+Pomáha vám nastaviť úlohy na pozadí vášho telefónu, aby vaše aplikácie konečne mohli fungovať pre VÁS, aj keď sa práve nepozeráte na obrazovku.
+
+Pozrite sa, ako sa vášmu telefónu darí, a otestujte rôzne nastavenia pomocou benchmarku DontKillMyApp.
+
+Funkcie:
+
+• Benchmark DKMA: Zmerajte, ako agresívne váš telefón vybíja aplikácie na pozadí
+• Návody: Získajte praktické kroky na prekonanie väčšiny obmedzení procesov na pozadí
+• Urobte zmenu:️Pomôžte smartfónom zostať inteligentnými zdieľaním vášho benchmarkového prehľadu na dontkillmyapp.com
+
+DontKillMyApp je nástroj na benchmarking, ktorý vám pomôže zistiť, ako dobre váš telefón podporuje spracovanie na pozadí. Môžete ho zmerať pred nastavením telefónu, potom si prejsť návody na nastavenie a znova ho porovnať, aby ste zistili, koľko váš telefón na pozadí zaostával.
+
+Svoj prehľad môžete prostredníctvom aplikácie zdieľať so správcami webovej stránky dontkillmyapp.com, ktorí ho zostavujú a na základe neho vypočítajú celkové negatívne skóre.
+
+Ako funguje benchmark? (Technické!)
+
+Aplikácia spustí službu v popredí s funkciou wake lock a naplánuje opakujúce sa úlohy v hlavnom vlákne, vlastný exekútor vlákna a naplánuje pravidelné alarmy (AlarmManager.setExactAndAllowWhileIdle). Potom vypočíta vykonané a očakávané úlohy. To je všetko!
+
+Pre viac informácií si pozrite kód. Aplikácia je open source dostupná na https://github.com/urbandroid-team/dontkillmy-app
+Špeciálne poďakovanie patrí Dokimu (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Umožniť presné plánovanie budíkov</string>
+<string name="exact_alarm_restrictions_summary">Umožnite nám naplánovať presné alarmy, aby sme mohli riadne otestovať spracovanie na pozadí na základe alarmu vášho zariadenia.</string>
+<string name="general_error">Ups, niečo, keď zle.</string>
+<string name="started">Benchmark sa začal!</string>
+</resources>

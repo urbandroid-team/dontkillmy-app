@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Սկսել չափանիշը</string>
+<string name="stop_benchmark">Կանգնեցրեք չափանիշը</string>
+<string name="benchmark">Չափանիշ</string>
+<string name="running">Բենչմարկը գործում է (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) սեղմեք՝ դադարեցնելու համար։</string>
+<string name="finished">Չափանիշն ավարտված է, հպեք՝ արդյունքները տեսնելու համար</string>
+<string name="already_running">Benchmark-ը արդեն աշխատում է</string>
+<string name="stop">Կանգ առեք</string>
+<string name="clear">Մաքրել</string>
+<string name="work">Աշխատանք</string>
+<string name="alarm">Զարթուցիչ</string>
+<string name="main">Գլխավոր</string>
+<string name="share">Կիսվել</string>
+<string name="share_with">Կիսվել</string>
+<string name="report">Հաշվետվություն</string>
+<string name="duration">Տևողություն</string>
+<string name="warning_title">Զգուշացում</string>
+<string name="warning_text">Խնդրում ենք հեռախոսը լիցքավորիչից դուրս պահել և փորձել չօգտագործել այն ամբողջ թեստի ընթացքում։</string>
+<string name="cancel">Չեղարկել</string>
+<string name="ok">Լավ</string>
+<string name="total">Ընդհանուր</string>
+<string-array name="duration_array">
+<item>1 ժամ</item>
+<item>2 ժամ</item>
+<item>3 ժամ</item>
+<item>4 ժամ</item>
+<item>5 ժամ</item>
+<item>6 ժամ</item>
+<item>7 ժամ</item>
+<item>8 ժամ</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Էլ․ փոստ</item>
+<item>Այլ</item>
+</string-array>
+<string name="how_it_works">Ինչպես է այն աշխատում</string>
+<string name="how_it_works_text">Չափանիշը գործարկում է առաջնային պլանի ծառայություն՝ արթնացման կողպեքով և պլանավորում է կրկնվող առաջադրանքներ հիմնական թելի վրա (յուրաքանչյուր 10 վայրկյանը մեկ), հատուկ թելի կատարող (յուրաքանչյուր 10 վայրկյանը մեկ) և պլանավորում է կանոնավոր զարթուցիչներ՝ օգտագործելով AlarmManager.setExactAndAllowWhileIdle (յուրաքանչյուր 10 րոպեն մեկ): Այնուհետև այն հաշվարկում է միավորը՝ համեմատելով կատարվածը սպասվողի հետ։\n\n100%-ին մոտ միավորները լավ արդյունքներ են. ոչ ստանդարտ մարտկոցի օպտիմալացումներ այս պահին չեն կիրառվում: Չնայած լավ է կրկնել թեստը մեկ շաբաթ անց, քանի որ որոշ OEM-ներ կարող են սահմանափակումներ կիրառել այն հավելվածների համար, որոնք որոշ ժամանակ չեն օգտագործվում։\n\nԳՐԱՖԻԿԸ\n\nԳրաֆիկի յուրաքանչյուր տող ներկայացնում է 5 րոպե: Իդեալականում դուք տեսնում եք 30 շրջանակ և եռանկյունի յուրաքանչյուր տողում և մեկ քառակուսի յուրաքանչյուր երկրորդ տողում: Սպիտակ տարածության ավելի մեծ տարածքները ցույց են տալիս խնդիր. ձեր հավելվածները կարող են չաշխատել նախատեսվածի պես, եթե չփոխեք ձեր հեռախոսի կարգավորումները։\n\n\Լրացուցիչ տեղեկությունների համար ստուգեք հավելվածի կոդը https://github.com/urbandroid-team/dontkillmy-app կայքում:</string>
+<string name="contact_support">Կապվեք աջակցության ծառայության հետ</string>
+<string name="tell_others">Պատմեք ուրիշներին</string>
+<string name="tell_others_text">DontKillMyApp Benchmark-ը ստուգում է ձեր հեռախոսի ֆոնային մշակումը՝ հավելվածների պատշաճ աշխատանքի համար։\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Խնդրում ենք գնահատել մեզ!</string>
+<string name="rate_button">Գնահատել</string>
+<string name="never_button">Երբեք</string>
+<string name="later_button">Ավելի ուշ</string>
+<string name="source">Աղբյուրի կոդ</string>
+<string name="rate_text">Մենք ցանկանում ենք, որ հավելվածները աշխատեն նույնիսկ այն հեռախոսների վրա, որոնց արտադրողները մարտկոցը նախընտրում են ֆունկցիոնալությունից։\n\nԱյս նախագիծը տեսանելի դարձնելու լավագույն միջոցը Play Store-ում այս անվճար և բաց կոդով գործիքը գնահատելն ու մեկնաբանելն է։\n\nՇատ շնորհակալություն Android-ի էկոհամակարգը ավելի լավը դարձնելու գործում մեզ օգնելու համար։</string>
+<string name="translate">Օգնեք թարգմանել հավելվածը</string>
+<string name="slogan">Աշխատեցրեք հավելվածները</string>
+<string name="market_text">Պաշտոնական DontKillMyApp հավելվածը այստեղ է՝ վերջապես ստիպեք հավելվածներին ճիշտ աշխատել, նույնիսկ եթե դուք Pixel չունեք։
+
+Օգնում է ձեզ կարգավորել ձեր հեռախոսի ֆոնային առաջադրանքները, որպեսզի ձեր հավելվածները վերջապես կարողանան աշխատել ձեզ համար, նույնիսկ երբ այս պահին էկրանին չեք նայում։
+
+Տեսեք, թե ինչպես է ձեր հեռախոսը աշխատում և փորձարկեք տարբեր կարգավորումներ DontKillMyApp չափանիշով։
+
+Հատկանիշներ՝
+• DKMA չափանիշ. Չափեք, թե որքան ագրեսիվ է ձեր հեռախոսը ոչնչացնում ֆոնային հավելվածները
+• Ուղեցույցներ. Ստացեք գործնական քայլեր՝ ֆոնային գործընթացների սահմանափակումների մեծ մասը հաղթահարելու համար
+• Կատարեք փոփոխություն. ️Օգնեք սմարթֆոններին մնալ խելացի՝ ձեր չափանիշային հաշվետվությունը dontkillmyapp.com կայքում կիսվելով
+
+DontKillMyApp-ը չափանիշային գործիք է, որը թույլ է տալիս տեսնել, թե որքանով է ձեր հեռախոսը աջակցում ֆոնային մշակմանը։ Դուք կարող եք չափել նախքան ձեր հեռախոսը կարգավորելը, այնուհետև անցնել կարգավորման ուղեցույցներով և կրկին չափանիշային թեստ անցկացնել՝ տեսնելու համար, թե որքանով է ձեր հեռախոսը թուլացել ֆոնային ռեժիմում։
+
+Դուք կարող եք հավելվածի միջոցով կիսվել ձեր հաշվետվությամբ dontkillmyapp.com կայքի սպասարկողներին, ովքեր կազմում են այն և հիմնվում են դրա վրա ընդհանուր բացասական գնահատականի վրա։
+
+Ինչպե՞ս է աշխատում չափանիշը։ (Տեխնիկական առումով!)
+
+Հավելվածը գործարկում է առաջնային ծառայություն՝ արթնացման կողպեքով և պլանավորում է կրկնվող առաջադրանքներ հիմնական թելի վրա, հատուկ թելի կատարող և պլանավորում է կանոնավոր ահազանգեր (AlarmManager.setExactAndAllowWhileIdle): Այնուհետև այն հաշվարկում է կատարվածը՝ սպասվածի համեմատ: Այսքանը։
+
+Լրացուցիչ տեղեկությունների համար ստուգեք կոդը: Հավելվածը բաց կոդով է, որը հասանելի է https://github.com/urbandroid-team/dontkillmy-app կայքում։
+Հատուկ շնորհակալություն Doki-ին (github.com/doubledotlabs/doki):</string>
+<string name="exact_alarm_restrictions_title">Թույլատրել ճշգրիտ զարթուցիչի ժամանակացույց</string>
+<string name="exact_alarm_restrictions_summary">Խնդրում ենք թույլ տալ մեզ ճշգրիտ զարթուցիչներ ժամանակացույց կազմել՝ ձեր սարքի զարթուցիչի վրա հիմնված ֆոնային մշակումը պատշաճ կերպով ստուգելու համար։</string>
+<string name="general_error">Վա՜յ, ինչ-որ բան այն չէ։</string>
+<string name="started">Բենչմարկը սկսվեց։</string>
+</resources>

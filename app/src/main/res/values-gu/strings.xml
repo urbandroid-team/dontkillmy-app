@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">બેન્ચમાર્ક શરૂ કરો</string>
+<string name="stop_benchmark">બેન્ચમાર્ક બંધ કરો</string>
+<string name="benchmark">બેન્ચમાર્ક</string>
+<string name="running">બેન્ચમાર્ક ચાલી રહ્યું છે (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) રોકવા માટે ટેપ કરો.</string>
+<string name="finished">બેન્ચમાર્ક પૂર્ણ થયું, પરિણામો માટે ટૅપ કરો</string>
+<string name="already_running">બેન્ચમાર્ક પહેલેથી જ ચાલી રહ્યું છે</string>
+<string name="stop">બંધ</string>
+<string name="clear">ચોખ્ખું</string>
+<string name="work">કામ</string>
+<string name="alarm">એલાર્મ</string>
+<string name="main">મુખ્ય</string>
+<string name="share">શેર કરો</string>
+<string name="share_with">સાથે શેર કરો</string>
+<string name="report">રિપોર્ટ</string>
+<string name="duration">સમયગાળો</string>
+<string name="warning_title">ચેતવણી</string>
+<string name="warning_text">કૃપા કરીને તમારા ફોનને ચાર્જરથી દૂર રાખો અને સમગ્ર બેન્ચમાર્ક દરમિયાન તેનો ઉપયોગ ન કરવાનો પ્રયાસ કરો.</string>
+<string name="cancel">રદ કરો</string>
+<string name="ok">બરાબર</string>
+<string name="total">કુલ</string>
+<string-array name="duration_array">
+<item>૧ કલાક</item>
+<item>૨ કલાક</item>
+<item>૩ કલાક</item>
+<item>૪ કલાક</item>
+<item>૫ કલાક</item>
+<item>૬ કલાક</item>
+<item>૭ કલાક</item>
+<item>૮ કલાક</item>
+</string-array>
+<string-array name="share_array">
+<item>ડોન્ટકિલમાયએપ.કોમ</item>
+<item>ઇમેઇલ</item>
+<item>અન્ય</item>
+</string-array>
+<string name="how_it_works">તે કેવી રીતે કામ કરે છે</string>
+<string name="how_it_works_text">બેન્ચમાર્ક વેક લોક સાથે ફોરગ્રાઉન્ડ સેવા શરૂ કરે છે અને મુખ્ય થ્રેડ (દર 10 સેકન્ડે), કસ્ટમ થ્રેડ એક્ઝિક્યુટર (દર 10 સેકન્ડે) પર પુનરાવર્તિત કાર્યોનું શેડ્યૂલ કરે છે અને AlarmManager.setExactAndAllowWhileIdle (દર 10 મિનિટે) નો ઉપયોગ કરીને નિયમિત એલાર્મનું શેડ્યૂલ કરે છે. પછી તે એક્ઝિક્યુટેડ અને અપેક્ષિતની તુલના કરીને સ્કોરની ગણતરી કરે છે.\n\n100% ની નજીકના સ્કોર સારા પરિણામો છે - હાલમાં બિન-માનક બેટરી ઑપ્ટિમાઇઝેશન લાગુ કરવામાં આવતા નથી. જોકે એક અઠવાડિયામાં પરીક્ષણનું પુનરાવર્તન કરવું સારું છે કારણ કે કેટલાક OEM એવા એપ્લિકેશનો પર મર્યાદા લાગુ કરી શકે છે જેનો ઉપયોગ થોડા સમય માટે થતો નથી.\n\nગ્રાફ\n\nગ્રાફમાં દરેક પંક્તિ 5 મિનિટનું પ્રતિનિધિત્વ કરે છે. આદર્શ રીતે તમે દરેક લાઇન પર 30 વર્તુળો અને ત્રિકોણ અને દરેક બીજી લાઇનમાં એક ચોરસ જુઓ છો. ખાલી જગ્યાના મોટા વિસ્તારો સમસ્યા સૂચવે છે - જો તમે તમારા ફોનની સેટિંગ્સ નહીં બદલો તો તમારી એપ્લિકેશનો હેતુ મુજબ કાર્ય ન પણ કરે.\n\n\વધુ વિગતો માટે https://github.com/urbandroid-team/dontkillmy-app પર એપ્લિકેશન કોડ તપાસો.</string>
+<string name="contact_support">સપોર્ટનો સંપર્ક કરો</string>
+<string name="tell_others">બીજાઓને કહો</string>
+<string name="tell_others_text">DontKillMyApp બેન્ચમાર્ક તમારા ફોનની બેકગ્રાઉન્ડ પ્રોસેસિંગ તપાસે છે જેથી તમારા ફોન પરની એપ્સ યોગ્ય રીતે કામ કરે.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">કૃપા કરીને, અમને રેટ કરો!</string>
+<string name="rate_button">દર</string>
+<string name="never_button">ક્યારેય નહીં</string>
+<string name="later_button">પછીથી</string>
+<string name="source">સોર્સ કોડ</string>
+<string name="rate_text">અમે એવા ફોન પર પણ એપ્સ કામ કરે તેવું ઇચ્છીએ છીએ જેના ઉત્પાદકો કાર્યક્ષમતા કરતાં બેટરીને વધુ પસંદ કરે છે.\n\nઆ પ્રોજેક્ટને દૃશ્યમાન બનાવવામાં મદદ કરવાનો શ્રેષ્ઠ રસ્તો એ છે કે તમે Play Store પર આ મફત અને ઓપન સોર્સ ટૂલને રેટ કરો અને ટિપ્પણી કરો.\n\nAndroid ઇકો-સિસ્ટમને વધુ સારી જગ્યા બનાવવામાં અમારી મદદ કરવા બદલ ખૂબ ખૂબ આભાર!</string>
+<string name="translate">એપ્લિકેશનનો અનુવાદ કરવામાં સહાય કરો</string>
+<string name="slogan">એપ્લિકેશનોને કાર્યરત બનાવો</string>
+<string name="market_text">અધિકૃત DontKillMyApp એપ અહીં છે - જો તમારી પાસે Pixel ન હોય તો પણ એપ્સને યોગ્ય રીતે કામ કરવા દો. 
+
+તમારા ફોનના બેકગ્રાઉન્ડ કાર્યો સેટ કરવામાં તમને મદદ કરે છે જેથી તમારી એપ્સ હમણાં સ્ક્રીન પર ન જોતી વખતે પણ તમારા માટે કામ કરી શકે. 
+
+DontKillMyApp બેન્ચમાર્ક સાથે તમારો ફોન કેવું કામ કરી રહ્યો છે તે જુઓ અને વિવિધ સેટિંગ્સનું પરીક્ષણ કરો. 
+
+સુવિધાઓ: 
+• DKMA બેન્ચમાર્ક: માપો કે તમારો ફોન બેકગ્રાઉન્ડ એપ્સને કેટલી આક્રમક રીતે મારી રહ્યો છે 
+• માર્ગદર્શિકાઓ: મોટાભાગના બેકગ્રાઉન્ડ પ્રક્રિયા પ્રતિબંધોને દૂર કરવા માટે પગલાં લેવા યોગ્ય પગલાં મેળવો 
+• ફેરફાર કરો: ️ dontkillmyapp.com પર તમારા બેન્ચમાર્ક રિપોર્ટ શેર કરીને સ્માર્ટફોનને સ્માર્ટ રહેવામાં મદદ કરો 
+
+DontKillMyApp એ એક બેન્ચમાર્ક ટૂલ છે જે જોવા માટે છે કે તમારો ફોન બેકગ્રાઉન્ડ પ્રોસેસિંગને કેટલી સારી રીતે સપોર્ટ કરે છે. તમે તમારા ફોનને સેટઅપ કરતા પહેલા માપી શકો છો, પછી સેટઅપ માર્ગદર્શિકાઓ અને બેન્ચમાર્ક ફરીથી જોઈ શકો છો કે તમારો ફોન બેકગ્રાઉન્ડમાં કેટલો સમય સુસ્ત રહ્યો છે. 
+
+તમે એપ દ્વારા તમારા રિપોર્ટને dontkillmyapp.com વેબસાઇટના જાળવણીકારો સાથે શેર કરી શકો છો જે તેને કમ્પાઇલ કરે છે અને તેના પર એકંદર નકારાત્મક સ્કોર બનાવે છે. 
+
+બેન્ચમાર્ક કેવી રીતે કામ કરે છે? (ટેકનિકલ!) 
+
+એપ વેક લોક સાથે ફોરગ્રાઉન્ડ સર્વિસ શરૂ કરે છે અને મુખ્ય થ્રેડ, કસ્ટમ થ્રેડ એક્ઝિક્યુટર પર પુનરાવર્તિત કાર્યનું શેડ્યૂલ કરે છે અને નિયમિત એલાર્મ (AlarmManager.setExactAndAllowWhileIdle) શેડ્યૂલ કરે છે. પછી તે એક્ઝિક્યુટેડ વિરુદ્ધ અપેક્ષિતની ગણતરી કરે છે. બસ! 
+
+વધુ વિગતો માટે કોડ તપાસો. એપ ઓપન સોર્સ છે જે https://github.com/urbandroid-team/dontkillmy-app પર ઉપલબ્ધ છે 
+ડોકી (github.com/doubledotlabs/doki) નો ખાસ આભાર.</string>
+<string name="exact_alarm_restrictions_title">ચોક્કસ એલાર્મ શેડ્યુલિંગને મંજૂરી આપો</string>
+<string name="exact_alarm_restrictions_summary">કૃપા કરીને અમને તમારા ઉપકરણના એલાર્મ-આધારિત પૃષ્ઠભૂમિ પ્રક્રિયાનું યોગ્ય રીતે પરીક્ષણ કરવા માટે ચોક્કસ એલાર્મ શેડ્યૂલ કરવાની મંજૂરી આપો.</string>
+<string name="general_error">અરેરે, કંઈક ખોટું થાય છે.</string>
+<string name="started">બેન્ચમાર્ક શરૂ થયો!</string>
+</resources>

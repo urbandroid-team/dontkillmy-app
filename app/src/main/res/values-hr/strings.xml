@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Započni mjerenje</string>
+<string name="stop_benchmark">Zaustavi referentnu vrijednost</string>
+<string name="benchmark">Mjerna vrijednost</string>
+<string name="running">Mjerna vrijednost u tijeku (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) dodirnite za zaustavljanje.</string>
+<string name="finished">Mjerna analiza završena, dodirnite za rezultate</string>
+<string name="already_running">Mjerilo se već izvodi</string>
+<string name="stop">Stop</string>
+<string name="clear">Jasan</string>
+<string name="work">Raditi</string>
+<string name="alarm">Alarm</string>
+<string name="main">Glavni</string>
+<string name="share">Udio</string>
+<string name="share_with">Podijeli s</string>
+<string name="report">Izvješće</string>
+<string name="duration">Trajanje</string>
+<string name="warning_title">Upozorenje</string>
+<string name="warning_text">Molimo vas da telefon držite izvan punjača i pokušajte ga ne koristiti tijekom cijelog testiranja.</string>
+<string name="cancel">Otkazati</string>
+<string name="ok">U REDU</string>
+<string name="total">Ukupno</string>
+<string-array name="duration_array">
+<item>1 sat</item>
+<item>2 sata</item>
+<item>3 sata</item>
+<item>4 sata</item>
+<item>5 sati</item>
+<item>6 sati</item>
+<item>7 sati</item>
+<item>8 sati</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-pošta</item>
+<item>Ostalo</item>
+</string-array>
+<string name="how_it_works">Kako funkcionira</string>
+<string name="how_it_works_text">Mjerilo pokreće uslugu u prvom planu s wake lockom i zakazuje ponavljajuće zadatke na glavnoj niti (svakih 10 sekundi), prilagođeni izvršitelj niti (svakih 10 sekundi) i zakazuje redovite alarme pomoću AlarmManager.setExactAndAllowWhileIdle (svakih 10 minuta). Zatim izračunava rezultat uspoređujući izvršene i očekivane zadatke.\n\nRezultati blizu 100% su dobri rezultati - nestandardne optimizacije baterije trenutno se ne primjenjuju. Iako je dobro ponoviti test za tjedan dana jer neki proizvođači originalne opreme mogu primijeniti ograničenja na aplikacije koje se ne koriste neko vrijeme.\n\nGRAFIKON\n\nSvaki redak na grafikonu predstavlja 5 minuta. Idealno bi bilo da vidite 30 krugova i trokuta u svakom retku i jedan kvadrat u svakom drugom retku. Veća područja bijelog prostora ukazuju na problem - vaše aplikacije možda neće raditi kako je predviđeno ako ne promijenite postavke telefona.\n\n\Za više detalja provjerite kod aplikacije na https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Kontaktirajte podršku</string>
+<string name="tell_others">Reci drugima</string>
+<string name="tell_others_text">DontKillMyApp Benchmark provjerava pozadinsku obradu vašeg telefona kako bi aplikacije na vašem telefonu ispravno radile.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Molimo vas, ocijenite nas!</string>
+<string name="rate_button">Stopa</string>
+<string name="never_button">Nikada</string>
+<string name="later_button">Kasnije</string>
+<string name="source">Izvorni kod</string>
+<string name="rate_text">Želimo da aplikacije rade čak i na telefonima čiji proizvođači preferiraju bateriju nad funkcionalnošću.\n\nNajbolji način da pomognete da ovaj projekt bude vidljiv jest da ocijenite i komentirate ovaj besplatni alat otvorenog koda u Trgovini Play.\n\nPuno vam hvala što nam pomažete da Android ekosustav učinimo boljim mjestom!</string>
+<string name="translate">Pomozite u prevođenju aplikacije</string>
+<string name="slogan">Omogućite rad aplikacija</string>
+<string name="market_text">Službena aplikacija DontKillMyApp je stigla - učinite da aplikacije konačno rade ispravno čak i ako nemate Pixel.
+
+Pomaže vam postaviti pozadinske zadatke vašeg telefona kako bi vaše aplikacije konačno mogle raditi za VAS čak i kada trenutno ne gledate u zaslon.
+
+Pogledajte kako vaš telefon radi i testirajte različite postavke uz DontKillMyApp benchmark.
+
+Značajke:
+
+• DKMA benchmark: Mjerite koliko agresivno vaš telefon uništava pozadinske aplikacije
+• Vodiči: Dobijte praktične korake za prevladavanje većine ograničenja pozadinskih procesa
+• Napravite promjenu:️ Pomozite pametnim telefonima da ostanu pametni dijeljenjem svog izvješća o benchmarku na dontkillmyapp.com
+
+DontKillMyApp je alat za mjerenje kako biste vidjeli koliko dobro vaš telefon podržava pozadinsku obradu. Možete izmjeriti prije postavljanja telefona, a zatim proći kroz vodiče za postavljanje i ponovno izvršiti mjerenje kako biste vidjeli koliko je vaš telefon radio u pozadini.
+
+Svoje izvješće možete podijeliti putem aplikacije s održavateljima web stranice dontkillmyapp.com koji ga sastavljaju i na njemu temelje ukupni negativni rezultat.
+
+Kako funkcionira benchmark? (Tehnički!)
+
+Aplikacija pokreće uslugu u prvom planu s wake lockom i zakazuje ponavljajuće zadatke u glavnoj niti, prilagođeni izvršitelj niti i zakazuje redovite alarme (AlarmManager.setExactAndAllowWhileIdle). Zatim izračunava izvršeno u odnosu na očekivano. To je to!
+
+Za više detalja provjerite kod. Aplikacija je otvorenog koda dostupna na https://github.com/urbandroid-team/dontkillmy-app
+Posebna zahvala Dokiju (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Omogući točno zakazivanje alarma</string>
+<string name="exact_alarm_restrictions_summary">Molimo vas da nam dopustite da točno zakažemo alarme kako bismo pravilno testirali obradu alarma na vašem uređaju u pozadini.</string>
+<string name="general_error">Ups, nešto nije u redu.</string>
+<string name="started">Mjerenje uspješnosti započelo!</string>
+</resources>

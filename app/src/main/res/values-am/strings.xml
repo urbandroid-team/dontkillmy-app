@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">ቤንችማርክን ጀምር</string>
+<string name="stop_benchmark">ቤንችማርክን አቁም</string>
+<string name="benchmark">ቤንችማርክ</string>
+<string name="running">ቤንችማርክ በማሄድ ላይ (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) ለማቆም መታ ያድርጉ።</string>
+<string name="finished">ቤንችማርክ አልቋል፣ ለውጤቶች መታ ያድርጉ</string>
+<string name="already_running">ቤንችማርክ አስቀድሞ እየሰራ ነው።</string>
+<string name="stop">ተወ</string>
+<string name="clear">ግልጽ</string>
+<string name="work">ስራ</string>
+<string name="alarm">ማንቂያ</string>
+<string name="main">ዋና</string>
+<string name="share">አጋራ</string>
+<string name="share_with">ሼር በማድረግ ያካፍሉ።</string>
+<string name="report">ሪፖርት አድርግ</string>
+<string name="duration">ቆይታ</string>
+<string name="warning_title">ማስጠንቀቂያ</string>
+<string name="warning_text">እባክዎን ስልክዎን ከቻርጅ መሙያው ውስጥ ያስቀምጡት እና በጠቅላላው ቤንችማርክ ጊዜ ላለመጠቀም ይሞክሩ።</string>
+<string name="cancel">ሰርዝ</string>
+<string name="ok">እሺ</string>
+<string name="total">ጠቅላላ</string>
+<string-array name="duration_array">
+<item>1 ሰዓት</item>
+<item>2 ሰዓታት</item>
+<item>3 ሰዓታት</item>
+<item>4 ሰዓታት</item>
+<item>5 ሰዓታት</item>
+<item>6 ሰዓታት</item>
+<item>7 ሰዓታት</item>
+<item>8 ሰዓታት</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>ኢሜይል</item>
+<item>ሌላ</item>
+</string-array>
+<string name="how_it_works">እንዴት እንደሚሰራ</string>
+<string name="how_it_works_text">መለኪያው የፊት ለፊት አገልግሎትን በመቀስቀስ መቆለፊያ ይጀምራል እና በዋናው ክር (በየ 10 ዎቹ) ላይ ተደጋጋሚ ስራዎችን ያዘጋጃል፣ ብጁ ክር ፈጻሚ (በየ 10ዎቹ) እና መደበኛ ማንቂያዎችን በAlarmManager.setExactAndAllowWhileIdle (በየ 10 ደቂቃው) በመጠቀም ያዘጋጃል። ከዚያ የተፈፀመውን ከተጠበቀው ጋር በማነፃፀር ውጤቱን ያሰላል።\n\nወደ 100% የሚጠጉ ውጤቶች ጥሩ ውጤቶች ናቸው - መደበኛ ያልሆኑ የባትሪ ማትባቶች በአሁኑ ጊዜ አይተገበሩም። ምንም እንኳን አንዳንድ የኦሪጂናል ዕቃ አምራቾች ለተወሰነ ጊዜ ጥቅም ላይ ላልዋሉ አፕሊኬሽኖች ገደቦችን ሊተገበሩ ስለሚችሉ በሳምንት ውስጥ ሙከራውን መድገም ጥሩ ቢሆንም።\n\nግራፉ\n\nበግራፉ ላይ ያለው እያንዳንዱ ረድፍ 5 ደቂቃን ይወክላል። በሐሳብ ደረጃ በእያንዳንዱ መስመር ላይ 30 ክበቦች እና ትሪያንግሎች እና በእያንዳንዱ ሁለተኛ መስመር አንድ ካሬ ያያሉ። ትላልቅ የነጭ ቦታ ክልሎች ችግርን ያመለክታሉ - የስልክዎን መቼት ካልቀየሩ የእርስዎ መተግበሪያዎች እንደታሰበው ላይሰሩ ይችላሉ።\n\n\nለበለጠ ዝርዝር የመተግበሪያውን ኮድ https://github.com/urbandroid-team/dontkillmy-app ላይ ያረጋግጡ።</string>
+<string name="contact_support">ድጋፍን ያነጋግሩ</string>
+<string name="tell_others">ለሌሎች ይንገሩ</string>
+<string name="tell_others_text">DontKillMyApp ቤንችማርክ በስልክዎ ላይ ያሉ መተግበሪያዎች በትክክል እንዲሰሩ የስልክዎን ዳራ ሂደት ይፈትሻል።\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">እባክዎን ደረጃ ይስጡን!</string>
+<string name="rate_button">ደረጃ ይስጡ</string>
+<string name="never_button">በጭራሽ</string>
+<string name="later_button">በኋላ</string>
+<string name="source">ምንጭ ኮድ</string>
+<string name="rate_text">አፕሊኬሽኑ አምራቾቹ ከተግባር ይልቅ ባትሪ በሚመርጡ ስልኮች ላይ እንኳን እንዲሰሩ ማድረግ እንፈልጋለን።\n\nይህን ፕሮጀክት እንዲታይ ለማገዝ ምርጡ መንገድ ይህንን ነፃ እና ክፍት ምንጭ መሳሪያ በፕሌይ ስቶር ላይ ደረጃ መስጠት እና አስተያየት መስጠት ነው።\n\nየአንድሮይድ ኢኮ ሲስተሙን የተሻለ ቦታ እንድናደርገው ስለረዱን እናመሰግናለን!</string>
+<string name="translate">መተግበሪያውን ለመተርጎም ያግዙ</string>
+<string name="slogan">መተግበሪያዎች እንዲሰሩ ያድርጉ</string>
+<string name="market_text">ይፋዊው DontKillMyApp መተግበሪያ እዚህ አለ - የፒክስል ባለቤት ባይሆኑም በመጨረሻ መተግበሪያዎችን በትክክል እንዲሰሩ ያድርጉ።
+
+መተግበሪያዎችዎ በመጨረሻ ማያ ገጹን በማይመለከቱበት ጊዜም ለእርስዎ እንዲሰሩ የስልክዎን ዳራ ስራዎች እንዲያዘጋጁ ያግዝዎታል።
+
+ስልክዎ እንዴት እየሰራ እንደሆነ ይመልከቱ እና በDontKillMyApp ቤንችማርክ የተለያዩ ቅንብሮችን ይሞክሩ።
+
+ባህሪያት፡
+• DKMA ቤንችማርክ፡ ስልክህ ምን ያህል የጀርባ አፕሊኬሽኖችን እየገደለ እንደሆነ ይለኩ።
+• መመሪያዎች፡ አብዛኞቹን የበስተጀርባ ሂደት ገደቦችን ለማሸነፍ የሚወሰዱ እርምጃዎችን ያግኙ
+• ለውጥ ያድርጉ፡️የቤንችማርክ ሪፖርትዎን ለdontkillmyapp.com በማጋራት ስማርት ስልኮች ብልህ እንዲሆኑ ያግዟቸው።
+
+DontKillMyApp ስልክዎ ምን ያህል የጀርባ ሂደትን እንደሚደግፍ ለማየት የቤንችማርክ መሳሪያ ነው። ስልክዎን ከማቀናበርዎ በፊት መለካት ይችላሉ፣ ከዚያ ስልክዎ ከበስተጀርባ ምን ያህል እየዘገየ እንደሆነ ለማየት የማዋቀር መመሪያዎችን እና ቤንችማርክን እንደገና ይሂዱ።
+
+ሪፖርትዎን በመተግበሪያው በኩል ለdontkillmyapp.com ድረ-ገጽ አዘጋጆች ላጠናቀሩት እና አጠቃላይ አሉታዊ ነጥቦቹን በእሱ ላይ ማጋራት ይችላሉ።
+
+
+መለኪያው እንዴት ነው የሚሰራው? (ቴክኒካል!)
+
+አፕሊኬሽኑ የፊት ለፊት አገልግሎትን በመቀስቀስ መቆለፊያ ይጀምራል እና በዋናው ክር ላይ ተደጋጋሚ ተግባር፣ ብጁ ክር ፈጻሚ እና መደበኛ ማንቂያዎችን (AlarmManager.setExactAndAllowWhileIdle) ያዘጋጃል። ከዚያም የተፈፀመውን ከተጠበቀው ጋር ያሰላል። ያ ነው!
+
+ለተጨማሪ ዝርዝሮች ኮዱን ያረጋግጡ። መተግበሪያው ክፍት ምንጭ https://github.com/urbandroid-team/dontkillmy-app ላይ ይገኛል።
+ልዩ ምስጋና ለዶኪ (github.com/doubledotlabs/doki)።</string>
+<string name="exact_alarm_restrictions_title">ትክክለኛውን የማንቂያ መርሐግብር ፍቀድ</string>
+<string name="exact_alarm_restrictions_summary">እባክዎ የመሳሪያዎን ማንቂያ-ተኮር የጀርባ ሂደት በትክክል ለመፈተሽ ትክክለኛ ማንቂያዎችን ቀጠሮ እንድናይዝ ይፍቀዱልን።</string>
+<string name="general_error">ውይ፣ የሆነ ነገር ሲሳሳት።</string>
+<string name="started">ቤንችማርክ ተጀምሯል!</string>
+</resources>

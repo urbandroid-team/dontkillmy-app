@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Sākuma etalons</string>
+<string name="stop_benchmark">Stop etalons</string>
+<string name="benchmark">Salīdzinošais kritērijs</string>
+<string name="running">Notiek salīdzinošā testēšana (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>). Pieskarieties, lai apturētu.</string>
+<string name="finished">Benchmark pabeigts, pieskarieties rezultātiem</string>
+<string name="already_running">Benchmark jau darbojas</string>
+<string name="stop">Pārtraukt</string>
+<string name="clear">Skaidrs</string>
+<string name="work">Darbs</string>
+<string name="alarm">Trauksmes signāls</string>
+<string name="main">Galvenais</string>
+<string name="share">Dalīties</string>
+<string name="share_with">Dalīties ar</string>
+<string name="report">Ziņojums</string>
+<string name="duration">Ilgums</string>
+<string name="warning_title">Brīdinājums</string>
+<string name="warning_text">Lūdzu, izņemiet tālruni no lādētāja un centieties to nelietot visā etalona laikā.</string>
+<string name="cancel">Atcelt</string>
+<string name="ok">LABI</string>
+<string name="total">Kopā</string>
+<string-array name="duration_array">
+<item>1 stunda</item>
+<item>2 stundas</item>
+<item>3 stundas</item>
+<item>4 stundas</item>
+<item>5 stundas</item>
+<item>6 stundas</item>
+<item>7 stundas</item>
+<item>8 stundas</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-pasts</item>
+<item>Citi</item>
+</string-array>
+<string name="how_it_works">Kā tas darbojas</string>
+<string name="how_it_works_text">Salīdzinošais tests sāk priekšplāna pakalpojumu ar aktivizēšanas bloķēšanu un ieplāno atkārtotus uzdevumus galvenajā pavedienā (ik pēc 10 sekundēm), pielāgotu pavediena izpildītāju (ik pēc 10 sekundēm) un ieplāno regulārus trauksmes signālus, izmantojot AlarmManager.setExactAndAllowWhileIdle (ik pēc 10 minūtēm). Pēc tam tas aprēķina rezultātu, salīdzinot izpildītos un gaidītos.\n\nRezultāti, kas tuvi 100%, ir labi rezultāti — pašlaik netiek piemērotas nestandarta akumulatora optimizācijas. Lai gan ir ieteicams atkārtot testu pēc nedēļas, jo daži oriģinālā aprīkojuma ražotāji (OEM) var piemērot ierobežojumus lietotnēm, kas kādu laiku netiek izmantotas.\n\nGRAFIKS\n\nKatra grafika rinda attēlo 5 minūtes. Ideālā gadījumā katrā rindā redzat 30 apļus un trīsstūrus un katrā otrajā rindā vienu kvadrātu. Lielāki balto atstarpju apgabali norāda uz problēmu — jūsu lietotnes var nedarboties, kā paredzēts, ja nemainīsiet tālruņa iestatījumus.\n\n\Lai iegūtu sīkāku informāciju, skatiet lietotņu kodu vietnē https://github.com/urbandroid-team/dontkillmy-app.</string>
+<string name="contact_support">Sazinieties ar atbalsta dienestu</string>
+<string name="tell_others">Pastāstiet citiem</string>
+<string name="tell_others_text">DontKillMyApp Benchmark pārbauda tālruņa fona apstrādi, lai lietotnes jūsu tālrunī darbotos pareizi.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Lūdzu, novērtējiet mūs!</string>
+<string name="rate_button">Novērtējiet</string>
+<string name="never_button">Nekad</string>
+<string name="later_button">Vēlāk</string>
+<string name="source">Avota kods</string>
+<string name="rate_text">Mēs vēlamies, lai lietotnes darbotos pat tālruņos, kuru ražotāji akumulatora darbības laiku vērtē augstāk par funkcionalitāti.\n\nLabākais veids, kā jūs varat palīdzēt padarīt šo projektu redzamu, ir novērtēt un komentēt šo bezmaksas un atvērtā pirmkoda rīku Play veikalā.\n\nLiels paldies par palīdzību Android ekosistēmas uzlabošanā!</string>
+<string name="translate">Palīdzēt tulkot lietotni</string>
+<string name="slogan">Nodrošiniet, lai lietotnes darbotos</string>
+<string name="market_text">Oficiālā DontKillMyApp lietotne ir klāt — lieciet lietotnēm beidzot darboties pareizi, pat ja jums nepieder Pixel tālrunis.
+
+Palīdz iestatīt tālruņa fona uzdevumus, lai jūsu lietotnes beidzot varētu darboties JŪSU labā, pat ja šobrīd neskatāties ekrānā.
+
+Skatiet, kā darbojas jūsu tālrunis, un pārbaudiet dažādus iestatījumus ar DontKillMyApp etalonu.
+
+Funkcijas:
+
+• DKMA etalons: mēriet, cik agresīvi jūsu tālrunis izslēdz fona lietotnes.
+• Rokasgrāmatas: saņemiet praktiskus soļus, lai pārvarētu lielāko daļu fona procesu ierobežojumu.
+• Veiciet izmaiņas:️ Palīdziet viedtālruņiem saglabāt viedumu, kopīgojot savu etalona ziņojumu vietnē dontkillmyapp.com.
+
+DontKillMyApp ir etalona rīks, lai redzētu, cik labi jūsu tālrunis atbalsta fona apstrādi. Pirms tālruņa iestatīšanas varat veikt mērījumus, pēc tam pārskatīt iestatīšanas rokasgrāmatas un vēlreiz veikt etalonu, lai redzētu, cik ļoti jūsu tālrunis ir darbojies fonā.
+
+Varat kopīgot savu ziņojumu, izmantojot lietotni, ar vietnes dontkillmyapp.com uzturētājiem, kuri to apkopo un uz tā balsta kopējo negatīvo vērtējumu.
+
+Kā darbojas etalontests? (Tehniski!)
+
+Lietotne sāk priekšplāna pakalpojumu ar aktivizēšanas bloķēšanu un ieplāno atkārtotus uzdevumus galvenajā pavedienā, pielāgotu pavediena izpildītāju un ieplāno regulārus trauksmes signālus (AlarmManager.setExactAndAllowWhileIdle). Pēc tam tā aprēķina izpildītos un gaidītos uzdevumus. Tas arī viss!
+
+Lai iegūtu sīkāku informāciju, skatiet kodu. Lietotne ir atvērtā koda programmatūra, kas pieejama vietnē https://github.com/urbandroid-team/dontkillmy-app
+
+Īpašs paldies Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Ļauj precīzi plānot trauksmes signālu</string>
+<string name="exact_alarm_restrictions_summary">Ļaujiet mums ieplānot precīzu trauksmes signālu grafiku, lai pareizi pārbaudītu ierīces fona apstrādi, kas balstīta uz trauksmes signālu.</string>
+<string name="general_error">Ak, kaut kas nepareizi.</string>
+<string name="started">Benchmark sākās!</string>
+</resources>

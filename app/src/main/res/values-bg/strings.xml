@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Начален критерий</string>
+<string name="stop_benchmark">Спиране на бенчмарка</string>
+<string name="benchmark">Бенчмарк</string>
+<string name="running">Бенчмарк работи (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) докоснете, за да спрете.</string>
+<string name="finished">Бенчмаркът е завършен, докоснете за резултати</string>
+<string name="already_running">Бенчмаркът вече работи</string>
+<string name="stop">Спрете</string>
+<string name="clear">Clear</string>
+<string name="work">Работа</string>
+<string name="alarm">Аларма</string>
+<string name="main">Основен</string>
+<string name="share">Споделете</string>
+<string name="share_with">Споделете с</string>
+<string name="report">Доклад</string>
+<string name="duration">Продължителност</string>
+<string name="warning_title">Предупреждение</string>
+<string name="warning_text">Моля, дръжте телефона си извън зарядното устройство и се опитайте да не го използвате по време на целия бенчмарк.</string>
+<string name="cancel">Отмяна на</string>
+<string name="ok">OK</string>
+<string name="total">Общо</string>
+<string-array name="duration_array">
+<item>1 час</item>
+<item>2 часа</item>
+<item>3 часа</item>
+<item>4 часа</item>
+<item>5 часа</item>
+<item>6 часа</item>
+<item>7 часа</item>
+<item>8 часа</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Имейл</item>
+<item>Други</item>
+</string-array>
+<string name="how_it_works">Как работи</string>
+<string name="how_it_works_text">Бенчмаркът стартира услуга на преден план с wake lock и планира повтарящи се задачи в основната нишка (на всеки 10 секунди), персонализиран изпълнител на нишки (на всеки 10 секунди) и планира редовни аларми, използвайки AlarmManager.setExactAndAllowWhileIdle (на всеки 10 минути). След това изчислява резултата, като сравнява изпълнените с очакваните.\n\nРезултати, близки до 100%, са добри резултати - нестандартните оптимизации на батерията не се прилагат в момента. Въпреки това е добре да се повтори тестът след седмица, тъй като някои производители на оригинално оборудване (OEM) могат да прилагат ограничения за приложения, които не се използват известно време.\n\nГРАФИКАТА\n\nВсеки ред в графиката представлява 5 минути. В идеалния случай виждате 30 кръга и триъгълника на всеки ред и един квадрат на всеки втори ред. По-големите области с бяло пространство показват проблем - вашите приложения може да не работят както е предвидено, ако не промените настройките на телефона си.\n\n\За повече подробности проверете кода на приложенията на https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Свържете се с поддръжката</string>
+<string name="tell_others">Кажете на другите</string>
+<string name="tell_others_text">DontKillMyApp Benchmark проверява фоновата обработка на телефона ви, за да осигури правилното функциониране на приложенията.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Моля, дайте ни оценка!</string>
+<string name="rate_button">Оценка</string>
+<string name="never_button">Никога</string>
+<string name="later_button">По-късно</string>
+<string name="source">Изходен код</string>
+<string name="rate_text">Искаме приложенията да работят дори на телефони, чиито производители предпочитат батерията пред функционалността.\n\nНай-добрият начин да помогнете на този проект да стане видим е да оцените и коментирате този безплатен инструмент с отворен код в Play Store.\n\nМного ви благодарим, че ни помагате да направим екосистемата на Android по-добро място!</string>
+<string name="translate">Помощ за превод на приложението</string>
+<string name="slogan">Осигуряване на работа на приложенията</string>
+<string name="market_text">Официалното приложение DontKillMyApp е тук - накарайте приложенията най-накрая да работят правилно, дори ако нямате Pixel.
+
+Помага ви да настроите фоновите задачи на телефона си, така че приложенията ви най-накрая да работят за ВАС, дори когато не гледате екрана в момента.
+
+Вижте как се справя телефонът ви и тествайте различни настройки с бенчмарка DontKillMyApp.
+
+Характеристики:
+
+• DKMA бенчмарк: Измерете колко агресивно вашият телефон „убива“ фоновите приложения
+
+• Ръководства: Получете практически стъпки за преодоляване на повечето ограничения на фоновите процеси
+• Направете промяна:️ Помогнете на смартфоните да останат интелигентни, като споделите вашия бенчмарк отчет на dontkillmyapp.com
+
+DontKillMyApp е инструмент за бенчмарк, за да видите колко добре вашият телефон поддържа фоновата обработка. Можете да измерите, преди да настроите телефона си, след което да преминете през ръководствата за настройка и да направите бенчмарк отново, за да видите колко много телефонът ви е работил във фонов режим.
+
+Можете да споделите вашия отчет чрез приложението с поддържащите уебсайта dontkillmyapp.com, които го съставят и базират общия отрицателен резултат на него.
+
+Как работи бенчмаркът? (Технически!)
+
+Приложението стартира услуга на преден план с wake lock и планира повтарящи се задачи в основната нишка, персонализиран изпълнител на нишки и планира редовни аларми (AlarmManager.setExactAndAllowWhileIdle). След това изчислява изпълнените спрямо очакваните. Това е всичко!
+
+За повече подробности вижте кода. Приложението е с отворен код и е достъпно на https://github.com/urbandroid-team/dontkillmy-app
+Специални благодарности на Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Позволява точно планиране на алармата</string>
+<string name="exact_alarm_restrictions_summary">Моля, позволете ни да планираме точни аларми, за да тестваме правилно фоновата обработка на вашето устройство, базирана на аларми.</string>
+<string name="general_error">Упс, нещо не е наред.</string>
+<string name="started">Бенчмаркът започна!</string>
+</resources>

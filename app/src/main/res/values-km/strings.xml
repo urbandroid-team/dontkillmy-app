@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">ចាប់​ផ្តើ​ម​គោល​ដៅ​</string>
+<string name="stop_benchmark">បញ្ឈប់ការសម្គាល់</string>
+<string name="benchmark">គោល</string>
+<string name="running">ការដំណើរការ Benchmark (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) ចុចដើម្បីបញ្ឈប់។</string>
+<string name="finished">Benchmark បានបញ្ចប់ សូមចុចដើម្បីទទួលបានលទ្ធផល</string>
+<string name="already_running">Benchmark កំពុងដំណើរការហើយ។</string>
+<string name="stop">ឈប់</string>
+<string name="clear">ច្បាស់</string>
+<string name="work">ការងារ</string>
+<string name="alarm">សំឡេងរោទិ៍</string>
+<string name="main">មេ</string>
+<string name="share">ចែករំលែក</string>
+<string name="share_with">ចែករំលែកជាមួយ</string>
+<string name="report">រាយការណ៍</string>
+<string name="duration">រយៈពេល</string>
+<string name="warning_title">ការព្រមាន</string>
+<string name="warning_text">សូមទុកទូរស័ព្ទរបស់អ្នកចេញពីឆ្នាំងសាក ហើយព្យាយាមមិនប្រើវាក្នុងអំឡុងពេលកំណត់ស្តង់ដារទាំងមូល។</string>
+<string name="cancel">បោះបង់</string>
+<string name="ok">យល់ព្រម</string>
+<string name="total">សរុប</string>
+<string-array name="duration_array">
+<item>1 ម៉ោង។</item>
+<item>2 ម៉ោង។</item>
+<item>3 ម៉ោង។</item>
+<item>4 ម៉ោង។</item>
+<item>5 ម៉ោង។</item>
+<item>6 ម៉ោង។</item>
+<item>7 ម៉ោង។</item>
+<item>8 ម៉ោង។</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>អ៊ីមែល</item>
+<item>ផ្សេងៗ</item>
+</string-array>
+<string name="how_it_works">របៀបដែលវាដំណើរការ</string>
+<string name="how_it_works_text">តារាងពិន្ទុចាប់ផ្តើមសេវាកម្មផ្នែកខាងមុខជាមួយនឹងការចាក់សោរភ្ញាក់ ហើយកំណត់កាលវិភាគការងារដដែលៗនៅលើខ្សែស្រឡាយមេ (រៀងរាល់ 10 វិនាទី) កម្មវិធីប្រតិបត្តិខ្សែស្រឡាយផ្ទាល់ខ្លួន (រៀងរាល់ 10 វិនាទី) និងកំណត់ម៉ោងរោទ៍ជាប្រចាំដោយប្រើ AlarmManager.setExactAndAllowWhileIdle (រៀងរាល់ 10 នាទី)។ បន្ទាប់មកវាគណនាពិន្ទុដោយប្រៀបធៀបការប្រតិបត្តិធៀបនឹងការរំពឹងទុក។\n\nពិន្ទុជិត 100% គឺជាលទ្ធផលដ៏ល្អ - ការបង្កើនប្រសិទ្ធភាពថ្មមិនស្តង់ដារមិនត្រូវបានអនុវត្តនៅពេលនេះទេ។ ទោះបីជាវាជាការល្អក្នុងការធ្វើតេស្ដម្តងទៀតក្នុងមួយសប្តាហ៍ ដោយសារ OEMs មួយចំនួនអាចអនុវត្តដែនកំណត់ចំពោះកម្មវិធីដែលមិនត្រូវបានប្រើមួយរយៈ។\n\nក្រាហ្វិក\n\nជួរនីមួយៗក្នុងក្រាហ្វតំណាងឱ្យ 5 នាទី។ តាមឧត្ដមគតិអ្នកឃើញរង្វង់ និងត្រីកោណចំនួន 30 នៅលើបន្ទាត់នីមួយៗ និងមួយការ៉េរាល់បន្ទាត់ទីពីរ។ កន្លែងទំនេរធំជាងនេះបង្ហាញពីបញ្ហា - កម្មវិធីរបស់អ្នកប្រហែលជាមិនដំណើរការដូចបំណងទេ ប្រសិនបើអ្នកនឹងមិនផ្លាស់ប្តូរការកំណត់ទូរសព្ទរបស់អ្នក។\n\n\សម្រាប់ព័ត៌មានលម្អិត សូមពិនិត្យមើលកូដកម្មវិធីនៅ https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">ទាក់ទងជំនួយ</string>
+<string name="tell_others">ប្រាប់អ្នកដទៃ</string>
+<string name="tell_others_text">DontKillMyApp Benchmark ពិនិត្យមើលដំណើរការផ្ទៃខាងក្រោយទូរសព្ទរបស់អ្នក ដើម្បីធ្វើឱ្យកម្មវិធីនៅលើទូរសព្ទរបស់អ្នកដំណើរការបានត្រឹមត្រូវ។\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">សូមវាយតម្លៃពួកយើង!</string>
+<string name="rate_button">អត្រា</string>
+<string name="never_button">មិនដែល</string>
+<string name="later_button">ពេលក្រោយ</string>
+<string name="source">កូដប្រភព</string>
+<string name="rate_text">យើងចង់ធ្វើឱ្យកម្មវិធីដំណើរការសូម្បីតែនៅលើទូរសព្ទដែលក្រុមហ៊ុនផលិតចូលចិត្តថាមពលថ្មជាងមុខងារក៏ដោយ។\n\nវិធីដ៏ល្អបំផុតដែលអ្នកអាចជួយធ្វើឱ្យគម្រោងនេះអាចមើលឃើញគឺវាយតម្លៃ និងផ្តល់មតិអំពីឧបករណ៍ប្រភពបើកចំហ និងឥតគិតថ្លៃនេះនៅលើ Play Store ។\n\nសូមអរគុណច្រើនសម្រាប់ការជួយយើងធ្វើឱ្យប្រព័ន្ធអេកូ Android កាន់តែប្រសើរឡើង!</string>
+<string name="translate">ជួយបកប្រែកម្មវិធី</string>
+<string name="slogan">ធ្វើឱ្យកម្មវិធីដំណើរការ</string>
+<string name="market_text">កម្មវិធី DontKillMyApp ផ្លូវការគឺនៅទីនេះ - ធ្វើឱ្យកម្មវិធីចុងក្រោយដំណើរការបានត្រឹមត្រូវ ទោះបីជាអ្នកមិនមែនជាម្ចាស់ Pixel ក៏ដោយ។
+
+ជួយ​អ្នក​រៀបចំ​កិច្ចការ​ផ្ទៃ​ខាងក្រោយ​ទូរសព្ទ​របស់អ្នក ដើម្បី​ឱ្យ​កម្មវិធី​របស់អ្នក​អាច​ដំណើរការ​សម្រាប់​អ្នក​ចុងក្រោយ​បាន ទោះបីជា​មិន​មើល​អេក្រង់​ឥឡូវនេះ​ក៏ដោយ។
+
+សូមមើលពីរបៀបដែលទូរសព្ទរបស់អ្នកកំពុងដំណើរការ និងសាកល្បងការកំណត់ផ្សេងៗជាមួយ DontKillMyApp benchmark។
+
+លក្ខណៈពិសេស៖
+• ស្តង់ដារ DKMA៖ វាស់ស្ទង់ថាតើទូរសព្ទរបស់អ្នកសម្លាប់កម្មវិធីផ្ទៃខាងក្រោយខ្លាំងប៉ុណ្ណា
+• មគ្គុទ្ទេសក៍៖ ទទួលបានជំហានដែលអាចអនុវត្តបាន ដើម្បីយកឈ្នះលើការរឹតបន្តឹងដំណើរការផ្ទៃខាងក្រោយភាគច្រើន
+• ធ្វើការផ្លាស់ប្តូរ៖ ️ជួយឱ្យស្មាតហ្វូនមានភាពឆ្លាតវៃដោយការចែករំលែករបាយការណ៍គោលរបស់អ្នកទៅកាន់ dontkillmyapp.com
+
+DontKillMyApp គឺជាឧបករណ៍គោលដើម្បីមើលថាតើទូរស័ព្ទរបស់អ្នកគាំទ្រដំណើរការផ្ទៃខាងក្រោយបានល្អប៉ុណ្ណា។ អ្នកអាចវាស់មុនពេលដំឡើងទូរសព្ទរបស់អ្នក បន្ទាប់មកឆ្លងកាត់ការណែនាំអំពីការដំឡើង និងគោលការវាយតម្លៃម្តងទៀត ដើម្បីមើលថាតើទូរសព្ទរបស់អ្នកធ្លាក់ចុះប៉ុន្មាននៅផ្ទៃខាងក្រោយ។
+
+អ្នកអាចចែករំលែករបាយការណ៍របស់អ្នកតាមរយៈកម្មវិធីទៅកាន់អ្នកថែទាំគេហទំព័រ dontkillmyapp.com ដែលចងក្រងវា ហើយផ្អែកលើពិន្ទុអវិជ្ជមានសរុបនៅលើវា។
+
+
+តើគោលការណ៏ដំណើរការយ៉ាងដូចម្តេច? (បច្ចេកទេស!)
+
+កម្មវិធីនេះចាប់ផ្តើមសេវាកម្មផ្ទៃខាងមុខជាមួយនឹងការចាក់សោរដាស់ ហើយកំណត់កាលវិភាគការងារដដែលៗនៅលើខ្សែមេ ដែលជាអ្នកប្រតិបត្តិខ្សែស្រឡាយផ្ទាល់ខ្លួន និងកំណត់ម៉ោងរោទិ៍ធម្មតា (AlarmManager.setExactAndAllowWhileIdle)។ បន្ទាប់មកវាគណនាការប្រតិបត្តិធៀបនឹងការរំពឹងទុក។ នោះហើយ!
+
+សម្រាប់ព័ត៌មានលម្អិត សូមពិនិត្យមើលលេខកូដ។ កម្មវិធីនេះគឺជាប្រភពបើកចំហដែលមាននៅ https://github.com/urbandroid-team/dontkillmy-app
+សូមអរគុណជាពិសេសចំពោះ Doki (github.com/doubledotlabs/doki) ។</string>
+<string name="exact_alarm_restrictions_title">អនុញ្ញាតឱ្យកំណត់ម៉ោងរោទិ៍ពិតប្រាកដ</string>
+<string name="exact_alarm_restrictions_summary">សូមអនុញ្ញាតឱ្យយើងកំណត់ម៉ោងរោទិ៍ពិតប្រាកដ ដើម្បីសាកល្បងដំណើរការផ្ទៃខាងក្រោយផ្អែកលើការជូនដំណឹងឧបករណ៍របស់អ្នក។</string>
+<string name="general_error">អូ៎ មានអ្វីមួយនៅពេលខុស។</string>
+<string name="started">Benchmark បានចាប់ផ្តើមហើយ!</string>
+</resources>

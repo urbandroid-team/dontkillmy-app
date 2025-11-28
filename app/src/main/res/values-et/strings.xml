@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Alusta võrdlusalust</string>
+<string name="stop_benchmark">Stopp võrdlusalus</string>
+<string name="benchmark">Võrdlusalus</string>
+<string name="running">Võrdlusanalüüs töötab (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>), peatamiseks puudutage.</string>
+<string name="finished">Benchmark valmis, koputage tulemuste saamiseks</string>
+<string name="already_running">Benchmark on juba käimas</string>
+<string name="stop">Stop</string>
+<string name="clear">Selge</string>
+<string name="work">Töö</string>
+<string name="alarm">Häire</string>
+<string name="main">Main</string>
+<string name="share">Jaga</string>
+<string name="share_with">Jagage koos</string>
+<string name="report">Aruanne</string>
+<string name="duration">Kestus</string>
+<string name="warning_title">Hoiatus</string>
+<string name="warning_text">Palun hoidke oma telefon laadijast eemal ja püüdke seda mitte kasutada kogu võrdlusmõõtmise ajal.</string>
+<string name="cancel">Tühista</string>
+<string name="ok">OK</string>
+<string name="total">Kokku</string>
+<string-array name="duration_array">
+<item>1 tund</item>
+<item>2 tundi</item>
+<item>3 tundi</item>
+<item>4 tundi</item>
+<item>5 tundi</item>
+<item>6 tundi</item>
+<item>7 tundi</item>
+<item>8 tundi</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-post</item>
+<item>Muud</item>
+</string-array>
+<string name="how_it_works">Kuidas see toimib</string>
+<string name="how_it_works_text">Võrdlustest käivitab esiplaanil oleva teenuse äratuslukuga ja ajastab korduvaid ülesandeid põhilõimes (iga 10 sekundi järel), kohandatud lõimetäitjat (iga 10 sekundi järel) ja ajastab regulaarseid alarme, kasutades AlarmManager.setExactAndAllowWhileIdle\'i (iga 10 minuti järel). Seejärel arvutab see skoori, võrreldes täidetud ja oodatud ülesandeid.\n\n100% lähedal olevad skoorid on head tulemused – hetkel ei rakendata mittestandardseid aku optimeerimisi. Kuigi on hea testi korrata nädala pärast, kuna mõned originaalseadmete tootjad võivad kehtestada piiranguid rakendustele, mida mõnda aega ei kasutata.\n\nGRAAFIK\n\nIga graafiku rida tähistab 5 minutit. Ideaalis näete igal real 30 ringi ja kolmnurka ning igal teisel real ühte ruutu. Suuremad tühikualad viitavad probleemile – teie rakendused ei pruugi ettenähtud viisil töötada, kui te ei muuda oma telefoni seadeid.\n\n\Lisateabe saamiseks vaadake rakenduste koodi aadressil https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Võtke ühendust tugiteenusega</string>
+<string name="tell_others">Ütle teistele</string>
+<string name="tell_others_text">DontKillMyApp Benchmark kontrollib teie telefoni taustatöötlust, et teie telefonis olevad rakendused korralikult töötaksid.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Palun hinnake meid!</string>
+<string name="rate_button">Hinda</string>
+<string name="never_button">Mitte kunagi</string>
+<string name="later_button">Hiljem</string>
+<string name="source">Allikakood</string>
+<string name="rate_text">Me tahame, et rakendused töötaksid ka telefonides, mille tootjad eelistavad akut funktsionaalsusele.\n\nParim viis selle projekti nähtavaks tegemiseks on hinnata ja kommenteerida seda tasuta ja avatud lähtekoodiga tööriista Play poes.\n\nSuur tänu, et aitate meil Androidi ökosüsteemi paremaks muuta!</string>
+<string name="translate">Abi rakenduse tõlkimisel</string>
+<string name="slogan">Rakendused tööle panna</string>
+<string name="market_text">Ametlik DontKillMyAppi rakendus on saabunud – pane rakendused lõpuks korralikult tööle isegi siis, kui sul pole Pixeli telefoni.
+
+Aitab sul seadistada telefoni taustaülesandeid, et rakendused saaksid lõpuks SINU heaks töötada ka siis, kui sa parasjagu ekraani ei vaata.
+
+Vaata, kuidas su telefonil läheb ja testi erinevaid seadeid DontKillMyAppi võrdlustestiga.
+
+Funktsioonid:
+
+• DKMA võrdlustest: mõõda, kui agressiivselt su telefon taustarakendusi peatab
+• Juhendid: leia praktilisi samme enamiku taustaprotsesside piirangute ületamiseks
+• Tee muudatusi:️Aita nutitelefonidel nutikana püsida, jagades oma võrdlusaruande dontkillmyapp.com-iga
+
+DontKillMyApp on võrdlustööriist, et näha, kui hästi su telefon taustatöötlust toetab. Saad mõõta enne telefoni seadistamist, seejärel vaadata läbi seadistusjuhendid ja uuesti võrrelda, et näha, kui palju su telefon taustal loid on olnud.
+
+Saad oma aruannet rakenduse kaudu jagada dontkillmyapp.com veebisaidi hooldajatega, kes selle kokku panevad ja selle põhjal üldise negatiivse hinde annavad.
+
+Kuidas võrdlustest töötab? (Tehniline!)
+
+Rakendus käivitab esiplaanil teenuse äratuslukuga ja ajastab korduvaid ülesandeid põhilõimes, kohandatud lõimetäitjaga ja ajastab regulaarseid alarme (AlarmManager.setExactAndAllowWhileIdle). Seejärel arvutab see teostatud ja oodatud ülesannete arvu. Ongi kõik!
+
+Lisateabe saamiseks vaadake koodi. Rakendus on avatud lähtekoodiga ja saadaval aadressil https://github.com/urbandroid-team/dontkillmy-app
+
+Eriline tänu Dokile (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Võimaldab täpset häire ajastamist</string>
+<string name="exact_alarm_restrictions_summary">Palun lubage meil planeerida täpseid häireid, et testida korralikult teie seadme häirepõhist taustatöötlust.</string>
+<string name="general_error">Ups, midagi kui valesti.</string>
+<string name="started">Benchmark algas!</string>
+</resources>

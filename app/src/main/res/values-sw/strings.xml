@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Anza kipimo</string>
+<string name="stop_benchmark">Acha kigezo</string>
+<string name="benchmark">Benchmark</string>
+<string name="running">Ulinganishaji unaoendeshwa (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) gusa ili kusimamisha.</string>
+<string name="finished">Ulinganisho umekamilika, gusa ili kupata matokeo</string>
+<string name="already_running">Benchmark tayari inaendeshwa</string>
+<string name="stop">Acha</string>
+<string name="clear">Wazi</string>
+<string name="work">Kazi</string>
+<string name="alarm">Kengele</string>
+<string name="main">Kuu</string>
+<string name="share">Shiriki</string>
+<string name="share_with">Shiriki na</string>
+<string name="report">Ripoti</string>
+<string name="duration">Muda</string>
+<string name="warning_title">Onyo</string>
+<string name="warning_text">Tafadhali weka simu yako nje ya chaja na ujaribu kutoitumia wakati wa kipimo kizima.</string>
+<string name="cancel">Ghairi</string>
+<string name="ok">SAWA</string>
+<string name="total">Jumla</string>
+<string-array name="duration_array">
+<item>Saa 1</item>
+<item>Saa 2</item>
+<item>Saa 3</item>
+<item>4 masaa</item>
+<item>5 masaa</item>
+<item>6 masaa</item>
+<item>Saa 7</item>
+<item>Saa 8</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Barua pepe</item>
+<item>Nyingine</item>
+</string-array>
+<string name="how_it_works">Jinsi inavyofanya kazi</string>
+<string name="how_it_works_text">Alama huanzisha huduma ya mbele kwa kutumia wake lock na kuratibu kazi zinazojirudia kwenye uzi mkuu (kila baada ya sekunde 10), kitekelezaji mazungumzo maalum (kila sekunde 10) na kuratibu kengele za kawaida kwa kutumia AlarmManager.setExactAndAllowWhileIdle (kila baada ya dakika 10). Kisha huhesabu alama kwa kulinganisha utekelezaji dhidi ya inavyotarajiwa.\n\nAlama zinazokaribia 100% ni matokeo mazuri - uboreshaji wa betri zisizo za kawaida hazitumiki kwa sasa. Ingawa ni vizuri kurudia jaribio baada ya wiki moja kwa kuwa baadhi ya Kampuni za OEM zinaweza kuweka vikomo kwa programu ambazo hazitumiki kwa muda.\n\nTHE GRAPH\n\nKila safu mlalo kwenye grafu inawakilisha dakika 5. Kwa hakika unaona miduara na pembetatu 30 kwenye kila mstari na mraba mmoja kila mstari wa pili. Maeneo makubwa ya nafasi nyeupe yanaonyesha tatizo - huenda programu zako zisifanye kazi inavyokusudiwa ikiwa hutabadilisha mipangilio ya simu yako.\n\n\Kwa maelezo zaidi angalia msimbo wa programu katika https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Wasiliana na usaidizi</string>
+<string name="tell_others">Waambie wengine</string>
+<string name="tell_others_text">DontKillMyApp Benchmark hukagua uchakataji wa usuli wa simu yako ili kufanya programu kwenye simu yako zifanye kazi ipasavyo.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Tafadhali, tukadirie!</string>
+<string name="rate_button">Kiwango</string>
+<string name="never_button">Kamwe</string>
+<string name="later_button">Baadaye</string>
+<string name="source">Msimbo wa chanzo</string>
+<string name="rate_text">Tunataka kufanya programu zifanye kazi hata kwenye simu ambazo watengenezaji wake wanapendelea matumizi ya betri kuliko utendakazi.\n\nNjia bora unayoweza kusaidia kufanya mradi huu uonekane ni kukadiria na kutoa maoni kuhusu zana hii ya chanzo huria na huria kwenye Duka la Google Play.\n\nShukrani nyingi kwa kutusaidia kufanya mfumo kiikolojia wa Android kuwa mahali pazuri zaidi!</string>
+<string name="translate">Saidia kutafsiri programu</string>
+<string name="slogan">Fanya programu zifanye kazi</string>
+<string name="market_text">Programu rasmi ya DontKillMyApp iko hapa - fanya programu zifanye kazi ipasavyo hata kama humiliki Pixel.
+
+Hukusaidia kusanidi majukumu ya usuli ya simu yako ili programu zako hatimaye ziweze kukufanyia kazi hata wakati huangalii skrini kwa sasa.
+
+Tazama jinsi simu yako inavyofanya kazi na ujaribu mipangilio tofauti ukitumia kipimo cha DontKillMyApp.
+
+Vipengele:
+• Kiwango cha DKMA: Pima jinsi simu yako inavyoua programu za mandharinyuma kwa ukali
+• Miongozo: Pata hatua zinazoweza kuchukuliwa ili kushinda vikwazo vingi vya mchakato wa usuli
+• Fanya mabadiliko:️Saidia simu mahiri kuwa mahiri kwa kushiriki ripoti yako ya kiwango kwa dontkillmyapp.com
+
+DontKillMyApp ni zana ya kulinganisha ili kuona jinsi simu yako inavyoauni uchakataji wa usuli. Unaweza kupima kabla ya kusanidi simu yako, kisha upitie miongozo ya usanidi na ulinganishe tena ili kuona ni kiasi gani simu yako imekuwa ikilegea chinichini.
+
+Unaweza kushiriki ripoti yako kupitia programu kwa wasimamizi wa tovuti ya dontkillmyapp.com ambao huitunga na kuweka alama hasi kwa jumla juu yake.
+
+
+Je, kipimo kinafanya kazi vipi? (Kiufundi!)
+
+Programu huanzisha huduma ya mbele kwa kutumia wake lock na kuratibu kazi inayojirudia kwenye thread kuu, kitekelezaji mazungumzo maalum na kuratibu kengele za kawaida (AlarmManager.setExactAndAllowWhileIdle). Kisha inakokotoa kutekelezwa dhidi ya inavyotarajiwa. Hiyo ndiyo!
+
+Kwa maelezo zaidi angalia msimbo. Programu ni chanzo wazi kinachopatikana katika https://github.com/urbandroid-team/dontkillmy-app
+Shukrani za pekee kwa Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Ruhusu upangaji kamili wa kengele</string>
+<string name="exact_alarm_restrictions_summary">Tafadhali turuhusu kuratibu kengele kamili ili kujaribu uchakataji wa mandharinyuma kulingana na kengele ya kifaa chako.</string>
+<string name="general_error">Lo, kuna jambo linapokosea.</string>
+<string name="started">Ulinganishaji umeanza!</string>
+</resources>

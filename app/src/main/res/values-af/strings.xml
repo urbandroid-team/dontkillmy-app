@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Begin maatstaf</string>
+<string name="stop_benchmark">Stop maatstaf</string>
+<string name="benchmark">Maatstaf</string>
+<string name="running">Maatstaf loop (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) tik om te stop.</string>
+<string name="finished">Maatstaf voltooi, tik vir resultate</string>
+<string name="already_running">Maatstaf loop reeds</string>
+<string name="stop">Stop</string>
+<string name="clear">Duidelik</string>
+<string name="work">Werk</string>
+<string name="alarm">Alarm</string>
+<string name="main">Hoof</string>
+<string name="share">Deel</string>
+<string name="share_with">Deel met</string>
+<string name="report">Rapporteer</string>
+<string name="duration">Duur</string>
+<string name="warning_title">Waarskuwing</string>
+<string name="warning_text">Hou asseblief jou foon uit die laaier en probeer om dit nie gedurende die hele maatstaf te gebruik nie.</string>
+<string name="cancel">Kanselleer</string>
+<string name="ok">Goed</string>
+<string name="total">Totaal</string>
+<string-array name="duration_array">
+<item>1 uur</item>
+<item>2 uur</item>
+<item>3 uur</item>
+<item>4 uur</item>
+<item>5 uur</item>
+<item>6 uur</item>
+<item>7 uur</item>
+<item>8 uur</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>E-pos</item>
+<item>Ander</item>
+</string-array>
+<string name="how_it_works">Hoe dit werk</string>
+<string name="how_it_works_text">Die maatstaf begin \'n voorgronddiens met \'n wekslot en skeduleer herhalende take op die hoofdraad (elke 10\'s), \'n persoonlike draaduitvoerder (elke 10\'s) en skeduleer gereelde alarms met behulp van AlarmManager.setExactAndAllowWhileIdle (elke 10 minute). Dan bereken dit die telling deur uitgevoerde teenoor verwagte te vergelyk.\n\nTellings naby 100% is goeie resultate - nie-standaard batteryoptimalisering word tans nie toegepas nie. Dit is egter goed om die toets oor \'n week te herhaal, aangesien sommige OEM\'s limiete kan toepas op toepassings wat \'n rukkie nie gebruik word nie.\n\nDIE GRAFIEK\n\nElke ry in die grafiek verteenwoordig 5 minute. Ideaal gesproke sien jy 30 sirkels en driehoeke op elke lyn en een vierkant elke tweede lyn. Groter streke van wit spasie dui op \'n probleem - jou toepassings werk dalk nie soos bedoel as jy nie jou foon se instellings verander nie.\n\n\Vir meer besonderhede, kyk na die toepassingskode by https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Kontak ondersteuning</string>
+<string name="tell_others">Vertel ander</string>
+<string name="tell_others_text">DontKillMyApp Benchmark kontroleer jou foon se agtergrondverwerking om programme op jou foon behoorlik te laat werk.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Asseblief, beoordeel ons!</string>
+<string name="rate_button">Koers</string>
+<string name="never_button">Nooit</string>
+<string name="later_button">Later</string>
+<string name="source">Bronkode</string>
+<string name="rate_text">Ons wil hê dat programme moet werk selfs op fone waarvan die vervaardigers battery bo funksionaliteit verkies.\n\nDie beste manier waarop jy kan help om hierdie projek sigbaar te maak, is om hierdie gratis en oopbron-instrument op die Play Winkel te gradeer en kommentaar te lewer.\n\nBaie dankie dat jy ons help om die Android-ekosisteem \'n beter plek te maak!</string>
+<string name="translate">Help om die toepassing te vertaal</string>
+<string name="slogan">Maak programme werk</string>
+<string name="market_text">Die amptelike DontKillMyApp-app is hier - laat programme uiteindelik behoorlik werk, selfs al besit jy nie \'n Pixel nie.
+
+Help jou om jou foon se agtergrondtake op te stel sodat jou programme uiteindelik vir JOU kan werk, selfs wanneer jy nie nou na die skerm kyk nie.
+
+Kyk hoe jou foon vaar en toets verskillende instellings met die DontKillMyApp-maatstaf.
+
+Kenmerke:
+• DKMA-maatstaf: Meet hoe aggressief jou foon agtergrondprogramme uitskakel
+• Gidse: Kry bruikbare stappe om die meeste agtergrondprosesbeperkings te oorkom
+• Maak \'n verandering: ️Help slimfone om slim te bly deur jou maatstafverslag met dontkillmyapp.com te deel
+
+DontKillMyApp is \'n maatstafinstrument om te sien hoe goed jou foon agtergrondverwerking ondersteun. Jy kan meet voordat jy jou foon opstel, dan deur die opstelgidse gaan en weer die maatstaf gebruik om te sien hoeveel jou foon in die agtergrond slap geraak het.
+
+Jy kan jou verslag deur die app deel met die onderhouers van die dontkillmyapp.com-webwerf wat dit saamstel en die algehele negatiewe telling daarop baseer.
+
+Hoe werk die maatstaf? (Tegnies!)
+
+Die toepassing begin \'n voorgronddiens met \'n wekslot en skeduleer herhalende take op die hoofdraad, \'n persoonlike draaduitvoerder en skeduleer gereelde alarms (AlarmManager.setExactAndAllowWhileIdle). Dan bereken dit uitgevoerde teenoor verwagte. Dis dit!
+
+Vir meer besonderhede, kyk na die kode. Die toepassing is oopbron beskikbaar by https://github.com/urbandroid-team/dontkillmy-app
+Spesiale dank aan Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Laat presiese alarmskedulering toe</string>
+<string name="exact_alarm_restrictions_summary">Laat ons asseblief toe om presiese alarms te skeduleer om u toestel se alarmgebaseerde agtergrondverwerking behoorlik te toets.</string>
+<string name="general_error">Oeps, iets toe verkeerd.</string>
+<string name="started">Maatstaf het begin!</string>
+</resources>

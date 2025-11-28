@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">벤치마크 시작</string>
+<string name="stop_benchmark">벤치마크 중지</string>
+<string name="benchmark">벤치마크</string>
+<string name="running">벤치마크 실행 중 (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) 탭하여 중지합니다.</string>
+<string name="finished">벤치마크 완료, 결과를 보려면 탭하세요.</string>
+<string name="already_running">벤치마크가 이미 실행 중입니다.</string>
+<string name="stop">중지</string>
+<string name="clear">지우기</string>
+<string name="work">업무</string>
+<string name="alarm">알람</string>
+<string name="main">메인</string>
+<string name="share">공유</string>
+<string name="share_with">공유 대상</string>
+<string name="report">신고</string>
+<string name="duration">기간</string>
+<string name="warning_title">경고</string>
+<string name="warning_text">벤치마크가 진행되는 동안 휴대폰을 충전기에서 분리하고 사용하지 마세요.</string>
+<string name="cancel">취소</string>
+<string name="ok">확인</string>
+<string name="total">합계</string>
+<string-array name="duration_array">
+<item>1시간</item>
+<item>2시간</item>
+<item>3시간</item>
+<item>4시간</item>
+<item>5시간</item>
+<item>6시간</item>
+<item>7시간</item>
+<item>8시간</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>이메일</item>
+<item>기타</item>
+</string-array>
+<string name="how_it_works">작동 방식</string>
+<string name="how_it_works_text">벤치마크는 웨이크 잠금을 사용하여 포그라운드 서비스를 시작하고, 반복적인 작업은 메인 스레드(10초 간격)에서, 커스텀 스레드 실행기(10초 간격)에서는 실행하고, AlarmManager.setExactAndAllowWhileIdle(10분 간격)을 사용하여 정기적인 알람을 예약합니다. 그런 다음 실행된 값과 예상 값을 비교하여 점수를 계산합니다.\n\n100%에 가까운 점수는 좋은 결과입니다. 비표준 배터리 최적화는 현재 적용되지 않았습니다. 하지만 일부 OEM은 한동안 사용되지 않는 앱에 제한을 적용할 수 있으므로 일주일 후에 테스트를 반복하는 것이 좋습니다.\n\n그래프\n\n그래프의 각 행은 5분을 나타냅니다. 이상적으로는 각 행에 원과 삼각형 30개, 그리고 두 번째 행마다 사각형 1개가 표시됩니다. 빈 공간이 더 넓으면 문제가 있음을 나타냅니다. 휴대폰 설정을 변경하지 않으면 앱이 의도한 대로 작동하지 않을 수 있습니다. 자세한 내용은 https://github.com/urbandroid-team/dontkillmy-app에서 앱 코드를 확인하세요.</string>
+<string name="contact_support">지원팀에 문의</string>
+<string name="tell_others">다른 사람에게 알리기</string>
+<string name="tell_others_text">DontKillMyApp 벤치마크는 휴대폰의 백그라운드 처리를 검사하여 휴대폰의 앱이 제대로 작동하는지 확인합니다.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">평가해 주세요!</string>
+<string name="rate_button">평가</string>
+<string name="never_button">절대로</string>
+<string name="later_button">나중에</string>
+<string name="source">소스 코드</string>
+<string name="rate_text">우리는 제조사가 기능보다 배터리를 더 중요하게 생각하는 휴대폰에서도 앱이 작동하도록 만들고 싶습니다.\n\n이 프로젝트를 널리 알리는 가장 좋은 방법은 Play 스토어에서 이 무료 오픈 소스 도구를 평가하고 댓글을 남기는 것입니다.\n\n안드로이드 생태계를 더 나은 곳으로 만드는 데 도움을 주셔서 감사합니다!</string>
+<string name="translate">앱 번역 도움말</string>
+<string name="slogan">앱 작동하기</string>
+<string name="market_text">DontKillMyApp 공식 앱이 출시되었습니다. Pixel을 사용하지 않아도 앱이 제대로 작동하도록 하세요.
+
+화면을 보지 않을 때에도 앱이 제대로 작동하도록 휴대폰 백그라운드 작업을 설정할 수 있습니다.
+
+DontKillMyApp 벤치마크를 통해 휴대폰의 상태를 확인하고 다양한 설정을 테스트해 보세요.
+
+기능:
+• DKMA 벤치마크: 휴대폰이 백그라운드 앱을 얼마나 적극적으로 종료하는지 측정합니다.
+• 가이드: 대부분의 백그라운드 프로세스 제한을 극복하기 위한 실행 가능한 단계를 안내합니다.
+• 변경: 벤치마크 보고서를 dontkillmyapp.com에 공유하여 스마트폰을 더욱 스마트하게 유지하세요.
+
+DontKillMyApp은 휴대폰이 백그라운드 프로세스를 얼마나 잘 지원하는지 확인하는 벤치마크 도구입니다. 휴대폰을 설정하기 전에 측정한 후, 설정 가이드를 참고하고 다시 벤치마크를 실행하여 휴대폰이 백그라운드에서 얼마나 느리게 작동하는지 확인할 수 있습니다.
+
+앱을 통해 dontkillmyapp.com 웹사이트 관리자에게 보고서를 공유하면 관리자가 보고서를 정리하여 전반적인 부정적 점수를 매깁니다.
+
+벤치마크는 어떻게 작동하나요? (기술적인 내용!)
+
+앱은 웨이크락(wake lock)을 사용하여 포그라운드 서비스를 시작하고, 메인 스레드에서 반복적인 작업을 예약합니다. 사용자 지정 스레드 실행기(executor)를 사용하여 정기적인 알람(AlarmManager.setExactAndAllowWhileIdle)을 예약합니다. 그런 다음 실행된 알람과 예상된 알람을 계산합니다. 이게 전부입니다!
+
+자세한 내용은 코드를 확인하세요. 앱은 https://github.com/urbandroid-team/dontkillmy-app에서 오픈 소스로 제공됩니다.
+Doki(github.com/doubledotlabs/doki)에 특별히 감사드립니다.</string>
+<string name="exact_alarm_restrictions_title">정확한 알람 예약 허용</string>
+<string name="exact_alarm_restrictions_summary">기기 알람 기반 백그라운드 처리를 제대로 테스트하기 위해 정확한 알람을 예약해 주세요.</string>
+<string name="general_error">이런, 뭔가 잘못되었습니다.</string>
+<string name="started">벤치마크 시작!</string>
+</resources>
