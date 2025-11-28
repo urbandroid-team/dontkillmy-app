@@ -3,13 +3,13 @@
         <font
             android:fontStyle="normal"
             android:fontWeight="400"
-            android:font="@font/mulish_medium"/>
+            android:font="@font/quicksand_semibold"/>
         <font
             android:fontStyle="italic"
             android:fontWeight="400"
-            android:font="@font/mulish_italic"/>
+            android:font="@font/quicksand_regular"/>
         <font
             android:fontStyle="normal"
             android:fontWeight="700"
-            android:font="@font/mulish_bold"/>
+            android:font="@font/quicksand_bold"/>
 </font-family>

@@ -295,7 +295,7 @@ class ResultActivity : AppCompatActivity(), CoroutineScope by MainScope() {
         } else {
             findViewById<View>(R.id.stop).visibility = View.GONE
             findViewById<View>(R.id.done).visibility = View.VISIBLE
-            findViewById<View>(R.id.indicator).visibility = View.GONE
+            findViewById<View>(R.id.indicator).visibility = View.INVISIBLE
         }
     }
 
