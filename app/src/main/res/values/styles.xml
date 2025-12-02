@@ -20,6 +20,10 @@
 
         <item name="android:windowBackground">@color/bg</item>
 
+
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/logo_anim</item>
+        <item name="android:windowSplashScreenAnimationDuration">1500</item>
+
         <item name="android:windowActionBar">false</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
