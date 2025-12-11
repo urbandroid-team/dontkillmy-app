@@ -18,7 +18,7 @@
 <string name="report">Report</string>
 <string name="duration">Doba</string>
 <string name="warning_title">Pozor</string>
-<string name="warning_text">Nenabíjejte telefon a zkuste s ním nepracovat po celou dobu měření.</string>
+<string name="warning_text">Nenabíjej telefon a zkus s ním nepracovat po celou dobu měření.</string>
 <string name="cancel">Zrušit</string>
 <string name="ok">OK</string>
 <string name="total">Celkem</string>
@@ -32,17 +32,23 @@
 <item>7 hodin</item>
 <item>8 hodin</item>
 </string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Email</item>
+<item>Ostatní</item>
+</string-array>
 <string name="how_it_works">Jak to funguje</string>
-<string name="how_it_works_text">Meření nastartuje službu na popředí, udržuje CPU zapnuté a nastaví opakující se úlohy na hlavním vlákně (po 10ti sekundách) a na dalších vláknech (po 10ti sekundách) a alarmy (AlarmManager.setExactAndAllowWhileIdle po 10ti minutách). Na konci se spočítá skóre jako uskutečněné proti očekávaným.\n\nHodnoty blízko 100% jsou dobrý výsledek - žádná nestandardní omezení nejspíš nejsou momentálně aktivní. Zkuste měření za týden opakovat, protože někteří výrobci zapínaji zabijáky aplikací až po nějaké době co není aplikace používána.\n\nGRAF\n\nKaždý řádek reprezentuje 5 minut. Ideálně vidíte v grafu 30 koleček a trojúhelníků na řádek a jeden čtverec na každém druhém řádku. Větší bílá místa znamenají problém - Vaše aplikace nemusí pracovat správně pokud nezměníte nastavení telefonu.\n\nPro více informací se podívejte na https://dontkillmyapp.com a nebo přímo do zdrojáku na https://github.com/urbandroid-team/dontkillmy-app</string>
-<string name="contact_support">Kontaktujte podporu</string>
+<string name="how_it_works_text">Meření nastartuje službu na popředí, udržuje CPU zapnuté a nastaví opakující se úlohy na hlavním vlákně (po 10ti sekundách) a na dalších vláknech (po 10ti sekundách) a alarmy (AlarmManager.setExactAndAllowWhileIdle po 10ti minutách). Na konci se spočítá skóre jako uskutečněné proti očekávaným.\n\nHodnoty blízko 100% jsou dobrý výsledek - žádná nestandardní omezení nejspíš nejsou momentálně aktivní. Zkus měření za týden opakovat, protože někteří výrobci zapínaji zabijáky aplikací až po nějaké době co není aplikace používána.\n\nGRAF\n\nKaždý řádek reprezentuje 5 minut. Ideálně vidíš v grafu 30 koleček a trojúhelníků na řádek a jeden čtverec na každém druhém řádku. Větší bílá místa znamenají problém - tvoje aplikace nemusí pracovat správně pokud nezměníš nastavení telefonu.\n\nPro více informací se podívej na https://dontkillmyapp.com a nebo přímo do zdrojáku na https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Kontaktuj podporu</string>
 <string name="tell_others">Řekněte to ostatním</string>
-<string name="tell_others_text">DontKillMyApp měří jak fungují procesy v pozadí na Vašem telefonu, aby Vaše aplikace fungovali správně.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
-<string name="rate">Prosím ohodnoťte nás</string>
+<string name="tell_others_text">DontKillMyApp měří jak fungují procesy v pozadí na tvém telefonu, aby tvoje aplikace fungovali správně.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Prosím ohodnoť nás</string>
 <string name="rate_button">Hodnocení</string>
 <string name="never_button">Nikdy</string>
 <string name="later_button">Později</string>
 <string name="source">Zdrojový kód</string>
-<string name="rate_text">Chceme, aby aplikace fungovaly i na telefonech výrobců, kteří upřednostňují baterii před užitečností aplikací.\n\nPomozte nám zviditelnit tento problém. Nejlépe tím, že ohodnotíte tuto aplikaci, která je zdarma a má otevřený zdrojový kód na Obchodě Play a napíšete nám zkušenosti, jak Vám aplikace pomohla.\n\nDěkujeme za Vaši podporu a důvěru, že nám pomáháte zlepšovat svět Androidích zařízení.</string>
+<string name="rate_text">Chceme, aby aplikace fungovaly i na telefonech výrobců, kteří upřednostňují baterii před užitečností aplikací.\n\nPomoz nám zviditelnit tento problém. Nejlépe tím, že tuto aplikaci, která je zdarma a má otevřený zdrojový kód, ohodnotíš na Play Storu a napíšeš nám zkušenosti, jak ti aplikace pomohla.\n\nDěkujeme za podporu a důvěru, že nám pomáháš zlepšovat svět Androidích zařízení.</string>
+<string name="translate">Pomož přeložit aplikaci</string>
 <string name="slogan">Nech apky žít</string>
 <string name="market_text">Oficiální aplikace projektu DontKillMyApp je zde - konečně můžete nechat apky žít i na Vašem telefonu i když o zrovna neni Pixel.
 
@@ -60,7 +66,7 @@ Nejprve změřtre telefon, pokud je Vaše skóre nízké, udělejte změny podle
 
 Projekt DKMA vyvíjejí a udržují dobrovolníci, kterým není jedno v jakém stavu je Androidí ekosystém a usilují o jeho zlepšení. Tato aplikace má otevřený zdrojový kód, který můžete nalézt na https://github.com/urbandroid-team/dontkillmy-app.</string>
 <string name="exact_alarm_restrictions_title">Povolit přesné plánování poplachu</string>
-<string name="exact_alarm_restrictions_summary">Umožněte nám naplánovat přesné alarmy, abychom mohli řádně otestovat zpracování zařízení na pozadí na základě alarmu.</string>
+<string name="exact_alarm_restrictions_summary">Umožni nám naplánovat přesné alarmy, abychom mohli řádně otestovat zpracování zařízení na pozadí na základě alarmu.</string>
 <string name="general_error">Něco se pokazilo.</string>
 <string name="started">Benchmark běží</string>
 </resources>

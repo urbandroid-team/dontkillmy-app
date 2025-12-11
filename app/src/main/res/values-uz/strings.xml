@@ -34,11 +34,14 @@
 </string-array>
 <string-array name="share_array">
 <item>DontKillMyApp.Com</item>
+<item>Elektron pochta</item>
+<item>Boshqa</item>
 </string-array>
 <string name="how_it_works">Bu qanday ishlaydi</string>
-<string name="how_it_works_text">Benchmark uyg\'onish blokirovkasi bilan oldingi xizmatni ishga tushiradi va asosiy oqimdagi takroriy vazifalarni (har 10 soniyada), maxsus tasma ijrochisini (har 10 soniyada) rejalashtiradi va AlarmManager.setExactAndAllowWhileIdle (har 10 daqiqada) yordamida muntazam signallarni rejalashtiradi.  Keyin bajarilgan va bajarilganlarni taqqoslash orqali ballni hisoblab chiqadi.  kutilmoqda.\n\n100% ga yaqin ballar yaxshi natijalardir – nostandart batareya optimallashtirishlari hozircha qo‘llanilmagan.  Testni bir haftadan keyin takrorlash yaxshi bo‘ladi, chunki ba’zi OEM’lar ma’lum muddat foydalanilmayotgan ilovalarga cheklovlar qo‘yishi mumkin.\n\nGRAFI\n\nGrafikdagi har bir qator 5 daqiqani bildiradi.  Ideal holda siz har bir chiziqda 30 ta doira va uchburchakni va har ikkinchi chiziqda bitta kvadratni ko\'rasiz.  Bo‘sh joyning kattaroq hududlari muammoni ko‘rsatadi – agar siz telefon sozlamalarini o‘zgartirmasangiz, ilovalaringiz mo‘ljallanganidek ishlamasligi mumkin.\n\n\Batafsil ma’lumot uchun  sahifasida ilova kodini tekshiring. https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="how_it_works_text">Benchmark uyg\'onish blokirovkasi bilan oldingi xizmatni ishga tushiradi va asosiy oqimdagi takroriy vazifalarni (har 10 soniyada), maxsus tasma ijrochisini (har 10 soniyada) rejalashtiradi va AlarmManager.setExactAndAllowWhileIdle (har 10 daqiqada) yordamida muntazam signallarni rejalashtiradi.  Keyin bajarilgan va bajarilganlarni taqqoslash orqali ballni hisoblab chiqadi.  kutilmoqda.\n\n100% ga yaqin ballar yaxshi natijalardir – nostandart batareya optimallashtirishlari hozircha qo‘llanilmagan.  Testni bir haftadan keyin takrorlash yaxshi bo\‘ladi, chunki ba\’zi OEM\’lar ma\’lum muddat foydalanilmayotgan ilovalarga cheklovlar qo\‘yishi mumkin.\n\nGRAFI\n\nGrafikdagi har bir qator 5 daqiqani bildiradi.  Ideal holda siz har bir chiziqda 30 ta doira va uchburchakni va har ikkinchi chiziqda bitta kvadratni ko\'rasiz.  Bo\‘sh joyning kattaroq hududlari muammoni ko\‘rsatadi – agar siz telefon sozlamalarini o\‘zgartirmasangiz, ilovalaringiz mo\‘ljallanganidek ishlamasligi mumkin.\n\n\Batafsil ma\’lumot uchun  sahifasida ilova kodini tekshiring. https://github.com/urbandroid-team/dontkillmy-app</string>
 <string name="contact_support">Biz bilan bog\'lanish</string>
 <string name="tell_others">Boshqalarga ulashing</string>
+<string name="tell_others_text">DontKillMyApp Benchmark telefoningizdagi ilovalarning to‘g‘ri ishlashi uchun telefoningiz fonida ishlov berishni tekshiradi.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
 <string name="rate">Iltimos, bizning ishimizga baho bering</string>
 <string name="rate_button">Baholash</string>
 <string name="never_button">Hech qachon</string>
@@ -47,18 +50,18 @@
 <string name="rate_text">Biz ilovalarni ishlab chiqaruvchilari funksiyadan ko‘ra batareya quvvatini uzoqqa yetishini afzal ko‘rgan telefonlarda ham ishlashini istaymiz.\n\nUshbu loyihani yanada yaxshilashga yordam berishning eng yaxshi yo‘li bu bepul va ochiq manbali ilovani Play Store’da baholash va sharhlashdir.\n\nKatta rahmat.  Android ekotizimini yaxshiroq qilishimizga yordam berganingiz uchun!</string>
 <string name="translate">Ilovani tarjima qilishda yordam berish</string>
 <string name="slogan">Ilovalar ishlab tursin!</string>
-<string name="market_text">Rasmiy DontKillMyApp ilovasi shu yerda – Pixel qurilmangiz boʻlmasa ham, ilovalarni nihoyat toʻgʻri ishlashiga imkon bering.
+<string name="market_text">Rasmiy DontKillMyApp ilovasi shu yerda – Pixel qurilmangiz bo\ʻlmasa ham, ilovalarni nihoyat to\ʻg\ʻri ishlashiga imkon bering.
 
  Telefoningiz fonidagi vazifalarni sozlashda yordam beradi, shunda ilovalaringiz hozir ekranga qaramasangiz ham SIZ uchun ishlashi mumkin.
 
  Telefoningiz qanday ishlashini ko\'ring va DontKillMyApp benchmark yordamida turli xil sozlamalarni sinab ko\'ring.
 
  Xususiyatlari:
- • DKMA benchmark: Telefoningiz fon ilovalarini qanchalik agressiv tarzda o‘ldirishini o‘lchang
- • Qo‘llanmalar: Fon jarayonidagi ko‘pgina cheklovlarni yengib o‘tish uchun amalda bo‘ladigan qadamlarni oling
- • O‘zgartirish kiriting: ️Dontkillmyapp.com saytida sinov hisobotini baham ko‘rish orqali smartfonlarning aqlli bo‘lishiga yordam bering.
+ • DKMA benchmark: Telefoningiz fon ilovalarini qanchalik agressiv tarzda o\‘ldirishini o\‘lchang
+ • Qo\‘llanmalar: Fon jarayonidagi ko‘pgina cheklovlarni yengib o\‘tish uchun amalda bo\‘ladigan qadamlarni oling
+ • O\‘zgartirish kiriting: ️Dontkillmyapp.com saytida sinov hisobotini baham ko\‘rish orqali smartfonlarning aqlli bo\‘lishiga yordam bering.
 
- DontKillMyApp bu sizning telefoningiz fonda ishlashni qanchalik yaxshi qo\'llab-quvvatlashini ko\'rish uchun sinov vositasidir.  Telefoningizni sozlashdan oldin oʻlchashingiz mumkin, soʻngra sozlash qoʻllanmalarini koʻrib chiqing va telefoningiz fonda qanchalik boʻshashayotganini koʻrish uchun yana bir bor taqqoslashingiz mumkin.
+ DontKillMyApp bu sizning telefoningiz fonda ishlashni qanchalik yaxshi qo\'llab-quvvatlashini ko\'rish uchun sinov vositasidir.  Telefoningizni sozlashdan oldin o\ʻlchashingiz mumkin, so\ʻngra sozlash qo\ʻllanmalarini ko\ʻrib chiqing va telefoningiz fonda qanchalik boʻshashayotganini ko\ʻrish uchun yana bir bor taqqoslashingiz mumkin.
 
  Hisobotingizni ilova orqali dontkillmyapp.com veb-saytining saqlovchilari bilan baham ko\'rishingiz mumkin, ular uni tuzadi va umumiy salbiy ballni unga asoslaydi.
 

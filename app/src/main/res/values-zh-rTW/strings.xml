@@ -5,19 +5,22 @@
 <string name="start_benchmark">開始測試</string>
 <string name="stop_benchmark">停止測試</string>
 <string name="benchmark">測試</string>
-<string name="running">測試中 (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) 點擊可停止</string>
-<string name="finished">測試結束，點擊以查看結果</string>
-<string name="already_running">測試已開始</string>
+<string name="running">測試進行中（<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>）點選終止測試</string>
+<string name="finished">基準測試完成，點選查看結果</string>
+<string name="already_running">基準測試正在運行</string>
 <string name="stop">停止</string>
 <string name="clear">清除</string>
+<string name="work">工作</string>
+<string name="alarm">警報</string>
+<string name="main">主介面</string>
 <string name="share">分享</string>
-<string name="share_with">分享到</string>
-<string name="report">回報</string>
-<string name="duration">測試時間</string>
+<string name="share_with">分享給</string>
+<string name="report">報告</string>
+<string name="duration">持續時間</string>
 <string name="warning_title">警告</string>
-<string name="warning_text">請不要在測試中充電或使用手機。</string>
+<string name="warning_text">請將手機從充電器上取下，並盡量在整個基準測試過程中不要使用手機。</string>
 <string name="cancel">取消</string>
-<string name="ok">確認</string>
+<string name="ok">確定</string>
 <string name="total">總計</string>
 <string-array name="duration_array">
 <item>1 小時</item>
@@ -34,42 +37,46 @@
 <item>電子郵件</item>
 <item>其他</item>
 </string-array>
-<string name="how_it_works">運作原理</string>
-<string name="contact_support">聯絡支援</string>
-<string name="tell_others">跟別人分享</string>
-<string name="tell_others_text">「DontKillMyApp 測試」檢查你手機的背景處理，以讓 App 順利運作。\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
-<string name="rate">幫我們評分，拜託！</string>
+<string name="how_it_works">工作原理</string>
+<string name="how_it_works_text">此基準測試會啟動一個有喚醒鎖定的前台服務，並在主執行緒（每 10 秒一次）、自訂執行緒執行器（每 10 秒一次）上調度重複性任務，並使用 AlarmManager.setExactAndAllowWhileIdle 調度定期鬧鐘（每 10 分鐘一次）。然後，它透過比較實際執行情況與預期情況來計算得分。 \n\n接近 100% 的得分是良好的結果——目前尚未應用非標準的電池優化。不過，最好在一週後重複測試，因為一些 OEM 廠商可能會限制長時間未使用的應用。 \n\n圖表\n\n圖表中的每一行代表 5 分鐘。理想情況下，每行應包含 30 個圓圈和三角形，每隔一行應包含一個正方形。較大的空白區域表示有問題—如果您不更改手機設置，您的應用程式可能無法正常運作。 \n\n更多詳情請看應用程式碼：https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">聯繫支持</string>
+<string name="tell_others">分享給其他人</string>
+<string name="tell_others_text">DontKillMyApp 基準測試會檢查您手機的背景處理情況，以確保手機上的應用程式正常運作。 \n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">請給我們評分！</string>
 <string name="rate_button">評分</string>
-<string name="never_button">不再提醒</string>
+<string name="never_button">永不</string>
 <string name="later_button">稍後</string>
-<string name="source">原始程式碼</string>
-<string name="rate_text">即使在某些製造商眼裡，續航力比功能性重要，但我們依然希望 App 能正確運作。\n\n在 Play 商店幫我們評分，是增加這個開放原始碼的計畫曝光的最好方式。\n\n我們非常感激協助我們改善 Android 生態的人！</string>
-<string name="translate">幫忙翻譯這個 App</string>
-<string name="slogan">Make apps work</string>
-<string name="market_text">DontKillMyApp 的官方應用程式就在這裡──即使你不是使用 Pixel，依然能讓 App 恢復正確運作。
+<string name="source">原始碼</string>
+<string name="rate_text">我們希望即使在那些廠商更注重電池續航力而非功能性的手機上，應用也能正常運作。 \n\n幫助推廣這個專案的最佳方式是在 Play 商店中為這款免費開源工具評分和評論。 \n\n非常感謝您幫助我們讓 Android 生態系統變得更好！</string>
+<string name="translate">幫助翻譯應用</string>
+<string name="slogan">讓應用程式正常運行</string>
+<string name="market_text">官方 DontKillMyApp 應用程式現已上線—即使您沒有 Pixel 手機，也能讓應用程式正常運作。
 
-幫你的手機設定好背景工作，如此一來 App 便能順利的協助你！即使沒有盯著螢幕也可以。
+它能幫助您設定手機後台任務，讓您即使不看螢幕，應用程式也能繼續為您服務。
 
-現在來看看你手機的狀況，並以「DontKillMyApp 測試」試試不同設定。
+使用 DontKillMyApp 基準測試，查看您的手機運作狀況並測試不同的設定。
 
-特點：
-- DKMA基準測試：測量你的手機是如何積極地封殺後台應用程式的
-- 指南：獲得可操作的步驟來剋服大多數的後台進程限制
-- 做出改變：️通過分享你的基準報告到dontkillmyapp.com，幫助智慧型手機保有智慧
+功能：
 
-DontKillMyApp是一個基準工具，可以看到你的手機對後台處理的支持程度，在設置手機之前進行測量，然後通過設置指南，再次進行基準測試，看看手機在後台有多懈怠。
+• DKMA 基準測試：衡量您的手機關閉後台應用程式的正面程度
 
-你可以通過該應用程式將你的報告分享給dontkillmyapp.com網站的維護者，他們會對報告進行匯編，並在此基礎上得出總體負分。
+• 指南：取得切實可行的步驟，克服大多數後台程序限制
 
-測試是如何運作的？（技術層面！）
+• 做出改變：將您的基準測試報告分享到 dontkillmyapp.com，幫助智慧型手機保持智能
 
-此基準應用啟動一個帶有解鎖的前臺服務，在主線程上與自定義的線程執行器上安排重復的任務，並定期通知（AlarmManager.setExactAndAllowWhileIdle）。然後計算出已執行與預期的時程。That\'s it!
+DontKillMyApp 是一款基準測試工具，用於查看您的手機對背景處理的支援情況。您可以在設置手機之前進行測試，然後按照設定指南進行設置，並再次進行基準測試，以了解您的手機在背景運行的效率如何。
 
-查看程式碼以取得詳細資訊。這個應用程式是開放原始碼的，並公開在 https://github.com/urbandroid-team/dontkillmy-app
+您可以透過應用程式將報告分享給 dontkillmyapp.com 網站的維護人員，他們會匯總報告並據此得出最終的負面評分。
 
-特別感謝 Doki （github.com/doubledotlabs/doki）。</string>
-<string name="exact_alarm_restrictions_title">允许确切的警报安排</string>
-<string name="exact_alarm_restrictions_summary">請允許我們安排準確的警報，以正確測試您設備基於警報的後台處理。</string>
-<string name="general_error">出了些问题。</string>
-<string name="started">基准正在运行</string>
+基準測試如何運作？工作？ （技術！）
+
+該應用程式會啟動一個帶有喚醒鎖定的前台服務，並在主執行緒上調度重複性任務，使用自訂執行緒執行器，並定期設定鬧鐘（AlarmManager.setExactAndAllowWhileIdle）。然後，它會計算實際執行次數與預期執行次數的差異。就是這樣！
+
+更多詳情請查看程式碼。該應用程式是開源的，可在 https://github.com/urbandroid-team/dontkillmy-app 取得。
+
+特別感謝 Doki (github.com/doubledotlabs/doki)。</string>
+<string name="exact_alarm_restrictions_title">允許精確設定鬧鐘時間</string>
+<string name="exact_alarm_restrictions_summary">請允許我們精確設定鬧鐘時間，以便我們能夠正確測試您裝置基於鬧鐘的後台處理功能。</string>
+<string name="general_error">糟糕，出錯了。</string>
+<string name="started">基準測試開始！</string>
 </resources>

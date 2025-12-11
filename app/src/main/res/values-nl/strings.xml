@@ -38,6 +38,7 @@
 <item>Anders</item>
 </string-array>
 <string name="how_it_works">Hoe werkt het</string>
+<string name="how_it_works_text">De benchmark start een service op de voorgrond met een wake lock en plant repetitieve taken op de hoofdthread (elke 10 seconden), een aangepaste thread-uitvoerder (elke 10 seconden) en plant regelmatige alarmen met AlarmManager.setExactAndAllowWhileIdle (elke 10 minuten). Vervolgens wordt de score berekend door de uitgevoerde taken te vergelijken met de verwachte taken. Scores dicht bij de 100% zijn goede resultaten - niet-standaard batterijoptimalisaties worden momenteel niet toegepast. Het is echter raadzaam om de test over een week te herhalen, aangezien sommige OEM\'s limieten kunnen opleggen aan apps die een tijdje niet worden gebruikt. DE GRAFIEK Elke rij in de grafiek vertegenwoordigt 5 minuten. Idealiter ziet u 30 cirkels en driehoeken op elke regel en één vierkant op elke tweede regel. Grotere witruimtegebieden duiden op een probleem: uw apps werken mogelijk niet zoals bedoeld als u de instellingen van uw telefoon niet wijzigt.\n\n\Voor meer informatie kunt u de code van de apps bekijken op https://github.com/urbandroid-team/dontkillmy-app</string>
 <string name="contact_support">Contacteer helpdesk</string>
 <string name="tell_others">Vertel het anderen</string>
 <string name="tell_others_text">DontKillMyApp Benchmark controleert de achtergrondprocessen van uw telefoon om de apps goed te laten werken.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
@@ -76,4 +77,5 @@ Speciale dank voor Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_summary">Laat ons exacte alarmen plannen om de achtergrondverwerking op basis van alarmen van je apparaat goed te testen.</string>
 <string name="general_error">Er is iets fout gegaan.</string>
 <string name="started">Benchmark is actief</string>
+<string name="">𝚜🅱𝚒𝚗𝚗𝚊𝚕𝚊</string>
 </resources>

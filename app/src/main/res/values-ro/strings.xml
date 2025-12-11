@@ -9,7 +9,9 @@
 <string name="finished">Testul s-a terminat, atinge pentru rezultate</string>
 <string name="already_running">Testul deja rulează</string>
 <string name="stop">Stop</string>
+<string name="clear">Clar</string>
 <string name="work">Lucrează</string>
+<string name="alarm">Alarma</string>
 <string name="main">Principal</string>
 <string name="share">Distribuie</string>
 <string name="share_with">Distribuie către</string>
@@ -48,6 +50,27 @@
 <string name="rate_text">Ne dorim să facem aplicaţiile fucţionale chiar şi la telefoanele gândite să conserve bateria în detrimentul funcţionalităţii.\n\nCea mai bună cale de a face proiectul cunoscut este să apreciaţi şi să comentaţi această aplicaţie gratuită în PlayStore.\n\nMulţumim că ne ajutaţi să facem sistemul Android mai bun!</string>
 <string name="translate">Help translate the app</string>
 <string name="slogan">Facem aplicaţile să funcţioneze</string>
+<string name="market_text">Aplicația oficială DontKillMyApp este aici - asigură-te că aplicațiile funcționează în sfârșit corect, chiar dacă nu deții un Pixel.
+
+Te ajută să configurezi sarcinile de fundal ale telefonului, astfel încât aplicațiile tale să poată funcționa în sfârșit pentru TINE, chiar și atunci când nu te uiți la ecran chiar acum.
+
+Vezi cum funcționează telefonul tău și testează diferite setări cu testul de performanță DontKillMyApp.
+
+Caracteristici:
+• Test de performanță DKMA: Măsoară cât de agresiv elimină telefonul tău aplicațiile de fundal
+• Ghiduri: Obține pași practici pentru a depăși majoritatea restricțiilor de procesare în fundal
+• Fă o schimbare: ️Ajută smartphone-urile să rămână inteligente partajând raportul tău de performanță pe dontkillmyapp.com
+
+DontKillMyApp este un instrument de performanță pentru a vedea cât de bine acceptă telefonul tău procesarea în fundal. Poți măsura înainte de a configura telefonul, apoi poți parcurge ghidurile de configurare și să testezi din nou performanța pentru a vedea cât de mult a funcționat telefonul tău în fundal.
+
+Poți partaja raportul tău prin intermediul aplicației cu administratorii site-ului web dontkillmyapp.com, care îl compilează și bazează scorul negativ general pe acesta.
+
+Cum funcționează testul de performanță? (Tehnic!)
+
+Aplicația pornește un serviciu în prim-plan cu o blocare de tip wake lock și programează sarcini repetitive pe firul principal, un executor de fire personalizat și programează alarme regulate (AlarmManager.setExactAndAllowWhileIdle). Apoi calculează executarea față de așteptat. Asta e tot!
+
+Pentru mai multe detalii, verificați codul. Aplicația este open source și este disponibilă la https://github.com/urbandroid-team/dontkillmy-app
+Mulțumiri speciale către Doki (github.com/doubledotlabs/doki).</string>
 <string name="exact_alarm_restrictions_title">Permiteți programarea exactă a alarmelor</string>
 <string name="exact_alarm_restrictions_summary">Vă rugăm să ne permiteți să programăm alarmele exacte pentru a testa în mod corespunzător procesarea în fundal bazată pe alarme a dispozitivului dvs.</string>
 <string name="general_error">Ceva n-a mers bine.</string>

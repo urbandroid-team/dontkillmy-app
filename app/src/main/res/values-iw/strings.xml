@@ -2,10 +2,10 @@
 <resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
 <string name="app_name">DontKillMyApp</string>
 <string name="app_name_short">DKMA</string>
-<string name="start_benchmark">התחל את מבחן הביצועים</string>
+<string name="start_benchmark">התחל את מבחן הב\יצוע\ים</string>
 <string name="stop_benchmark">עצור את הבנצ\'מרק</string>
 <string name="benchmark">מדד</string>
-<string name="running">ריצת בנצ\'מרק (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) הקש כדי לעצור.</string>
+<string name="running">ר\יצת בנצ\'מרק (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) הקש כד\י לעצור.</string>
 <string name="finished">הבדיקה הסתיימה, הקש לקבלת תוצאות</string>
 <string name="already_running">הבנצ\'מרק כבר פועל</string>
 <string name="stop">עצור</string>
