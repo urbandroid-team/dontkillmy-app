@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" xmlns:tools="http://schemas.android.com/tools">
+<string name="app_name">DontKillMyApp</string>
+<string name="app_name_short">DKMA</string>
+<string name="start_benchmark">Пачаць тэставанне</string>
+<string name="stop_benchmark">Спыніць тэставанне</string>
+<string name="benchmark">Тэставанне</string>
+<string name="running">Тэставанне працуе (<xliff:g id="range">%1$s</xliff:g> - <xliff:g id="range">%2$s</xliff:g>) націсніце, каб спыніць.</string>
+<string name="finished">Тэставанне завершана, націсніце, каб убачыць вынікі</string>
+<string name="already_running">Тэставанне ўжо запушчана</string>
+<string name="stop">Спыніць</string>
+<string name="clear">Ачысціць</string>
+<string name="work">Праца</string>
+<string name="alarm">Сігнал трывогі</string>
+<string name="main">Асноўнае</string>
+<string name="share">Падзяліцца</string>
+<string name="share_with">Падзяліцца з</string>
+<string name="report">Паведаміць</string>
+<string name="duration">Працягласць</string>
+<string name="warning_title">Папярэджанне</string>
+<string name="warning_text">Калі ласка, трымайце тэлефон далей ад зараднай прылады і паспрабуйце не карыстацца ім на працягу ўсяго тэсту.</string>
+<string name="cancel">Адмена</string>
+<string name="ok">ОК</string>
+<string name="total">Усяго</string>
+<string-array name="duration_array">
+<item>1 гадзіна</item>
+<item>2 гадзіны</item>
+<item>3 гадзіны</item>
+<item>4 гадзіны</item>
+<item>5 гадзін</item>
+<item>6 гадзін</item>
+<item>7 гадзін</item>
+<item>8 гадзін</item>
+</string-array>
+<string-array name="share_array">
+<item>DontKillMyApp.com</item>
+<item>Электронная пошта</item>
+<item>Іншае</item>
+</string-array>
+<string name="how_it_works">Як гэта працуе</string>
+<string name="how_it_works_text">Тэст запускае службу пярэдняга плана з блакіроўкай абуджэння і плануе паўтаральныя задачы ў асноўным патоку (кожныя 10 секунд), карыстальніцкі выканаўца патоку (кожныя 10 секунд) і плануе рэгулярныя сігналы трывогі з дапамогай AlarmManager.setExactAndAllowWhileIdle (кожныя 10 хвілін). Затым ён разлічвае бал, параўноўваючы выкананыя і чаканыя.\n\nВынікі, блізкія да 100%, з\'яўляюцца добрымі вынікамі - нестандартныя аптымізацыі батарэі ў дадзены момант не ўжываюцца. Хаця добра паўтарыць тэст праз тыдзень, бо некаторыя вытворцы абсталявання могуць уводзіць абмежаванні для праграм, якія не выкарыстоўваюцца некаторы час.\n\nГРАФІК\n\nКожны радок на графіку прадстаўляе 5 хвілін. У ідэале вы бачыце 30 кругоў і трохвугольнікаў на кожным радку і адзін квадрат на кожным другім радку. Вялікія вобласці пустой прасторы сведчаць аб праблеме - вашы праграмы могуць працаваць неналежным чынам, калі вы не зменіце налады тэлефона.\n\n\Для атрымання больш падрабязнай інфармацыі праверце код праграм па адрасе https://github.com/urbandroid-team/dontkillmy-app</string>
+<string name="contact_support">Звязацца са службай падтрымкі</string>
+<string name="tell_others">Расказаць іншым</string>
+<string name="tell_others_text">DontKillMyApp Benchmark правярае фонавую апрацоўку вашага тэлефона, каб праграмы на вашым тэлефоне працавалі належным чынам.\n\nhttps://play.google.com/store/apps/details?id=com.urbandroid.dontkillmyapp</string>
+<string name="rate">Калі ласка, ацаніце нас!</string>
+<string name="rate_button">Ацаніць</string>
+<string name="never_button">Ніколі</string>
+<string name="later_button">Пазней</string>
+<string name="source">Зыходны код</string>
+<string name="rate_text">Мы хочам, каб праграмы працавалі нават на тэлефонах, вытворцы якіх аддаюць перавагу батарэі перад функцыянальнасцю.\n\nЛепшы спосаб зрабіць гэты праект бачным — ацаніць і пракаментаваць гэты бясплатны інструмент з адкрытым зыходным кодам у Play Store.\n\nВялікі дзякуй за дапамогу ў паляпшэнні экасістэмы Android!</string>
+<string name="translate">Дапамажыце перакласці праграму</string>
+<string name="slogan">Зрабіце праграмы працаздольнымі</string>
+<string name="market_text">Афіцыйнае прыкладанне DontKillMyApp ужо тут — прымусьце прыкладанні нарэшце працаваць належным чынам, нават калі ў вас няма Pixel.
+
+Дапамагае наладзіць фонавыя задачы вашага тэлефона, каб вашы прыкладанні нарэшце маглі працаваць для ВАС, нават калі вы не глядзіце на экран.
+
+Паглядзіце, як працуе ваш тэлефон, і пратэстуйце розныя налады з дапамогай тэсту DontKillMyApp.
+
+Асаблівасці:
+
+• Тэст DKMA: вымерайце, наколькі агрэсіўна ваш тэлефон забівае фонавыя прыкладанні
+• Кіраўніцтва: атрымайце практычныя крокі для пераадолення большасці абмежаванняў фонавых працэсаў
+• Зрабіце змены: ️Дапамажыце смартфонам заставацца разумнымі, падзяліўшыся сваёй справаздачай аб бенчмарку на dontkillmyapp.com
+
+DontKillMyApp — гэта інструмент для тэставання, каб убачыць, наколькі добра ваш тэлефон падтрымлівае фонавую апрацоўку. Вы можаце вымераць перад наладкай тэлефона, а затым прайсці кіраўніцтва па наладзе і зноў праверыць, каб убачыць, наколькі ваш тэлефон запавольваецца ў фонавым рэжыме.
+
+Вы можаце падзяліцца сваёй справаздачай праз прыкладанне з распрацоўшчыкамі вэб-сайта dontkillmyapp.com, якія складаюць яе і абапіраюцца на яе агульны адмоўны бал.
+
+Як працуе тэст? (Тэхнічныя праблемы!)
+
+Праграма запускае службу пярэдняга плана з блакіроўкай пасля абуджэння і плануе паўтаральныя задачы ў галоўным патоку, карыстальніцкі выканаўца патоку і плануе рэгулярныя сігналы трывогі (AlarmManager.setExactAndAllowWhileIdle). Затым яна разлічвае выкананыя і чаканыя задачы. Вось і ўсё!
+
+Больш падрабязную інфармацыю глядзіце ў коде. Праграма з адкрытым зыходным кодам даступная па адрасе https://github.com/urbandroid-team/dontkillmy-app
+Асаблівая падзяка Doki (github.com/doubledotlabs/doki).</string>
+<string name="exact_alarm_restrictions_title">Дазволіць дакладнае планаванне сігналізацыі</string>
+<string name="exact_alarm_restrictions_summary">Калі ласка, дазвольце нам планаваць дакладныя сігналізацыі, каб належным чынам праверыць фонавую апрацоўку сігналізацыі вашай прылады.</string>
+<string name="general_error">Ой, нешта пайшло не так.</string>
+<string name="started">Тэставанне пачалося!</string>
+</resources>
