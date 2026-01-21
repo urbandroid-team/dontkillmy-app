@@ -20,4 +20,4 @@ You can share your report through the app to the maintainers of the dontkillmyap
 
 ## How does the benchmark work?
 
-The app starts a foreground service with a wake lock and schedules repetitive task on the main thread, a custom thread executor and schedules regular alarms (AlarmManager.setExactAndAllowWhileIdle). Then it calculates executed vs. expected. That's it!
+The app starts a foreground service with a wake lock and schedules repetitive task on the main thread, a custom thread executor and schedules regular alarms (`AlarmManager.setExactAndAllowWhileIdle`). Then it calculates executed vs. expected. That's it!
